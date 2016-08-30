@@ -76,4 +76,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '2.1.9 bundler', privileged: false
   config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '2.2.5 bundler', privileged: false
   config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '2.3.1 bundler rails', privileged: false
+
+  # vim
+  config.vm.provision :shell, path: 'vim/install-vim.sh', privileged: true
 end
