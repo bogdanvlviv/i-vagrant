@@ -98,4 +98,7 @@ Vagrant.configure('2') do |config|
 
   # mongodb
   config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.2 xenial', privileged: true
+
+  # redis
+  config.vm.provision :shell, path: 'ubuntu/redis/install-redis.sh', privileged: true
 end
