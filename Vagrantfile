@@ -70,32 +70,32 @@ Vagrant.configure('2') do |config|
   # SHELL
 
   #ruby
-  config.vm.provision :shell, path: 'ruby/install-rvm.sh', args: 'stable', privileged: false
-  config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '1.9.3 bundler', privileged: false
-  config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '2.0.0 bundler', privileged: false
-  config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '2.1.9 bundler', privileged: false
-  config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '2.2.5 bundler', privileged: false
-  config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '2.3.1 bundler rails', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-rvm.sh', args: 'stable', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '1.9.3 bundler', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.0.0 bundler', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.1.9 bundler', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.2.5 bundler', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.3.1 bundler rails', privileged: false
 
   # vim
-  config.vm.provision :shell, path: 'vim/install-vim.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
 
   # tmux
-  config.vm.provision :shell, path: 'tmux/install-tmux.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
 
   # git
-  config.vm.provision :shell, path: 'git/install-git.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
 
   # postgresql
-  config.vm.provision :shell, path: 'postgresql/install-postgresql.sh', args: '9.5 xenial libpq-dev', privileged: true
-  config.vm.provision :shell, path: 'postgresql/create-user.sh', args: 'root admin', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.5 xenial libpq-dev', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
 
   # mysql
-  config.vm.provision :shell, path: 'mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
 
   # sqlite3
-  config.vm.provision :shell, path: 'sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
 
   # mongodb
-  config.vm.provision :shell, path: 'mongodb/install-mongodb.sh', args: '3.2 xenial', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.2 xenial', privileged: true
 end
