@@ -92,4 +92,7 @@ Vagrant.configure('2') do |config|
 
   # sqlite3
   config.vm.provision :shell, path: 'sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
+
+  # mongodb
+  config.vm.provision :shell, path: 'mongodb/install-mongodb.sh', args: '3.2 xenial', privileged: true
 end
