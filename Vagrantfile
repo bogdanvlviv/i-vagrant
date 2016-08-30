@@ -86,4 +86,7 @@ Vagrant.configure('2') do |config|
 
   # mysql
   config.vm.provision :shell, path: 'mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
+
+  # sqlite3
+  config.vm.provision :shell, path: 'sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
 end
