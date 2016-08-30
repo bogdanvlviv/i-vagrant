@@ -80,6 +80,9 @@ Vagrant.configure('2') do |config|
   # vim
   config.vm.provision :shell, path: 'vim/install-vim.sh', privileged: true
 
+  # tmux
+  config.vm.provision :shell, path: 'tmux/install-tmux.sh', privileged: true
+
   # postgresql
   config.vm.provision :shell, path: 'postgresql/install-postgresql.sh', args: '9.5 xenial libpq-dev', privileged: true
   config.vm.provision :shell, path: 'postgresql/create-user.sh', args: 'root admin', privileged: true
