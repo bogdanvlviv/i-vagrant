@@ -68,4 +68,12 @@ Vagrant.configure('2') do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
+
+  #ruby
+  config.vm.provision :shell, path: 'ruby/install-rvm.sh', args: 'stable', privileged: false
+  config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '1.9.3 bundler', privileged: false
+  config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '2.0.0 bundler', privileged: false
+  config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '2.1.9 bundler', privileged: false
+  config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '2.2.5 bundler', privileged: false
+  config.vm.provision :shell, path: 'ruby/install-ruby.sh', args: '2.3.1 bundler rails', privileged: false
 end
