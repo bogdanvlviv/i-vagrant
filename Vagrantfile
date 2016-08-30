@@ -83,4 +83,7 @@ Vagrant.configure('2') do |config|
   # postgresql
   config.vm.provision :shell, path: 'postgresql/install-postgresql.sh', args: '9.5 xenial libpq-dev', privileged: true
   config.vm.provision :shell, path: 'postgresql/create-user.sh', args: 'root admin', privileged: true
+
+  # mysql
+  config.vm.provision :shell, path: 'mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
 end
