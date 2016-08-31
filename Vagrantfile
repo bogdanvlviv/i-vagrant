@@ -92,6 +92,9 @@ Vagrant.configure('2') do |config|
   # mc
   config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
 
+  # nodejs
+  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '6', privileged: true
+
   # postgresql
   config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.5 xenial libpq-dev', privileged: true
   config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
