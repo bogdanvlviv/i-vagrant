@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+
+apt-get update
+
+apt-get install -y curl
+
+apt-get install -y make
+
 # http://redis.io/topics/quickstart
 cd /tmp
 curl -O http://download.redis.io/redis-stable.tar.gz
