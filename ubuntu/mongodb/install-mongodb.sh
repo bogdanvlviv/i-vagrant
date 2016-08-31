@@ -6,7 +6,7 @@ apt-get update
 
 apt-get install -y mongodb-org
 
-if (( $2 == "xenial"  )); then
+if (( $2 = "xenial" )); then
   echo "[Unit]" | tee /lib/systemd/system/mongod.service
   echo "Description=High-performance, schema-free document-oriented database" | tee -a /lib/systemd/system/mongod.service
   echo "After=network.target" | tee -a /lib/systemd/system/mongod.service
