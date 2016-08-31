@@ -12,7 +12,7 @@ Vagrant.configure('2') do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = 'ubuntu/xenial64'
+  config.vm.box = 'ubuntu/trusty64'
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -79,7 +79,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
 
   # mongodb
-  config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.2 xenial', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.2 trusty', privileged: true
 
   # mysql
   config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
@@ -88,7 +88,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '6', privileged: true
 
   # postgresql
-  config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.5 xenial libpq-dev', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.5 trusty libpq-dev', privileged: true
   config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
 
   # redis

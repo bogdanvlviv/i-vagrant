@@ -10,7 +10,7 @@ source "ubuntu/git/install-git.sh"
 source "ubuntu/mc/install-mc.sh"
 
 # mongodb
-source "ubuntu/mongodb/install-mongodb.sh" 3.2 xenial
+source "ubuntu/mongodb/install-mongodb.sh" 3.2 trusty
 
 # mysql
 source "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
@@ -19,7 +19,7 @@ source "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
 source "ubuntu/nodejs/install-nodejs.sh" 6
 
 # postgresql
-source "ubuntu/postgresql/install-postgresql.sh" 9.5 xenial libpq-dev
+source "ubuntu/postgresql/install-postgresql.sh" 9.5 trusty libpq-dev
 source "ubuntu/postgresql/create-user.sh" root admin
 
 # redis
