@@ -69,28 +69,20 @@ Vagrant.configure('2') do |config|
   #   apt-get install -y apache2
   # SHELL
 
-  #ruby
-  config.vm.provision :shell, path: 'ubuntu/ruby/install-rvm.sh', args: 'stable', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '1.9.3 bundler', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.0.0 bundler', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.1.9 bundler', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.2.5 bundler', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.3.1 bundler rails rubocop', privileged: false
-
-  # vim
-  config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
-
-  # tmux
-  config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
+  # curl
+  config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
 
   # git
   config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
 
-  # curl
-  config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
-
   # mc
   config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
+
+  # mongodb
+  config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.2 xenial', privileged: true
+
+  # mysql
+  config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
 
   # nodejs
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '6', privileged: true
@@ -99,15 +91,23 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.5 xenial libpq-dev', privileged: true
   config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
 
-  # mysql
-  config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
+  # redis
+  config.vm.provision :shell, path: 'ubuntu/redis/install-redis.sh', privileged: true
+
+  #ruby
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-rvm.sh', args: 'stable', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '1.9.3 bundler', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.0.0 bundler', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.1.9 bundler', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.2.5 bundler', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.3.1 bundler rails rubocop', privileged: false
 
   # sqlite3
   config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
 
-  # mongodb
-  config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.2 xenial', privileged: true
+  # tmux
+  config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
 
-  # redis
-  config.vm.provision :shell, path: 'ubuntu/redis/install-redis.sh', privileged: true
+  # vim
+  config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
 end
