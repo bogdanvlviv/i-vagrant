@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+# curl
+source "ubuntu/curl/install-curl.sh"
+
+# git
+source "ubuntu/git/install-git.sh"
+
+# mc
+source "ubuntu/mc/install-mc.sh"
+
+# mongodb
+source "ubuntu/mongodb/install-mongodb.sh" 3.2 xenial
+
+# mysql
+source "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
+
+# nodejs
+source "ubuntu/nodejs/install-nodejs.sh" 6
+
+# postgresql
+source "ubuntu/postgresql/install-postgresql.sh" 9.5 xenial libpq-dev
+source "ubuntu/postgresql/create-user.sh" root admin
+
+# redis
+source "ubuntu/redis/install-redis.sh"
+
+#ruby
+source "ubuntu/ruby/install-rvm.sh" stable
+source "ubuntu/ruby/install-ruby.sh" 1.9.3 bundler
+source "ubuntu/ruby/install-ruby.sh" 2.0.0 bundler
+source "ubuntu/ruby/install-ruby.sh" 2.1.9 bundler
+source "ubuntu/ruby/install-ruby.sh" 2.2.5 bundler
+source "ubuntu/ruby/install-ruby.sh" 2.3.1 bundler rails rubocop
+
+# sqlite3
+source "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
+
+# tmux
+source "ubuntu/tmux/install-tmux.sh"
+
+# vim
+source "ubuntu/vim/install-vim.sh"
+
+echo "==================================================="
+echo "i-vagrant: https://github.com/bogdanvlviv/i-vagrant"
+echo "==================================================="
