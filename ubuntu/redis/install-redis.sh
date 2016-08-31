@@ -5,7 +5,7 @@ apt-get update
 
 apt-get install -y curl
 
-apt-get install -y make
+apt-get install -y build-essential
 
 # http://redis.io/topics/quickstart
 cd /tmp
