@@ -42,6 +42,8 @@ source "ubuntu/tmux/install-tmux.sh"
 # vim
 source "ubuntu/vim/install-vim.sh"
 
+echo ""
 echo "==================================================="
 echo "i-vagrant: https://github.com/bogdanvlviv/i-vagrant"
 echo "==================================================="
+echo ""
