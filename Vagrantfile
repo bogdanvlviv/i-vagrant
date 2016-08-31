@@ -86,6 +86,12 @@ Vagrant.configure('2') do |config|
   # git
   config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
 
+  # curl
+  config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
+
+  # mc
+  config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
+
   # postgresql
   config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.5 xenial libpq-dev', privileged: true
   config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
