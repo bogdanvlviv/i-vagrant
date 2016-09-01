@@ -31,6 +31,7 @@ $ vagrant up
   - [curl](#curl)
   - [fzf](#fzf)
   - [git](#git)
+  - [graphviz](#graphviz)
   - [imagemagick](#imagemagick)
   - [mc](#mc)
   - [mongodb](#mongodb)
@@ -74,6 +75,16 @@ sudo bash "ubuntu/git/install-git.sh"
 To configure `Vagrantfile` file for installing `git` need to set the row
 ```ruby
 config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
+```
+
+##### graphviz
+To configure `i-vagrant` file for installing `graphviz` need to set the row
+```bash
+sudo bash "ubuntu/graphviz/install-graphviz.sh"
+```
+To configure `Vagrantfile` file for installing `graphviz` need to set the row
+```ruby
+config.vm.provision :shell, path: 'ubuntu/graphviz/install-graphviz.sh', privileged: true
 ```
 
 ##### imagemagick

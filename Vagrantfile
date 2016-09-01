@@ -78,6 +78,9 @@ Vagrant.configure('2') do |config|
   # git
   config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
 
+  # graphviz
+  config.vm.provision :shell, path: 'ubuntu/graphviz/install-graphviz.sh', privileged: true
+
   # imagemagick
   config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
 
