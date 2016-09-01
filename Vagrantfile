@@ -78,6 +78,9 @@ Vagrant.configure('2') do |config|
   # git
   config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
 
+  # imagemagick
+  config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
+
   # mc
   config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
 

@@ -9,6 +9,9 @@ bash "ubuntu/fzf/install-fzf.sh"
 # git
 sudo bash "ubuntu/git/install-git.sh"
 
+# imagemagick
+sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
+
 # mc
 sudo bash "ubuntu/mc/install-mc.sh"
 

@@ -31,6 +31,7 @@ $ vagrant up
   - [curl](#curl)
   - [fzf](#fzf)
   - [git](#git)
+  - [imagemagick](#imagemagick)
   - [mc](#mc)
   - [mongodb](#mongodb)
   - [mysql](#mysql)
@@ -73,6 +74,16 @@ sudo bash "ubuntu/git/install-git.sh"
 To configure `Vagrantfile` file for installing `git` need to set the row
 ```ruby
 config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
+```
+
+##### imagemagick
+To configure `i-vagrant` file for installing `imagemagick` need to set the row
+```bash
+sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
+```
+To configure `Vagrantfile` file for installing `imagemagick` need to set the row
+```ruby
+config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
 ```
 
 ##### mc
