@@ -39,6 +39,9 @@ bash "ubuntu/ruby/install-ruby.sh" 2.3.1 bundler rails rubocop
 # sqlite3
 sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
 
+# the_silver_searcher
+sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
+
 # tmux
 sudo bash "ubuntu/tmux/install-tmux.sh"
 

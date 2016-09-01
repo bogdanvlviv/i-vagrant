@@ -108,6 +108,9 @@ Vagrant.configure('2') do |config|
   # sqlite3
   config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
 
+  # the_silver_searcher
+  config.vm.provision :shell, path: 'ubuntu/the_silver_searcher/install-the_silver_searcher.sh', privileged: true
+
   # tmux
   config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
 

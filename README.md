@@ -39,6 +39,7 @@ $ vagrant up
   - [redis](#redis)
   - [ruby](#ruby)
   - [sqlite3](#sqlite3)
+  - [the_silver_searcher](#the_silver_searcher)
   - [tmux](#tmux)
   - [vim](#vim)
 
@@ -209,6 +210,16 @@ config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'AD
 
 ###### Optional arguments:
 `ADDITIONAL_LIBRARIES` - example values: `libsqlite3-dev` or `libsqlite3-dev libsqlite3-tcl`, ...
+
+##### the_silver_searcher
+To configure `i-vagrant` file for installing `the_silver_searcher` need to set the row
+```bash
+sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
+```
+To configure `Vagrantfile` file for installing `the_silver_searcher` need to set the row
+```ruby
+config.vm.provision :shell, path: 'ubuntu/the_silver_searcher/install-the_silver_searcher.sh', privileged: true
+```
 
 ##### tmux
 To configure `i-vagrant` file for installing `tmux` need to set the row
