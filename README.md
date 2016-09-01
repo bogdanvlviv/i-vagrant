@@ -29,6 +29,7 @@ $ vagrant up
 
 - [ubuntu](#ubuntu)
   - [curl](#curl)
+  - [fzf](#fzf)
   - [git](#git)
   - [mc](#mc)
   - [mongodb](#mongodb)
@@ -51,6 +52,16 @@ sudo bash "ubuntu/curl/install-curl.sh"
 To configure `Vagrantfile` file for installing `curl` need to set the row
 ```ruby
 config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
+```
+
+##### fzf
+To configure `i-vagrant` file for installing `fzf` need to set the row
+```bash
+bash "ubuntu/fzf/install-fzf.sh"
+```
+To configure `Vagrantfile` file for installing `fzf` need to set the row
+```ruby
+config.vm.provision :shell, path: 'ubuntu/fzf/install-fzf.sh', privileged: false
 ```
 
 ##### git

@@ -3,6 +3,9 @@
 # curl
 sudo bash "ubuntu/curl/install-curl.sh"
 
+# fzf
+bash "ubuntu/fzf/install-fzf.sh"
+
 # git
 sudo bash "ubuntu/git/install-git.sh"
 
