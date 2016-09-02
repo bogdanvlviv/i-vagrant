@@ -37,6 +37,7 @@ $ vagrant up
   - [mongodb](#mongodb)
   - [mysql](#mysql)
   - [nodejs](#nodejs)
+  - [phantomjs](#phantomjs)
   - [postgresql](#postgresql)
   - [redis](#redis)
   - [ruby](#ruby)
@@ -152,6 +153,16 @@ config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: 'NODE
 
 ###### Required arguments:
 `NODEJS_VERSION` - example values: `4` or `6`, ...
+
+##### phantomjs
+To configure `i-vagrant` file for installing `phantomjs` need to set the row
+```bash
+sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
+```
+To configure `Vagrantfile` file for installing `phantomjs` need to set the row
+```ruby
+config.vm.provision :shell, path: 'ubuntu/phantomjs/install-phantomjs.sh', privileged: true
+```
 
 ##### postgresql
 To configure `i-vagrant` file for installing `postgresql` need to set the row

@@ -27,6 +27,9 @@ sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
 # nodejs
 sudo bash "ubuntu/nodejs/install-nodejs.sh" 6
 
+# phantomjs
+sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
+
 # postgresql
 sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.5 trusty libpq-dev
 sudo bash "ubuntu/postgresql/create-user.sh" root admin
