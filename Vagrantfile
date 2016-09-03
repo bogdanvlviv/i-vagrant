@@ -38,6 +38,22 @@ Vagrant.configure('2') do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
+  config.vm.synced_folder '~/active_projects/', '/active_projects'
+
+  # git
+  config.vm.provision 'file', source: '~/.gitconfig', destination: '.gitconfig'
+  config.vm.provision 'file', source: '~/.gitignore_global', destination: '.gitignore_global'
+
+  # gnupg
+  config.vm.provision 'file', source: '~/.gnupg/gpg.conf', destination: '.gnupg/gpg.conf'
+  config.vm.provision 'file', source: '~/.gnupg/pubring.gpg', destination: '.gnupg/pubring.gpg'
+  config.vm.provision 'file', source: '~/.gnupg/random_seed', destination: '.gnupg/random_seed'
+  config.vm.provision 'file', source: '~/.gnupg/secring.gpg', destination: '.gnupg/secring.gpg'
+  config.vm.provision 'file', source: '~/.gnupg/trustdb.gpg', destination: '.gnupg/trustdb.gpg'
+
+  # ssh
+  config.vm.provision 'file', source: '~/.ssh/id_rsa', destination: '.ssh/id_rsa'
+  config.vm.provision 'file', source: '~/.ssh/id_rsa.pub', destination: '.ssh/id_rsa.pub'
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
