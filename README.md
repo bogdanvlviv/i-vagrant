@@ -28,6 +28,7 @@ $ vagrant up
 ### How to configure `i-vagrant` and `Vagrantfile` files
 
 - [ubuntu](#ubuntu)
+  - [bashrc](#bashrc)
   - [curl](#curl)
   - [fzf](#fzf)
   - [git](#git)
@@ -47,6 +48,16 @@ $ vagrant up
   - [vim](#vim)
 
 #### ubuntu
+
+##### bashrc
+To configure `i-vagrant` file for setting `LC_ALL` environment variable need to set the row
+```bash
+bash "ubuntu/bashrc/set-lc_all-variable.sh"
+```
+To configure `Vagrantfile` file for setting `LC_ALL` environment variable need to set the row
+```ruby
+config.vm.provision :shell, path: 'ubuntu/bashrc/set-lc_all-variable.sh', privileged: false
+```
 
 ##### curl
 To configure `i-vagrant` file for installing `curl` need to set the row

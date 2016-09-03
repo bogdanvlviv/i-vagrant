@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# bashrc
+bash "ubuntu/bashrc/set-lc_all-variable.sh"
+
 # curl
 sudo bash "ubuntu/curl/install-curl.sh"
 
