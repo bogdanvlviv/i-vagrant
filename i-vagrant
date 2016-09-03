@@ -57,6 +57,7 @@ sudo bash "ubuntu/tmux/install-tmux.sh"
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
 bash "ubuntu/vim/install-dotvim.sh"
+bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 echo ""
 echo "==================================================="

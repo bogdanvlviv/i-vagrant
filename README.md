@@ -281,3 +281,11 @@ To configure `Vagrantfile` file for installing `dotvim` need to set the row
 ```ruby
 config.vm.provision :shell, path: 'ubuntu/vim/install-dotvim.sh', privileged: false
 ```
+To configure `i-vagrant` file for setting `vim` as default editor after installation need to set the row
+```bash
+bash "ubuntu/vim/set-vim-as-default-editor.sh"
+```
+To configure `Vagrantfile` file for setting `vim` as default editor after installation need to set the row
+```ruby
+config.vm.provision :shell, path: 'ubuntu/vim/set-vim-as-default-editor.sh', privileged: false
+```
