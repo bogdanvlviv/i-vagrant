@@ -273,3 +273,11 @@ To configure `Vagrantfile` file for installing `vim` need to set the row
 ```ruby
 config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
 ```
+To configure `i-vagrant` file for installing `dotvim` need to set the row
+```bash
+bash "ubuntu/vim/install-dotvim.sh"
+```
+To configure `Vagrantfile` file for installing `dotvim` need to set the row
+```ruby
+config.vm.provision :shell, path: 'ubuntu/vim/install-dotvim.sh', privileged: false
+```

@@ -125,4 +125,5 @@ Vagrant.configure('2') do |config|
 
   # vim
   config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/vim/install-dotvim.sh', privileged: false
 end
