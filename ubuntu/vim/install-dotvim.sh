@@ -2,6 +2,6 @@
 
 sudo apt-get update
 
-sudo apt-get install -y git-all
+sudo apt-get install -y git
 
 git clone https://github.com/bogdanvlviv/dotvim.git ~/.vim

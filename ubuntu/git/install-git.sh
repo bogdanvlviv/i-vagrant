@@ -2,4 +2,4 @@
 
 apt-get update
 
-apt-get install -y git-all
+apt-get install -y git
