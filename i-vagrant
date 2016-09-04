@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+UBUNTU_RELEASE_CODENAME="$(lsb_release -cs)"
+
 # bashrc
 bash "ubuntu/bashrc/set-lc_all-variable.sh"
 
@@ -22,7 +24,7 @@ sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 sudo bash "ubuntu/mc/install-mc.sh"
 
 # mongodb
-sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.2 trusty
+sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.2 $UBUNTU_RELEASE_CODENAME
 
 # mysql
 sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
@@ -34,7 +36,7 @@ sudo bash "ubuntu/nodejs/install-nodejs.sh" 6
 sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
 # postgresql
-sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.5 trusty libpq-dev
+sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.5 $UBUNTU_RELEASE_CODENAME libpq-dev
 sudo bash "ubuntu/postgresql/create-user.sh" root admin
 
 # redis

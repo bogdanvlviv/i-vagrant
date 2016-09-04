@@ -122,17 +122,17 @@ config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
 ##### mongodb
 To configure `i-vagrant` file for installing `mongodb` need to set the row
 ```bash
-sudo bash "ubuntu/mongodb/install-mongodb.sh" MONGODB_VERSION UBUNTU_RELEASE
+sudo bash "ubuntu/mongodb/install-mongodb.sh" MONGODB_VERSION UBUNTU_RELEASE_CODENAME
 ```
 To configure `Vagrantfile` file for installing `mongodb` need to set the row
 ```ruby
-config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: 'MONGODB_VERSION UBUNTU_RELEASE', privileged: true
+config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: 'MONGODB_VERSION UBUNTU_RELEASE_CODENAME', privileged: true
 ```
 
 ###### Required arguments:
 `MONGODB_VERSION` - example values: `3.0` or `3.2`, ...
 
-`UBUNTU_RELEASE` - example values: `trusty`, `xenial`, ...
+`UBUNTU_RELEASE_CODENAME` - example values: `trusty`, `xenial`, ...
 
 ##### mysql
 To configure `i-vagrant` file for installing `mysql` need to set the row
@@ -178,11 +178,11 @@ config.vm.provision :shell, path: 'ubuntu/phantomjs/install-phantomjs.sh', privi
 ##### postgresql
 To configure `i-vagrant` file for installing `postgresql` need to set the row
 ```bash
-sudo bash "ubuntu/postgresql/install-postgresql.sh" POSTGRESQL_VERSION UBUNTU_RELEASE ADDITIONAL_LIBRARIES
+sudo bash "ubuntu/postgresql/install-postgresql.sh" POSTGRESQL_VERSION UBUNTU_RELEASE_CODENAME ADDITIONAL_LIBRARIES
 ```
 To configure `Vagrantfile` file for installing `postgresql` need to set the row
 ```ruby
-config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: 'POSTGRESQL_VERSION UBUNTU_RELEASE ADDITIONAL_LIBRARIES', privileged: true
+config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: 'POSTGRESQL_VERSION UBUNTU_RELEASE_CODENAME ADDITIONAL_LIBRARIES', privileged: true
 ```
 To configure `i-vagrant` file for create `postgresql user` after installation `postgresql` need to set the row
 ```bash
@@ -200,7 +200,7 @@ config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'POS
 
 `POSTGRESQL_VERSION` - example values: `9.4` or `9.5`, ...
 
-`UBUNTU_RELEASE` - example values: `trusty`, `xenial`, ...
+`UBUNTU_RELEASE_CODENAME` - example values: `trusty`, `xenial`, ...
 
 ###### Optional arguments:
 `ADDITIONAL_LIBRARIES` - example values: `libpq-dev` or `libpq-dev postgresql-contrib`, ...
