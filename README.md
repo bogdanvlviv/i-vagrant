@@ -14,7 +14,7 @@ $ cd i-vagrant/
 To set up a development environment on local machine, need configure `i-vagrant` file.
 After configure `i-vagrant` file need to run
 ```bash
-$ bash i-vagrant
+$ source i-vagrant
 ```
 
 ### Using with [Vagrant](https://github.com/mitchellh/vagrant)
