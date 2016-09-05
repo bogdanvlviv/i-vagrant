@@ -59,6 +59,9 @@ sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 # tmux
 sudo bash "ubuntu/tmux/install-tmux.sh"
 
+# vagrant
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.8.5
+
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
 bash "ubuntu/vim/install-dotvim.sh"

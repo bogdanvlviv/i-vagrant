@@ -45,6 +45,7 @@ $ vagrant up
   - [sqlite3](#sqlite3)
   - [the_silver_searcher](#the_silver_searcher)
   - [tmux](#tmux)
+  - [vagrant](#vagrant)
   - [vim](#vim)
 
 #### ubuntu
@@ -274,6 +275,19 @@ To configure `Vagrantfile` file for installing `tmux` need to set the row
 ```ruby
 config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
 ```
+
+##### vagrant
+To configure `i-vagrant` file for installing `vagrant` need to set the row
+```bash
+sudo bash "ubuntu/vagrant/install-vagrant.sh" VAGRANT_VERSION
+```
+To configure `Vagrantfile` file for installing `vagrant` need to set the row
+```ruby
+config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: 'VAGRANT_VERSION', privileged: true
+```
+
+###### Required arguments:
+`VAGRANT_VERSION` - example values: `1.8.4` or `1.8.5`, ...
 
 ##### vim
 To configure `i-vagrant` file for installing `vim` need to set the row
