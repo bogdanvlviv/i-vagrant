@@ -24,6 +24,21 @@ Vagrant.configure('2') do |config|
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # config.vm.network "forwarded_port", guest: 80, host: 8080
 
+  # mongodb
+  # config.vm.network 'forwarded_port', guest: 27017, host: 27017
+
+  # mysql
+  # config.vm.network 'forwarded_port', guest: 3306, host: 3306
+
+  # postgresql
+  # config.vm.network 'forwarded_port', guest: 5432, host: 5432
+
+  # rails
+  config.vm.network 'forwarded_port', guest: 3000, host: 3000
+
+  # redis
+  # config.vm.network 'forwarded_port', guest: 6379, host: 6379
+
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network "private_network", ip: "192.168.33.10"
@@ -31,6 +46,8 @@ Vagrant.configure('2') do |config|
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
+  # config.vm.network "public_network"
+
   config.vm.network 'public_network'
 
   # Share an additional folder to the guest VM. The first argument is
@@ -38,6 +55,7 @@ Vagrant.configure('2') do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
+
   config.vm.synced_folder '~/active_projects/', '/active_projects'
 
   # git
