@@ -30,7 +30,10 @@ sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.2 $UBUNTU_RELEASE_CODENAME
 sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
 
 # nodejs
-sudo bash "ubuntu/nodejs/install-nodejs.sh" 6
+bash "ubuntu/nodejs/install-nvm.sh" 0.31.7
+bash "ubuntu/nodejs/install-nodejs.sh" 4.5.0
+bash "ubuntu/nodejs/install-nodejs.sh" 5.12.0
+bash "ubuntu/nodejs/install-nodejs.sh" 6.5.0
 
 # phantomjs
 sudo bash "ubuntu/phantomjs/install-phantomjs.sh"

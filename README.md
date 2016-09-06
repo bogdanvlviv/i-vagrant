@@ -154,17 +154,27 @@ During installing MySQL create `mysql user` named `root`, need to set password f
 `ADDITIONAL_LIBRARIES` - example values: `libmysqlclient-dev` or `libmysqlclient-dev mysql-testsuite`, ...
 
 ##### nodejs
-To configure `i-vagrant` file for installing `nodejs` need to set the row
+To configure `i-vagrant` file for installing `nvm` need to set the row
 ```bash
-sudo bash "ubuntu/nodejs/install-nodejs.sh" NODEJS_VERSION
+bash "ubuntu/nodejs/install-nvm.sh" NVM_VERSION
 ```
-To configure `Vagrantfile` file for installing `nodejs` need to set the row
+To configure `Vagrantfile` file for installing `nvm` need to set the row
 ```ruby
-config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: 'NODEJS_VERSION', privileged: true
+config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: 'NVM_VERSION', privileged: false
+```
+To configure `i-vagrant` file for installing `nodejs` after installation `nvm` need to set the row
+```bash
+bash "ubuntu/nodejs/install-nodejs.sh" NODEJS_VERSION
+```
+To configure `Vagrantfile` file for installing `nodejs` after installation `nvm` need to set the row
+```ruby
+config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: 'NODEJS_VERSION', privileged: false
 ```
 
 ###### Required arguments:
-`NODEJS_VERSION` - example values: `4` or `6`, ...
+`NVM_VERSION` - example values: `0.31.6` or `0.31.7`, ...
+
+`NODEJS_VERSION` - example values: `4.5.0` or `6.5.0`, ...
 
 ##### phantomjs
 To configure `i-vagrant` file for installing `phantomjs` need to set the row

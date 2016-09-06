@@ -139,7 +139,10 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
 
   # nodejs
-  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '6', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.31.7', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '4.5.0', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '5.12.0', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '6.5.0', privileged: false
 
   # phantomjs
   config.vm.provision :shell, path: 'ubuntu/phantomjs/install-phantomjs.sh', privileged: true
