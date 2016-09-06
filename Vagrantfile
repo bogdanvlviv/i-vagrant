@@ -75,6 +75,8 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, inline: 'sudo chmod 600 ~/.ssh/id_rsa', privileged: false
   config.vm.provision :shell, inline: 'sudo chmod 600 ~/.ssh/id_rsa.pub', privileged: false
 
+  config.ssh.forward_agent = true
+
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
