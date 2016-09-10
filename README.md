@@ -1,5 +1,5 @@
 # i-vagrant
-i-vagrant helps set up a development environment easily. i-vagrant can be used with [Vagrant](https://github.com/mitchellh/vagrant).
+i-vagrant helps set up a development environment easily.
 
 Try to fork this repository and build i-vagrant for own needs.
 
@@ -17,15 +17,7 @@ After configure `i-vagrant` file need to run
 $ source i-vagrant
 ```
 
-### Using with [Vagrant](https://github.com/mitchellh/vagrant)
-See more about Vagrant [here](https://github.com/mitchellh/vagrant/blob/master/README.md).
-
-Need configure `Vagrantfile` file, then to run
-```bash
-$ vagrant up
-```
-
-### How to configure `i-vagrant` and `Vagrantfile` files
+### How to configure `i-vagrant` file
 
 - [ubuntu](#ubuntu)
   - [bashrc](#bashrc)
@@ -55,19 +47,11 @@ To configure `i-vagrant` file for setting `LC_ALL` environment variable need to 
 ```bash
 bash "ubuntu/bashrc/set-lc_all-variable.sh"
 ```
-To configure `Vagrantfile` file for setting `LC_ALL` environment variable need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/bashrc/set-lc_all-variable.sh', privileged: false
-```
 
 ##### curl
 To configure `i-vagrant` file for installing `curl` need to set the row
 ```bash
 sudo bash "ubuntu/curl/install-curl.sh"
-```
-To configure `Vagrantfile` file for installing `curl` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
 ```
 
 ##### fzf
@@ -75,19 +59,11 @@ To configure `i-vagrant` file for installing `fzf` need to set the row
 ```bash
 bash "ubuntu/fzf/install-fzf.sh"
 ```
-To configure `Vagrantfile` file for installing `fzf` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/fzf/install-fzf.sh', privileged: false
-```
 
 ##### git
 To configure `i-vagrant` file for installing `git` need to set the row
 ```bash
 sudo bash "ubuntu/git/install-git.sh"
-```
-To configure `Vagrantfile` file for installing `git` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
 ```
 
 ##### graphviz
@@ -95,19 +71,11 @@ To configure `i-vagrant` file for installing `graphviz` need to set the row
 ```bash
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
 ```
-To configure `Vagrantfile` file for installing `graphviz` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/graphviz/install-graphviz.sh', privileged: true
-```
 
 ##### imagemagick
 To configure `i-vagrant` file for installing `imagemagick` need to set the row
 ```bash
 sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
-```
-To configure `Vagrantfile` file for installing `imagemagick` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
 ```
 
 ##### mc
@@ -115,19 +83,11 @@ To configure `i-vagrant` file for installing `mc` need to set the row
 ```bash
 sudo bash "ubuntu/mc/install-mc.sh"
 ```
-To configure `Vagrantfile` file for installing `mc` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
-```
 
 ##### mongodb
 To configure `i-vagrant` file for installing `mongodb` need to set the row
 ```bash
 sudo bash "ubuntu/mongodb/install-mongodb.sh" MONGODB_VERSION UBUNTU_RELEASE_CODENAME
-```
-To configure `Vagrantfile` file for installing `mongodb` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: 'MONGODB_VERSION UBUNTU_RELEASE_CODENAME', privileged: true
 ```
 
 ###### Required arguments:
@@ -139,10 +99,6 @@ config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: 'MO
 To configure `i-vagrant` file for installing `mysql` need to set the row
 ```bash
 sudo bash "ubuntu/mysql/install-mysql.sh" MYSQL_USER_ROOT_PASSWORD ADDITIONAL_LIBRARIES
-```
-To configure `Vagrantfile` file for installing `mysql` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'MYSQL_USER_ROOT_PASSWORD ADDITIONAL_LIBRARIES', privileged: true
 ```
 
 ###### Required arguments:
@@ -158,17 +114,9 @@ To configure `i-vagrant` file for installing `nvm` need to set the row
 ```bash
 bash "ubuntu/nodejs/install-nvm.sh" NVM_VERSION
 ```
-To configure `Vagrantfile` file for installing `nvm` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: 'NVM_VERSION', privileged: false
-```
 To configure `i-vagrant` file for installing `nodejs` after installation `nvm` need to set the row
 ```bash
 bash "ubuntu/nodejs/install-nodejs.sh" NODEJS_VERSION
-```
-To configure `Vagrantfile` file for installing `nodejs` after installation `nvm` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: 'NODEJS_VERSION', privileged: false
 ```
 
 ###### Required arguments:
@@ -181,27 +129,15 @@ To configure `i-vagrant` file for installing `phantomjs` need to set the row
 ```bash
 sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 ```
-To configure `Vagrantfile` file for installing `phantomjs` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/phantomjs/install-phantomjs.sh', privileged: true
-```
 
 ##### postgresql
 To configure `i-vagrant` file for installing `postgresql` need to set the row
 ```bash
 sudo bash "ubuntu/postgresql/install-postgresql.sh" POSTGRESQL_VERSION UBUNTU_RELEASE_CODENAME ADDITIONAL_LIBRARIES
 ```
-To configure `Vagrantfile` file for installing `postgresql` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: 'POSTGRESQL_VERSION UBUNTU_RELEASE_CODENAME ADDITIONAL_LIBRARIES', privileged: true
-```
 To configure `i-vagrant` file for create `postgresql user` after installation `postgresql` need to set the row
 ```bash
 sudo bash "ubuntu/postgresql/create-user.sh" POSTGRESQL_USER_NAME POSTGRESQL_USER_PASSWORD
-```
-To configure `Vagrantfile` file for create `postgresql user` after installation `postgresql` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'POSTGRESQL_USER_NAME POSTGRESQL_USER_PASSWORD', privileged: true
 ```
 
 ###### Required arguments:
@@ -221,27 +157,15 @@ To configure `i-vagrant` file for installing `redis` need to set the row
 ```bash
 sudo bash "ubuntu/redis/install-redis.sh"
 ```
-To configure `Vagrantfile` file for installing `redis` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/redis/install-redis.sh', privileged: true
-```
 
 ##### ruby
 To configure `i-vagrant` file for installing `rvm` need to set the row
 ```bash
 bash "ubuntu/ruby/install-rvm.sh" RVM_VERSION
 ```
-To configure `Vagrantfile` file for installing `rvm` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/ruby/install-rvm.sh', args: 'RVM_VERSION', privileged: false
-```
 To configure `i-vagrant` file for installing `ruby` after installation `rvm` need to set the row
 ```bash
 bash "ubuntu/ruby/install-ruby.sh" RUBY_VERSION ADDITIONAL_GEMS
-```
-To configure `Vagrantfile` file for installing `ruby` after installation `rvm` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'RUBY_VERSION ADDITIONAL_GEMS', privileged: false
 ```
 See more about installing `rvm` with sudo privileges [here](https://rvm.io/rvm/install).
 
@@ -258,10 +182,6 @@ To configure `i-vagrant` file for installing `sqlite3` need to set the row
 ```bash
 sudo bash "ubuntu/sqlite3/install-sqlite3.sh" ADDITIONAL_LIBRARIES
 ```
-To configure `Vagrantfile` file for installing `sqlite3` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'ADDITIONAL_LIBRARIES', privileged: true
-```
 
 ###### Optional arguments:
 `ADDITIONAL_LIBRARIES` - example values: `libsqlite3-dev` or `libsqlite3-dev libsqlite3-tcl`, ...
@@ -271,29 +191,17 @@ To configure `i-vagrant` file for installing `the_silver_searcher` need to set t
 ```bash
 sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 ```
-To configure `Vagrantfile` file for installing `the_silver_searcher` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/the_silver_searcher/install-the_silver_searcher.sh', privileged: true
-```
 
 ##### tmux
 To configure `i-vagrant` file for installing `tmux` need to set the row
 ```bash
 sudo bash "ubuntu/tmux/install-tmux.sh"
 ```
-To configure `Vagrantfile` file for installing `tmux` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
-```
 
 ##### vagrant
 To configure `i-vagrant` file for installing `vagrant` need to set the row
 ```bash
 sudo bash "ubuntu/vagrant/install-vagrant.sh" VAGRANT_VERSION
-```
-To configure `Vagrantfile` file for installing `vagrant` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: 'VAGRANT_VERSION', privileged: true
 ```
 
 ###### Required arguments:
@@ -304,23 +212,11 @@ To configure `i-vagrant` file for installing `vim` need to set the row
 ```bash
 sudo bash "ubuntu/vim/install-vim.sh"
 ```
-To configure `Vagrantfile` file for installing `vim` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
-```
 To configure `i-vagrant` file for installing `dotvim` need to set the row
 ```bash
 bash "ubuntu/vim/install-dotvim.sh"
 ```
-To configure `Vagrantfile` file for installing `dotvim` need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/vim/install-dotvim.sh', privileged: false
-```
 To configure `i-vagrant` file for setting `vim` as default editor after installation need to set the row
 ```bash
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
-```
-To configure `Vagrantfile` file for setting `vim` as default editor after installation need to set the row
-```ruby
-config.vm.provision :shell, path: 'ubuntu/vim/set-vim-as-default-editor.sh', privileged: false
 ```

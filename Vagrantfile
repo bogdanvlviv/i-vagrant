@@ -48,34 +48,32 @@ Vagrant.configure('2') do |config|
   # your network.
   # config.vm.network "public_network"
 
-  config.vm.network 'public_network'
-
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
 
-  config.vm.synced_folder '~/active_projects/', '/active_projects'
+  # config.vm.synced_folder '~/active_projects/', '/active_projects'
 
   # git
-  config.vm.provision :file, source: '~/.gitconfig', destination: '~/.gitconfig'
-  config.vm.provision :file, source: '~/.gitignore_global', destination: '~/.gitignore_global'
+  # config.vm.provision :file, source: '~/.gitconfig', destination: '~/.gitconfig'
+  # config.vm.provision :file, source: '~/.gitignore_global', destination: '~/.gitignore_global'
 
   # gnupg
-  config.vm.provision :file, source: '~/.gnupg/gpg.conf', destination: '~/.gnupg/gpg.conf'
-  config.vm.provision :file, source: '~/.gnupg/pubring.gpg', destination: '~/.gnupg/pubring.gpg'
-  config.vm.provision :file, source: '~/.gnupg/random_seed', destination: '~/.gnupg/random_seed'
-  config.vm.provision :file, source: '~/.gnupg/secring.gpg', destination: '~/.gnupg/secring.gpg'
-  config.vm.provision :file, source: '~/.gnupg/trustdb.gpg', destination: '~/.gnupg/trustdb.gpg'
+  # config.vm.provision :file, source: '~/.gnupg/gpg.conf', destination: '~/.gnupg/gpg.conf'
+  # config.vm.provision :file, source: '~/.gnupg/pubring.gpg', destination: '~/.gnupg/pubring.gpg'
+  # config.vm.provision :file, source: '~/.gnupg/random_seed', destination: '~/.gnupg/random_seed'
+  # config.vm.provision :file, source: '~/.gnupg/secring.gpg', destination: '~/.gnupg/secring.gpg'
+  # config.vm.provision :file, source: '~/.gnupg/trustdb.gpg', destination: '~/.gnupg/trustdb.gpg'
 
   # ssh
-  config.vm.provision :file, source: '~/.ssh/id_rsa', destination: '~/.ssh/id_rsa'
-  config.vm.provision :file, source: '~/.ssh/id_rsa.pub', destination: '~/.ssh/id_rsa.pub'
-  config.vm.provision :shell, inline: 'sudo chmod 600 ~/.ssh/id_rsa', privileged: false
-  config.vm.provision :shell, inline: 'sudo chmod 600 ~/.ssh/id_rsa.pub', privileged: false
+  # config.vm.provision :file, source: '~/.ssh/id_rsa', destination: '~/.ssh/id_rsa'
+  # config.vm.provision :file, source: '~/.ssh/id_rsa.pub', destination: '~/.ssh/id_rsa.pub'
+  # config.vm.provision :shell, inline: 'sudo chmod 600 ~/.ssh/id_rsa', privileged: false
+  # config.vm.provision :shell, inline: 'sudo chmod 600 ~/.ssh/id_rsa.pub', privileged: false
 
-  config.ssh.forward_agent = true
+  # config.ssh.forward_agent = true
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -91,10 +89,6 @@ Vagrant.configure('2') do |config|
   #
   # View the documentation for the provider you are using for more
   # information on available options.
-
-  config.vm.provider 'virtualbox' do |vb|
-    vb.memory = '2048'
-  end
 
   # Define a Vagrant Push strategy for pushing to Atlas. Other push strategies
   # such as FTP and Heroku are also available. See the documentation at
@@ -172,7 +166,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
 
   # vagrant
-  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '1.8.5', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '1.8.5', privileged: true
 
   # vim
   config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
