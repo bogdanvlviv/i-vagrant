@@ -28,6 +28,7 @@ $ source i-vagrant
   - [imagemagick](#imagemagick)
   - [mc](#mc)
   - [mongodb](#mongodb)
+  - [mosh](#mosh)
   - [mysql](#mysql)
   - [nmap](#nmap)
   - [nodejs](#nodejs)
@@ -96,6 +97,12 @@ sudo bash "ubuntu/mongodb/install-mongodb.sh" MONGODB_VERSION UBUNTU_RELEASE_COD
 `MONGODB_VERSION` - example values: `3.0` or `3.2`, ...
 
 `UBUNTU_RELEASE_CODENAME` - example values: `trusty`, `xenial`, ...
+
+##### mosh
+To configure `i-vagrant` file for installing `mosh` need to set the row
+```bash
+sudo bash "ubuntu/mosh/install-mosh.sh"
+```
 
 ##### mysql
 To configure `i-vagrant` file for installing `mysql` need to set the row

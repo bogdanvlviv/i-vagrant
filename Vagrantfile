@@ -129,6 +129,9 @@ Vagrant.configure('2') do |config|
   # mongodb
   config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.2 trusty', privileged: true
 
+  # mosh
+  config.vm.provision :shell, path: 'ubuntu/mosh/install-mosh.sh', privileged: true
+
   # mysql
   config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
 
