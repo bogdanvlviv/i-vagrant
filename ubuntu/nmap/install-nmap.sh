@@ -2,4 +2,4 @@
 
 apt-get update
 
-apt-get install nmap
+apt-get install -y nmap

@@ -2,4 +2,4 @@
 
 apt-get update
 
-apt-get install openssh-client
+apt-get install -y openssh-client

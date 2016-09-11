@@ -2,4 +2,4 @@
 
 apt-get update
 
-apt-get install mosh
+apt-get install -y mosh
