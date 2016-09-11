@@ -201,12 +201,6 @@ sudo bash "ubuntu/sqlite3/install-sqlite3.sh" ADDITIONAL_LIBRARIES
 ###### Optional arguments:
 `ADDITIONAL_LIBRARIES` - example values: `libsqlite3-dev` or `libsqlite3-dev libsqlite3-tcl`, ...
 
-##### the_silver_searcher
-To configure `i-vagrant` file for installing `the_silver_searcher` need to set the row
-```bash
-sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
-```
-
 ##### ssh
 To configure `i-vagrant` file for installing `openssh-client` need to set the row
 ```bash
@@ -216,11 +210,26 @@ To configure `i-vagrant` file for installing `openssh-server` need to set the ro
 ```bash
 sudo bash "ubuntu/ssh/install-openssh-server.sh"
 ```
+To configure `i-vagrant` to set `change sshd_config` need to set the row
+```bash
+bash "ubuntu/ssh/change-sshd_config.sh", SSH_PORT PASSWORD_AUTHENTICATION
+```
 To configure `i-vagrant` to set `authorized_keys` need to set the row
 ```bash
 bash "ubuntu/ssh/set-authorized_keys.sh"
 ```
 NOTICE: Add your own `authorized_keys` in the `ubuntu/ssh/set-authorized_keys.sh` file!
+
+###### Required arguments:
+`SSH_PORT` - example values: `22` or `2222`, ...
+
+`PASSWORD_AUTHENTICATION` - example values: `yes` or `no`
+
+##### the_silver_searcher
+To configure `i-vagrant` file for installing `the_silver_searcher` need to set the row
+```bash
+sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
+```
 
 ##### tmux
 To configure `i-vagrant` file for installing `tmux` need to set the row
