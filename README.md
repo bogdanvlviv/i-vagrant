@@ -216,6 +216,11 @@ To configure `i-vagrant` file for installing `openssh-server` need to set the ro
 ```bash
 sudo bash "ubuntu/ssh/install-openssh-server.sh"
 ```
+To configure `i-vagrant` to set `authorized_keys` need to set the row
+```bash
+bash "ubuntu/ssh/set-authorized_keys.sh"
+```
+NOTICE: Add your own `authorized_keys` in the `ubuntu/ssh/set-authorized_keys.sh` file!
 
 ##### tmux
 To configure `i-vagrant` file for installing `tmux` need to set the row

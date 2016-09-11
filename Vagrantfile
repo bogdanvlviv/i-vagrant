@@ -70,8 +70,8 @@ Vagrant.configure('2') do |config|
   # ssh
   # config.vm.provision :file, source: '~/.ssh/id_rsa', destination: '~/.ssh/id_rsa'
   # config.vm.provision :file, source: '~/.ssh/id_rsa.pub', destination: '~/.ssh/id_rsa.pub'
-  # config.vm.provision :shell, inline: 'sudo chmod 600 ~/.ssh/id_rsa', privileged: false
-  # config.vm.provision :shell, inline: 'sudo chmod 600 ~/.ssh/id_rsa.pub', privileged: false
+  # config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa', privileged: false
+  # config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa.pub', privileged: false
 
   # config.ssh.forward_agent = true
 
@@ -168,6 +168,7 @@ Vagrant.configure('2') do |config|
   # ssh
   config.vm.provision :shell, path: 'ubuntu/ssh/install-openssh-client.sh', privileged: true
   config.vm.provision :shell, path: 'ubuntu/ssh/install-openssh-server.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/ssh/set-authorized_keys.sh', privileged: false
 
   # the_silver_searcher
   config.vm.provision :shell, path: 'ubuntu/the_silver_searcher/install-the_silver_searcher.sh', privileged: true
