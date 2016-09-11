@@ -132,6 +132,9 @@ Vagrant.configure('2') do |config|
   # mysql
   config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
 
+  # nmap
+  config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
+
   # nodejs
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.31.7', privileged: false
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '4.5.0', privileged: false
@@ -158,6 +161,10 @@ Vagrant.configure('2') do |config|
 
   # sqlite3
   config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
+
+  # ssh
+  config.vm.provision :shell, path: 'ubuntu/ssh/install-openssh-client.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/ssh/install-openssh-server.sh', privileged: true
 
   # the_silver_searcher
   config.vm.provision :shell, path: 'ubuntu/the_silver_searcher/install-the_silver_searcher.sh', privileged: true

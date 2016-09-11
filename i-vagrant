@@ -29,6 +29,9 @@ sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.2 $UBUNTU_RELEASE_CODENAME
 # mysql
 sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
 
+# nmap
+sudo bash "ubuntu/nmap/install-nmap.sh"
+
 # nodejs
 bash "ubuntu/nodejs/install-nvm.sh" 0.31.7
 bash "ubuntu/nodejs/install-nodejs.sh" 4.5.0
@@ -55,6 +58,10 @@ bash "ubuntu/ruby/install-ruby.sh" 2.3.1 bundler rails rubocop
 
 # sqlite3
 sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
+
+# ssh
+sudo bash "ubuntu/ssh/install-openssh-client.sh"
+sudo bash "ubuntu/ssh/install-openssh-server.sh"
 
 # the_silver_searcher
 sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"

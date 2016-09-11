@@ -29,12 +29,14 @@ $ source i-vagrant
   - [mc](#mc)
   - [mongodb](#mongodb)
   - [mysql](#mysql)
+  - [nmap](#nmap)
   - [nodejs](#nodejs)
   - [phantomjs](#phantomjs)
   - [postgresql](#postgresql)
   - [redis](#redis)
   - [ruby](#ruby)
   - [sqlite3](#sqlite3)
+  - [ssh](#ssh)
   - [the_silver_searcher](#the_silver_searcher)
   - [tmux](#tmux)
   - [vagrant](#vagrant)
@@ -108,6 +110,12 @@ During installing MySQL create `mysql user` named `root`, need to set password f
 
 ###### Optional arguments:
 `ADDITIONAL_LIBRARIES` - example values: `libmysqlclient-dev` or `libmysqlclient-dev mysql-testsuite`, ...
+
+##### nmap
+To configure `i-vagrant` file for installing `nmap` need to set the row
+```bash
+sudo bash "ubuntu/nmap/install-nmap.sh"
+```
 
 ##### nodejs
 To configure `i-vagrant` file for installing `nvm` need to set the row
@@ -190,6 +198,16 @@ sudo bash "ubuntu/sqlite3/install-sqlite3.sh" ADDITIONAL_LIBRARIES
 To configure `i-vagrant` file for installing `the_silver_searcher` need to set the row
 ```bash
 sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
+```
+
+##### ssh
+To configure `i-vagrant` file for installing `openssh-client` need to set the row
+```bash
+sudo bash "ubuntu/ssh/install-openssh-client.sh"
+```
+To configure `i-vagrant` file for installing `openssh-server` need to set the row
+```bash
+sudo bash "ubuntu/ssh/install-openssh-server.sh"
 ```
 
 ##### tmux
