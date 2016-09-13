@@ -2,7 +2,7 @@
 
 apt-get update
 
-apt-get install sqlite3
+apt-get install -y sqlite3
 
 if (( $# )); then
   apt-get install -y $@
