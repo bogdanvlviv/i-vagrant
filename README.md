@@ -240,6 +240,10 @@ To configure `i-vagrant` file for installing `tmux` need to set the row
 ```bash
 sudo bash "ubuntu/tmux/install-tmux.sh"
 ```
+To configure `i-vagrant` file for installing `dottmux` after installation `tmux` need to set the row
+```bash
+bash "ubuntu/tmux/install-dottmux.sh"
+```
 
 ##### vagrant
 To configure `i-vagrant` file for installing `vagrant` need to set the row
@@ -255,7 +259,7 @@ To configure `i-vagrant` file for installing `vim` need to set the row
 ```bash
 sudo bash "ubuntu/vim/install-vim.sh"
 ```
-To configure `i-vagrant` file for installing `dotvim` need to set the row
+To configure `i-vagrant` file for installing `dotvim` after installation `vim` need to set the row
 ```bash
 bash "ubuntu/vim/install-dotvim.sh"
 ```

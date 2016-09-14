@@ -177,6 +177,7 @@ Vagrant.configure('2') do |config|
 
   # tmux
   config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/tmux/install-dottmux.sh', privileged: false
 
   # vagrant
   config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '1.8.5', privileged: true
