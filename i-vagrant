@@ -4,6 +4,7 @@ UBUNTU_RELEASE_CODENAME="$(lsb_release -cs)"
 
 # bashrc
 bash "ubuntu/bashrc/set-lc_all-variable.sh"
+bash "ubuntu/bashrc/set-term-variable.sh"
 
 # curl
 sudo bash "ubuntu/curl/install-curl.sh"

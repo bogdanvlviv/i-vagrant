@@ -50,6 +50,10 @@ To configure `i-vagrant` file for setting `LC_ALL` environment variable need to 
 ```bash
 bash "ubuntu/bashrc/set-lc_all-variable.sh"
 ```
+To configure `i-vagrant` file for setting `TERM` environment variable need to set the row
+```bash
+bash "ubuntu/bashrc/set-term-variable.sh"
+```
 
 ##### curl
 To configure `i-vagrant` file for installing `curl` need to set the row

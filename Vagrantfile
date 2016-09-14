@@ -107,6 +107,7 @@ Vagrant.configure('2') do |config|
 
   # bashrc
   config.vm.provision :shell, path: 'ubuntu/bashrc/set-lc_all-variable.sh', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/bashrc/set-term-variable.sh', privileged: false
 
   # curl
   config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
