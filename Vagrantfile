@@ -121,6 +121,9 @@ Vagrant.configure('2') do |config|
   # graphviz
   config.vm.provision :shell, path: 'ubuntu/graphviz/install-graphviz.sh', privileged: true
 
+  # htop
+  config.vm.provision :shell, path: 'ubuntu/htop/install-htop.sh', privileged: true
+
   # imagemagick
   config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
 

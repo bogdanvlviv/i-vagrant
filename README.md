@@ -25,6 +25,7 @@ $ source i-vagrant
   - [fzf](#fzf)
   - [git](#git)
   - [graphviz](#graphviz)
+  - [htop](#htop)
   - [imagemagick](#imagemagick)
   - [mc](#mc)
   - [mongodb](#mongodb)
@@ -77,6 +78,12 @@ sudo bash "ubuntu/git/install-git.sh"
 To configure `i-vagrant` file for installing `graphviz` need to set the row
 ```bash
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
+```
+
+##### htop
+To configure `i-vagrant` file for installing `htop` need to set the row
+```bash
+sudo bash "ubuntu/htop/install-htop.sh"
 ```
 
 ##### imagemagick
