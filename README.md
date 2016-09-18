@@ -22,6 +22,7 @@ $ source i-vagrant
 - [ubuntu](#ubuntu)
   - [bashrc](#bashrc)
   - [curl](#curl)
+  - [exuberant-ctags](#exuberant-ctags)
   - [fzf](#fzf)
   - [git](#git)
   - [graphviz](#graphviz)
@@ -60,6 +61,12 @@ bash "ubuntu/bashrc/set-term-variable.sh"
 To configure `i-vagrant` file for installing `curl` need to set the row
 ```bash
 sudo bash "ubuntu/curl/install-curl.sh"
+```
+
+##### exuberant-ctags
+To configure `i-vagrant` file for installing `exuberant-ctags` need to set the row
+```bash
+sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
 ```
 
 ##### fzf

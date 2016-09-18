@@ -112,6 +112,9 @@ Vagrant.configure('2') do |config|
   # curl
   config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
 
+  # exuberant-ctags
+  config.vm.provision :shell, path: 'ubuntu/exuberant-ctags/install-exuberant-ctags.sh', privileged: true
+
   # fzf
   config.vm.provision :shell, path: 'ubuntu/fzf/install-fzf.sh', privileged: false
 

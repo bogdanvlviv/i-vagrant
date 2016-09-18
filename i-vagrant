@@ -9,6 +9,9 @@ bash "ubuntu/bashrc/set-term-variable.sh"
 # curl
 sudo bash "ubuntu/curl/install-curl.sh"
 
+# exuberant-ctags
+sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
+
 # fzf
 bash "ubuntu/fzf/install-fzf.sh"
 
