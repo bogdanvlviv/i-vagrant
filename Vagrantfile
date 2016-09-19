@@ -192,4 +192,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
   config.vm.provision :shell, path: 'ubuntu/vim/install-dotvim.sh', privileged: false
   config.vm.provision :shell, path: 'ubuntu/vim/set-vim-as-default-editor.sh', privileged: false
+
+  # xterm
+  config.vm.provision :shell, path: 'ubuntu/xterm/install-xterm.sh', privileged: true
 end

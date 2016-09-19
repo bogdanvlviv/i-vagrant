@@ -44,6 +44,7 @@ $ source i-vagrant
   - [tmux](#tmux)
   - [vagrant](#vagrant)
   - [vim](#vim)
+  - [xterm](#xterm)
 
 #### ubuntu
 
@@ -280,4 +281,10 @@ bash "ubuntu/vim/install-dotvim.sh"
 To configure `i-vagrant` file for setting `vim` as default editor after installation need to set the row
 ```bash
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
+```
+
+##### xterm
+To configure `i-vagrant` file for installing `xterm` need to set the row
+```bash
+sudo bash "ubuntu/xterm/install-xterm.sh"
 ```
