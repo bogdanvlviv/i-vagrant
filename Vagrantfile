@@ -195,4 +195,5 @@ Vagrant.configure('2') do |config|
 
   # xterm
   config.vm.provision :shell, path: 'ubuntu/xterm/install-xterm.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/xterm/install-dotX.sh', privileged: false
 end

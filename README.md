@@ -288,3 +288,7 @@ To configure `i-vagrant` file for installing `xterm` need to set the row
 ```bash
 sudo bash "ubuntu/xterm/install-xterm.sh"
 ```
+To configure `i-vagrant` file for installing `dotX` after installation `xterm` need to set the row
+```bash
+bash "ubuntu/xterm/install-dotX.sh"
+```
