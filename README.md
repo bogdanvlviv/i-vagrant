@@ -265,7 +265,7 @@ To configure `i-vagrant` file for installing `tmux` need to set the row
 ```bash
 sudo bash "ubuntu/tmux/install-tmux.sh"
 ```
-To configure `i-vagrant` file for installing `dottmux` after installation `tmux` need to set the row
+To configure `i-vagrant` file for installing [dottmux](https://github.com/bogdanvlviv/dottmux) after installation `tmux` need to set the row
 ```bash
 bash "ubuntu/tmux/install-dottmux.sh"
 ```
@@ -284,7 +284,7 @@ To configure `i-vagrant` file for installing `vim` need to set the row
 ```bash
 sudo bash "ubuntu/vim/install-vim.sh"
 ```
-To configure `i-vagrant` file for installing `dotvim` after installation `vim` need to set the row
+To configure `i-vagrant` file for installing [dotvim](https://github.com/bogdanvlviv/dotvim) after installation `vim` need to set the row
 ```bash
 bash "ubuntu/vim/install-dotvim.sh"
 ```
@@ -298,7 +298,7 @@ To configure `i-vagrant` file for installing `xterm` need to set the row
 ```bash
 sudo bash "ubuntu/xterm/install-xterm.sh"
 ```
-To configure `i-vagrant` file for installing `dotX` after installation `xterm` need to set the row
+To configure `i-vagrant` file for installing [dotX](https://github.com/bogdanvlviv/dotX) after installation `xterm` need to set the row
 ```bash
 bash "ubuntu/xterm/install-dotX.sh"
 ```
