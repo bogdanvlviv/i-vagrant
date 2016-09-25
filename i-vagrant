@@ -27,6 +27,11 @@ sudo bash "ubuntu/htop/install-htop.sh"
 # imagemagick
 sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 
+# java
+sudo bash "ubuntu/java/install-java.sh" 7
+sudo bash "ubuntu/java/install-java.sh" 8
+sudo bash "ubuntu/java/install-java.sh" 9
+
 # mc
 sudo bash "ubuntu/mc/install-mc.sh"
 

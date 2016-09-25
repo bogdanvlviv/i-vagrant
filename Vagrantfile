@@ -130,6 +130,11 @@ Vagrant.configure('2') do |config|
   # imagemagick
   config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
 
+  # java
+  config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '7', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '8', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '9', privileged: true
+
   # mc
   config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
 

@@ -28,6 +28,7 @@ $ source i-vagrant
   - [graphviz](#graphviz)
   - [htop](#htop)
   - [imagemagick](#imagemagick)
+  - [java](#java)
   - [mc](#mc)
   - [mongodb](#mongodb)
   - [mosh](#mosh)
@@ -99,6 +100,15 @@ To configure `i-vagrant` file for installing `imagemagick` need to set the row
 ```bash
 sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 ```
+
+##### java
+To configure `i-vagrant` file for installing `java` need to set the row
+```bash
+sudo bash "ubuntu/java/install-java.sh" JAVA_VERSION
+```
+
+###### Required arguments:
+`JAVA_VERSION` - example values: `7` or `8`, ...
 
 ##### mc
 To configure `i-vagrant` file for installing `mc` need to set the row
