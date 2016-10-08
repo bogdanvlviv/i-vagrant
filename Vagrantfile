@@ -172,7 +172,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.0.0 bundler', privileged: false
   config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.1.9 bundler', privileged: false
   config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.2.5 bundler', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.3.1 bundler rails rubocop', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.3.1 bundler rails rubocop tmuxinator', privileged: false
 
   # sqlite3
   config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
