@@ -163,6 +163,9 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.5 trusty libpq-dev', privileged: true
   config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
 
+  # readline
+  config.vm.provision :shell, path: 'ubuntu/readline/set-inputrc.sh', privileged: false
+
   # redis
   config.vm.provision :shell, path: 'ubuntu/redis/install-redis.sh', privileged: true
 

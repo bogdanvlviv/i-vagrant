@@ -37,6 +37,7 @@ $ source i-vagrant
   - [nodejs](#nodejs)
   - [phantomjs](#phantomjs)
   - [postgresql](#postgresql)
+  - [readline](#readline)
   - [redis](#redis)
   - [ruby](#ruby)
   - [sqlite3](#sqlite3)
@@ -195,6 +196,13 @@ sudo bash "ubuntu/postgresql/create-user.sh" POSTGRESQL_USER_NAME POSTGRESQL_USE
 
 ###### Optional arguments:
 `ADDITIONAL_LIBRARIES` - example values: `libpq-dev` or `libpq-dev postgresql-contrib`, ...
+
+
+##### readline
+To configure `i-vagrant` file for setting `~/.inputrc` file need to set the row
+```bash
+bash "ubuntu/readline/set-inputrc.sh"
+```
 
 ##### redis
 To configure `i-vagrant` file for installing `redis` need to set the row

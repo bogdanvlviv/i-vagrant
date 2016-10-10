@@ -60,6 +60,9 @@ sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.5 $UBUNTU_RELEASE_CODENAME libpq-dev
 sudo bash "ubuntu/postgresql/create-user.sh" root admin
 
+# readline
+bash "ubuntu/readline/set-inputrc.sh"
+
 # redis
 sudo bash "ubuntu/redis/install-redis.sh"
 
