@@ -20,6 +20,12 @@ bash "android/termux/htop/install-htop.sh"
 # imagemagick
 bash "android/termux/imagemagick/install-imagemagick.sh"
 
+# make
+bash "android/termux/make/install-make.sh"
+
+# man
+bash "android/termux/man/install-man.sh"
+
 # mc
 bash "android/termux/mc/install-mc.sh"
 
@@ -35,7 +41,10 @@ bash "android/termux/nodejs/install-nodejs.sh"
 # readline
 bash "android/termux/readline/set-inputrc.sh"
 
-#ruby
+# rsync
+bash "android/termux/rsync/install-rsync.sh"
+
+# ruby
 bash "android/termux/ruby/install-ruby.sh" bundler rubocop tmuxinator
 
 # sqlite
@@ -46,12 +55,18 @@ bash "android/termux/ssh/install-openssh.sh"
 bash "android/termux/ssh/change-sshd_config.sh" 2222 no
 bash "android/termux/ssh/set-authorized_keys.sh"
 
+# termux_api
+bash "android/termux/termux_api/install-termux_api.sh"
+
 # the_silver_searcher
 bash "android/termux/the_silver_searcher/install-the_silver_searcher.sh"
 
 # tmux
 bash "android/termux/tmux/install-tmux.sh"
 bash "android/termux/tmux/install-dottmux.sh"
+
+# tree
+bash "android/termux/tree/install-tree.sh"
 
 # vim
 bash "android/termux/vim/install-vim.sh"
@@ -60,6 +75,9 @@ bash "android/termux/vim/set-vim-as-default-editor.sh"
 
 # xterm
 bash "android/termux/xterm/install-dotX.sh"
+
+# zip
+bash "android/termux/zi/install-zip.sh"
 
 echo ""
 echo "Running: \`source \"$HOME/.bashrc\"\`"

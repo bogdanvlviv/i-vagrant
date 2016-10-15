@@ -15,19 +15,25 @@ $ source android-termux.sh
 - [htop](#htop)
 - [imagemagick](#imagemagick)
 - [java](#java)
+- [make](#make)
+- [man](#man)
 - [mc](#mc)
 - [mosh](#mosh)
 - [nmap](#nmap)
 - [nodejs](#nodejs)
 - [readline](#readline)
+- [rsync](#rsync)
 - [ruby](#ruby)
 - [sqlite](#sqlite)
 - [ssh](#ssh)
+- [termux_api](#termux_api)
 - [the_silver_searcher](#the_silver_searcher)
 - [tmux](#tmux)
+- [tree](#tree)
 - [vagrant](#vagrant)
 - [vim](#vim)
 - [xterm](#xterm)
+- [zip](#zip)
 
 ##### bashrc
 To configure `android-termux.sh` file for setting `LC_ALL` environment variable need to set the row
@@ -75,6 +81,18 @@ To configure `android-termux.sh` file for installing `imagemagick` need to set t
 bash "android/termux/imagemagick/install-imagemagick.sh"
 ```
 
+##### make
+To configure `android-termux.sh` file for installing `make` need to set the row
+```bash
+bash "android/termux/make/install-make.sh"
+```
+
+##### man
+To configure `android-termux.sh` file for installing `man` need to set the row
+```bash
+bash "android/termux/man/install-man.sh"
+```
+
 ##### mc
 To configure `android-termux.sh` file for installing `mc` need to set the row
 ```bash
@@ -103,6 +121,12 @@ bash "android/termux/nodejs/install-nodejs.sh"
 To configure `android-termux.sh` file for setting `~/.inputrc` file need to set the row
 ```bash
 bash "android/termux/readline/set-inputrc.sh"
+```
+
+##### rsync
+To configure `android-termux.sh` file for installing `rsync` need to set the row
+```bash
+bash "android/termux/rsync/install-rsync.sh"
 ```
 
 ##### ruby
@@ -140,6 +164,12 @@ NOTICE: Add your own `authorized_keys` in the `android/termux/ssh/set-authorized
 
 `PASSWORD_AUTHENTICATION` - example values: `yes` or `no`
 
+##### termux_api
+To configure `android-termux.sh` file for installing `termux_api` need to set the row
+```bash
+bash "android/termux/termux_api/install-termux_api.sh"
+```
+
 ##### the_silver_searcher
 To configure `android-termux.sh` file for installing `the_silver_searcher` need to set the row
 ```bash
@@ -154,6 +184,12 @@ bash "android/termux/tmux/install-tmux.sh"
 To configure `android-termux.sh` file for installing [dottmux](https://github.com/bogdanvlviv/dottmux) need to set the row
 ```bash
 bash "android/termux/tmux/install-dottmux.sh"
+```
+
+##### tree
+To configure `android-termux.sh` file for installing `tree` need to set the row
+```bash
+bash "android/termux/tree/install-tree.sh"
 ```
 
 ##### vim
@@ -174,4 +210,10 @@ bash "android/termux/vim/set-vim-as-default-editor.sh"
 To configure `android-termux.sh` file for installing [dotX](https://github.com/bogdanvlviv/dotX) need to set the row
 ```bash
 bash "android/termux/xterm/install-dotX.sh"
+```
+
+##### zip
+To configure `android-termux.sh` file for installing `zip` need to set the row
+```bash
+bash "android/termux/zip/install-zip.sh"
 ```
