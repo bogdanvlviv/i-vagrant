@@ -68,6 +68,9 @@ bash "android/termux/tmux/install-dottmux.sh"
 # tree
 bash "android/termux/tree/install-tree.sh"
 
+# upgrade
+bash "android/termux/upgrade/make-upgrade_packages.sh"
+
 # vim
 bash "android/termux/vim/install-vim.sh"
 bash "android/termux/vim/install-dotvim.sh"

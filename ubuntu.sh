@@ -93,6 +93,9 @@ bash "ubuntu/tmux/install-dottmux.sh"
 # tree
 sudo bash "ubuntu/tree/install-tree.sh"
 
+# upgrade
+sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
+
 # vagrant
 sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.8.5
 

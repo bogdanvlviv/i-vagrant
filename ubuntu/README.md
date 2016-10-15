@@ -32,6 +32,7 @@ $ source ubuntu.sh
 - [the_silver_searcher](#the_silver_searcher)
 - [tmux](#tmux)
 - [tree](#tree)
+- [upgrade](#upgrade)
 - [vagrant](#vagrant)
 - [vim](#vim)
 - [xterm](#xterm)
@@ -268,6 +269,12 @@ bash "ubuntu/tmux/install-dottmux.sh"
 To configure `ubuntu.sh` file for installing `tree` need to set the row
 ```bash
 sudo bash "ubuntu/tree/install-tree.sh"
+```
+
+##### upgrade
+To configure `ubuntu.sh` file for upgrade packages need to set the row
+```bash
+sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 ```
 
 ##### vagrant
