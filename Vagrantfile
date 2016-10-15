@@ -105,6 +105,8 @@ Vagrant.configure('2') do |config|
   #   apt-get install -y apache2
   # SHELL
 
+  # ubuntu
+
   # bashrc
   config.vm.provision :shell, path: 'ubuntu/bashrc/set-lc_all-variable.sh', privileged: false
   config.vm.provision :shell, path: 'ubuntu/bashrc/set-term-variable.sh', privileged: false
@@ -202,6 +204,6 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/vim/set-vim-as-default-editor.sh', privileged: false
 
   # xterm
-  # config.vm.provision :shell, path: 'ubuntu/xterm/install-xterm.sh', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/xterm/install-dotX.sh', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/xterm/install-xterm.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/xterm/install-dotX.sh', privileged: false
 end
