@@ -80,7 +80,7 @@ bash "android/termux/vim/set-vim-as-default-editor.sh"
 bash "android/termux/xterm/install-dotX.sh"
 
 # zip
-bash "android/termux/zi/install-zip.sh"
+bash "android/termux/zip/install-zip.sh"
 
 echo ""
 echo "Running: \`source \"$HOME/.bashrc\"\`"
