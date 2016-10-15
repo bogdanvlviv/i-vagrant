@@ -31,6 +31,7 @@ $ source ubuntu.sh
 - [ssh](#ssh)
 - [the_silver_searcher](#the_silver_searcher)
 - [tmux](#tmux)
+- [tree](#tree)
 - [vagrant](#vagrant)
 - [vim](#vim)
 - [xterm](#xterm)
@@ -261,6 +262,12 @@ sudo bash "ubuntu/tmux/install-tmux.sh"
 To configure `ubuntu.sh` file for installing [dottmux](https://github.com/bogdanvlviv/dottmux) need to set the row
 ```bash
 bash "ubuntu/tmux/install-dottmux.sh"
+```
+
+##### tree
+To configure `ubuntu.sh` file for installing `tree` need to set the row
+```bash
+sudo bash "ubuntu/tree/install-tree.sh"
 ```
 
 ##### vagrant

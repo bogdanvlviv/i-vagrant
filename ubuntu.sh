@@ -90,6 +90,9 @@ sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 sudo bash "ubuntu/tmux/install-tmux.sh"
 bash "ubuntu/tmux/install-dottmux.sh"
 
+# tree
+sudo bash "ubuntu/tree/install-tree.sh"
+
 # vagrant
 sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.8.5
 
