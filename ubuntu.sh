@@ -47,6 +47,9 @@ sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
 # nmap
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
+# nmcli
+sudo bash "ubuntu/nmcli/install-nmcli.sh"
+
 # nodejs
 bash "ubuntu/nodejs/install-nvm.sh" 0.31.7
 bash "ubuntu/nodejs/install-nodejs.sh" 4.5.0

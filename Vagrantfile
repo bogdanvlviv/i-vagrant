@@ -152,6 +152,9 @@ Vagrant.configure('2') do |config|
   # nmap
   config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
 
+  # nmcli
+  config.vm.provision :shell, path: 'ubuntu/nmcli/install-nmcli.sh', privileged: true
+
   # nodejs
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.31.7', privileged: false
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '4.5.0', privileged: false

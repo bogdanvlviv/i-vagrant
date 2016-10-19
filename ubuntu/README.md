@@ -21,6 +21,7 @@ $ source ubuntu.sh
 - [mosh](#mosh)
 - [mysql](#mysql)
 - [nmap](#nmap)
+- [nmcli](#nmcli)
 - [nodejs](#nodejs)
 - [phantomjs](#phantomjs)
 - [postgresql](#postgresql)
@@ -141,6 +142,11 @@ To configure `ubuntu.sh` file for installing `nmap` need to set the row
 sudo bash "ubuntu/nmap/install-nmap.sh"
 ```
 
+##### nmcli
+To configure `ubuntu.sh` file for installing `nmcli` need to set the row
+```bash
+sudo bash "ubuntu/nmcli/install-nmcli.sh"
+```
 ##### nodejs
 To configure `ubuntu.sh` file for installing `nvm` need to set the row
 ```bash
