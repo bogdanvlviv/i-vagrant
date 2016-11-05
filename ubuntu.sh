@@ -55,6 +55,7 @@ bash "ubuntu/nodejs/install-nvm.sh" 0.31.7
 bash "ubuntu/nodejs/install-nodejs.sh" 4.5.0
 bash "ubuntu/nodejs/install-nodejs.sh" 5.12.0
 bash "ubuntu/nodejs/install-nodejs.sh" 6.5.0
+sudo bash "ubuntu/nodejs/install-yarn.sh"
 
 # phantomjs
 sudo bash "ubuntu/phantomjs/install-phantomjs.sh"

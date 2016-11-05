@@ -160,6 +160,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '4.5.0', privileged: false
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '5.12.0', privileged: false
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '6.5.0', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/nodejs/install-yarn.sh', privileged: true
 
   # phantomjs
   config.vm.provision :shell, path: 'ubuntu/phantomjs/install-phantomjs.sh', privileged: true

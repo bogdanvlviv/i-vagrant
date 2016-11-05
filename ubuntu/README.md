@@ -156,6 +156,10 @@ To configure `ubuntu.sh` file for installing `nodejs` after installation `nvm` n
 ```bash
 bash "ubuntu/nodejs/install-nodejs.sh" NODEJS_VERSION
 ```
+To configure `ubuntu.sh` file for installing `yarn` need to set the row
+```bash
+sudo bash "ubuntu/nodejs/install-yarn.sh"
+```
 
 ###### Required arguments:
 `NVM_VERSION` - example values: `0.31.6` or `0.31.7`, ...
