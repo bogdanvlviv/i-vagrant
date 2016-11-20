@@ -65,6 +65,10 @@ To configure `ubuntu.sh` file for installing `fzf` need to set the row
 ```bash
 bash "ubuntu/fzf/install-fzf.sh"
 ```
+To configure `ubuntu.sh` file for setting `FZF_DEFAULT_COMMAND` need to set the row
+```bash
+bash "ubuntu/fzf/set-fzf_default_command.sh"
+```
 
 ##### git
 To configure `ubuntu.sh` file for installing `git` need to set the row

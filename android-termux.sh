@@ -10,6 +10,7 @@ bash "android/termux/curl/install-curl.sh"
 
 # fzf
 bash "android/termux/fzf/install-fzf.sh"
+bash "android/termux/fzf/set-fzf_default_command.sh"
 
 # git
 bash "android/termux/git/install-git.sh"

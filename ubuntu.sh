@@ -14,6 +14,7 @@ sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
 
 # fzf
 bash "ubuntu/fzf/install-fzf.sh"
+bash "ubuntu/fzf/set-fzf_default_command.sh"
 
 # git
 sudo bash "ubuntu/git/install-git.sh"

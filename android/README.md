@@ -61,6 +61,10 @@ To configure `android-termux.sh` file for installing `fzf` need to set the row
 ```bash
 bash "android/termux/fzf/install-fzf.sh"
 ```
+To configure `android-termux.sh` file for setting `FZF_DEFAULT_COMMAND` need to set the row
+```bash
+bash "android/termux/fzf/set-fzf_default_command.sh"
+```
 
 ##### git
 To configure `android-termux.sh` file for installing `git` need to set the row

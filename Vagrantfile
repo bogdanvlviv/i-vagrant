@@ -119,6 +119,7 @@ Vagrant.configure('2') do |config|
 
   # fzf
   config.vm.provision :shell, path: 'ubuntu/fzf/install-fzf.sh', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/fzf/set-fzf_default_command.sh', privileged: false
 
   # git
   config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
