@@ -51,10 +51,10 @@ sudo bash "ubuntu/nmap/install-nmap.sh"
 sudo bash "ubuntu/nmcli/install-nmcli.sh"
 
 # nodejs
-bash "ubuntu/nodejs/install-nvm.sh" 0.31.7
-bash "ubuntu/nodejs/install-nodejs.sh" 4.5.0
+bash "ubuntu/nodejs/install-nvm.sh" 0.32.1
 bash "ubuntu/nodejs/install-nodejs.sh" 5.12.0
-bash "ubuntu/nodejs/install-nodejs.sh" 6.5.0
+bash "ubuntu/nodejs/install-nodejs.sh" 6.9.1
+bash "ubuntu/nodejs/install-nodejs.sh" 7.1.0
 sudo bash "ubuntu/nodejs/install-yarn.sh"
 
 # phantomjs
@@ -75,8 +75,8 @@ bash "ubuntu/ruby/install-rvm.sh" stable
 bash "ubuntu/ruby/install-ruby.sh" 1.9.3 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.0.0 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.1.9 bundler
-bash "ubuntu/ruby/install-ruby.sh" 2.2.5 bundler
-bash "ubuntu/ruby/install-ruby.sh" 2.3.1 bundler rails rubocop tmuxinator
+bash "ubuntu/ruby/install-ruby.sh" 2.2.6 bundler
+bash "ubuntu/ruby/install-ruby.sh" 2.3.2 bundler rails rubocop tmuxinator
 
 # sqlite3
 sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
@@ -101,7 +101,7 @@ sudo bash "ubuntu/tree/install-tree.sh"
 sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.8.5
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.8.7
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
