@@ -36,6 +36,7 @@ $ source ubuntu.sh
 - [upgrade](#upgrade)
 - [vagrant](#vagrant)
 - [vim](#vim)
+- [xclip](#xclip)
 - [xterm](#xterm)
 
 ##### bashrc
@@ -312,6 +313,12 @@ bash "ubuntu/vim/install-dotvim.sh"
 To configure `ubuntu.sh` file for setting `vim` as default editor need to set the row
 ```bash
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
+```
+
+##### xclip
+To configure `ubuntu.sh` file for installing `xclip` need to set the row
+```bash
+sudo bash "ubuntu/xclip/install-xclip.sh"
 ```
 
 ##### xterm
