@@ -37,7 +37,7 @@ sudo bash "ubuntu/java/install-java.sh" 9
 sudo bash "ubuntu/mc/install-mc.sh"
 
 # mongodb
-sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.2 $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.4 $UBUNTU_RELEASE_CODENAME
 
 # mosh
 sudo bash "ubuntu/mosh/install-mosh.sh"
@@ -54,15 +54,15 @@ sudo bash "ubuntu/nmcli/install-nmcli.sh"
 # nodejs
 bash "ubuntu/nodejs/install-nvm.sh" 0.32.1
 bash "ubuntu/nodejs/install-nodejs.sh" 5.12.0
-bash "ubuntu/nodejs/install-nodejs.sh" 6.9.1
-bash "ubuntu/nodejs/install-nodejs.sh" 7.1.0
+bash "ubuntu/nodejs/install-nodejs.sh" 6.9.2
+bash "ubuntu/nodejs/install-nodejs.sh" 7.3.0
 sudo bash "ubuntu/nodejs/install-yarn.sh"
 
 # phantomjs
 sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
 # postgresql
-sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.5 $UBUNTU_RELEASE_CODENAME libpq-dev
+sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.6 $UBUNTU_RELEASE_CODENAME libpq-dev
 sudo bash "ubuntu/postgresql/create-user.sh" root admin
 
 # readline
@@ -77,7 +77,8 @@ bash "ubuntu/ruby/install-ruby.sh" 1.9.3 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.0.0 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.1.9 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.2.6 bundler
-bash "ubuntu/ruby/install-ruby.sh" 2.3.3 bundler jekyll rails rubocop tmuxinator
+bash "ubuntu/ruby/install-ruby.sh" 2.3.3
+bash "ubuntu/ruby/install-ruby.sh" 2.4.0 bundler jekyll rails rubocop tmuxinator
 
 # sqlite3
 sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
@@ -102,7 +103,7 @@ sudo bash "ubuntu/tree/install-tree.sh"
 sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.8.7
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.1
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
