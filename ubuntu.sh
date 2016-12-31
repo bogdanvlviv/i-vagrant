@@ -33,6 +33,9 @@ sudo bash "ubuntu/java/install-java.sh" 7
 sudo bash "ubuntu/java/install-java.sh" 8
 sudo bash "ubuntu/java/install-java.sh" 9
 
+# letsencrypt
+sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
+
 # mc
 sudo bash "ubuntu/mc/install-mc.sh"
 

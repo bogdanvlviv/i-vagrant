@@ -138,6 +138,9 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '8', privileged: true
   config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '9', privileged: true
 
+  # letsencrypt
+  config.vm.provision :shell, path: 'ubuntu/letsencrypt/install-letsencrypt.sh', privileged: true
+
   # mc
   config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
 

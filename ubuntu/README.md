@@ -16,6 +16,7 @@ $ source ubuntu.sh
 - [htop](#htop)
 - [imagemagick](#imagemagick)
 - [java](#java)
+- [letsencrypt](#letsencrypt)
 - [mc](#mc)
 - [mongodb](#mongodb)
 - [mosh](#mosh)
@@ -103,6 +104,12 @@ sudo bash "ubuntu/java/install-java.sh" JAVA_VERSION
 
 ###### Required arguments:
 `JAVA_VERSION` - example values: `7` or `8`, ...
+
+##### letsencrypt
+To configure `ubuntu.sh` file for installing `letsencrypt` need to set the row
+```bash
+sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
+```
 
 ##### mc
 To configure `ubuntu.sh` file for installing `mc` need to set the row
