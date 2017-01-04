@@ -95,7 +95,7 @@ bash "ubuntu/ruby/install-ruby.sh" 1.9.3 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.0.0 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.1.9 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.2.6 bundler
-bash "ubuntu/ruby/install-ruby.sh" 2.3.3
+bash "ubuntu/ruby/install-ruby.sh" 2.3.3 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.4.0 bundler jekyll rails rubocop tmuxinator
 
 # sqlite3
