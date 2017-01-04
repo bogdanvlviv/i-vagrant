@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+echo "Are you ready to start?"
+echo -n "Type 'yes' or operation will be aborted: "
+read answer_for_the_start
+if [[ "$answer_for_the_start" != "yes" ]]; then
+  echo ""
+  echo "Aborted!"
+  echo ""
+  return
+fi
+
 UBUNTU_RELEASE_CODENAME="$(lsb_release -cs)"
 
 export RUN_APT_GET_UPDATE_BEFORE="no"
