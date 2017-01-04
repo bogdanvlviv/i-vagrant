@@ -1,3 +1,6 @@
+# upgrade
+bash "android/termux/upgrade/make-upgrade_packages.sh"
+
 # bashrc
 bash "android/termux/bashrc/set-lc_all-variable.sh"
 bash "android/termux/bashrc/set-term-variable.sh"
@@ -68,9 +71,6 @@ bash "android/termux/tmux/install-dottmux.sh"
 
 # tree
 bash "android/termux/tree/install-tree.sh"
-
-# upgrade
-bash "android/termux/upgrade/make-upgrade_packages.sh"
 
 # vim
 bash "android/termux/vim/install-vim.sh"

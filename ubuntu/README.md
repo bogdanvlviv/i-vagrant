@@ -7,6 +7,17 @@ $ source ubuntu.sh
 
 #### How to configure `ubuntu.sh` file
 
+To configure `ubuntu.sh` don't run `apt-get update` before some scripts need to set the row
+```bash
+export RUN_APT_GET_UPDATE_BEFORE="no"
+```
+
+##### upgrade
+To configure `ubuntu.sh` file for upgrade packages need to set the row
+```bash
+sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
+```
+
 - [bashrc](#bashrc)
 - [curl](#curl)
 - [exuberant-ctags](#exuberant-ctags)
@@ -34,7 +45,6 @@ $ source ubuntu.sh
 - [the_silver_searcher](#the_silver_searcher)
 - [tmux](#tmux)
 - [tree](#tree)
-- [upgrade](#upgrade)
 - [vagrant](#vagrant)
 - [vim](#vim)
 - [xclip](#xclip)
@@ -291,12 +301,6 @@ bash "ubuntu/tmux/install-dottmux.sh"
 To configure `ubuntu.sh` file for installing `tree` need to set the row
 ```bash
 sudo bash "ubuntu/tree/install-tree.sh"
-```
-
-##### upgrade
-To configure `ubuntu.sh` file for upgrade packages need to set the row
-```bash
-sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 ```
 
 ##### vagrant

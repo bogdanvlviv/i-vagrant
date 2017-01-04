@@ -107,6 +107,9 @@ Vagrant.configure('2') do |config|
 
   # ubuntu
 
+  # upgrade
+  config.vm.provision :shell, path: 'ubuntu/upgrade/make-upgrade_packages.sh', privileged: true
+
   # bashrc
   config.vm.provision :shell, path: 'ubuntu/bashrc/set-lc_all-variable.sh', privileged: false
   config.vm.provision :shell, path: 'ubuntu/bashrc/set-term-variable.sh', privileged: false
@@ -205,9 +208,6 @@ Vagrant.configure('2') do |config|
 
   # tree
   config.vm.provision :shell, path: 'ubuntu/tree/install-tree.sh', privileged: true
-
-  # upgrade
-  config.vm.provision :shell, path: 'ubuntu/upgrade/make-upgrade_packages.sh', privileged: true
 
   # vagrant
   config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '1.8.5', privileged: true

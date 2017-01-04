@@ -7,6 +7,12 @@ $ source android-termux.sh
 
 #### How to configure `android-termux.sh` file
 
+##### upgrade
+To configure `android-termux.sh` file for upgrade packages need to set the row
+```bash
+bash "android/termux/upgrade/make-upgrade_packages.sh"
+```
+
 - [bashrc](#bashrc)
 - [ctags](#ctags)
 - [curl](#curl)
@@ -29,7 +35,6 @@ $ source android-termux.sh
 - [the_silver_searcher](#the_silver_searcher)
 - [tmux](#tmux)
 - [tree](#tree)
-- [upgrade](#upgrade)
 - [vim](#vim)
 - [xterm](#xterm)
 - [zip](#zip)
@@ -193,12 +198,6 @@ bash "android/termux/tmux/install-dottmux.sh"
 To configure `android-termux.sh` file for installing `tree` need to set the row
 ```bash
 bash "android/termux/tree/install-tree.sh"
-```
-
-##### upgrade
-To configure `android-termux.sh` file for upgrade packages need to set the row
-```bash
-bash "android/termux/upgrade/make-upgrade_packages.sh"
 ```
 
 ##### vim

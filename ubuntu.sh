@@ -2,6 +2,11 @@
 
 UBUNTU_RELEASE_CODENAME="$(lsb_release -cs)"
 
+export RUN_APT_GET_UPDATE_BEFORE="no"
+
+# upgrade
+sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
+
 # bashrc
 bash "ubuntu/bashrc/set-lc_all-variable.sh"
 bash "ubuntu/bashrc/set-term-variable.sh"
@@ -101,9 +106,6 @@ bash "ubuntu/tmux/install-dottmux.sh"
 
 # tree
 sudo bash "ubuntu/tree/install-tree.sh"
-
-# upgrade
-sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 
 # vagrant
 sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.1

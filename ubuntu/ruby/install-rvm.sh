@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-apt-get update
+if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
+  apt-get update
+fi
 
 apt-get install -y curl
 
