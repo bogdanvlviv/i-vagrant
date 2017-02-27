@@ -22,6 +22,9 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 bash "ubuntu/bashrc/set-lc_all-variable.sh"
 bash "ubuntu/bashrc/set-term-variable.sh"
 
+# cmus
+sudo bash "ubuntu/cmus/install-cmus.sh"
+
 # curl
 sudo bash "ubuntu/curl/install-curl.sh"
 

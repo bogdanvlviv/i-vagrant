@@ -114,6 +114,9 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/bashrc/set-lc_all-variable.sh', privileged: false
   config.vm.provision :shell, path: 'ubuntu/bashrc/set-term-variable.sh', privileged: false
 
+  # cmus
+  config.vm.provision :shell, path: 'ubuntu/cmus/install-cmus.sh', privileged: true
+
   # curl
   config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
 

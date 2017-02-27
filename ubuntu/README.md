@@ -19,6 +19,7 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 ```
 
 - [bashrc](#bashrc)
+- [cmus](#cmus)
 - [curl](#curl)
 - [exuberant-ctags](#exuberant-ctags)
 - [fzf](#fzf)
@@ -58,6 +59,12 @@ bash "ubuntu/bashrc/set-lc_all-variable.sh"
 To configure `ubuntu.sh` file for setting `TERM` environment variable need to set the row
 ```bash
 bash "ubuntu/bashrc/set-term-variable.sh"
+```
+
+##### cmus
+To configure `ubuntu.sh` file for installing `cmus` need to set the row
+```bash
+sudo bash "ubuntu/cmus/install-cmus.sh"
 ```
 
 ##### curl
