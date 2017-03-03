@@ -79,6 +79,7 @@ bash "ubuntu/nodejs/install-nodejs.sh" 5.12.0
 bash "ubuntu/nodejs/install-nodejs.sh" 6.9.2
 bash "ubuntu/nodejs/install-nodejs.sh" 7.3.0
 sudo bash "ubuntu/nodejs/install-yarn.sh"
+bash "ubuntu/nodejs/install-eslint.sh"
 
 # phantomjs
 sudo bash "ubuntu/phantomjs/install-phantomjs.sh"

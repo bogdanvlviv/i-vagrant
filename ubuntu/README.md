@@ -189,6 +189,10 @@ To configure `ubuntu.sh` file for installing `yarn` need to set the row
 ```bash
 sudo bash "ubuntu/nodejs/install-yarn.sh"
 ```
+To configure `ubuntu.sh` file for installing `eslint` need to set the row
+```bash
+bash "ubuntu/nodejs/install-eslint.sh"
+```
 
 ###### Required arguments:
 `NVM_VERSION` - example values: `0.31.6` or `0.31.7`, ...
