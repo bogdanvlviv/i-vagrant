@@ -151,7 +151,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
 
   # mongodb
-  config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.2 trusty', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.4 trusty', privileged: true
 
   # mosh
   config.vm.provision :shell, path: 'ubuntu/mosh/install-mosh.sh', privileged: true
@@ -166,17 +166,18 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/nmcli/install-nmcli.sh', privileged: true
 
   # nodejs
-  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.31.7', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '4.5.0', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.1', privileged: false
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '5.12.0', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '6.5.0', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '6.10.1', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '7.7.4', privileged: false
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-yarn.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/nodejs/install-eslint.sh', privileged: false
 
   # phantomjs
   config.vm.provision :shell, path: 'ubuntu/phantomjs/install-phantomjs.sh', privileged: true
 
   # postgresql
-  config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.5 trusty libpq-dev', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.6 trusty libpq-dev', privileged: true
   config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
 
   # readline
@@ -190,8 +191,9 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '1.9.3 bundler', privileged: false
   config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.0.0 bundler', privileged: false
   config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.1.9 bundler', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.2.5 bundler', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.3.1 bundler rails rubocop tmuxinator', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.2.6 bundler', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.3.3 bundler', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.4.1 bundler jekyll rails rubocop tmuxinator', privileged: false
 
   # sqlite3
   config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
@@ -213,7 +215,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/tree/install-tree.sh', privileged: true
 
   # vagrant
-  config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '1.8.5', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '1.9.3', privileged: true
 
   # vim
   config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true

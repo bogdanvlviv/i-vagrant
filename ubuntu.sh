@@ -74,10 +74,10 @@ sudo bash "ubuntu/nmap/install-nmap.sh"
 sudo bash "ubuntu/nmcli/install-nmcli.sh"
 
 # nodejs
-bash "ubuntu/nodejs/install-nvm.sh" 0.32.1
+bash "ubuntu/nodejs/install-nvm.sh" 0.33.1
 bash "ubuntu/nodejs/install-nodejs.sh" 5.12.0
-bash "ubuntu/nodejs/install-nodejs.sh" 6.9.2
-bash "ubuntu/nodejs/install-nodejs.sh" 7.3.0
+bash "ubuntu/nodejs/install-nodejs.sh" 6.10.1
+bash "ubuntu/nodejs/install-nodejs.sh" 7.7.4
 sudo bash "ubuntu/nodejs/install-yarn.sh"
 bash "ubuntu/nodejs/install-eslint.sh"
 
@@ -101,7 +101,7 @@ bash "ubuntu/ruby/install-ruby.sh" 2.0.0 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.1.9 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.2.6 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.3.3 bundler
-bash "ubuntu/ruby/install-ruby.sh" 2.4.0 bundler jekyll rails rubocop tmuxinator
+bash "ubuntu/ruby/install-ruby.sh" 2.4.1 bundler jekyll rails rubocop tmuxinator
 
 # sqlite3
 sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
@@ -123,7 +123,7 @@ bash "ubuntu/tmux/install-dottmux.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.1
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.3
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
