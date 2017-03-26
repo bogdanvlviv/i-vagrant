@@ -33,8 +33,8 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 - [mongodb](#mongodb)
 - [mosh](#mosh)
 - [mysql](#mysql)
+- [network-manager](#network-manager)
 - [nmap](#nmap)
-- [nmcli](#nmcli)
 - [nodejs](#nodejs)
 - [phantomjs](#phantomjs)
 - [postgresql](#postgresql)
@@ -165,17 +165,18 @@ During installing MySQL create `mysql user` named `root`, need to set password f
 ###### Optional arguments:
 `ADDITIONAL_LIBRARIES` - example values: `libmysqlclient-dev` or `libmysqlclient-dev mysql-testsuite`, ...
 
+##### network-manager
+To configure `ubuntu.sh` file for installing `network-manager` need to set the row
+```bash
+sudo bash "ubuntu/network-manager/install-network-manager.sh"
+```
+
 ##### nmap
 To configure `ubuntu.sh` file for installing `nmap` need to set the row
 ```bash
 sudo bash "ubuntu/nmap/install-nmap.sh"
 ```
 
-##### nmcli
-To configure `ubuntu.sh` file for installing `nmcli` need to set the row
-```bash
-sudo bash "ubuntu/nmcli/install-nmcli.sh"
-```
 ##### nodejs
 To configure `ubuntu.sh` file for installing `nvm` need to set the row
 ```bash

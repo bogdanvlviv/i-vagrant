@@ -159,11 +159,11 @@ Vagrant.configure('2') do |config|
   # mysql
   config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
 
+  # network-manager
+  config.vm.provision :shell, path: 'ubuntu/network-manager/install-network-manager.sh', privileged: true
+
   # nmap
   config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
-
-  # nmcli
-  config.vm.provision :shell, path: 'ubuntu/nmcli/install-nmcli.sh', privileged: true
 
   # nodejs
   config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.1', privileged: false
@@ -199,10 +199,10 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
 
   # ssh
-  config.vm.provision :shell, path: 'ubuntu/ssh/install-openssh-client.sh', privileged: true
-  config.vm.provision :shell, path: 'ubuntu/ssh/install-openssh-server.sh', privileged: true
-  config.vm.provision :shell, path: 'ubuntu/ssh/change-sshd_config.sh', args: '2222 no', privileged: true
-  config.vm.provision :shell, path: 'ubuntu/ssh/set-authorized_keys.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/ssh/install-openssh-client.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ssh/install-openssh-server.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ssh/change-sshd_config.sh', args: '2222 no', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ssh/set-authorized_keys.sh', privileged: false
 
   # the_silver_searcher
   config.vm.provision :shell, path: 'ubuntu/the_silver_searcher/install-the_silver_searcher.sh', privileged: true
@@ -215,7 +215,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/tree/install-tree.sh', privileged: true
 
   # vagrant
-  config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '1.9.3', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '1.9.3', privileged: true
 
   # vim
   config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
@@ -226,6 +226,6 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/xclip/install-xclip.sh', privileged: true
 
   # xterm
-  config.vm.provision :shell, path: 'ubuntu/xterm/install-xterm.sh', privileged: true
-  config.vm.provision :shell, path: 'ubuntu/xterm/install-dotX.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/xterm/install-xterm.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/xterm/install-dotX.sh', privileged: false
 end

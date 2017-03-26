@@ -67,11 +67,11 @@ sudo bash "ubuntu/mosh/install-mosh.sh"
 # mysql
 sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
 
+# network-manager
+sudo bash "ubuntu/network-manager/install-network-manager.sh"
+
 # nmap
 sudo bash "ubuntu/nmap/install-nmap.sh"
-
-# nmcli
-sudo bash "ubuntu/nmcli/install-nmcli.sh"
 
 # nodejs
 bash "ubuntu/nodejs/install-nvm.sh" 0.33.1
