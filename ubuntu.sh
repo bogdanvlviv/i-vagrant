@@ -28,6 +28,9 @@ sudo bash "ubuntu/cmus/install-cmus.sh"
 # curl
 sudo bash "ubuntu/curl/install-curl.sh"
 
+# docker
+sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
+
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
 

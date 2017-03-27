@@ -120,6 +120,9 @@ Vagrant.configure('2') do |config|
   # curl
   config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
 
+  # docker
+  config.vm.provision :shell, path: 'ubuntu/docker/install-docker.sh', args: 'xenial', privileged: true
+
   # exuberant-ctags
   config.vm.provision :shell, path: 'ubuntu/exuberant-ctags/install-exuberant-ctags.sh', privileged: true
 

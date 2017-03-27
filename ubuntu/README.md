@@ -21,6 +21,7 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 - [bashrc](#bashrc)
 - [cmus](#cmus)
 - [curl](#curl)
+- [docker](#docker)
 - [exuberant-ctags](#exuberant-ctags)
 - [fzf](#fzf)
 - [git](#git)
@@ -72,6 +73,15 @@ To configure `ubuntu.sh` file for installing `curl` need to set the row
 ```bash
 sudo bash "ubuntu/curl/install-curl.sh"
 ```
+
+##### docker
+To configure `ubuntu.sh` file for installing `docker` need to set the row
+```bash
+sudo bash "ubuntu/docker/install-docker.sh" UBUNTU_RELEASE_CODENAME
+```
+
+###### Required arguments:
+`UBUNTU_RELEASE_CODENAME` - example values: `trusty`, `xenial`, ...
 
 ##### exuberant-ctags
 To configure `ubuntu.sh` file for installing `exuberant-ctags` need to set the row
