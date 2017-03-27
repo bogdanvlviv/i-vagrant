@@ -154,7 +154,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
 
   # mongodb
-  config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.4 trusty', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.4 xenial', privileged: true
 
   # mosh
   config.vm.provision :shell, path: 'ubuntu/mosh/install-mosh.sh', privileged: true
@@ -180,7 +180,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/phantomjs/install-phantomjs.sh', privileged: true
 
   # postgresql
-  config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.6 trusty libpq-dev', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.6 xenial libpq-dev', privileged: true
   config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
 
   # readline
