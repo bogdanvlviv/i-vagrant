@@ -123,6 +123,9 @@ Vagrant.configure('2') do |config|
   # docker
   config.vm.provision :shell, path: 'ubuntu/docker/install-docker.sh', args: 'xenial', privileged: true
 
+  # elasticsearch
+  config.vm.provision :shell, path: 'ubuntu/elasticsearch/install-elasticsearch.sh', args: '5.3.0', privileged: true
+
   # exuberant-ctags
   config.vm.provision :shell, path: 'ubuntu/exuberant-ctags/install-exuberant-ctags.sh', privileged: true
 

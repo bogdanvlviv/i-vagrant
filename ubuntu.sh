@@ -31,6 +31,9 @@ sudo bash "ubuntu/curl/install-curl.sh"
 # docker
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 
+# elasticsearch
+sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.3.0
+
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
 

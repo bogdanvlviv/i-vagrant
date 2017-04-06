@@ -22,6 +22,7 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 - [cmus](#cmus)
 - [curl](#curl)
 - [docker](#docker)
+- [elasticsearch](#elasticsearch)
 - [exuberant-ctags](#exuberant-ctags)
 - [fzf](#fzf)
 - [git](#git)
@@ -82,6 +83,15 @@ sudo bash "ubuntu/docker/install-docker.sh" UBUNTU_RELEASE_CODENAME
 
 ###### Required arguments:
 `UBUNTU_RELEASE_CODENAME` - example values: `trusty`, `xenial`, ...
+
+##### elasticsearch
+To configure `ubuntu.sh` file for installing `elasticsearch` need to set the row
+```bash
+sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" ELASTICSEARCH_VERSION
+```
+
+###### Required arguments:
+`ELASTICSEARCH_VERSION` - example values: `1.7.6` or `5.3.0`, ...
 
 ##### exuberant-ctags
 To configure `ubuntu.sh` file for installing `exuberant-ctags` need to set the row
