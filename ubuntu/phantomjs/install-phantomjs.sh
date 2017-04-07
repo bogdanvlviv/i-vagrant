@@ -4,7 +4,7 @@ if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
   apt-get update
 fi
 
-apt-get install -y curl
+bash "ubuntu/curl/install-curl.sh"
 
 curl -L https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2 -o /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2
 tar xvjf /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /tmp

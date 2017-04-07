@@ -4,7 +4,7 @@ if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
   apt-get update
 fi
 
-apt-get install -y curl
+bash "ubuntu/curl/install-curl.sh"
 
 apt-get install -y build-essential
 

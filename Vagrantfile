@@ -215,7 +215,7 @@ Vagrant.configure('2') do |config|
 
   # tmux
   config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
-  config.vm.provision :shell, path: 'ubuntu/tmux/install-dottmux.sh', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/tmux/install-dottmux.sh', privileged: true
 
   # tree
   config.vm.provision :shell, path: 'ubuntu/tree/install-tree.sh', privileged: true
@@ -225,7 +225,7 @@ Vagrant.configure('2') do |config|
 
   # vim
   config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
-  config.vm.provision :shell, path: 'ubuntu/vim/install-dotvim.sh', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/vim/install-dotvim.sh', privileged: true
   config.vm.provision :shell, path: 'ubuntu/vim/set-vim-as-default-editor.sh', privileged: false
 
   # xclip
@@ -233,5 +233,5 @@ Vagrant.configure('2') do |config|
 
   # xterm
   # config.vm.provision :shell, path: 'ubuntu/xterm/install-xterm.sh', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/xterm/install-dotX.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/xterm/install-dotX.sh', privileged: true
 end

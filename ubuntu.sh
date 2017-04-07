@@ -123,7 +123,7 @@ sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 
 # tmux
 sudo bash "ubuntu/tmux/install-tmux.sh"
-bash "ubuntu/tmux/install-dottmux.sh"
+sudo bash "ubuntu/tmux/install-dottmux.sh"
 
 # tree
 sudo bash "ubuntu/tree/install-tree.sh"
@@ -133,7 +133,7 @@ sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.3
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
-bash "ubuntu/vim/install-dotvim.sh"
+sudo bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # xclip
@@ -141,7 +141,7 @@ sudo bash "ubuntu/xclip/install-xclip.sh"
 
 # xterm
 sudo bash "ubuntu/xterm/install-xterm.sh"
-bash "ubuntu/xterm/install-dotX.sh"
+sudo bash "ubuntu/xterm/install-dotX.sh"
 
 echo ""
 echo "Running: \`source \"$HOME/.bashrc\"\`"

@@ -4,7 +4,7 @@ if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
   apt-get update
 fi
 
-apt-get install -y curl
+bash "ubuntu/curl/install-curl.sh"
 
 touch /etc/apt/sources.list.d/pgdg.list
 echo "deb http://apt.postgresql.org/pub/repos/apt/ $2-pgdg main" | tee /etc/apt/sources.list.d/pgdg.list > /dev/null

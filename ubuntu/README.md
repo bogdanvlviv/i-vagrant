@@ -326,7 +326,7 @@ sudo bash "ubuntu/tmux/install-tmux.sh"
 ```
 To configure `ubuntu.sh` file for installing [dottmux](https://github.com/bogdanvlviv/dottmux) need to set the row
 ```bash
-bash "ubuntu/tmux/install-dottmux.sh"
+sudo bash "ubuntu/tmux/install-dottmux.sh"
 ```
 
 ##### tree
@@ -351,7 +351,7 @@ sudo bash "ubuntu/vim/install-vim.sh"
 ```
 To configure `ubuntu.sh` file for installing [dotvim](https://github.com/bogdanvlviv/dotvim) need to set the row
 ```bash
-bash "ubuntu/vim/install-dotvim.sh"
+sudo bash "ubuntu/vim/install-dotvim.sh"
 ```
 To configure `ubuntu.sh` file for setting `vim` as default editor need to set the row
 ```bash
@@ -371,5 +371,5 @@ sudo bash "ubuntu/xterm/install-xterm.sh"
 ```
 To configure `ubuntu.sh` file for installing [dotX](https://github.com/bogdanvlviv/dotX) need to set the row
 ```bash
-bash "ubuntu/xterm/install-dotX.sh"
+sudo bash "ubuntu/xterm/install-dotX.sh"
 ```

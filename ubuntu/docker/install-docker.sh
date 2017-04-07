@@ -4,9 +4,10 @@ if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
   apt-get update
 fi
 
+bash "ubuntu/curl/install-curl.sh"
+
 apt-get install -y apt-transport-https
 apt-get install -y ca-certificates
-apt-get install -y curl
 apt-get install -y software-properties-common
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
