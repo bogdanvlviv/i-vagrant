@@ -304,7 +304,7 @@ bash "ubuntu/ssh/change-sshd_config.sh", SSH_PORT PASSWORD_AUTHENTICATION
 ```
 To configure `ubuntu.sh` to set `authorized_keys` need to set the row
 ```bash
-bash "ubuntu/ssh/set-authorized_keys.sh"
+sudo bash "ubuntu/ssh/set-authorized_keys.sh"
 ```
 NOTICE: Add your own `authorized_keys` in the `ubuntu/ssh/set-authorized_keys.sh` file!
 

@@ -116,7 +116,7 @@ sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
 sudo bash "ubuntu/ssh/install-openssh-client.sh"
 sudo bash "ubuntu/ssh/install-openssh-server.sh"
 sudo bash "ubuntu/ssh/change-sshd_config.sh" 2222 no
-bash "ubuntu/ssh/set-authorized_keys.sh"
+sudo bash "ubuntu/ssh/set-authorized_keys.sh"
 
 # the_silver_searcher
 sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
