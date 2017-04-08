@@ -100,7 +100,7 @@ bash "ubuntu/readline/set-inputrc.sh"
 # redis
 sudo bash "ubuntu/redis/install-redis.sh"
 
-#ruby
+# ruby
 bash "ubuntu/ruby/install-rvm.sh" stable
 bash "ubuntu/ruby/install-ruby.sh" 1.9.3 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.0.0 bundler
