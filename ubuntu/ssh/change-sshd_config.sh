@@ -7,4 +7,4 @@ sed -i "/PasswordAuthentication no/c\PasswordAuthentication $2" /etc/ssh/sshd_co
 
 sed -i "1iGatewayPorts clientspecified\n" /etc/ssh/sshd_config
 
-/etc/init.d/ssh restart
+sudo /etc/init.d/ssh restart

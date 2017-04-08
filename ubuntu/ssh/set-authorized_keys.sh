@@ -12,4 +12,4 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjfsK7Uvp8ZtGcb+PDPfzwGvjZYr7PKYo3vrUTsjZk
 
 chmod 600 ~/.ssh/authorized_keys
 
-/etc/init.d/ssh restart
+sudo /etc/init.d/ssh restart

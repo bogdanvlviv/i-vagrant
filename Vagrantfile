@@ -208,7 +208,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/ssh/install-openssh-client.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ssh/install-openssh-server.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ssh/change-sshd_config.sh', args: '2222 no', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/ssh/set-authorized_keys.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ssh/set-authorized_keys.sh', privileged: false
 
   # the_silver_searcher
   config.vm.provision :shell, path: 'ubuntu/the_silver_searcher/install-the_silver_searcher.sh', privileged: true
