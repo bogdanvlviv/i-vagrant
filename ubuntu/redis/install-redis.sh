@@ -25,7 +25,6 @@ chmod 770 /var/lib/redis
 cp /tmp/redis-stable/redis.conf /etc/redis/redis.conf
 sed -i "s/^supervised no/supervised systemd/g" /etc/redis/redis.conf
 sed -i "s/^dir \.\//dir \/var\/lib\/redis/g" /etc/redis/redis.conf
-# sed -i "s/^daemonize no/daemonize yes/g" /etc/redis/redis.conf
 
 echo "[Unit]" | tee /lib/systemd/system/redis.service > /dev/null
 echo "Description=Redis In-Memory Data Store" | tee -a /lib/systemd/system/redis.service > /dev/null
