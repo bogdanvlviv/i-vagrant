@@ -4,8 +4,22 @@ if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
   apt-get update
 fi
 
-bash "ubuntu/curl/install-curl.sh"
-bash "ubuntu/java/install-java.sh" 9
+# "ubuntu/curl/install-curl.sh"
+apt-get install -y curl
+# "ubuntu/curl/install-curl.sh"
+
+# "ubuntu/java/install-java.sh" 9
+apt-get install -y software-properties-common
+
+add-apt-repository -y ppa:webupd8team/java
+
+apt-get update
+
+echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
+echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
+
+apt-get install -y oracle-java9-installer
+# "ubuntu/java/install-java.sh" 9
 
 curl https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-$1.deb -o /tmp/elasticsearch-$1.deb
 
