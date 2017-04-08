@@ -11,7 +11,7 @@ if [[ "$answer_for_the_start" != "yes" ]]; then
   return
 fi
 
-UBUNTU_RELEASE_CODENAME="$(lsb_release -cs)"
+UBUNTU_RELEASE_CODENAME="xenial"
 
 export RUN_APT_GET_UPDATE_BEFORE="no"
 
