@@ -125,6 +125,9 @@ sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 sudo bash "ubuntu/tmux/install-tmux.sh"
 bash "ubuntu/tmux/install-dottmux.sh"
 
+# tor
+sudo bash "ubuntu/tor/install-tor.sh"
+
 # tree
 sudo bash "ubuntu/tree/install-tree.sh"
 

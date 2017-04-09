@@ -47,6 +47,7 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 - [ssh](#ssh)
 - [the_silver_searcher](#the_silver_searcher)
 - [tmux](#tmux)
+- [tor](#tor)
 - [tree](#tree)
 - [vagrant](#vagrant)
 - [vim](#vim)
@@ -327,6 +328,12 @@ sudo bash "ubuntu/tmux/install-tmux.sh"
 To configure `ubuntu.sh` file for installing [dottmux](https://github.com/bogdanvlviv/dottmux) need to set the row
 ```bash
 bash "ubuntu/tmux/install-dottmux.sh"
+```
+
+##### tor
+To configure `ubuntu.sh` file for installing `tor` need to set the row
+```bash
+sudo bash "ubuntu/tor/install-tor.sh"
 ```
 
 ##### tree

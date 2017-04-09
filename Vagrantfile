@@ -217,6 +217,9 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
   config.vm.provision :shell, path: 'ubuntu/tmux/install-dottmux.sh', privileged: false
 
+  # tor
+  # config.vm.provision :shell, path: 'ubuntu/tor/install-tor.sh', privileged: true
+
   # tree
   # config.vm.provision :shell, path: 'ubuntu/tree/install-tree.sh', privileged: true
 
