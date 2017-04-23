@@ -26,19 +26,21 @@ cp /tmp/redis-stable/redis.conf /etc/redis/redis.conf
 sed -i "s/^supervised no/supervised systemd/g" /etc/redis/redis.conf
 sed -i "s/^dir \.\//dir \/var\/lib\/redis/g" /etc/redis/redis.conf
 
-echo "[Unit]" | tee /lib/systemd/system/redis.service > /dev/null
-echo "Description=Redis In-Memory Data Store" | tee -a /lib/systemd/system/redis.service > /dev/null
-echo "After=network.target" | tee -a /lib/systemd/system/redis.service > /dev/null
-echo "" | tee -a /lib/systemd/system/redis.service > /dev/null
-echo "[Service]" | tee -a /lib/systemd/system/redis.service > /dev/null
-echo "User=redis" | tee -a /lib/systemd/system/redis.service > /dev/null
-echo "Group=redis" | tee -a /lib/systemd/system/redis.service > /dev/null
-echo "ExecStart=/usr/local/bin/redis-server /etc/redis/redis.conf" | tee -a /lib/systemd/system/redis.service > /dev/null
-echo "ExecStop=/usr/local/bin/redis-cli shutdown" | tee -a /lib/systemd/system/redis.service > /dev/null
-echo "Restart=always" | tee -a /lib/systemd/system/redis.service > /dev/null
-echo "" | tee -a /lib/systemd/system/redis.service > /dev/null
-echo "[Install]" | tee -a /lib/systemd/system/redis.service > /dev/null
-echo "WantedBy=multi-user.target" | tee -a /lib/systemd/system/redis.service > /dev/null
+cat <<EOF | tee /lib/systemd/system/redis.service > /dev/null
+[Unit]
+Description=Redis In-Memory Data Store
+After=network.target
+
+[Service]
+User=redis
+Group=redis
+ExecStart=/usr/local/bin/redis-server /etc/redis/redis.conf
+ExecStop=/usr/local/bin/redis-cli shutdown
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
 
 rm /tmp/redis-stable.tar.gz
 rm -fr /tmp/redis-stable
