@@ -32,7 +32,7 @@ sudo bash "ubuntu/curl/install-curl.sh"
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 
 # elasticsearch
-sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.3.0
+sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.3.2
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -80,10 +80,10 @@ sudo bash "ubuntu/network-manager/install-network-manager.sh"
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-bash "ubuntu/nodejs/install-nvm.sh" 0.33.1
+bash "ubuntu/nodejs/install-nvm.sh" 0.33.2
 bash "ubuntu/nodejs/install-nodejs.sh" 5.12.0
-bash "ubuntu/nodejs/install-nodejs.sh" 6.10.1
-bash "ubuntu/nodejs/install-nodejs.sh" 7.7.4
+bash "ubuntu/nodejs/install-nodejs.sh" 6.10.2
+bash "ubuntu/nodejs/install-nodejs.sh" 7.9.0
 sudo bash "ubuntu/nodejs/install-yarn.sh"
 bash "ubuntu/nodejs/install-eslint.sh"
 
@@ -106,7 +106,7 @@ bash "ubuntu/ruby/install-ruby.sh" 1.9.3 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.0.0 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.1.9 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.2.6 bundler
-bash "ubuntu/ruby/install-ruby.sh" 2.3.3 bundler
+bash "ubuntu/ruby/install-ruby.sh" 2.3.4 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.4.1 bundler jekyll rails rubocop tmuxinator
 
 # sqlite3
@@ -132,7 +132,7 @@ sudo bash "ubuntu/tor/install-tor.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.3
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.4
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
