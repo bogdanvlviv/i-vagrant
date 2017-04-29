@@ -25,19 +25,19 @@ Vagrant.configure('2') do |config|
   # config.vm.network "forwarded_port", guest: 80, host: 8080
 
   # mongodb
-  # config.vm.network 'forwarded_port', guest: 37017, host: 27017
+  # config.vm.network 'forwarded_port', guest: 27017, host: 37017
 
   # mysql
-  # config.vm.network 'forwarded_port', guest: 33061, host: 3306
+  # config.vm.network 'forwarded_port', guest: 3306, host: 33061
 
   # postgresql
-  # config.vm.network 'forwarded_port', guest: 54321, host: 5432
+  # config.vm.network 'forwarded_port', guest: 5432, host: 54321
 
   # rails
-  # config.vm.network 'forwarded_port', guest: 30001, host: 3000
+  # config.vm.network 'forwarded_port', guest: 3000, host: 30001
 
   # redis
-  # config.vm.network 'forwarded_port', guest: 63791, host: 6379
+  # config.vm.network 'forwarded_port', guest: 6379, host: 63791
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
