@@ -31,6 +31,7 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 - [imagemagick](#imagemagick)
 - [java](#java)
 - [letsencrypt](#letsencrypt)
+- [libxml2](#libxml2)
 - [mc](#mc)
 - [mongodb](#mongodb)
 - [mosh](#mosh)
@@ -148,6 +149,15 @@ To configure `ubuntu.sh` file for installing `letsencrypt` need to set the row
 ```bash
 sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
 ```
+
+##### libxml2
+To configure `ubuntu.sh` file for installing `libxml2` need to set the row
+```bash
+sudo bash "ubuntu/libxml2/install-libxml2.sh" ADDITIONAL_LIBRARIES
+```
+
+###### Optional arguments:
+`ADDITIONAL_LIBRARIES` - example values: `libxml2-dev`, ...
 
 ##### mc
 To configure `ubuntu.sh` file for installing `mc` need to set the row

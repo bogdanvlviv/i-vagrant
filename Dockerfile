@@ -55,6 +55,9 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # letsencrypt
 # RUN sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
 
+# libxml2
+# RUN sudo bash "ubuntu/libxml2/install-libxml2.sh" libxml2-dev
+
 # mc
 # RUN sudo bash "ubuntu/mc/install-mc.sh"
 

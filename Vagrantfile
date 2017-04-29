@@ -153,6 +153,9 @@ Vagrant.configure('2') do |config|
   # letsencrypt
   # config.vm.provision :shell, path: 'ubuntu/letsencrypt/install-letsencrypt.sh', privileged: true
 
+  # libxml2
+  # config.vm.provision :shell, path: 'ubuntu/libxml2/install-libxml2.sh', args: 'libxml2-dev', privileged: true
+
   # mc
   # config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
 

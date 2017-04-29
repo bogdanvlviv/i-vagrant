@@ -61,6 +61,9 @@ sudo bash "ubuntu/java/install-java.sh" 9
 # letsencrypt
 sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
 
+# libxml2
+sudo bash "ubuntu/libxml2/install-libxml2.sh" libxml2-dev
+
 # mc
 sudo bash "ubuntu/mc/install-mc.sh"
 
