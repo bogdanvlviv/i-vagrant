@@ -139,6 +139,9 @@ RUN sudo bash "ubuntu/vim/install-vim.sh"
 RUN bash "ubuntu/vim/install-dotvim.sh"
 RUN bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
+# virtualbox
+# RUN sudo bash "ubuntu/virtualbox/install-virtualbox.sh"
+
 # xclip
 RUN sudo bash "ubuntu/xclip/install-xclip.sh"
 

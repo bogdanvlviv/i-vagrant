@@ -53,6 +53,7 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 - [tree](#tree)
 - [vagrant](#vagrant)
 - [vim](#vim)
+- [virtualbox](#virtualbox)
 - [xclip](#xclip)
 - [xterm](#xterm)
 
@@ -380,6 +381,12 @@ bash "ubuntu/vim/install-dotvim.sh"
 To configure `ubuntu.sh` file for setting `vim` as default editor need to set the row
 ```bash
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
+```
+
+##### virtualbox
+To configure `ubuntu.sh` file for installing `virtualbox` need to set the row
+```bash
+sudo bash "ubuntu/virtualbox/install-virtualbox.sh"
 ```
 
 ##### xclip
