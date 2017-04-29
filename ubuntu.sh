@@ -44,6 +44,9 @@ bash "ubuntu/fzf/set-fzf_default_command.sh"
 # git
 sudo bash "ubuntu/git/install-git.sh"
 
+# google-chrome
+sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
+
 # graphviz
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
 

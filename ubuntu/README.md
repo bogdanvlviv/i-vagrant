@@ -26,6 +26,7 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 - [exuberant-ctags](#exuberant-ctags)
 - [fzf](#fzf)
 - [git](#git)
+- [google-chrome](#google-chrome)
 - [graphviz](#graphviz)
 - [htop](#htop)
 - [imagemagick](#imagemagick)
@@ -115,6 +116,12 @@ bash "ubuntu/fzf/set-fzf_default_command.sh"
 To configure `ubuntu.sh` file for installing `git` need to set the row
 ```bash
 sudo bash "ubuntu/git/install-git.sh"
+```
+
+##### google-chrome
+To configure `ubuntu.sh` file for installing `google-chrome` need to set the row
+```bash
+sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
 ```
 
 ##### graphviz

@@ -38,6 +38,9 @@ RUN bash "ubuntu/fzf/set-fzf_default_command.sh"
 # git
 RUN sudo bash "ubuntu/git/install-git.sh"
 
+# google-chrome
+# RUN sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
+
 # graphviz
 # RUN sudo bash "ubuntu/graphviz/install-graphviz.sh"
 
