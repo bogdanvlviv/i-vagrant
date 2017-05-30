@@ -54,24 +54,24 @@ Vagrant.configure('2') do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
 
-  # config.vm.synced_folder '~/active_projects/', '/active_projects'
+  # config.vm.synced_folder '~/active_projects', '/active_projects'
 
   # git
-  # config.vm.provision :file, source: '~/.gitconfig', destination: '~/.gitconfig'
-  # config.vm.provision :file, source: '~/.gitignore_global', destination: '~/.gitignore_global'
+  config.vm.provision :file, source: '~/.gitconfig', destination: '~/.gitconfig'
+  config.vm.provision :file, source: '~/.gitignore_global', destination: '~/.gitignore_global'
 
   # gnupg
-  # config.vm.provision :file, source: '~/.gnupg/gpg.conf', destination: '~/.gnupg/gpg.conf'
-  # config.vm.provision :file, source: '~/.gnupg/pubring.gpg', destination: '~/.gnupg/pubring.gpg'
-  # config.vm.provision :file, source: '~/.gnupg/random_seed', destination: '~/.gnupg/random_seed'
-  # config.vm.provision :file, source: '~/.gnupg/secring.gpg', destination: '~/.gnupg/secring.gpg'
-  # config.vm.provision :file, source: '~/.gnupg/trustdb.gpg', destination: '~/.gnupg/trustdb.gpg'
+  config.vm.provision :file, source: '~/.gnupg/gpg.conf', destination: '~/.gnupg/gpg.conf'
+  config.vm.provision :file, source: '~/.gnupg/pubring.gpg', destination: '~/.gnupg/pubring.gpg'
+  config.vm.provision :file, source: '~/.gnupg/random_seed', destination: '~/.gnupg/random_seed'
+  config.vm.provision :file, source: '~/.gnupg/secring.gpg', destination: '~/.gnupg/secring.gpg'
+  config.vm.provision :file, source: '~/.gnupg/trustdb.gpg', destination: '~/.gnupg/trustdb.gpg'
 
   # ssh
-  # config.vm.provision :file, source: '~/.ssh/id_rsa', destination: '~/.ssh/id_rsa'
-  # config.vm.provision :file, source: '~/.ssh/id_rsa.pub', destination: '~/.ssh/id_rsa.pub'
-  # config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa', privileged: false
-  # config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa.pub', privileged: false
+  config.vm.provision :file, source: '~/.ssh/id_rsa', destination: '~/.ssh/id_rsa'
+  config.vm.provision :file, source: '~/.ssh/id_rsa.pub', destination: '~/.ssh/id_rsa.pub'
+  config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa', privileged: false
+  config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa.pub', privileged: false
 
   # config.ssh.forward_agent = true
 
@@ -178,10 +178,8 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
 
   # nodejs
-  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.1', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '5.12.0', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '6.10.1', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '7.7.4', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.2', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '7.10.0', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-yarn.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-eslint.sh', privileged: false
 
@@ -198,13 +196,14 @@ Vagrant.configure('2') do |config|
   # redis
   # config.vm.provision :shell, path: 'ubuntu/redis/install-redis.sh', privileged: true
 
-  #ruby
+  # ruby
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-rvm.sh', args: 'stable', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '1.9.3 bundler', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.0.0 bundler', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.1.9 bundler', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.2.6 bundler', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.3.3 bundler', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.2.7 bundler', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.3.4 bundler', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'ruby-head bundler', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.4.1 bundler jekyll rails rubocop tmuxinator', privileged: false
 
   # sqlite3
@@ -230,7 +229,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/tree/install-tree.sh', privileged: true
 
   # vagrant
-  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '1.9.3', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '1.9.5', privileged: true
 
   # vim
   config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true

@@ -80,10 +80,8 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-# RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.1
-# RUN bash "ubuntu/nodejs/install-nodejs.sh" 5.12.0
-# RUN bash "ubuntu/nodejs/install-nodejs.sh" 6.10.1
-# RUN bash "ubuntu/nodejs/install-nodejs.sh" 7.7.4
+# RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.2
+# RUN bash "ubuntu/nodejs/install-nodejs.sh" 7.10.0
 # RUN sudo bash "ubuntu/nodejs/install-yarn.sh"
 # RUN bash "ubuntu/nodejs/install-eslint.sh"
 
@@ -105,8 +103,9 @@ RUN bash "ubuntu/readline/set-inputrc.sh"
 # RUN bash "ubuntu/ruby/install-ruby.sh" 1.9.3 bundler
 # RUN bash "ubuntu/ruby/install-ruby.sh" 2.0.0 bundler
 # RUN bash "ubuntu/ruby/install-ruby.sh" 2.1.9 bundler
-# RUN bash "ubuntu/ruby/install-ruby.sh" 2.2.6 bundler
-# RUN bash "ubuntu/ruby/install-ruby.sh" 2.3.3 bundler
+# RUN bash "ubuntu/ruby/install-ruby.sh" 2.2.7 bundler
+# RUN bash "ubuntu/ruby/install-ruby.sh" 2.3.4 bundler
+# RUN bash "ubuntu/ruby/install-ruby.sh" ruby-head bundler
 # RUN bash "ubuntu/ruby/install-ruby.sh" 2.4.1 bundler jekyll rails rubocop tmuxinator
 
 # sqlite3
@@ -132,7 +131,7 @@ RUN bash "ubuntu/tmux/install-dottmux.sh"
 # RUN sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.3
+# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.5
 
 # vim
 RUN sudo bash "ubuntu/vim/install-vim.sh"
