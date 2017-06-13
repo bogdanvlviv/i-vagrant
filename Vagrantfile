@@ -237,7 +237,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/vim/set-vim-as-default-editor.sh', privileged: false
 
   # virtualbox
-  # config.vm.provision :shell, path: 'ubuntu/virtualbox/install-virtualbox.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/virtualbox/install-virtualbox.sh', args: 'xenial', privileged: true
 
   # xclip
   config.vm.provision :shell, path: 'ubuntu/xclip/install-xclip.sh', privileged: true

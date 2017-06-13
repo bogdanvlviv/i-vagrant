@@ -145,7 +145,7 @@ bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-sudo bash "ubuntu/virtualbox/install-virtualbox.sh"
+sudo bash "ubuntu/virtualbox/install-virtualbox.sh" $UBUNTU_RELEASE_CODENAME
 
 # xclip
 sudo bash "ubuntu/xclip/install-xclip.sh"

@@ -386,8 +386,11 @@ bash "ubuntu/vim/set-vim-as-default-editor.sh"
 ##### virtualbox
 To configure `ubuntu.sh` file for installing `virtualbox` need to set the row
 ```bash
-sudo bash "ubuntu/virtualbox/install-virtualbox.sh"
+sudo bash "ubuntu/virtualbox/install-virtualbox.sh" UBUNTU_RELEASE_CODENAME
 ```
+
+###### Required arguments:
+`UBUNTU_RELEASE_CODENAME` - example values: `trusty`, `xenial`, ...
 
 ##### xclip
 To configure `ubuntu.sh` file for installing `xclip` need to set the row

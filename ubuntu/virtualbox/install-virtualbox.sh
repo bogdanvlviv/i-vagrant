@@ -10,7 +10,7 @@ apt-get install -y curl
 
 curl http://download.virtualbox.org/virtualbox/5.1.22/virtualbox-5.1_5.1.22-115126~Ubuntu~xenial_amd64.deb -o /tmp/virtualbox-5.1_5.1.22-115126~Ubuntu~xenial_amd64.deb
 
-dpkg -i /tmp/virtualbox-5.1_5.1.22-115126~Ubuntu~xenial_amd64.deb
+dpkg -i /tmp/virtualbox-5.1_5.1.22-115126~Ubuntu~$1_amd64.deb
 apt-get install -y -f
 
-rm /tmp/virtualbox-5.1_5.1.22-115126~Ubuntu~xenial_amd64.deb
+rm /tmp/virtualbox-5.1_5.1.22-115126~Ubuntu~$1_amd64.deb
