@@ -32,7 +32,7 @@ sudo bash "ubuntu/curl/install-curl.sh"
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 
 # elasticsearch
-sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.3.2
+sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.4.1
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -87,7 +87,7 @@ sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
 bash "ubuntu/nodejs/install-nvm.sh" 0.33.2
-bash "ubuntu/nodejs/install-nodejs.sh" 7.10.0
+bash "ubuntu/nodejs/install-nodejs.sh" 8.1.0
 sudo bash "ubuntu/nodejs/install-yarn.sh"
 bash "ubuntu/nodejs/install-eslint.sh"
 

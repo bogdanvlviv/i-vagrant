@@ -26,7 +26,7 @@ RUN sudo bash "ubuntu/curl/install-curl.sh"
 # RUN sudo bash "ubuntu/docker/install-docker.sh" xenial
 
 # elasticsearch
-# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.3.0
+# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.4.1
 
 # exuberant-ctags
 RUN sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -81,7 +81,7 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 
 # nodejs
 # RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.2
-# RUN bash "ubuntu/nodejs/install-nodejs.sh" 7.10.0
+# RUN bash "ubuntu/nodejs/install-nodejs.sh" 8.1.0
 # RUN sudo bash "ubuntu/nodejs/install-yarn.sh"
 # RUN bash "ubuntu/nodejs/install-eslint.sh"
 
@@ -89,7 +89,7 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # RUN sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
 # postgresql
-# RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.6 xenial
+# RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.6 xenial libpq-dev
 # RUN sudo bash "ubuntu/postgresql/create-user.sh" root admin
 
 # readline
