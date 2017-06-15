@@ -57,8 +57,6 @@ sudo bash "ubuntu/htop/install-htop.sh"
 sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 
 # java
-sudo bash "ubuntu/java/install-java.sh" 7
-sudo bash "ubuntu/java/install-java.sh" 8
 sudo bash "ubuntu/java/install-java.sh" 9
 
 # letsencrypt
@@ -111,7 +109,6 @@ bash "ubuntu/ruby/install-ruby.sh" 2.0.0 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.1.9 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.2.7 bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.3.4 bundler
-bash "ubuntu/ruby/install-ruby.sh" ruby-head bundler
 bash "ubuntu/ruby/install-ruby.sh" 2.4.1 bundler jekyll rails rubocop tmuxinator
 
 # sqlite3

@@ -149,8 +149,6 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
 
   # java
-  # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '7', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '8', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '9', privileged: true
 
   # letsencrypt
@@ -203,7 +201,6 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.1.9 bundler', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.2.7 bundler', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.3.4 bundler', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'ruby-head bundler', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: '2.4.1 bundler jekyll rails rubocop tmuxinator', privileged: false
 
   # sqlite3

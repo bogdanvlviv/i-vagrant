@@ -5,9 +5,3 @@ echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu $2/mongodb-org
 apt-get update
 
 apt-get install -y mongodb-org
-
-shift 2
-
-if (( $# )); then
-  apt-get install -y $@
-fi
