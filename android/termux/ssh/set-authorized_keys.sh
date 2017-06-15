@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-mkdir ~/.ssh
+mkdir -p ~/.ssh
 
 chmod 700 ~/.ssh
 

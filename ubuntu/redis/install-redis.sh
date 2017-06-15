@@ -17,8 +17,8 @@ make install -C /tmp/redis-stable
 
 adduser --system --group --no-create-home redis
 
-mkdir /etc/redis
-mkdir /var/lib/redis
+mkdir -p /etc/redis
+mkdir -p /var/lib/redis
 chown redis:redis /var/lib/redis
 chmod 770 /var/lib/redis
 
