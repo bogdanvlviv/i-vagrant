@@ -170,10 +170,10 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
 
   # network-manager
-  # config.vm.provision :shell, path: 'ubuntu/network-manager/install-network-manager.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/network-manager/install-network-manager.sh', privileged: true
 
   # nmap
-  # config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
 
   # nodejs
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.2', privileged: false
@@ -199,12 +199,12 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby-build.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-rbenv-ctags.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-rbenv-vars.sh', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 1.9.3-p551 bundler', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.0.0-p648 bundler', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.1.9 bundler', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.2.7 bundler', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.3.4 bundler', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.4.1 bundler jekyll rails rubocop tmuxinator', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 1.9.3-p551 bundler', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.0.0-p648 bundler', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.1.9 bundler', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.2.7 bundler', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.3.4 bundler', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.4.1 bundler jekyll rails rubocop tmuxinator', privileged: true
 
   # sqlite3
   # config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true

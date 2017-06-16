@@ -72,10 +72,10 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # RUN sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
 
 # network-manager
-# RUN sudo bash "ubuntu/network-manager/install-network-manager.sh"
+RUN sudo bash "ubuntu/network-manager/install-network-manager.sh"
 
 # nmap
-# RUN sudo bash "ubuntu/nmap/install-nmap.sh"
+RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
 # RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.2
@@ -101,12 +101,12 @@ RUN bash "ubuntu/readline/set-inputrc.sh"
 # RUN sudo bash "ubuntu/ruby/install-ruby-build.sh"
 # RUN sudo bash "ubuntu/ruby/install-rbenv-ctags.sh"
 # RUN sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
-# RUN bash "ubuntu/ruby/install-ruby.sh" rbenv 1.9.3-p551 bundler
-# RUN bash "ubuntu/ruby/install-ruby.sh" rbenv 2.0.0-p648 bundler
-# RUN bash "ubuntu/ruby/install-ruby.sh" rbenv 2.1.9 bundler
-# RUN bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.7 bundler
-# RUN bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.4 bundler
-# RUN bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.1 bundler jekyll rails rubocop tmuxinator
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 1.9.3-p551 bundler
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.0.0-p648 bundler
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.1.9 bundler
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.7 bundler
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.4 bundler
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.1 bundler jekyll rails rubocop tmuxinator
 
 # sqlite3
 # RUN sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
