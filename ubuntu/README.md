@@ -290,9 +290,13 @@ To configure `ubuntu.sh` file for installing `rvm` need to set the row
 ```bash
 bash "ubuntu/ruby/install-rvm.sh" RVM_VERSION
 ```
-To configure `ubuntu.sh` file for installing `ruby` after installation `rbenv` or `rvm` need to set the row
+To configure `ubuntu.sh` file for installing `ruby` after installation `rbenv` need to set the row
 ```bash
-bash "ubuntu/ruby/install-ruby.sh" RUBY_ENVIRONMENT_MANAGER RUBY_VERSION ADDITIONAL_GEMS
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv RUBY_VERSION ADDITIONAL_GEMS
+```
+To configure `ubuntu.sh` file for installing `ruby` after installation `rvm` need to set the row
+```bash
+bash "ubuntu/ruby/install-ruby.sh" rvm RUBY_VERSION ADDITIONAL_GEMS
 ```
 To configure `ubuntu.sh` file for installing `ruby-build` need to set the row
 ```bash
@@ -308,8 +312,6 @@ sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 ```
 
 ###### Required arguments:
-`RUBY_ENVIRONMENT_MANAGER` - example values: `rbenv` or `rvm`
-
 `RVM_VERSION` - example values: `stable` or `head`, ...
 
 `RUBY_VERSION` - example values: `1.9.3` or `1.9.3-p551` or `2.3.1`, ...
