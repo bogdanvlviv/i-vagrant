@@ -103,13 +103,16 @@ bash "ubuntu/readline/set-inputrc.sh"
 sudo bash "ubuntu/redis/install-redis.sh"
 
 # ruby
-bash "ubuntu/ruby/install-rvm.sh" stable
-bash "ubuntu/ruby/install-ruby.sh" 1.9.3 bundler
-bash "ubuntu/ruby/install-ruby.sh" 2.0.0 bundler
-bash "ubuntu/ruby/install-ruby.sh" 2.1.9 bundler
-bash "ubuntu/ruby/install-ruby.sh" 2.2.7 bundler
-bash "ubuntu/ruby/install-ruby.sh" 2.3.4 bundler
-bash "ubuntu/ruby/install-ruby.sh" 2.4.1 bundler jekyll rails rubocop tmuxinator
+sudo bash "ubuntu/ruby/install-rbenv.sh"
+sudo bash "ubuntu/ruby/install-ruby-build.sh"
+sudo bash "ubuntu/ruby/install-rbenv-ctags.sh"
+sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
+bash "ubuntu/ruby/install-ruby.sh" rbenv 1.9.3-p551 bundler
+bash "ubuntu/ruby/install-ruby.sh" rbenv 2.0.0-p648 bundler
+bash "ubuntu/ruby/install-ruby.sh" rbenv 2.1.9 bundler
+bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.7 bundler
+bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.4 bundler
+bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.1 bundler jekyll rails rubocop tmuxinator
 
 # sqlite3
 sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev

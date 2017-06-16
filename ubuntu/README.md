@@ -281,20 +281,38 @@ sudo bash "ubuntu/redis/install-redis.sh"
 ```
 
 ##### ruby
+To configure `ubuntu.sh` file for installing `rbenv` need to set the row
+```bash
+sudo bash "ubuntu/ruby/install-rbenv.sh"
+```
 To configure `ubuntu.sh` file for installing `rvm` need to set the row
+(See more about installing `rvm` with sudo privileges [here](https://rvm.io/rvm/install)).
 ```bash
 bash "ubuntu/ruby/install-rvm.sh" RVM_VERSION
 ```
-To configure `ubuntu.sh` file for installing `ruby` after installation `rvm` need to set the row
+To configure `ubuntu.sh` file for installing `ruby` after installation `rbenv` or `rvm` need to set the row
 ```bash
-bash "ubuntu/ruby/install-ruby.sh" RUBY_VERSION ADDITIONAL_GEMS
+bash "ubuntu/ruby/install-ruby.sh" RUBY_ENVIRONMENT_MANAGER RUBY_VERSION ADDITIONAL_GEMS
 ```
-See more about installing `rvm` with sudo privileges [here](https://rvm.io/rvm/install).
+To configure `ubuntu.sh` file for installing `ruby-build` need to set the row
+```bash
+sudo bash "ubuntu/ruby/install-ruby-build.sh"
+```
+To configure `ubuntu.sh` file for installing `rbenv-ctags` need to set the row
+```bash
+sudo bash "ubuntu/ruby/install-rbenv-ctags.sh"
+```
+To configure `ubuntu.sh` file for installing `rbenv-vars` need to set the row
+```bash
+sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
+```
 
 ###### Required arguments:
+`RUBY_ENVIRONMENT_MANAGER` - example values: `rbenv` or `rvm`
+
 `RVM_VERSION` - example values: `stable` or `head`, ...
 
-`RUBY_VERSION` - example values: `1.9.3` or `2.3.1`, ...
+`RUBY_VERSION` - example values: `1.9.3` or `1.9.3-p551` or `2.3.1`, ...
 
 ###### Optional arguments:
 `ADDITIONAL_GEMS` - example values: `bundler` or `bundler rails`, ...
