@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-echo "export EDITOR=\"vi\"" | tee -a ~/.bashrc > /dev/null
+echo "export EDITOR=\"vim\"" | tee -a ~/.bashrc > /dev/null

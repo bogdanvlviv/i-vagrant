@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sed -i "1iexport EDITOR=\"vi\"\n" ~/.bashrc
+sed -i "1iexport EDITOR=\"vim\"\n" ~/.bashrc
