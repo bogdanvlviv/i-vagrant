@@ -10,6 +10,8 @@ apt-get install -y curl
 
 apt-get install -y build-essential
 
+rm /tmp/redis-stable.tar.gz
+rm -fr /tmp/redis-stable
 curl http://download.redis.io/redis-stable.tar.gz -o /tmp/redis-stable.tar.gz
 tar xvzf /tmp/redis-stable.tar.gz -C /tmp
 make -C /tmp/redis-stable

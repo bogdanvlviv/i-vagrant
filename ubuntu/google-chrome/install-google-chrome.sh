@@ -8,6 +8,7 @@ fi
 apt-get install -y curl
 # "ubuntu/curl/install-curl.sh"
 
+rm /tmp/google-chrome-stable_current_amd64.deb
 curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /tmp/google-chrome-stable_current_amd64.deb
 
 dpkg -i /tmp/google-chrome-stable_current_amd64.deb

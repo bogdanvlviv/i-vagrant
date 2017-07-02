@@ -10,6 +10,7 @@ apt-get install -y git
 
 apt-get install -y build-essential
 
+rm -fr /tmp/vim
 git clone https://github.com/vim/vim.git /tmp/vim
 make -C /tmp/vim
 make install -C /tmp/vim
