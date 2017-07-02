@@ -10,6 +10,7 @@ apt-get install -y git
 
 apt-get install -y build-essential
 apt-get install -y libevent-dev
+apt-get install -y pkg-config
 
 rm -fr /tmp/tmux
 git clone https://github.com/tmux/tmux.git /tmp/tmux
