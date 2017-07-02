@@ -8,7 +8,8 @@ fi
 apt-get install -y git
 # "ubuntu/git/install-git.sh"
 
-apt-get install -y build-essential libevent-dev
+apt-get install -y build-essential
+apt-get install -y libevent-dev
 
 rm -fr /tmp/tmux
 git clone https://github.com/tmux/tmux.git /tmp/tmux
