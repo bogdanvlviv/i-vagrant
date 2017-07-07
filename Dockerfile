@@ -40,7 +40,7 @@ RUN sudo bash "ubuntu/git/install-git.sh"
 
 # google-chrome
 # RUN sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh"
+# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.30
 
 # graphviz
 # RUN sudo bash "ubuntu/graphviz/install-graphviz.sh"

@@ -10,7 +10,7 @@ apt-get install -y curl
 
 rm /tmp/chromedriver_linux64.zip
 rm -fr /tmp/chromedriver_linux64
-curl -L https://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -o /tmp/chromedriver_linux64.zip
+curl -L https://chromedriver.storage.googleapis.com/$1/chromedriver_linux64.zip -o /tmp/chromedriver_linux64.zip
 unzip /tmp/chromedriver_linux64.zip -d /tmp/chromedriver_linux64
 cp /tmp/chromedriver_linux64/chromedriver /usr/local/bin/chromedriver
 rm /tmp/chromedriver_linux64.zip

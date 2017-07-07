@@ -46,7 +46,7 @@ sudo bash "ubuntu/git/install-git.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh"
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.30
 
 # graphviz
 sudo bash "ubuntu/graphviz/install-graphviz.sh"

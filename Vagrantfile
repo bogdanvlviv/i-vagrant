@@ -138,7 +138,7 @@ Vagrant.configure('2') do |config|
 
   # google-chrome
   # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-google-chrome.sh', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-chromedriver.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-chromedriver.sh', args: '2.30', privileged: true
 
   # graphviz
   # config.vm.provision :shell, path: 'ubuntu/graphviz/install-graphviz.sh', privileged: true

@@ -126,8 +126,11 @@ sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
 ```
 To configure `ubuntu.sh` file for installing `chromedriver` need to set the row
 ```bash
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh"
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" CHROMEDRIVER_VERSION
 ```
+
+###### Required arguments:
+`CHROMEDRIVER_VERSION` - example values: `2.29` or `2.30`, ...
 
 ##### graphviz
 To configure `ubuntu.sh` file for installing `graphviz` need to set the row
