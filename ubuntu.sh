@@ -90,7 +90,7 @@ sudo bash "ubuntu/nodejs/install-yarn.sh"
 bash "ubuntu/nodejs/install-eslint.sh"
 
 # phantomjs
-sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
+# sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
 # postgresql
 sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.6 $UBUNTU_RELEASE_CODENAME libpq-dev
