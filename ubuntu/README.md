@@ -124,6 +124,10 @@ To configure `ubuntu.sh` file for installing `google-chrome` need to set the row
 ```bash
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
 ```
+To configure `ubuntu.sh` file for installing `chromedriver` need to set the row
+```bash
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh"
+```
 
 ##### graphviz
 To configure `ubuntu.sh` file for installing `graphviz` need to set the row
