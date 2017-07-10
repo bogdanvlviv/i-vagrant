@@ -85,10 +85,10 @@ sudo bash "ubuntu/network-manager/install-network-manager.sh"
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-bash "ubuntu/nodejs/install-nvm.sh" 0.33.2
-bash "ubuntu/nodejs/install-nodejs.sh" 8.1.0
-sudo bash "ubuntu/nodejs/install-yarn.sh"
-bash "ubuntu/nodejs/install-eslint.sh"
+# bash "ubuntu/nodejs/install-nvm.sh" 0.33.2
+# bash "ubuntu/nodejs/install-nodejs.sh" 8.1.0
+# sudo bash "ubuntu/nodejs/install-yarn.sh"
+# bash "ubuntu/nodejs/install-eslint.sh"
 
 # phantomjs
 # sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
