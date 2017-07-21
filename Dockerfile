@@ -52,7 +52,7 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # RUN sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 
 # java
-# RUN sudo bash "ubuntu/java/install-java.sh" 9
+# RUN sudo bash "ubuntu/java/install-java.sh" 8
 
 # letsencrypt
 # RUN sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"

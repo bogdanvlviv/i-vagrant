@@ -157,7 +157,7 @@ sudo bash "ubuntu/java/install-java.sh" JAVA_VERSION
 ```
 
 ###### Required arguments:
-`JAVA_VERSION` - example values: `7` or `8`, ...
+`JAVA_VERSION` - example values: `8`, ...
 
 ##### letsencrypt
 To configure `ubuntu.sh` file for installing `letsencrypt` need to set the row

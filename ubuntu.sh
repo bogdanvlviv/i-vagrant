@@ -58,7 +58,7 @@ sudo bash "ubuntu/htop/install-htop.sh"
 sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 
 # java
-sudo bash "ubuntu/java/install-java.sh" 9
+sudo bash "ubuntu/java/install-java.sh" 8
 
 # letsencrypt
 # sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"

@@ -150,7 +150,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
 
   # java
-  # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '9', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '8', privileged: true
 
   # letsencrypt
   # config.vm.provision :shell, path: 'ubuntu/letsencrypt/install-letsencrypt.sh', privileged: true
