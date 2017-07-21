@@ -132,7 +132,7 @@ RUN bash "ubuntu/tmux/install-dottmux.sh"
 # RUN sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.5
+# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.7
 
 # vim
 RUN sudo bash "ubuntu/vim/install-vim.sh"

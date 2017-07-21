@@ -32,7 +32,7 @@ sudo bash "ubuntu/curl/install-curl.sh"
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 
 # elasticsearch
-sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.4.1
+# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.4.1
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -61,22 +61,22 @@ sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 sudo bash "ubuntu/java/install-java.sh" 9
 
 # letsencrypt
-sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
+# sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
 
 # libxml2
 sudo bash "ubuntu/libxml2/install-libxml2.sh" libxml2-dev
 
 # mc
-sudo bash "ubuntu/mc/install-mc.sh"
+# sudo bash "ubuntu/mc/install-mc.sh"
 
 # mongodb
-sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.4 $UBUNTU_RELEASE_CODENAME
+# sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.4 $UBUNTU_RELEASE_CODENAME
 
 # mosh
 sudo bash "ubuntu/mosh/install-mosh.sh"
 
 # mysql
-sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
+# sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
 
 # network-manager
 sudo bash "ubuntu/network-manager/install-network-manager.sh"
@@ -94,29 +94,29 @@ sudo bash "ubuntu/nmap/install-nmap.sh"
 # sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
 # postgresql
-sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.6 $UBUNTU_RELEASE_CODENAME libpq-dev
-sudo bash "ubuntu/postgresql/create-user.sh" root admin
+# sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.6 $UBUNTU_RELEASE_CODENAME libpq-dev
+# sudo bash "ubuntu/postgresql/create-user.sh" root admin
 
 # readline
 bash "ubuntu/readline/set-inputrc.sh"
 
 # redis
-sudo bash "ubuntu/redis/install-redis.sh"
+# sudo bash "ubuntu/redis/install-redis.sh"
 
 # ruby
 sudo bash "ubuntu/ruby/install-rbenv.sh"
 sudo bash "ubuntu/ruby/install-ruby-build.sh"
 sudo bash "ubuntu/ruby/install-rbenv-ctags.sh"
 sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 1.9.3-p551 bundler
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.0.0-p648 bundler
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.1.9 bundler
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.7 bundler
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.4 bundler
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 1.9.3-p551 bundler
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.0.0-p648 bundler
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.1.9 bundler
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.7 bundler
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.4 bundler
 sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.1 bundler jekyll rails rubocop tmuxinator
 
 # sqlite3
-sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
+# sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
 
 # ssh
 sudo bash "ubuntu/ssh/install-openssh-client.sh"
@@ -138,7 +138,7 @@ sudo bash "ubuntu/tor/install-tor.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.5
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.7
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
