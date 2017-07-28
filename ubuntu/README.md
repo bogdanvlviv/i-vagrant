@@ -34,6 +34,7 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 - [letsencrypt](#letsencrypt)
 - [libxml2](#libxml2)
 - [mc](#mc)
+- [memcached](#memcached)
 - [mongodb](#mongodb)
 - [mosh](#mosh)
 - [mysql](#mysql)
@@ -178,6 +179,12 @@ sudo bash "ubuntu/libxml2/install-libxml2.sh" ADDITIONAL_LIBRARIES
 To configure `ubuntu.sh` file for installing `mc` need to set the row
 ```bash
 sudo bash "ubuntu/mc/install-mc.sh"
+```
+
+##### memcached
+To configure `ubuntu.sh` file for installing `memcached` need to set the row
+```bash
+sudo bash "ubuntu/memcached/install-memcached.sh"
 ```
 
 ##### mongodb

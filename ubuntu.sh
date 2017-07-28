@@ -69,6 +69,9 @@ sudo bash "ubuntu/libxml2/install-libxml2.sh" libxml2-dev
 # mc
 # sudo bash "ubuntu/mc/install-mc.sh"
 
+# memcached
+# sudo bash "ubuntu/memcached/install-memcached.sh"
+
 # mongodb
 # sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.4 $UBUNTU_RELEASE_CODENAME
 

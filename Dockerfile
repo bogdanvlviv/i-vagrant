@@ -63,6 +63,9 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # mc
 # RUN sudo bash "ubuntu/mc/install-mc.sh"
 
+# memcached
+# RUN sudo bash "ubuntu/memcached/install-memcached.sh"
+
 # mongodb
 # RUN sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.4 xenial
 

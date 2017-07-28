@@ -160,6 +160,9 @@ Vagrant.configure('2') do |config|
   # mc
   # config.vm.provision :shell, path: 'ubuntu/mc/install-mc.sh', privileged: true
 
+  # memcached
+  # config.vm.provision :shell, path: 'ubuntu/memcached/install-memcached.sh', privileged: true
+
   # mongodb
   # config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.4 xenial', privileged: true
 
