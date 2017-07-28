@@ -209,11 +209,19 @@ To configure `ubuntu.sh` file for installing `mysql` need to set the row
 ```bash
 sudo bash "ubuntu/mysql/install-mysql.sh" MYSQL_USER_ROOT_PASSWORD ADDITIONAL_LIBRARIES
 ```
+To configure `ubuntu.sh` file for installing `mariadb` need to set the row
+```bash
+sudo bash "ubuntu/mysql/install-mariadb.sh" MARIADB_VERSION UBUNTU_RELEASE_CODENAME MYSQL_USER_ROOT_PASSWORD ADDITIONAL_LIBRARIES
+```
 
 ###### Required arguments:
 `MYSQL_USER_ROOT_PASSWORD` - example values: `password` or `password1`, ...
 
-During installing MySQL create `mysql user` named `root`, need to set password for him.
+`MARIADB_VERSION` - example values: `10.1` or `10.2`, ...
+
+`UBUNTU_RELEASE_CODENAME` - example values: `trusty`, `xenial`, ...
+
+During installing MySQL/MariaDB creates `mysql user` named `root`, need to set password for him.
 
 ###### Optional arguments:
 `ADDITIONAL_LIBRARIES` - example values: `libmysqlclient-dev` or `libmysqlclient-dev mysql-testsuite`, ...

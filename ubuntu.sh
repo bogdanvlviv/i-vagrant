@@ -80,6 +80,7 @@ sudo bash "ubuntu/mosh/install-mosh.sh"
 
 # mysql
 # sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
+# sudo bash "ubuntu/mysql/install-mariadb.sh" 10.2 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
 
 # network-manager
 sudo bash "ubuntu/network-manager/install-network-manager.sh"

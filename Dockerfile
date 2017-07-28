@@ -74,6 +74,7 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 
 # mysql
 # RUN sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
+# RUN sudo bash "ubuntu/mysql/install-mariadb.sh" 10.2 xenial admin libmysqlclient-dev
 
 # network-manager
 RUN sudo bash "ubuntu/network-manager/install-network-manager.sh"

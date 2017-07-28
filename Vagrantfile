@@ -171,6 +171,7 @@ Vagrant.configure('2') do |config|
 
   # mysql
   # config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/mysql/install-mariadb.sh', args: '10.2 xenial admin libmysqlclient-dev', privileged: true
 
   # network-manager
   config.vm.provision :shell, path: 'ubuntu/network-manager/install-network-manager.sh', privileged: true
