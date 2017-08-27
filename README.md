@@ -1,7 +1,7 @@
 # i-vagrant
-i-vagrant helps set up a development environment easily.
+i-vagrant helps to set up a (development) environment.
 
-Try to fork this repository and build i-vagrant for own needs.
+Try to fork this idea and build for own needs.
 
 ## Getting Started Guide
 Download i-vagrant
