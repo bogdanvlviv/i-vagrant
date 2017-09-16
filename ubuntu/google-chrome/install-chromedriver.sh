@@ -8,6 +8,8 @@ fi
 apt-get install -y curl
 # "ubuntu/curl/install-curl.sh"
 
+apt-get install -y unzip
+
 rm /tmp/chromedriver_linux64.zip
 rm -fr /tmp/chromedriver_linux64
 curl -L https://chromedriver.storage.googleapis.com/$1/chromedriver_linux64.zip -o /tmp/chromedriver_linux64.zip
