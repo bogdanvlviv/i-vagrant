@@ -32,7 +32,7 @@ sudo bash "ubuntu/curl/install-curl.sh"
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 
 # elasticsearch
-# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.4.1
+# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.6.0
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -46,7 +46,7 @@ sudo bash "ubuntu/git/install-git.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.30
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.32
 
 # graphviz
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
@@ -89,8 +89,8 @@ sudo bash "ubuntu/network-manager/install-network-manager.sh"
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-# bash "ubuntu/nodejs/install-nvm.sh" 0.33.2
-# bash "ubuntu/nodejs/install-nodejs.sh" 8.1.0
+# bash "ubuntu/nodejs/install-nvm.sh" 0.33.4
+# bash "ubuntu/nodejs/install-nodejs.sh" 8.5.0
 # sudo bash "ubuntu/nodejs/install-yarn.sh"
 # bash "ubuntu/nodejs/install-eslint.sh"
 
@@ -115,9 +115,9 @@ sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 1.9.3-p551 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.0.0-p648 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.1.9 bundler
-# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.7 bundler
-# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.4 bundler
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.1 bundler jekyll rails rubocop tmuxinator
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.8 bundler
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.5 bundler
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.2 bundler jekyll rails rubocop tmuxinator
 
 # sqlite3
 # sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
@@ -142,7 +142,7 @@ sudo bash "ubuntu/tor/install-tor.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.7
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.0.0
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"

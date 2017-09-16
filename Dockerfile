@@ -26,7 +26,7 @@ RUN sudo bash "ubuntu/curl/install-curl.sh"
 # RUN sudo bash "ubuntu/docker/install-docker.sh" xenial
 
 # elasticsearch
-# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.4.1
+# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.6.0
 
 # exuberant-ctags
 RUN sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -40,7 +40,7 @@ RUN sudo bash "ubuntu/git/install-git.sh"
 
 # google-chrome
 # RUN sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.30
+# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.32
 
 # graphviz
 # RUN sudo bash "ubuntu/graphviz/install-graphviz.sh"
@@ -83,8 +83,8 @@ RUN sudo bash "ubuntu/network-manager/install-network-manager.sh"
 RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-# RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.2
-# RUN bash "ubuntu/nodejs/install-nodejs.sh" 8.1.0
+# RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.4
+# RUN bash "ubuntu/nodejs/install-nodejs.sh" 8.5.0
 # RUN sudo bash "ubuntu/nodejs/install-yarn.sh"
 # RUN bash "ubuntu/nodejs/install-eslint.sh"
 
@@ -109,9 +109,9 @@ RUN bash "ubuntu/readline/set-inputrc.sh"
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 1.9.3-p551 bundler
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.0.0-p648 bundler
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.1.9 bundler
-# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.7 bundler
-# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.4 bundler
-# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.1 bundler jekyll rails rubocop tmuxinator
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.8 bundler
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.5 bundler
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.2 bundler jekyll rails rubocop tmuxinator
 
 # sqlite3
 # RUN sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
@@ -136,7 +136,7 @@ RUN bash "ubuntu/tmux/install-dottmux.sh"
 # RUN sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 1.9.7
+# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.0.0
 
 # vim
 RUN sudo bash "ubuntu/vim/install-vim.sh"

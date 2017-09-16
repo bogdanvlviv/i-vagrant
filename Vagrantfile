@@ -123,7 +123,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/docker/install-docker.sh', args: 'xenial', privileged: true
 
   # elasticsearch
-  # config.vm.provision :shell, path: 'ubuntu/elasticsearch/install-elasticsearch.sh', args: '5.4.1', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/elasticsearch/install-elasticsearch.sh', args: '5.6.0', privileged: true
 
   # exuberant-ctags
   config.vm.provision :shell, path: 'ubuntu/exuberant-ctags/install-exuberant-ctags.sh', privileged: true
@@ -137,7 +137,7 @@ Vagrant.configure('2') do |config|
 
   # google-chrome
   # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-google-chrome.sh', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-chromedriver.sh', args: '2.30', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-chromedriver.sh', args: '2.32', privileged: true
 
   # graphviz
   # config.vm.provision :shell, path: 'ubuntu/graphviz/install-graphviz.sh', privileged: true
@@ -180,8 +180,8 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
 
   # nodejs
-  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.2', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '8.1.0', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.4', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '8.5.0', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-yarn.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-eslint.sh', privileged: false
 
@@ -206,9 +206,9 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 1.9.3-p551 bundler', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.0.0-p648 bundler', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.1.9 bundler', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.2.7 bundler', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.3.4 bundler', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.4.1 bundler jekyll rails rubocop tmuxinator', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.2.8 bundler', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.3.5 bundler', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.4.2 bundler jekyll rails rubocop tmuxinator', privileged: true
 
   # sqlite3
   # config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
@@ -233,7 +233,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/tree/install-tree.sh', privileged: true
 
   # vagrant
-  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '1.9.7', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '2.0.0', privileged: true
 
   # vim
   config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
