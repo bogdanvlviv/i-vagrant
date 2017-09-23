@@ -28,6 +28,7 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 - [git](#git)
 - [google-chrome](#google-chrome)
 - [graphviz](#graphviz)
+- [heroku](#heroku)
 - [htop](#htop)
 - [imagemagick](#imagemagick)
 - [java](#java)
@@ -137,6 +138,12 @@ sudo bash "ubuntu/google-chrome/install-chromedriver.sh" CHROMEDRIVER_VERSION
 To configure `ubuntu.sh` file for installing `graphviz` need to set the row
 ```bash
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
+```
+
+##### heroku
+To configure `ubuntu.sh` file for installing `heroku-cli` need to set the row
+```bash
+sudo bash "ubuntu/heroku/install-heroku-cli.sh"
 ```
 
 ##### htop

@@ -45,6 +45,9 @@ RUN sudo bash "ubuntu/git/install-git.sh"
 # graphviz
 # RUN sudo bash "ubuntu/graphviz/install-graphviz.sh"
 
+# heroku
+# RUN sudo bash "ubuntu/heroku/install-heroku-cli.sh"
+
 # htop
 RUN sudo bash "ubuntu/htop/install-htop.sh"
 

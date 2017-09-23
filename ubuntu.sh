@@ -51,6 +51,9 @@ sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.32
 # graphviz
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
 
+# heroku
+# sudo bash "ubuntu/heroku/install-heroku-cli.sh"
+
 # htop
 sudo bash "ubuntu/htop/install-htop.sh"
 

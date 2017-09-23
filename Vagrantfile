@@ -142,6 +142,9 @@ Vagrant.configure('2') do |config|
   # graphviz
   # config.vm.provision :shell, path: 'ubuntu/graphviz/install-graphviz.sh', privileged: true
 
+  # heroku
+  # config.vm.provision :shell, path: 'ubuntu/heroku/install-heroku-cli.sh', privileged: true
+
   # htop
   config.vm.provision :shell, path: 'ubuntu/htop/install-htop.sh', privileged: true
 
