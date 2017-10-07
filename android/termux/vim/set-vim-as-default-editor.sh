@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-sed -i "1ialias vi='vim'\n" ~/.bashrc
-sed -i "1iexport EDITOR=\"vim\"" ~/.bashrc
+echo "alias vi='vim'" | tee -a ~/.bashrc > /dev/null
+echo "export EDITOR=\"vim\"" | tee -a ~/.bashrc > /dev/null

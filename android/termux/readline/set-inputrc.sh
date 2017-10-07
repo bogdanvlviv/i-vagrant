@@ -2,4 +2,6 @@
 
 rm ~/.inputrc
 
-echo "set editing-mode vi" | tee ~/.inputrc > /dev/null
+cat <<EOF | tee ~/.inputrc > /dev/null
+set editing-mode vi
+EOF
