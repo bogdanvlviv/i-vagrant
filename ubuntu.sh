@@ -13,8 +13,6 @@ fi
 
 UBUNTU_RELEASE_CODENAME="xenial"
 
-USER_NAME=$(id -un)
-
 export RUN_APT_GET_UPDATE_BEFORE="no"
 
 # upgrade
@@ -113,7 +111,7 @@ bash "ubuntu/readline/set-inputrc.sh"
 # sudo bash "ubuntu/redis/install-redis.sh"
 
 # ruby
-sudo bash "ubuntu/ruby/install-rbenv.sh" $USER_NAME
+sudo bash "ubuntu/ruby/install-rbenv.sh"
 sudo bash "ubuntu/ruby/install-ruby-build.sh"
 sudo bash "ubuntu/ruby/install-rbenv-ctags.sh"
 sudo bash "ubuntu/ruby/install-rbenv-vars.sh"

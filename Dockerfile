@@ -105,7 +105,7 @@ RUN bash "ubuntu/readline/set-inputrc.sh"
 # RUN sudo bash "ubuntu/redis/install-redis.sh"
 
 # ruby
-# RUN sudo bash "ubuntu/ruby/install-rbenv.sh" root
+# RUN sudo bash "ubuntu/ruby/install-rbenv.sh"
 # RUN sudo bash "ubuntu/ruby/install-ruby-build.sh"
 # RUN sudo bash "ubuntu/ruby/install-rbenv-ctags.sh"
 # RUN sudo bash "ubuntu/ruby/install-rbenv-vars.sh"

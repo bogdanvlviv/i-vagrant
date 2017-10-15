@@ -312,7 +312,7 @@ sudo bash "ubuntu/redis/install-redis.sh"
 ##### ruby
 To configure `ubuntu.sh` file for installing `rbenv` need to set the row
 ```bash
-sudo bash "ubuntu/ruby/install-rbenv.sh" USER_NAME
+sudo bash "ubuntu/ruby/install-rbenv.sh"
 ```
 To configure `ubuntu.sh` file for installing `rvm` need to set the row
 (See more about installing `rvm` with sudo privileges [here](https://rvm.io/rvm/install)).
@@ -344,8 +344,6 @@ sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 `RVM_VERSION` - example values: `stable` or `head`, ...
 
 `RUBY_VERSION` - example values: `1.9.3` or `1.9.3-p551` or `2.3.1`, ...
-
-`USER_NAME` - example values: $(id -un), $USER, $(whoami), ...
 
 ###### Optional arguments:
 `ADDITIONAL_GEMS` - example values: `bundler` or `bundler rails`, ...

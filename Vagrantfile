@@ -202,7 +202,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/redis/install-redis.sh', privileged: true
 
   # ruby
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-rbenv.sh', args: 'ubuntu', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-rbenv.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby-build.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-rbenv-ctags.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-rbenv-vars.sh', privileged: true
