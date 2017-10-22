@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-apt-get update
+apt update
 
-apt-get upgrade -y
+apt upgrade -y
 
-apt-get install -y software-properties-common
-apt-get install -y build-essential
-apt-get install -y apt-transport-https
+apt install -y software-properties-common
+apt install -y build-essential
+apt install -y apt-transport-https

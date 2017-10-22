@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
-if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
-  apt-get update
+if [[ "$RUN_APT_UPDATE_BEFORE" != "no" ]]; then
+  apt update
 fi
 
 # "ubuntu/git/install-git.sh"
-apt-get install -y git
+apt install -y git
 # "ubuntu/git/install-git.sh"
 
 # "ubuntu/curl/install-curl.sh"
-apt-get install -y curl
+apt install -y curl
 # "ubuntu/curl/install-curl.sh"
 
-apt-get install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+apt install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
 
 rm -fr ~/.rbenv/plugins/ruby-build
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build

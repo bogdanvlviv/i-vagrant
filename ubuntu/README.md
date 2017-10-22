@@ -7,9 +7,9 @@ $ source ubuntu.sh
 
 #### How to configure `ubuntu.sh` file
 
-To configure `ubuntu.sh` don't run `apt-get update` before some scripts need to set the row
+To configure `ubuntu.sh` don't run `apt update` before some scripts need to set the row
 ```bash
-export RUN_APT_GET_UPDATE_BEFORE="no"
+export RUN_APT_UPDATE_BEFORE="no"
 ```
 
 ##### upgrade

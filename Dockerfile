@@ -1,13 +1,13 @@
 FROM ubuntu:16.04
 
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get install -y sudo
+RUN apt update
+RUN apt upgrade -y
+RUN apt install -y sudo
 
 COPY . /tmp/i-vagrant
 WORKDIR /tmp/i-vagrant
 
-ENV RUN_APT_GET_UPDATE_BEFORE "no"
+ENV RUN_APT_UPDATE_BEFORE "no"
 
 # upgrade
 RUN sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"

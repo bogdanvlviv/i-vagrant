@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
-  apt-get update
+if [[ "$RUN_APT_UPDATE_BEFORE" != "no" ]]; then
+  apt update
 fi
 
-apt-get install -y libxml2
+apt install -y libxml2
 
 if (( $# )); then
-  apt-get install -y $@
+  apt install -y $@
 fi

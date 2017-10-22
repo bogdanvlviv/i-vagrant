@@ -13,7 +13,7 @@ fi
 
 UBUNTU_RELEASE_CODENAME="xenial"
 
-export RUN_APT_GET_UPDATE_BEFORE="no"
+export RUN_APT_UPDATE_BEFORE="no"
 
 # upgrade
 sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"

@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
-if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
-  apt-get update
+if [[ "$RUN_APT_UPDATE_BEFORE" != "no" ]]; then
+  apt update
 fi
 
 # "ubuntu/curl/install-curl.sh"
-apt-get install -y curl
+apt install -y curl
 # "ubuntu/curl/install-curl.sh"
 
-apt-get install -y build-essential
+apt install -y build-essential
 
 rm /tmp/redis-stable.tar.gz
 rm -fr /tmp/redis-stable

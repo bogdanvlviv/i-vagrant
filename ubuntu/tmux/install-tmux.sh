@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
-if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
-  apt-get update
+if [[ "$RUN_APT_UPDATE_BEFORE" != "no" ]]; then
+  apt update
 fi
 
 # "ubuntu/git/install-git.sh"
-apt-get install -y git
+apt install -y git
 # "ubuntu/git/install-git.sh"
 
-apt-get install -y build-essential
-apt-get install -y libevent-dev
-apt-get install -y pkg-config
-apt-get install -y automake
+apt install -y build-essential
+apt install -y libevent-dev
+apt install -y pkg-config
+apt install -y automake
 
 rm -fr /tmp/tmux
 git clone https://github.com/tmux/tmux.git /tmp/tmux

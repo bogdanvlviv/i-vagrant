@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
-  apt-get update
+if [[ "$RUN_APT_UPDATE_BEFORE" != "no" ]]; then
+  apt update
 fi
 
-apt-get install -y git
+apt install -y git

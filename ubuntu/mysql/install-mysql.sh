@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
-if [[ "$RUN_APT_GET_UPDATE_BEFORE" != "no" ]]; then
-  apt-get update
+if [[ "$RUN_APT_UPDATE_BEFORE" != "no" ]]; then
+  apt update
 fi
 
 echo "mysql-server mysql-server/root_password password $1" | debconf-set-selections
 echo "mysql-server mysql-server/root_password_again password $1" | debconf-set-selections
 
-apt-get install -y mysql-server
+apt install -y mysql-server
 
 shift
 
 if (( $# )); then
-  apt-get install -y $@
+  apt install -y $@
 fi
