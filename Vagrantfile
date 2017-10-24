@@ -123,7 +123,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/docker/install-docker.sh', args: 'xenial', privileged: true
 
   # elasticsearch
-  # config.vm.provision :shell, path: 'ubuntu/elasticsearch/install-elasticsearch.sh', args: '5.6.0', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/elasticsearch/install-elasticsearch.sh', args: '5.6.3', privileged: true
 
   # exuberant-ctags
   config.vm.provision :shell, path: 'ubuntu/exuberant-ctags/install-exuberant-ctags.sh', privileged: true
@@ -137,7 +137,7 @@ Vagrant.configure('2') do |config|
 
   # google-chrome
   # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-google-chrome.sh', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-chromedriver.sh', args: '2.32', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-chromedriver.sh', args: '2.33', privileged: true
 
   # graphviz
   # config.vm.provision :shell, path: 'ubuntu/graphviz/install-graphviz.sh', privileged: true
@@ -152,7 +152,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
 
   # java
-  # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '8', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '9', privileged: true
 
   # letsencrypt
   # config.vm.provision :shell, path: 'ubuntu/letsencrypt/install-letsencrypt.sh', privileged: true
@@ -183,8 +183,8 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
 
   # nodejs
-  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.4', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '8.5.0', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.6', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '8.7.0', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-yarn.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-eslint.sh', privileged: false
 
@@ -192,7 +192,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/phantomjs/install-phantomjs.sh', privileged: true
 
   # postgresql
-  # config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '9.6 xenial libpq-dev', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '10 xenial libpq-dev', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
 
   # readline

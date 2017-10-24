@@ -26,7 +26,7 @@ RUN sudo bash "ubuntu/curl/install-curl.sh"
 # RUN sudo bash "ubuntu/docker/install-docker.sh" xenial
 
 # elasticsearch
-# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.6.0
+# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.6.3
 
 # exuberant-ctags
 RUN sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -40,7 +40,7 @@ RUN sudo bash "ubuntu/git/install-git.sh"
 
 # google-chrome
 # RUN sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.32
+# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.33
 
 # graphviz
 # RUN sudo bash "ubuntu/graphviz/install-graphviz.sh"
@@ -55,7 +55,7 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # RUN sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 
 # java
-# RUN sudo bash "ubuntu/java/install-java.sh" 8
+# RUN sudo bash "ubuntu/java/install-java.sh" 9
 
 # letsencrypt
 # RUN sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
@@ -86,8 +86,8 @@ RUN sudo bash "ubuntu/network-manager/install-network-manager.sh"
 RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-# RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.4
-# RUN bash "ubuntu/nodejs/install-nodejs.sh" 8.5.0
+# RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.6
+# RUN bash "ubuntu/nodejs/install-nodejs.sh" 8.7.0
 # RUN sudo bash "ubuntu/nodejs/install-yarn.sh"
 # RUN bash "ubuntu/nodejs/install-eslint.sh"
 
@@ -95,7 +95,7 @@ RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 # RUN sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
 # postgresql
-# RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 9.6 xenial libpq-dev
+# RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 xenial libpq-dev
 # RUN sudo bash "ubuntu/postgresql/create-user.sh" root admin
 
 # readline
