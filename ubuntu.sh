@@ -120,7 +120,8 @@ sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.1.9 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.8 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.5 bundler
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.2 bundler jekyll rails rubocop tmuxinator
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.2 bundler jekyll rabbit rails rubocop tmuxinator
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.0-dev jekyll rabbit rails rubocop tmuxinator
 
 # sqlite3
 # sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
