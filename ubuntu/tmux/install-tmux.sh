@@ -8,10 +8,10 @@ fi
 apt install -y git
 # "ubuntu/git/install-git.sh"
 
-apt install -y build-essential
-apt install -y libevent-dev
-apt install -y pkg-config
 apt install -y automake
+apt install -y build-essential
+apt install -y pkg-config
+apt install -y libevent-dev
 apt install -y libncurses5-dev
 
 rm -fr /tmp/tmux
