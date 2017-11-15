@@ -12,6 +12,7 @@ apt install -y build-essential
 apt install -y libevent-dev
 apt install -y pkg-config
 apt install -y automake
+apt install -y libncurses5-dev
 
 rm -fr /tmp/tmux
 git clone https://github.com/tmux/tmux.git /tmp/tmux
