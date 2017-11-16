@@ -116,6 +116,9 @@ RUN bash "ubuntu/readline/set-inputrc.sh"
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.5 bundler
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.2 bundler jekyll rails rubocop tmuxinator
 
+# simplescreenrecorder
+# RUN sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
+
 # sqlite3
 # RUN sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
 

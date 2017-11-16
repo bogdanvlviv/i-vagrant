@@ -213,6 +213,9 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.3.5 bundler', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.4.2 bundler jekyll rails rubocop tmuxinator', privileged: true
 
+  # simplescreenrecorder
+  # config.vm.provision :shell, path: 'ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh', privileged: true
+
   # sqlite3
   # config.vm.provision :shell, path: 'ubuntu/sqlite3/install-sqlite3.sh', args: 'libsqlite3-dev', privileged: true
 
