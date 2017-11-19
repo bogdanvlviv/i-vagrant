@@ -37,6 +37,9 @@ sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
 
+# ffmpeg
+sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
+
 # fzf
 bash "ubuntu/fzf/install-fzf.sh"
 bash "ubuntu/fzf/set-fzf_default_command.sh"
@@ -77,6 +80,9 @@ sudo bash "ubuntu/libxml2/install-libxml2.sh" libxml2-dev
 
 # mongodb
 # sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.4 $UBUNTU_RELEASE_CODENAME
+
+# mupdf
+sudo bash "ubuntu/mupdf/install-mupdf.sh"
 
 # mosh
 sudo bash "ubuntu/mosh/install-mosh.sh"

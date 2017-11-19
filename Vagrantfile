@@ -128,6 +128,9 @@ Vagrant.configure('2') do |config|
   # exuberant-ctags
   config.vm.provision :shell, path: 'ubuntu/exuberant-ctags/install-exuberant-ctags.sh', privileged: true
 
+  # ffmpeg
+  config.vm.provision :shell, path: 'ubuntu/ffmpeg/install-ffmpeg.sh', privileged: true
+
   # fzf
   config.vm.provision :shell, path: 'ubuntu/fzf/install-fzf.sh', privileged: false
   config.vm.provision :shell, path: 'ubuntu/fzf/set-fzf_default_command.sh', privileged: false
@@ -168,6 +171,9 @@ Vagrant.configure('2') do |config|
 
   # mongodb
   # config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.4 xenial', privileged: true
+
+  # mupdf
+  # config.vm.provision :shell, path: 'ubuntu/mupdf/install-mupdf.sh', privileged: true
 
   # mosh
   # config.vm.provision :shell, path: 'ubuntu/mosh/install-mosh.sh', privileged: true

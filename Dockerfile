@@ -31,6 +31,9 @@ RUN sudo bash "ubuntu/curl/install-curl.sh"
 # exuberant-ctags
 RUN sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
 
+# ffmpeg
+RUN sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
+
 # fzf
 RUN bash "ubuntu/fzf/install-fzf.sh"
 RUN bash "ubuntu/fzf/set-fzf_default_command.sh"
@@ -71,6 +74,9 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 
 # mongodb
 # RUN sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.4 xenial
+
+# mupdf
+# RUN sudo bash "ubuntu/mupdf/install-mupdf.sh"
 
 # mosh
 # RUN sudo bash "ubuntu/mosh/install-mosh.sh"
