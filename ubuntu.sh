@@ -40,6 +40,10 @@ sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
 # ffmpeg
 sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 
+# firefox
+sudo bash "ubuntu/firefox/install-firefox.sh"
+sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.19.1
+
 # fzf
 bash "ubuntu/fzf/install-fzf.sh"
 bash "ubuntu/fzf/set-fzf_default_command.sh"

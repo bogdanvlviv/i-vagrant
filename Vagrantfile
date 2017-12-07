@@ -131,6 +131,10 @@ Vagrant.configure('2') do |config|
   # ffmpeg
   config.vm.provision :shell, path: 'ubuntu/ffmpeg/install-ffmpeg.sh', privileged: true
 
+  # firefox
+  config.vm.provision :shell, path: 'ubuntu/firefox/install-firefox.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/firefox/install-geckodriver.sh', args: '0.19.1', privileged: true
+
   # fzf
   config.vm.provision :shell, path: 'ubuntu/fzf/install-fzf.sh', privileged: false
   config.vm.provision :shell, path: 'ubuntu/fzf/set-fzf_default_command.sh', privileged: false

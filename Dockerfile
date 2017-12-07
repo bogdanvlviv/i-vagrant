@@ -34,6 +34,10 @@ RUN sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
 # ffmpeg
 RUN sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 
+# firefox
+RUN sudo bash "ubuntu/firefox/install-firefox.sh"
+RUN sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.19.1
+
 # fzf
 RUN bash "ubuntu/fzf/install-fzf.sh"
 RUN bash "ubuntu/fzf/set-fzf_default_command.sh"
