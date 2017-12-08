@@ -32,7 +32,7 @@ sudo bash "ubuntu/curl/install-curl.sh"
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 
 # elasticsearch
-# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.6.3
+sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.6.3
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -59,7 +59,7 @@ sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.33
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
 
 # heroku
-# sudo bash "ubuntu/heroku/install-heroku-cli.sh"
+sudo bash "ubuntu/heroku/install-heroku-cli.sh"
 
 # htop
 sudo bash "ubuntu/htop/install-htop.sh"
@@ -71,19 +71,19 @@ sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 sudo bash "ubuntu/java/install-java.sh" 9
 
 # letsencrypt
-# sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
+sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
 
 # libxml2
 sudo bash "ubuntu/libxml2/install-libxml2.sh" libxml2-dev
 
 # mc
-# sudo bash "ubuntu/mc/install-mc.sh"
+sudo bash "ubuntu/mc/install-mc.sh"
 
 # memcached
-# sudo bash "ubuntu/memcached/install-memcached.sh"
+sudo bash "ubuntu/memcached/install-memcached.sh"
 
 # mongodb
-# sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.4 $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.4 $UBUNTU_RELEASE_CODENAME
 
 # mupdf
 sudo bash "ubuntu/mupdf/install-mupdf.sh"
@@ -93,7 +93,7 @@ sudo bash "ubuntu/mosh/install-mosh.sh"
 
 # mysql
 # sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
-# sudo bash "ubuntu/mysql/install-mariadb.sh" 10.2 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
+sudo bash "ubuntu/mysql/install-mariadb.sh" 10.2 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
 
 # network-manager
 sudo bash "ubuntu/network-manager/install-network-manager.sh"
@@ -102,23 +102,23 @@ sudo bash "ubuntu/network-manager/install-network-manager.sh"
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-# bash "ubuntu/nodejs/install-nvm.sh" 0.33.6
-# bash "ubuntu/nodejs/install-nodejs.sh" 8.7.0
-# sudo bash "ubuntu/nodejs/install-yarn.sh"
-# bash "ubuntu/nodejs/install-eslint.sh"
+bash "ubuntu/nodejs/install-nvm.sh" 0.33.6
+bash "ubuntu/nodejs/install-nodejs.sh" 8.7.0
+sudo bash "ubuntu/nodejs/install-yarn.sh"
+bash "ubuntu/nodejs/install-eslint.sh"
 
 # phantomjs
-# sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
+sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
 # postgresql
-# sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 $UBUNTU_RELEASE_CODENAME libpq-dev
-# sudo bash "ubuntu/postgresql/create-user.sh" root admin
+sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 $UBUNTU_RELEASE_CODENAME libpq-dev
+sudo bash "ubuntu/postgresql/create-user.sh" root admin
 
 # readline
 bash "ubuntu/readline/set-inputrc.sh"
 
 # redis
-# sudo bash "ubuntu/redis/install-redis.sh"
+sudo bash "ubuntu/redis/install-redis.sh"
 
 # ruby
 sudo bash "ubuntu/ruby/install-rbenv.sh"
@@ -134,10 +134,10 @@ sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.2 bundler jekyll rabbit rails 
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.0-dev jekyll rabbit rails rubocop tmuxinator
 
 # simplescreenrecorder
-# sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
+sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
 
 # sqlite3
-# sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
+sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
 
 # ssh
 sudo bash "ubuntu/ssh/install-openssh-client.sh"
