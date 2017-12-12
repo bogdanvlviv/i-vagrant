@@ -92,6 +92,9 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # network-manager
 RUN sudo bash "ubuntu/network-manager/install-network-manager.sh"
 
+# nginx
+RUN sudo bash "ubuntu/nginx/install-nginx.sh"
+
 # nmap
 RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 

@@ -98,6 +98,9 @@ sudo bash "ubuntu/mysql/install-mariadb.sh" 10.2 $UBUNTU_RELEASE_CODENAME admin 
 # network-manager
 sudo bash "ubuntu/network-manager/install-network-manager.sh"
 
+# nginx
+sudo bash "ubuntu/nginx/install-nginx.sh"
+
 # nmap
 sudo bash "ubuntu/nmap/install-nmap.sh"
 

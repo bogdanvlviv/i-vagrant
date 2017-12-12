@@ -189,6 +189,9 @@ Vagrant.configure('2') do |config|
   # network-manager
   config.vm.provision :shell, path: 'ubuntu/network-manager/install-network-manager.sh', privileged: true
 
+  # nginx
+  config.vm.provision :shell, path: 'ubuntu/nginx/install-nginx.sh', privileged: true
+
   # nmap
   config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
 
