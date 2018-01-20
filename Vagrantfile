@@ -200,6 +200,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '8.7.0', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-yarn.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-eslint.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-stylelint.sh', privileged: false
 
   # overmind
   # config.vm.provision :shell, path: 'ubuntu/overmind/install-overmind.sh', args: '1.1.1', privileged: true
