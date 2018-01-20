@@ -110,6 +110,9 @@ bash "ubuntu/nodejs/install-nodejs.sh" 8.7.0
 sudo bash "ubuntu/nodejs/install-yarn.sh"
 bash "ubuntu/nodejs/install-eslint.sh"
 
+# overmind
+sudo bash "ubuntu/overmind/install-overmind.sh" 1.1.1
+
 # phantomjs
 sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 

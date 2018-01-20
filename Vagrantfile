@@ -201,6 +201,9 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-yarn.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-eslint.sh', privileged: false
 
+  # overmind
+  # config.vm.provision :shell, path: 'ubuntu/overmind/install-overmind.sh', args: '1.1.1', privileged: true
+
   # phantomjs
   # config.vm.provision :shell, path: 'ubuntu/phantomjs/install-phantomjs.sh', privileged: true
 

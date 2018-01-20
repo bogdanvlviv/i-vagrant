@@ -104,6 +104,9 @@ RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 # RUN sudo bash "ubuntu/nodejs/install-yarn.sh"
 # RUN bash "ubuntu/nodejs/install-eslint.sh"
 
+# overmind
+# RUN sudo bash "ubuntu/overmind/install-overmind.sh" 1.1.1
+
 # phantomjs
 # RUN sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
