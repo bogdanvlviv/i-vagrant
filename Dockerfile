@@ -38,9 +38,15 @@ RUN sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 RUN sudo bash "ubuntu/firefox/install-firefox.sh"
 RUN sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.19.1
 
+# flatpak
+# RUN sudo bash "ubuntu/flatpak/install-flatpak.sh"
+
 # fzf
 RUN bash "ubuntu/fzf/install-fzf.sh"
 RUN bash "ubuntu/fzf/set-fzf_default_command.sh"
+
+# gimp
+# RUN sudo bash "ubuntu/gimp/install-gimp.sh"
 
 # git
 RUN sudo bash "ubuntu/git/install-git.sh"

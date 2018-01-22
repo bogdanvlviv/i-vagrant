@@ -44,9 +44,15 @@ sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 sudo bash "ubuntu/firefox/install-firefox.sh"
 sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.19.1
 
+# flatpak
+sudo bash "ubuntu/flatpak/install-flatpak.sh"
+
 # fzf
 bash "ubuntu/fzf/install-fzf.sh"
 bash "ubuntu/fzf/set-fzf_default_command.sh"
+
+# gimp
+sudo bash "ubuntu/gimp/install-gimp.sh"
 
 # git
 sudo bash "ubuntu/git/install-git.sh"

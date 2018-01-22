@@ -135,9 +135,15 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/firefox/install-firefox.sh', privileged: true
   config.vm.provision :shell, path: 'ubuntu/firefox/install-geckodriver.sh', args: '0.19.1', privileged: true
 
+  # flatpak
+  # config.vm.provision :shell, path: 'ubuntu/flatpak/install-flatpak.sh', privileged: true
+
   # fzf
   config.vm.provision :shell, path: 'ubuntu/fzf/install-fzf.sh', privileged: false
   config.vm.provision :shell, path: 'ubuntu/fzf/set-fzf_default_command.sh', privileged: false
+
+  # gimp
+  # config.vm.provision :shell, path: 'ubuntu/gimp/install-gimp.sh', privileged: true
 
   # git
   config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
