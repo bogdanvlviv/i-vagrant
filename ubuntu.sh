@@ -120,6 +120,7 @@ sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 # postgresql
 sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 $UBUNTU_RELEASE_CODENAME libpq-dev
 sudo bash "ubuntu/postgresql/create-user.sh" root admin
+bash "ubuntu/postgresql/set-psqlrc.sh"
 
 # readline
 bash "ubuntu/readline/set-inputrc.sh"

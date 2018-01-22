@@ -211,6 +211,7 @@ Vagrant.configure('2') do |config|
   # postgresql
   # config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '10 xenial libpq-dev', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/postgresql/set-psqlrc.sh', privileged: false
 
   # readline
   config.vm.provision :shell, path: 'ubuntu/readline/set-inputrc.sh', privileged: false

@@ -114,6 +114,7 @@ RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 # postgresql
 # RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 xenial libpq-dev
 # RUN sudo bash "ubuntu/postgresql/create-user.sh" root admin
+# RUN bash "ubuntu/postgresql/set-psqlrc.sh"
 
 # readline
 RUN bash "ubuntu/readline/set-inputrc.sh"
