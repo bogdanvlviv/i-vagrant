@@ -122,6 +122,10 @@ RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 # RUN sudo bash "ubuntu/postgresql/create-user.sh" root admin
 # RUN bash "ubuntu/postgresql/set-psqlrc.sh"
 
+# python
+# RUN sudo bash "ubuntu/python/install-pyenv.sh"
+# RUN sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.14
+
 # readline
 RUN bash "ubuntu/readline/set-inputrc.sh"
 

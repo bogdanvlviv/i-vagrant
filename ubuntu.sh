@@ -128,6 +128,10 @@ sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 $UBUNTU_RELEASE_CODENAME 
 sudo bash "ubuntu/postgresql/create-user.sh" root admin
 bash "ubuntu/postgresql/set-psqlrc.sh"
 
+# python
+sudo bash "ubuntu/python/install-pyenv.sh"
+sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.14
+
 # readline
 bash "ubuntu/readline/set-inputrc.sh"
 

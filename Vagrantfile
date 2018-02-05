@@ -33,6 +33,10 @@ Vagrant.configure('2') do |config|
   # postgresql
   # config.vm.network 'forwarded_port', guest: 5432, host: 54321
 
+  # python
+  # config.vm.provision :shell, path: 'ubuntu/python/install-pyenv.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/python/install-python.sh', args: 'pyenv 2.7.14', privileged: true
+
   # rails
   # config.vm.network 'forwarded_port', guest: 3000, host: 30001
 
