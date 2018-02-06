@@ -218,6 +218,9 @@ Vagrant.configure('2') do |config|
   # phantomjs
   # config.vm.provision :shell, path: 'ubuntu/phantomjs/install-phantomjs.sh', privileged: true
 
+  # poppler
+  # config.vm.provision :shell, path: 'ubuntu/poppler/install-poppler.sh', privileged: true
+
   # postgresql
   # config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '10 xenial libpq-dev', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true

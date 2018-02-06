@@ -123,6 +123,9 @@ sudo bash "ubuntu/overmind/install-overmind.sh" 1.1.1
 # phantomjs
 sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
+# poppler
+sudo bash "ubuntu/poppler/install-poppler.sh"
+
 # postgresql
 sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 $UBUNTU_RELEASE_CODENAME libpq-dev
 sudo bash "ubuntu/postgresql/create-user.sh" root admin

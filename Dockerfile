@@ -117,6 +117,9 @@ RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 # phantomjs
 # RUN sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
+# poppler
+# RUN sudo bash "ubuntu/poppler/install-poppler.sh"
+
 # postgresql
 # RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 xenial libpq-dev
 # RUN sudo bash "ubuntu/postgresql/create-user.sh" root admin
