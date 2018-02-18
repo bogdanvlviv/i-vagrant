@@ -135,6 +135,9 @@ bash "ubuntu/postgresql/set-psqlrc.sh"
 sudo bash "ubuntu/python/install-pyenv.sh"
 sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.14
 
+# rar
+sudo bash "ubuntu/rar/install-rar.sh"
+
 # readline
 bash "ubuntu/readline/set-inputrc.sh"
 

@@ -129,6 +129,9 @@ RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 # RUN sudo bash "ubuntu/python/install-pyenv.sh"
 # RUN sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.14
 
+# rar
+# RUN sudo bash "ubuntu/rar/install-rar.sh"
+
 # readline
 RUN bash "ubuntu/readline/set-inputrc.sh"
 

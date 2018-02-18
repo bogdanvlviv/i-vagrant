@@ -226,6 +226,9 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/postgresql/set-psqlrc.sh', privileged: false
 
+  # rar
+  config.vm.provision :shell, path: 'ubuntu/rar/install-rar.sh', privileged: true
+
   # readline
   config.vm.provision :shell, path: 'ubuntu/readline/set-inputrc.sh', privileged: false
 
