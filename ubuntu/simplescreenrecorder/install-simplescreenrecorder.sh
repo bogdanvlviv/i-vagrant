@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ "$RUN_APT_UPDATE_BEFORE" != "no" ]]; then
-  apt update
-fi
+apt update
 
 add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
 

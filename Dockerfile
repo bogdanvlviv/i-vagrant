@@ -7,8 +7,6 @@ RUN apt install -y sudo
 COPY . /tmp/i-vagrant
 WORKDIR /tmp/i-vagrant
 
-ENV RUN_APT_UPDATE_BEFORE "no"
-
 # upgrade
 RUN sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 

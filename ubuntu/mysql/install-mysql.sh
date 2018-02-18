@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ "$RUN_APT_UPDATE_BEFORE" != "no" ]]; then
-  apt update
-fi
+apt update
 
 echo "mysql-server mysql-server/root_password password $1" | debconf-set-selections
 echo "mysql-server mysql-server/root_password_again password $1" | debconf-set-selections
