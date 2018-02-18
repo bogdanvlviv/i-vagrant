@@ -18,5 +18,6 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 sed -i "1ieval \"\$(rbenv init -)\"\n" ~/.bashrc
 sed -i "1iexport PATH=\"\$HOME/.rbenv/bin:\$PATH\"" ~/.bashrc
 
-# If you have problems with permissions, run
-# sudo chown -R username:username ~/.rbenv/
+if [[ "$SUDO_USER" ]]; then
+  chown -R $SUDO_USER:$SUDO_USER ~/.rbenv/
+fi
