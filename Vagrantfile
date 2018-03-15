@@ -125,6 +125,7 @@ Vagrant.configure('2') do |config|
 
   # docker
   # config.vm.provision :shell, path: 'ubuntu/docker/install-docker.sh', args: 'xenial', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/docker/install-docker-compose.sh', args: '1.19.0', privileged: true
 
   # elasticsearch
   # config.vm.provision :shell, path: 'ubuntu/elasticsearch/install-elasticsearch.sh', args: '5.6.3', privileged: true

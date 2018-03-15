@@ -22,6 +22,7 @@ RUN sudo bash "ubuntu/curl/install-curl.sh"
 
 # docker
 # RUN sudo bash "ubuntu/docker/install-docker.sh" xenial
+# RUN sudo bash "ubuntu/docker/install-docker-compose.sh" 1.19.0
 
 # elasticsearch
 # RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.6.3
