@@ -22,10 +22,10 @@ RUN sudo bash "ubuntu/curl/install-curl.sh"
 
 # docker
 # RUN sudo bash "ubuntu/docker/install-docker.sh" xenial
-# RUN sudo bash "ubuntu/docker/install-docker-compose.sh" 1.19.0
+# RUN sudo bash "ubuntu/docker/install-docker-compose.sh" 1.20.1
 
 # elasticsearch
-# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.6.3
+# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.2.3
 
 # exuberant-ctags
 RUN sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -35,7 +35,7 @@ RUN sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 
 # firefox
 RUN sudo bash "ubuntu/firefox/install-firefox.sh"
-RUN sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.19.1
+RUN sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.20.0
 
 # flatpak
 # RUN sudo bash "ubuntu/flatpak/install-flatpak.sh"
@@ -52,7 +52,7 @@ RUN sudo bash "ubuntu/git/install-git.sh"
 
 # google-chrome
 # RUN sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.33
+# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.37
 
 # graphviz
 # RUN sudo bash "ubuntu/graphviz/install-graphviz.sh"
@@ -67,7 +67,7 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # RUN sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 
 # java
-# RUN sudo bash "ubuntu/java/install-java.sh" 9
+# RUN sudo bash "ubuntu/java/install-java.sh" 8
 
 # letsencrypt
 # RUN sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
@@ -82,7 +82,7 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # RUN sudo bash "ubuntu/memcached/install-memcached.sh"
 
 # mongodb
-# RUN sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.4 xenial
+# RUN sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.6 xenial
 
 # mupdf
 # RUN sudo bash "ubuntu/mupdf/install-mupdf.sh"
@@ -107,8 +107,8 @@ RUN sudo bash "ubuntu/ngrok/install-ngrok.sh"
 RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-# RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.6
-# RUN bash "ubuntu/nodejs/install-nodejs.sh" 8.7.0
+# RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.8
+# RUN bash "ubuntu/nodejs/install-nodejs.sh" 9.9.0
 # RUN sudo bash "ubuntu/nodejs/install-yarn.sh"
 # RUN bash "ubuntu/nodejs/install-eslint.sh"
 # RUN bash "ubuntu/nodejs/install-stylelint.sh"
@@ -179,7 +179,7 @@ RUN bash "ubuntu/tmux/install-dottmux.sh"
 # RUN sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.0.0
+# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.0.3
 
 # vim
 RUN sudo bash "ubuntu/vim/install-vim.sh"
@@ -187,7 +187,7 @@ RUN bash "ubuntu/vim/install-dotvim.sh"
 RUN bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-# RUN sudo bash "ubuntu/virtualbox/install-virtualbox.sh" xenial
+# RUN sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.8 5.2_5.2.8-121009 xenial
 
 # xclip
 RUN sudo bash "ubuntu/xclip/install-xclip.sh"

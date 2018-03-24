@@ -6,10 +6,10 @@ apt update
 apt install -y curl
 # "ubuntu/curl/install-curl.sh"
 
-rm /tmp/virtualbox-5.1_5.1.30-118389_Ubuntu_$1_amd64.deb
-curl http://download.virtualbox.org/virtualbox/5.1.30/virtualbox-5.1_5.1.30-118389~Ubuntu~$1_amd64.deb -o /tmp/virtualbox-5.1_5.1.30-118389_Ubuntu_$1_amd64.deb
+rm /tmp/virtualbox-$2_Ubuntu_$3_amd64.deb
+curl http://download.virtualbox.org/virtualbox/$1/virtualbox-$2~Ubuntu~$3_amd64.deb -o /tmp/virtualbox-$2_Ubuntu_$3_amd64.deb
 
-dpkg -i /tmp/virtualbox-5.1_5.1.30-118389_Ubuntu_$1_amd64.deb
+dpkg -i /tmp/virtualbox-$2_Ubuntu_$3_amd64.deb
 apt install -y -f
 
-rm /tmp/virtualbox-5.1_5.1.30-118389_Ubuntu_$1_amd64.deb
+rm /tmp/virtualbox-$2_Ubuntu_$3_amd64.deb

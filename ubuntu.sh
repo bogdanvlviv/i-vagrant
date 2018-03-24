@@ -28,10 +28,10 @@ sudo bash "ubuntu/curl/install-curl.sh"
 
 # docker
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
-sudo bash "ubuntu/docker/install-docker-compose.sh" 1.19.0
+sudo bash "ubuntu/docker/install-docker-compose.sh" 1.20.1
 
 # elasticsearch
-sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 5.6.3
+sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.2.3
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -41,7 +41,7 @@ sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 
 # firefox
 sudo bash "ubuntu/firefox/install-firefox.sh"
-sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.19.1
+sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.20.0
 
 # flatpak
 sudo bash "ubuntu/flatpak/install-flatpak.sh"
@@ -58,7 +58,7 @@ sudo bash "ubuntu/git/install-git.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.33
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.37
 
 # graphviz
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
@@ -73,7 +73,7 @@ sudo bash "ubuntu/htop/install-htop.sh"
 sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 
 # java
-sudo bash "ubuntu/java/install-java.sh" 9
+sudo bash "ubuntu/java/install-java.sh" 8
 
 # letsencrypt
 sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
@@ -88,7 +88,7 @@ sudo bash "ubuntu/mc/install-mc.sh"
 sudo bash "ubuntu/memcached/install-memcached.sh"
 
 # mongodb
-sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.4 $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.6 $UBUNTU_RELEASE_CODENAME
 
 # mupdf
 sudo bash "ubuntu/mupdf/install-mupdf.sh"
@@ -113,8 +113,8 @@ sudo bash "ubuntu/ngrok/install-ngrok.sh"
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-bash "ubuntu/nodejs/install-nvm.sh" 0.33.6
-bash "ubuntu/nodejs/install-nodejs.sh" 8.7.0
+bash "ubuntu/nodejs/install-nvm.sh" 0.33.8
+bash "ubuntu/nodejs/install-nodejs.sh" 9.9.0
 sudo bash "ubuntu/nodejs/install-yarn.sh"
 bash "ubuntu/nodejs/install-eslint.sh"
 bash "ubuntu/nodejs/install-stylelint.sh"
@@ -185,7 +185,7 @@ sudo bash "ubuntu/tor/install-tor.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.0.0
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.0.3
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
@@ -193,7 +193,7 @@ bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-sudo bash "ubuntu/virtualbox/install-virtualbox.sh" $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.8 5.2_5.2.8-121009 $UBUNTU_RELEASE_CODENAME
 
 # xclip
 sudo bash "ubuntu/xclip/install-xclip.sh"

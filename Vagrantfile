@@ -82,13 +82,13 @@ Vagrant.configure('2') do |config|
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
-  # config.vm.provider "virtualbox" do |vb|
-  #   # Display the VirtualBox GUI when booting the machine
-  #   vb.gui = true
-  #
-  #   # Customize the amount of memory on the VM:
-  #   vb.memory = "1024"
-  # end
+  config.vm.provider "virtualbox" do |vb|
+    # Display the VirtualBox GUI when booting the machine
+    # vb.gui = true
+
+    # Customize the amount of memory on the VM:
+    vb.memory = "2048"
+  end
   #
   # View the documentation for the provider you are using for more
   # information on available options.
@@ -125,10 +125,10 @@ Vagrant.configure('2') do |config|
 
   # docker
   # config.vm.provision :shell, path: 'ubuntu/docker/install-docker.sh', args: 'xenial', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/docker/install-docker-compose.sh', args: '1.19.0', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/docker/install-docker-compose.sh', args: '1.20.1', privileged: true
 
   # elasticsearch
-  # config.vm.provision :shell, path: 'ubuntu/elasticsearch/install-elasticsearch.sh', args: '5.6.3', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/elasticsearch/install-elasticsearch.sh', args: '6.2.3', privileged: true
 
   # exuberant-ctags
   config.vm.provision :shell, path: 'ubuntu/exuberant-ctags/install-exuberant-ctags.sh', privileged: true
@@ -138,7 +138,7 @@ Vagrant.configure('2') do |config|
 
   # firefox
   config.vm.provision :shell, path: 'ubuntu/firefox/install-firefox.sh', privileged: true
-  config.vm.provision :shell, path: 'ubuntu/firefox/install-geckodriver.sh', args: '0.19.1', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/firefox/install-geckodriver.sh', args: '0.20.0', privileged: true
 
   # flatpak
   # config.vm.provision :shell, path: 'ubuntu/flatpak/install-flatpak.sh', privileged: true
@@ -155,7 +155,7 @@ Vagrant.configure('2') do |config|
 
   # google-chrome
   # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-google-chrome.sh', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-chromedriver.sh', args: '2.33', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-chromedriver.sh', args: '2.37', privileged: true
 
   # graphviz
   # config.vm.provision :shell, path: 'ubuntu/graphviz/install-graphviz.sh', privileged: true
@@ -170,7 +170,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
 
   # java
-  # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '9', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '8', privileged: true
 
   # letsencrypt
   # config.vm.provision :shell, path: 'ubuntu/letsencrypt/install-letsencrypt.sh', privileged: true
@@ -185,7 +185,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/memcached/install-memcached.sh', privileged: true
 
   # mongodb
-  # config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.4 xenial', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/mongodb/install-mongodb.sh', args: '3.6 xenial', privileged: true
 
   # mupdf
   # config.vm.provision :shell, path: 'ubuntu/mupdf/install-mupdf.sh', privileged: true
@@ -210,8 +210,8 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
 
   # nodejs
-  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.6', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '8.7.0', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.8', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '9.9.0', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-yarn.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-eslint.sh', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-stylelint.sh', privileged: false
@@ -278,7 +278,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/tree/install-tree.sh', privileged: true
 
   # vagrant
-  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '2.0.0', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '2.0.3', privileged: true
 
   # vim
   config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
@@ -286,7 +286,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'ubuntu/vim/set-vim-as-default-editor.sh', privileged: false
 
   # virtualbox
-  # config.vm.provision :shell, path: 'ubuntu/virtualbox/install-virtualbox.sh', args: 'xenial', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/virtualbox/install-virtualbox.sh', args: ' 5.2.8 5.2_5.2.8-121009 xenial', privileged: true
 
   # xclip
   config.vm.provision :shell, path: 'ubuntu/xclip/install-xclip.sh', privileged: true
