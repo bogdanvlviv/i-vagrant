@@ -100,6 +100,9 @@ RUN sudo bash "ubuntu/network-manager/install-network-manager.sh"
 # nginx
 RUN sudo bash "ubuntu/nginx/install-nginx.sh"
 
+# ngrok
+RUN sudo bash "ubuntu/ngrok/install-ngrok.sh"
+
 # nmap
 RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 

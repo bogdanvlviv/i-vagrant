@@ -203,6 +203,9 @@ Vagrant.configure('2') do |config|
   # nginx
   config.vm.provision :shell, path: 'ubuntu/nginx/install-nginx.sh', privileged: true
 
+  # ngrok
+  config.vm.provision :shell, path: 'ubuntu/ngrok/install-ngrok.sh', privileged: true
+
   # nmap
   config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
 
