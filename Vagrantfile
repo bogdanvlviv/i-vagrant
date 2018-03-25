@@ -58,7 +58,7 @@ Vagrant.configure('2') do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
 
-  # config.vm.synced_folder '~/active_projects', '/active_projects'
+  # config.vm.synced_folder '~/work', '/work'
 
   # git
   config.vm.provision :file, source: '~/.gitconfig', destination: '~/.gitconfig'
