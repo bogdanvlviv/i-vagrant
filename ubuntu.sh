@@ -75,6 +75,10 @@ sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 # java
 sudo bash "ubuntu/java/install-java.sh" 8
 
+# kubernetes
+sudo bash "ubuntu/kubernetes/install-kubectl.sh"
+sudo bash "ubuntu/kubernetes/install-minikube.sh"
+
 # letsencrypt
 sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
 

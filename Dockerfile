@@ -69,6 +69,10 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # java
 # RUN sudo bash "ubuntu/java/install-java.sh" 8
 
+# kubernetes
+# sudo bash "ubuntu/kubernetes/install-kubectl.sh"
+# sudo bash "ubuntu/kubernetes/install-minikube.sh"
+
 # letsencrypt
 # RUN sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
 

@@ -172,6 +172,10 @@ Vagrant.configure('2') do |config|
   # java
   # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '8', privileged: true
 
+  # kubernetes
+  # config.vm.provision :shell, path: 'ubuntu/kubernetes/install-kubectl.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/kubernetes/install-minikube.sh', privileged: true
+
   # letsencrypt
   # config.vm.provision :shell, path: 'ubuntu/letsencrypt/install-letsencrypt.sh', privileged: true
 
