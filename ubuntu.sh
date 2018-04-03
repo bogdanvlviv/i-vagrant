@@ -55,6 +55,7 @@ sudo bash "ubuntu/gimp/install-gimp.sh"
 
 # git
 sudo bash "ubuntu/git/install-git.sh"
+sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"

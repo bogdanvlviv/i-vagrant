@@ -49,6 +49,7 @@ RUN bash "ubuntu/fzf/set-fzf_default_command.sh"
 
 # git
 RUN sudo bash "ubuntu/git/install-git.sh"
+RUN sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # google-chrome
 # RUN sudo bash "ubuntu/google-chrome/install-google-chrome.sh"

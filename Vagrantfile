@@ -152,6 +152,7 @@ Vagrant.configure('2') do |config|
 
   # git
   config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/git/install-diff-highlight.sh', privileged: true
 
   # google-chrome
   # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-google-chrome.sh', privileged: true
