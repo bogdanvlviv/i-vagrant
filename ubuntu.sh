@@ -207,6 +207,9 @@ sudo bash "ubuntu/xclip/install-xclip.sh"
 sudo bash "ubuntu/xterm/install-xterm.sh"
 bash "ubuntu/xterm/install-dotX.sh"
 
+# zoom
+sudo bash "ubuntu/zoom/install-zoom.sh"
+
 echo ""
 echo "Running: \`source \"$HOME/.bashrc\"\`"
 source "$HOME/.bashrc"

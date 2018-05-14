@@ -201,4 +201,7 @@ RUN sudo bash "ubuntu/xclip/install-xclip.sh"
 # RUN sudo bash "ubuntu/xterm/install-xterm.sh"
 # RUN bash "ubuntu/xterm/install-dotX.sh"
 
+# zoom
+# sudo bash "ubuntu/zoom/install-zoom.sh"
+
 RUN echo "i-vagrant: https://github.com/bogdanvlviv/i-vagrant"
