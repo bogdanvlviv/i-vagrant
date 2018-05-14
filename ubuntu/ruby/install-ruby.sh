@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+apt install -y libssl-dev
+apt install -y libreadline-dev
+apt install -y zlib1g-dev
+
 if [[ "$1" = "rbenv" ]]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
@@ -14,6 +18,10 @@ if [[ "$1" = "rbenv" ]]; then
   fi
 
   rbenv rehash
+
+  if [[ "$SUDO_USER" ]]; then
+    chown -R $SUDO_USER:$SUDO_USER ~/.rbenv/
+  fi
 elif [[ "$1" = "rvm" ]]; then
   source "$HOME/.rvm/scripts/rvm" || source "/etc/profile.d/rvm.sh"
 

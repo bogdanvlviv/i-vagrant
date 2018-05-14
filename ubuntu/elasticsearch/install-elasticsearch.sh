@@ -7,7 +7,7 @@ apt install -y curl
 # "ubuntu/curl/install-curl.sh"
 
 # "ubuntu/java/install-java.sh" 8
-apt install -y openjdk-8-jre
+apt install -y openjdk-11-jre
 # "ubuntu/java/install-java.sh" 8
 
 rm /tmp/elasticsearch-$1.deb

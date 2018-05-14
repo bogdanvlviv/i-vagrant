@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 RUN apt update
 RUN apt upgrade -y
@@ -21,11 +21,11 @@ RUN bash "ubuntu/bashrc/set-term-variable.sh"
 RUN sudo bash "ubuntu/curl/install-curl.sh"
 
 # docker
-# RUN sudo bash "ubuntu/docker/install-docker.sh" xenial
+# RUN sudo bash "ubuntu/docker/install-docker.sh" bionic
 # RUN sudo bash "ubuntu/docker/install-docker-compose.sh" 1.20.1
 
 # elasticsearch
-# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.2.3
+# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.2.4
 
 # exuberant-ctags
 RUN sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -35,7 +35,7 @@ RUN sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 
 # firefox
 RUN sudo bash "ubuntu/firefox/install-firefox.sh"
-RUN sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.20.0
+RUN sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.20.1
 
 # flatpak
 # RUN sudo bash "ubuntu/flatpak/install-flatpak.sh"
@@ -53,7 +53,7 @@ RUN sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # google-chrome
 # RUN sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.37
+# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.38
 
 # graphviz
 # RUN sudo bash "ubuntu/graphviz/install-graphviz.sh"
@@ -68,7 +68,7 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # RUN sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 
 # java
-# RUN sudo bash "ubuntu/java/install-java.sh" 8
+# RUN sudo bash "ubuntu/java/install-java.sh" 11
 
 # kubernetes
 # sudo bash "ubuntu/kubernetes/install-kubectl.sh"
@@ -87,7 +87,7 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 # RUN sudo bash "ubuntu/memcached/install-memcached.sh"
 
 # mongodb
-# RUN sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.6 xenial
+# RUN sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.6 bionic
 
 # mupdf
 # RUN sudo bash "ubuntu/mupdf/install-mupdf.sh"
@@ -97,7 +97,7 @@ RUN sudo bash "ubuntu/htop/install-htop.sh"
 
 # mysql
 # RUN sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
-# RUN sudo bash "ubuntu/mysql/install-mariadb.sh" 10.2 xenial admin libmysqlclient-dev
+# RUN sudo bash "ubuntu/mysql/install-mariadb.sh" 10.1 bionic admin libmysqlclient-dev
 
 # network-manager
 RUN sudo bash "ubuntu/network-manager/install-network-manager.sh"
@@ -112,8 +112,8 @@ RUN sudo bash "ubuntu/ngrok/install-ngrok.sh"
 RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-# RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.8
-# RUN bash "ubuntu/nodejs/install-nodejs.sh" 9.9.0
+# RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.11
+# RUN bash "ubuntu/nodejs/install-nodejs.sh" 10.1.0
 # RUN sudo bash "ubuntu/nodejs/install-yarn.sh"
 # RUN bash "ubuntu/nodejs/install-eslint.sh"
 # RUN bash "ubuntu/nodejs/install-stylelint.sh"
@@ -128,13 +128,13 @@ RUN sudo bash "ubuntu/nmap/install-nmap.sh"
 # RUN sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
-# RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 xenial libpq-dev
+# RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 bionic libpq-dev
 # RUN sudo bash "ubuntu/postgresql/create-user.sh" root admin
 # RUN bash "ubuntu/postgresql/set-psqlrc.sh"
 
 # python
 # RUN sudo bash "ubuntu/python/install-pyenv.sh"
-# RUN sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.14
+# RUN sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.15
 
 # rar
 # RUN sudo bash "ubuntu/rar/install-rar.sh"
@@ -156,7 +156,7 @@ RUN bash "ubuntu/readline/set-inputrc.sh"
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.9 bundler
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.6 bundler
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.3 bundler
-# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.0 bundler jekyll rails rubocop tmuxinator
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.1 jekyll rails rubocop tmuxinator
 
 # simplescreenrecorder
 # RUN sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
@@ -184,7 +184,7 @@ RUN bash "ubuntu/tmux/install-dottmux.sh"
 # RUN sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.0.3
+# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.1.1
 
 # vim
 RUN sudo bash "ubuntu/vim/install-vim.sh"
@@ -192,7 +192,7 @@ RUN bash "ubuntu/vim/install-dotvim.sh"
 RUN bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-# RUN sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.8 5.2_5.2.8-121009 xenial
+# RUN sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.12 5.2_5.2.12-122591 bionic
 
 # wkhtmltopdf
 RUN sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4

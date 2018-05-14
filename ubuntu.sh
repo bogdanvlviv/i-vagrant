@@ -11,7 +11,7 @@ if [[ "$answer_for_the_start" != "yes" ]]; then
   return
 fi
 
-UBUNTU_RELEASE_CODENAME="xenial"
+UBUNTU_RELEASE_CODENAME="bionic"
 
 # upgrade
 sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
@@ -26,12 +26,13 @@ sudo bash "ubuntu/cmus/install-cmus.sh"
 # curl
 sudo bash "ubuntu/curl/install-curl.sh"
 
+# NOTE fix this
 # docker
-sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
-sudo bash "ubuntu/docker/install-docker-compose.sh" 1.20.1
+# sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
+# sudo bash "ubuntu/docker/install-docker-compose.sh" 1.20.1
 
 # elasticsearch
-sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.2.3
+sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.2.4
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -41,7 +42,7 @@ sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 
 # firefox
 sudo bash "ubuntu/firefox/install-firefox.sh"
-sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.20.0
+sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.20.1
 
 # flatpak
 sudo bash "ubuntu/flatpak/install-flatpak.sh"
@@ -59,7 +60,7 @@ sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.37
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.38
 
 # graphviz
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
@@ -74,7 +75,7 @@ sudo bash "ubuntu/htop/install-htop.sh"
 sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 
 # java
-sudo bash "ubuntu/java/install-java.sh" 8
+sudo bash "ubuntu/java/install-java.sh" 11
 
 # kubernetes
 sudo bash "ubuntu/kubernetes/install-kubectl.sh"
@@ -92,8 +93,9 @@ sudo bash "ubuntu/mc/install-mc.sh"
 # memcached
 sudo bash "ubuntu/memcached/install-memcached.sh"
 
+# NOTE fix this
 # mongodb
-sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.6 $UBUNTU_RELEASE_CODENAME
+# sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.6 $UBUNTU_RELEASE_CODENAME
 
 # mupdf
 sudo bash "ubuntu/mupdf/install-mupdf.sh"
@@ -103,7 +105,7 @@ sudo bash "ubuntu/mosh/install-mosh.sh"
 
 # mysql
 # sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
-sudo bash "ubuntu/mysql/install-mariadb.sh" 10.2 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
+sudo bash "ubuntu/mysql/install-mariadb.sh" 10.1 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
 
 # network-manager
 sudo bash "ubuntu/network-manager/install-network-manager.sh"
@@ -118,8 +120,8 @@ sudo bash "ubuntu/ngrok/install-ngrok.sh"
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-bash "ubuntu/nodejs/install-nvm.sh" 0.33.8
-bash "ubuntu/nodejs/install-nodejs.sh" 9.9.0
+bash "ubuntu/nodejs/install-nvm.sh" 0.33.11
+bash "ubuntu/nodejs/install-nodejs.sh" 10.1.0
 sudo bash "ubuntu/nodejs/install-yarn.sh"
 bash "ubuntu/nodejs/install-eslint.sh"
 bash "ubuntu/nodejs/install-stylelint.sh"
@@ -140,7 +142,7 @@ bash "ubuntu/postgresql/set-psqlrc.sh"
 
 # python
 sudo bash "ubuntu/python/install-pyenv.sh"
-sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.14
+sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.15
 
 # rar
 sudo bash "ubuntu/rar/install-rar.sh"
@@ -162,7 +164,7 @@ sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.9 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.6 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.3 bundler
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.0 bundler jekyll rabbit rails rubocop "tmuxinator:0.10.1"
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.1 jekyll rabbit rails rubocop "tmuxinator:0.10.1"
 
 # simplescreenrecorder
 sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
@@ -190,7 +192,7 @@ sudo bash "ubuntu/tor/install-tor.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.0.3
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.1.1
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
@@ -198,7 +200,7 @@ bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.8 5.2_5.2.8-121009 $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.12 5.2_5.2.12-122591 $UBUNTU_RELEASE_CODENAME
 
 # wkhtmltopdf
 sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4
