@@ -200,6 +200,9 @@ bash "ubuntu/vim/set-vim-as-default-editor.sh"
 # virtualbox
 sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.8 5.2_5.2.8-121009 $UBUNTU_RELEASE_CODENAME
 
+# wkhtmltopdf
+sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4
+
 # xclip
 sudo bash "ubuntu/xclip/install-xclip.sh"
 

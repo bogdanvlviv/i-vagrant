@@ -194,6 +194,9 @@ RUN bash "ubuntu/vim/set-vim-as-default-editor.sh"
 # virtualbox
 # RUN sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.8 5.2_5.2.8-121009 xenial
 
+# wkhtmltopdf
+RUN sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4
+
 # xclip
 RUN sudo bash "ubuntu/xclip/install-xclip.sh"
 
@@ -202,6 +205,6 @@ RUN sudo bash "ubuntu/xclip/install-xclip.sh"
 # RUN bash "ubuntu/xterm/install-dotX.sh"
 
 # zoom
-# sudo bash "ubuntu/zoom/install-zoom.sh"
+# RUN sudo bash "ubuntu/zoom/install-zoom.sh"
 
 RUN echo "i-vagrant: https://github.com/bogdanvlviv/i-vagrant"

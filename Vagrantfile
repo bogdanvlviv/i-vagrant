@@ -293,6 +293,9 @@ Vagrant.configure('2') do |config|
   # virtualbox
   # config.vm.provision :shell, path: 'ubuntu/virtualbox/install-virtualbox.sh', args: ' 5.2.8 5.2_5.2.8-121009 xenial', privileged: true
 
+  # wkhtmltopdf
+  config.vm.provision :shell, path: 'ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh', args: '0.12.4', privileged: true
+
   # xclip
   config.vm.provision :shell, path: 'ubuntu/xclip/install-xclip.sh', privileged: true
 
