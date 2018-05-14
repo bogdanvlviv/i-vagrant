@@ -32,7 +32,7 @@ sudo bash "ubuntu/curl/install-curl.sh"
 # sudo bash "ubuntu/docker/install-docker-compose.sh" 1.20.1
 
 # elasticsearch
-sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.2.4
+# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.2.4
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -78,11 +78,11 @@ sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 sudo bash "ubuntu/java/install-java.sh" 11
 
 # kubernetes
-sudo bash "ubuntu/kubernetes/install-kubectl.sh"
-sudo bash "ubuntu/kubernetes/install-minikube.sh"
+# sudo bash "ubuntu/kubernetes/install-kubectl.sh"
+# sudo bash "ubuntu/kubernetes/install-minikube.sh"
 
 # letsencrypt
-sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
+# sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
 
 # libxml2
 sudo bash "ubuntu/libxml2/install-libxml2.sh" libxml2-dev
@@ -91,7 +91,7 @@ sudo bash "ubuntu/libxml2/install-libxml2.sh" libxml2-dev
 sudo bash "ubuntu/mc/install-mc.sh"
 
 # memcached
-sudo bash "ubuntu/memcached/install-memcached.sh"
+# sudo bash "ubuntu/memcached/install-memcached.sh"
 
 # NOTE fix this
 # mongodb
@@ -105,13 +105,13 @@ sudo bash "ubuntu/mosh/install-mosh.sh"
 
 # mysql
 # sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
-sudo bash "ubuntu/mysql/install-mariadb.sh" 10.1 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
+# sudo bash "ubuntu/mysql/install-mariadb.sh" 10.1 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
 
 # network-manager
 sudo bash "ubuntu/network-manager/install-network-manager.sh"
 
 # nginx
-sudo bash "ubuntu/nginx/install-nginx.sh"
+# sudo bash "ubuntu/nginx/install-nginx.sh"
 
 # ngrok
 sudo bash "ubuntu/ngrok/install-ngrok.sh"
@@ -120,29 +120,30 @@ sudo bash "ubuntu/ngrok/install-ngrok.sh"
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-bash "ubuntu/nodejs/install-nvm.sh" 0.33.11
-bash "ubuntu/nodejs/install-nodejs.sh" 10.1.0
-sudo bash "ubuntu/nodejs/install-yarn.sh"
-bash "ubuntu/nodejs/install-eslint.sh"
-bash "ubuntu/nodejs/install-stylelint.sh"
+# bash "ubuntu/nodejs/install-nvm.sh" 0.33.11
+# bash "ubuntu/nodejs/install-nodejs.sh" 10.1.0
+# sudo bash "ubuntu/nodejs/install-yarn.sh"
+# bash "ubuntu/nodejs/install-eslint.sh"
+# bash "ubuntu/nodejs/install-stylelint.sh"
 
 # overmind
-sudo bash "ubuntu/overmind/install-overmind.sh" 1.1.1
+# sudo bash "ubuntu/overmind/install-overmind.sh" 1.1.1
 
 # phantomjs
-sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
+# sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
 # poppler
 sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
-sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 $UBUNTU_RELEASE_CODENAME libpq-dev
-sudo bash "ubuntu/postgresql/create-user.sh" root admin
-bash "ubuntu/postgresql/set-psqlrc.sh"
+# sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 $UBUNTU_RELEASE_CODENAME libpq-dev
+# sudo bash "ubuntu/postgresql/create-user.sh" root admin
+# bash "ubuntu/postgresql/set-psqlrc.sh"
 
 # python
-sudo bash "ubuntu/python/install-pyenv.sh"
-sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.15
+# sudo bash "ubuntu/python/install-pyenv.sh"
+# sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.15
+# sudo bash "ubuntu/python/install-python.sh" pyenv 3.6.5
 
 # rar
 sudo bash "ubuntu/rar/install-rar.sh"
@@ -151,7 +152,7 @@ sudo bash "ubuntu/rar/install-rar.sh"
 bash "ubuntu/readline/set-inputrc.sh"
 
 # redis
-sudo bash "ubuntu/redis/install-redis.sh"
+# sudo bash "ubuntu/redis/install-redis.sh"
 
 # ruby
 sudo bash "ubuntu/ruby/install-rbenv.sh"

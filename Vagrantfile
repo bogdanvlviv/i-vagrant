@@ -36,6 +36,7 @@ Vagrant.configure('2') do |config|
   # python
   # config.vm.provision :shell, path: 'ubuntu/python/install-pyenv.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/python/install-python.sh', args: 'pyenv 2.7.15', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/python/install-python.sh', args: 'pyenv 3.6.5', privileged: true
 
   # rails
   # config.vm.network 'forwarded_port', guest: 3000, host: 30001
@@ -111,17 +112,17 @@ Vagrant.configure('2') do |config|
   # ubuntu
 
   # upgrade
-  config.vm.provision :shell, path: 'ubuntu/upgrade/make-upgrade_packages.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/upgrade/make-upgrade_packages.sh', privileged: true
 
   # bashrc
-  config.vm.provision :shell, path: 'ubuntu/bashrc/set-lc_all-variable.sh', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/bashrc/set-term-variable.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/bashrc/set-lc_all-variable.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/bashrc/set-term-variable.sh', privileged: false
 
   # cmus
   # config.vm.provision :shell, path: 'ubuntu/cmus/install-cmus.sh', privileged: true
 
   # curl
-  config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
 
   # docker
   # config.vm.provision :shell, path: 'ubuntu/docker/install-docker.sh', args: 'bionic', privileged: true
@@ -131,28 +132,28 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/elasticsearch/install-elasticsearch.sh', args: '6.2.4', privileged: true
 
   # exuberant-ctags
-  config.vm.provision :shell, path: 'ubuntu/exuberant-ctags/install-exuberant-ctags.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/exuberant-ctags/install-exuberant-ctags.sh', privileged: true
 
   # ffmpeg
-  config.vm.provision :shell, path: 'ubuntu/ffmpeg/install-ffmpeg.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ffmpeg/install-ffmpeg.sh', privileged: true
 
   # firefox
-  config.vm.provision :shell, path: 'ubuntu/firefox/install-firefox.sh', privileged: true
-  config.vm.provision :shell, path: 'ubuntu/firefox/install-geckodriver.sh', args: '0.20.1', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/firefox/install-firefox.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/firefox/install-geckodriver.sh', args: '0.20.1', privileged: true
 
   # flatpak
   # config.vm.provision :shell, path: 'ubuntu/flatpak/install-flatpak.sh', privileged: true
 
   # fzf
-  config.vm.provision :shell, path: 'ubuntu/fzf/install-fzf.sh', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/fzf/set-fzf_default_command.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/fzf/install-fzf.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/fzf/set-fzf_default_command.sh', privileged: false
 
   # gimp
   # config.vm.provision :shell, path: 'ubuntu/gimp/install-gimp.sh', privileged: true
 
   # git
-  config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
-  config.vm.provision :shell, path: 'ubuntu/git/install-diff-highlight.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/git/install-diff-highlight.sh', privileged: true
 
   # google-chrome
   # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-google-chrome.sh', privileged: true
@@ -165,7 +166,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/heroku/install-heroku-cli.sh', privileged: true
 
   # htop
-  config.vm.provision :shell, path: 'ubuntu/htop/install-htop.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/htop/install-htop.sh', privileged: true
 
   # imagemagick
   # config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
@@ -203,16 +204,16 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/mysql/install-mariadb.sh', args: '10.1 bionic admin libmysqlclient-dev', privileged: true
 
   # network-manager
-  config.vm.provision :shell, path: 'ubuntu/network-manager/install-network-manager.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/network-manager/install-network-manager.sh', privileged: true
 
   # nginx
-  config.vm.provision :shell, path: 'ubuntu/nginx/install-nginx.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/nginx/install-nginx.sh', privileged: true
 
   # ngrok
-  config.vm.provision :shell, path: 'ubuntu/ngrok/install-ngrok.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ngrok/install-ngrok.sh', privileged: true
 
   # nmap
-  config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/nmap/install-nmap.sh', privileged: true
 
   # nodejs
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.11', privileged: false
@@ -236,10 +237,10 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/postgresql/set-psqlrc.sh', privileged: false
 
   # rar
-  config.vm.provision :shell, path: 'ubuntu/rar/install-rar.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/rar/install-rar.sh', privileged: true
 
   # readline
-  config.vm.provision :shell, path: 'ubuntu/readline/set-inputrc.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/readline/set-inputrc.sh', privileged: false
 
   # redis
   # config.vm.provision :shell, path: 'ubuntu/redis/install-redis.sh', privileged: true
@@ -270,11 +271,11 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/ssh/set-authorized_keys.sh', privileged: false
 
   # the_silver_searcher
-  config.vm.provision :shell, path: 'ubuntu/the_silver_searcher/install-the_silver_searcher.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/the_silver_searcher/install-the_silver_searcher.sh', privileged: true
 
   # tmux
-  config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
-  config.vm.provision :shell, path: 'ubuntu/tmux/install-dottmux.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/tmux/install-dottmux.sh', privileged: false
 
   # tor
   # config.vm.provision :shell, path: 'ubuntu/tor/install-tor.sh', privileged: true
@@ -286,18 +287,18 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '2.1.1', privileged: true
 
   # vim
-  config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
-  config.vm.provision :shell, path: 'ubuntu/vim/install-dotvim.sh', privileged: false
-  config.vm.provision :shell, path: 'ubuntu/vim/set-vim-as-default-editor.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/vim/install-dotvim.sh', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/vim/set-vim-as-default-editor.sh', privileged: false
 
   # virtualbox
   # config.vm.provision :shell, path: 'ubuntu/virtualbox/install-virtualbox.sh', args: '5.2.12 5.2_5.2.12-122591 bionic', privileged: true
 
   # wkhtmltopdf
-  config.vm.provision :shell, path: 'ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh', args: '0.12.4', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh', args: '0.12.4', privileged: true
 
   # xclip
-  config.vm.provision :shell, path: 'ubuntu/xclip/install-xclip.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/xclip/install-xclip.sh', privileged: true
 
   # xterm
   # config.vm.provision :shell, path: 'ubuntu/xterm/install-xterm.sh', privileged: true
