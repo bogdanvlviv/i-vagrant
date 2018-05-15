@@ -10,4 +10,4 @@ apt update
 apt install -y flatpak-builder
 # "ubuntu/flatpak/install-flatpak.sh"
 
-flatpak install flathub us.zoom.Zoom
+flatpak install -y flathub us.zoom.Zoom
