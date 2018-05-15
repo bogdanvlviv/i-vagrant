@@ -75,8 +75,8 @@ sudo bash "ubuntu/htop/install-htop.sh"
 sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 
 # java
-sudo bash "ubuntu/java/install-java.sh" 8
 sudo bash "ubuntu/java/install-java.sh" 11
+sudo bash "ubuntu/java/install-oracle-java.sh" 8
 
 # kubernetes
 # sudo bash "ubuntu/kubernetes/install-kubectl.sh"

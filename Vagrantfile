@@ -173,6 +173,7 @@ Vagrant.configure('2') do |config|
 
   # java
   # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '11', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/java/install-oracle-java.sh', args: '8', privileged: true
 
   # kubernetes
   # config.vm.provision :shell, path: 'ubuntu/kubernetes/install-kubectl.sh', privileged: true
