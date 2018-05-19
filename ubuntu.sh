@@ -78,6 +78,9 @@ sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 sudo bash "ubuntu/java/install-java.sh" 11
 sudo bash "ubuntu/java/install-oracle-java.sh" 8
 
+# jq
+sudo bash "ubuntu/jq/install-jq.sh"
+
 # kubernetes
 # sudo bash "ubuntu/kubernetes/install-kubectl.sh"
 # sudo bash "ubuntu/kubernetes/install-minikube.sh"

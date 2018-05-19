@@ -71,6 +71,9 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/java/install-java.sh" 11
 # RUN sudo bash "ubuntu/java/install-oracle-java.sh" 8
 
+# jq
+# RUN sudo bash "ubuntu/jq/install-jq.sh"
+
 # kubernetes
 # sudo bash "ubuntu/kubernetes/install-kubectl.sh"
 # sudo bash "ubuntu/kubernetes/install-minikube.sh"
