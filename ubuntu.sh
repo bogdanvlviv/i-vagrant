@@ -26,10 +26,9 @@ sudo bash "ubuntu/cmus/install-cmus.sh"
 # curl
 sudo bash "ubuntu/curl/install-curl.sh"
 
-# NOTE fix this
 # docker
-# sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
-# sudo bash "ubuntu/docker/install-docker-compose.sh" 1.20.1
+sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/docker/install-docker-compose.sh" 1.21.2
 
 # elasticsearch
 # sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.2.4
