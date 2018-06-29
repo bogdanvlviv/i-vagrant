@@ -168,7 +168,7 @@ sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.9 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.6 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.3 bundler
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.1 jekyll rabbit rails rubocop "tmuxinator:0.10.1"
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.1 jekyll rails rubocop "tmuxinator:0.11.3"
 
 # simplescreenrecorder
 sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
