@@ -206,6 +206,9 @@ bash "ubuntu/vim/set-vim-as-default-editor.sh"
 # virtualbox
 sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.12 5.2_5.2.12-122591 $UBUNTU_RELEASE_CODENAME
 
+# vscode
+# sudo bash "ubuntu/vscode/install-vscode.sh"
+
 # wkhtmltopdf
 sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4
 

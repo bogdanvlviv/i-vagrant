@@ -199,6 +199,9 @@ WORKDIR /tmp/i-vagrant
 # virtualbox
 # RUN sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.12 5.2_5.2.12-122591 bionic
 
+# vscode
+# RUN sudo bash "ubuntu/vscode/install-vscode.sh"
+
 # wkhtmltopdf
 # RUN sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4
 

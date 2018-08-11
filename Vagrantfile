@@ -298,6 +298,9 @@ Vagrant.configure('2') do |config|
   # virtualbox
   # config.vm.provision :shell, path: 'ubuntu/virtualbox/install-virtualbox.sh', args: '5.2.12 5.2_5.2.12-122591 bionic', privileged: true
 
+  # vscode
+  # config.vm.provision :shell, path: 'ubuntu/vscode/install-vscode.sh', privileged: true
+
   # wkhtmltopdf
   # config.vm.provision :shell, path: 'ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh', args: '0.12.4', privileged: true
 
