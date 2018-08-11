@@ -20,6 +20,9 @@ sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
 bash "ubuntu/bashrc/set-lc_all-variable.sh"
 bash "ubuntu/bashrc/set-term-variable.sh"
 
+# android_studio
+# sudo bash "ubuntu/android_studio/install-android_studio.sh"
+
 # cmus
 sudo bash "ubuntu/cmus/install-cmus.sh"
 

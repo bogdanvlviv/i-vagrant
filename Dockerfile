@@ -14,6 +14,9 @@ WORKDIR /tmp/i-vagrant
 # RUN bash "ubuntu/bashrc/set-lc_all-variable.sh"
 # RUN bash "ubuntu/bashrc/set-term-variable.sh"
 
+# android_studio
+# RUN sudo bash "ubuntu/android_studio/install-android_studio.sh"
+
 # cmus
 # RUN sudo bash "ubuntu/cmus/install-cmus.sh"
 

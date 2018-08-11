@@ -118,6 +118,9 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/bashrc/set-lc_all-variable.sh', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/bashrc/set-term-variable.sh', privileged: false
 
+  # android_studio
+  # config.vm.provision :shell, path: 'ubuntu/android_studio/install-android_studio.sh', privileged: true
+
   # cmus
   # config.vm.provision :shell, path: 'ubuntu/cmus/install-cmus.sh', privileged: true
 
