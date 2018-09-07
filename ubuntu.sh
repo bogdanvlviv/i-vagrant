@@ -99,9 +99,8 @@ sudo bash "ubuntu/mc/install-mc.sh"
 # memcached
 # sudo bash "ubuntu/memcached/install-memcached.sh"
 
-# NOTE fix this
 # mongodb
-# sudo bash "ubuntu/mongodb/install-mongodb.sh" 3.6 $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/mongodb/install-mongodb.sh" 4.0 $UBUNTU_RELEASE_CODENAME
 
 # mupdf
 sudo bash "ubuntu/mupdf/install-mupdf.sh"
