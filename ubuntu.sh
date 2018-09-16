@@ -153,6 +153,9 @@ sudo bash "ubuntu/poppler/install-poppler.sh"
 # rar
 sudo bash "ubuntu/rar/install-rar.sh"
 
+# rbspy
+# sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.2
+
 # readline
 bash "ubuntu/readline/set-inputrc.sh"
 

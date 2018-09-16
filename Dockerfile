@@ -147,6 +147,9 @@ WORKDIR /tmp/i-vagrant
 # rar
 # RUN sudo bash "ubuntu/rar/install-rar.sh"
 
+# rbspy
+# RUN sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.2
+
 # readline
 # RUN bash "ubuntu/readline/set-inputrc.sh"
 

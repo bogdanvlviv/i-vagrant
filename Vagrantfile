@@ -246,6 +246,9 @@ Vagrant.configure('2') do |config|
   # rar
   # config.vm.provision :shell, path: 'ubuntu/rar/install-rar.sh', privileged: true
 
+  # rbspy
+  # config.vm.provision :shell, path: 'ubuntu/rbspy/install-rbspy.sh', args: '0.3.2', privileged: true
+
   # readline
   # config.vm.provision :shell, path: 'ubuntu/readline/set-inputrc.sh', privileged: false
 
