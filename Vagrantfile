@@ -268,6 +268,9 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.4.3 bundler', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.5.1 jekyll rails rubocop tmuxinator', privileged: true
 
+  # siege
+  # config.vm.provision :shell, path: 'ubuntu/siege/install-siege.sh', privileged: true
+
   # simplescreenrecorder
   # config.vm.provision :shell, path: 'ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh', privileged: true
 

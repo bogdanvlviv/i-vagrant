@@ -169,6 +169,9 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.3 bundler
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.1 jekyll rails rubocop tmuxinator
 
+# siege
+# RUN sudo bash "ubuntu/siege/install-siege.sh"
+
 # simplescreenrecorder
 # RUN sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
 
