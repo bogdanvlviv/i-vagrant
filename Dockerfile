@@ -164,10 +164,10 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 1.9.3-p551 bundler
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.0.0-p648 bundler
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.1.10 bundler
-# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.9 bundler
-# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.6 bundler
-# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.3 bundler
-# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.1 jekyll rails rubocop tmuxinator
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.10 bundler
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.8 bundler
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.5 bundler
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.3 jekyll rails rubocop tmuxinator
 
 # siege
 # RUN sudo bash "ubuntu/siege/install-siege.sh"

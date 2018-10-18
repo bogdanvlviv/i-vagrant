@@ -263,10 +263,10 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 1.9.3-p551 bundler', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.0.0-p648 bundler', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.1.10 bundler', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.2.9 bundler', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.3.6 bundler', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.4.3 bundler', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.5.1 jekyll rails rubocop tmuxinator', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.2.10 bundler', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.3.8 bundler', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.4.5 bundler', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.5.3 jekyll rails rubocop tmuxinator', privileged: true
 
   # siege
   # config.vm.provision :shell, path: 'ubuntu/siege/install-siege.sh', privileged: true
