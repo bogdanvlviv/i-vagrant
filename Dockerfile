@@ -25,10 +25,10 @@ WORKDIR /tmp/i-vagrant
 
 # docker
 # RUN sudo bash "ubuntu/docker/install-docker.sh" bionic
-# RUN sudo bash "ubuntu/docker/install-docker-compose.sh" 1.20.1
+# RUN sudo bash "ubuntu/docker/install-docker-compose.sh" 1.23.1
 
 # elasticsearch
-# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.2.4
+# RUN sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.5.0
 
 # exuberant-ctags
 # RUN sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -38,7 +38,7 @@ WORKDIR /tmp/i-vagrant
 
 # firefox
 # RUN sudo bash "ubuntu/firefox/install-firefox.sh"
-# RUN sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.20.1
+# RUN sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.23.0
 
 # flatpak
 # RUN sudo bash "ubuntu/flatpak/install-flatpak.sh"
@@ -56,7 +56,7 @@ WORKDIR /tmp/i-vagrant
 
 # google-chrome
 # RUN sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.38
+# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.43
 
 # graphviz
 # RUN sudo bash "ubuntu/graphviz/install-graphviz.sh"
@@ -104,7 +104,7 @@ WORKDIR /tmp/i-vagrant
 
 # mysql
 # RUN sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
-# RUN sudo bash "ubuntu/mysql/install-mariadb.sh" 10.1 bionic admin libmysqlclient-dev
+# RUN sudo bash "ubuntu/mysql/install-mariadb.sh" 10.3 bionic admin libmysqlclient-dev
 
 # network-manager
 # RUN sudo bash "ubuntu/network-manager/install-network-manager.sh"
@@ -120,13 +120,13 @@ WORKDIR /tmp/i-vagrant
 
 # nodejs
 # RUN bash "ubuntu/nodejs/install-nvm.sh" 0.33.11
-# RUN bash "ubuntu/nodejs/install-nodejs.sh" 10.1.0
+# RUN bash "ubuntu/nodejs/install-nodejs.sh" 10.13.0
 # RUN sudo bash "ubuntu/nodejs/install-yarn.sh"
 # RUN bash "ubuntu/nodejs/install-eslint.sh"
 # RUN bash "ubuntu/nodejs/install-stylelint.sh"
 
 # overmind
-# RUN sudo bash "ubuntu/overmind/install-overmind.sh" 1.1.1
+# RUN sudo bash "ubuntu/overmind/install-overmind.sh" 1.2.1
 
 # phantomjs
 # RUN sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
@@ -135,20 +135,20 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
-# RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 bionic libpq-dev
+# RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 11 bionic libpq-dev
 # RUN sudo bash "ubuntu/postgresql/create-user.sh" root admin
 # RUN bash "ubuntu/postgresql/set-psqlrc.sh"
 
 # python
 # RUN sudo bash "ubuntu/python/install-pyenv.sh"
 # RUN sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.15
-# RUN sudo bash "ubuntu/python/install-python.sh" pyenv 3.6.5
+# RUN sudo bash "ubuntu/python/install-python.sh" pyenv 3.7.1
 
 # rar
 # RUN sudo bash "ubuntu/rar/install-rar.sh"
 
 # rbspy
-# RUN sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.2
+# RUN sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.3
 
 # readline
 # RUN bash "ubuntu/readline/set-inputrc.sh"
@@ -198,7 +198,7 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.1.1
+# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.1
 
 # vim
 # RUN sudo bash "ubuntu/vim/install-vim.sh"
@@ -206,13 +206,13 @@ WORKDIR /tmp/i-vagrant
 # RUN bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-# RUN sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.12 5.2_5.2.12-122591 bionic
+# RUN sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.22 5.2_5.2.22-126460 bionic
 
 # vscode
 # RUN sudo bash "ubuntu/vscode/install-vscode.sh"
 
 # wkhtmltopdf
-# RUN sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4
+# RUN sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.5
 
 # xclip
 # RUN sudo bash "ubuntu/xclip/install-xclip.sh"

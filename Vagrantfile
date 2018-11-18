@@ -36,7 +36,7 @@ Vagrant.configure('2') do |config|
   # python
   # config.vm.provision :shell, path: 'ubuntu/python/install-pyenv.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/python/install-python.sh', args: 'pyenv 2.7.15', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/python/install-python.sh', args: 'pyenv 3.6.5', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/python/install-python.sh', args: 'pyenv 3.7.1', privileged: true
 
   # rails
   # config.vm.network 'forwarded_port', guest: 3000, host: 30001
@@ -129,10 +129,10 @@ Vagrant.configure('2') do |config|
 
   # docker
   # config.vm.provision :shell, path: 'ubuntu/docker/install-docker.sh', args: 'bionic', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/docker/install-docker-compose.sh', args: '1.20.1', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/docker/install-docker-compose.sh', args: '1.23.1', privileged: true
 
   # elasticsearch
-  # config.vm.provision :shell, path: 'ubuntu/elasticsearch/install-elasticsearch.sh', args: '6.2.4', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/elasticsearch/install-elasticsearch.sh', args: '6.5.0', privileged: true
 
   # exuberant-ctags
   # config.vm.provision :shell, path: 'ubuntu/exuberant-ctags/install-exuberant-ctags.sh', privileged: true
@@ -142,7 +142,7 @@ Vagrant.configure('2') do |config|
 
   # firefox
   # config.vm.provision :shell, path: 'ubuntu/firefox/install-firefox.sh', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/firefox/install-geckodriver.sh', args: '0.20.1', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/firefox/install-geckodriver.sh', args: '0.23.0', privileged: true
 
   # flatpak
   # config.vm.provision :shell, path: 'ubuntu/flatpak/install-flatpak.sh', privileged: true
@@ -160,7 +160,7 @@ Vagrant.configure('2') do |config|
 
   # google-chrome
   # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-google-chrome.sh', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-chromedriver.sh', args: '2.38', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-chromedriver.sh', args: '2.43', privileged: true
 
   # graphviz
   # config.vm.provision :shell, path: 'ubuntu/graphviz/install-graphviz.sh', privileged: true
@@ -208,7 +208,7 @@ Vagrant.configure('2') do |config|
 
   # mysql
   # config.vm.provision :shell, path: 'ubuntu/mysql/install-mysql.sh', args: 'admin libmysqlclient-dev', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/mysql/install-mariadb.sh', args: '10.1 bionic admin libmysqlclient-dev', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/mysql/install-mariadb.sh', args: '10.3 bionic admin libmysqlclient-dev', privileged: true
 
   # network-manager
   # config.vm.provision :shell, path: 'ubuntu/network-manager/install-network-manager.sh', privileged: true
@@ -224,13 +224,13 @@ Vagrant.configure('2') do |config|
 
   # nodejs
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nvm.sh', args: '0.33.11', privileged: false
-  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '10.1.0', privileged: false
+  # config.vm.provision :shell, path: 'ubuntu/nodejs/install-nodejs.sh', args: '10.13.0', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-yarn.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-eslint.sh', privileged: false
   # config.vm.provision :shell, path: 'ubuntu/nodejs/install-stylelint.sh', privileged: false
 
   # overmind
-  # config.vm.provision :shell, path: 'ubuntu/overmind/install-overmind.sh', args: '1.1.1', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/overmind/install-overmind.sh', args: '1.2.1', privileged: true
 
   # phantomjs
   # config.vm.provision :shell, path: 'ubuntu/phantomjs/install-phantomjs.sh', privileged: true
@@ -239,7 +239,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/poppler/install-poppler.sh', privileged: true
 
   # postgresql
-  # config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '10 bionic libpq-dev', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '11 bionic libpq-dev', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/postgresql/set-psqlrc.sh', privileged: false
 
@@ -247,7 +247,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/rar/install-rar.sh', privileged: true
 
   # rbspy
-  # config.vm.provision :shell, path: 'ubuntu/rbspy/install-rbspy.sh', args: '0.3.2', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/rbspy/install-rbspy.sh', args: '0.3.3', privileged: true
 
   # readline
   # config.vm.provision :shell, path: 'ubuntu/readline/set-inputrc.sh', privileged: false
@@ -297,7 +297,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/tree/install-tree.sh', privileged: true
 
   # vagrant
-  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '2.1.1', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '2.2.1', privileged: true
 
   # vim
   # config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true
@@ -305,13 +305,13 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/vim/set-vim-as-default-editor.sh', privileged: false
 
   # virtualbox
-  # config.vm.provision :shell, path: 'ubuntu/virtualbox/install-virtualbox.sh', args: '5.2.12 5.2_5.2.12-122591 bionic', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/virtualbox/install-virtualbox.sh', args: '5.2.22 5.2_5.2.22-126460 bionic', privileged: true
 
   # vscode
   # config.vm.provision :shell, path: 'ubuntu/vscode/install-vscode.sh', privileged: true
 
   # wkhtmltopdf
-  # config.vm.provision :shell, path: 'ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh', args: '0.12.4', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh', args: '0.12.5', privileged: true
 
   # xclip
   # config.vm.provision :shell, path: 'ubuntu/xclip/install-xclip.sh', privileged: true

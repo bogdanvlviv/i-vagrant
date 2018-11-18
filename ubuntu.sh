@@ -31,10 +31,10 @@ sudo bash "ubuntu/curl/install-curl.sh"
 
 # docker
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
-sudo bash "ubuntu/docker/install-docker-compose.sh" 1.21.2
+sudo bash "ubuntu/docker/install-docker-compose.sh" 1.23.1
 
 # elasticsearch
-# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.2.4
+# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.5.0
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -44,7 +44,7 @@ sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 
 # firefox
 sudo bash "ubuntu/firefox/install-firefox.sh"
-sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.20.1
+sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.23.0
 
 # flatpak
 sudo bash "ubuntu/flatpak/install-flatpak.sh"
@@ -62,7 +62,7 @@ sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.38
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.43
 
 # graphviz
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
@@ -110,7 +110,7 @@ sudo bash "ubuntu/mosh/install-mosh.sh"
 
 # mysql
 # sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
-# sudo bash "ubuntu/mysql/install-mariadb.sh" 10.1 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
+# sudo bash "ubuntu/mysql/install-mariadb.sh" 10.3 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
 
 # network-manager
 sudo bash "ubuntu/network-manager/install-network-manager.sh"
@@ -126,13 +126,13 @@ sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
 # bash "ubuntu/nodejs/install-nvm.sh" 0.33.11
-# bash "ubuntu/nodejs/install-nodejs.sh" 10.1.0
+# bash "ubuntu/nodejs/install-nodejs.sh" 10.13.0
 # sudo bash "ubuntu/nodejs/install-yarn.sh"
 # bash "ubuntu/nodejs/install-eslint.sh"
 # bash "ubuntu/nodejs/install-stylelint.sh"
 
 # overmind
-# sudo bash "ubuntu/overmind/install-overmind.sh" 1.1.1
+# sudo bash "ubuntu/overmind/install-overmind.sh" 1.2.1
 
 # phantomjs
 # sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
@@ -141,20 +141,20 @@ sudo bash "ubuntu/nmap/install-nmap.sh"
 sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
-# sudo bash "ubuntu/postgresql/install-postgresql.sh" 10 $UBUNTU_RELEASE_CODENAME libpq-dev
+# sudo bash "ubuntu/postgresql/install-postgresql.sh" 11 $UBUNTU_RELEASE_CODENAME libpq-dev
 # sudo bash "ubuntu/postgresql/create-user.sh" root admin
 # bash "ubuntu/postgresql/set-psqlrc.sh"
 
 # python
 # sudo bash "ubuntu/python/install-pyenv.sh"
 # sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.15
-# sudo bash "ubuntu/python/install-python.sh" pyenv 3.6.5
+# sudo bash "ubuntu/python/install-python.sh" pyenv 3.7.1
 
 # rar
 sudo bash "ubuntu/rar/install-rar.sh"
 
 # rbspy
-# sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.2
+# sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.3
 
 # readline
 bash "ubuntu/readline/set-inputrc.sh"
@@ -173,7 +173,7 @@ sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.10 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.8 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.5 bundler
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.3 jekyll rails rubocop "tmuxinator:0.11.3"
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.3 jekyll rails rubocop "tmuxinator:0.13.0"
 
 # siege
 # sudo bash "ubuntu/siege/install-siege.sh"
@@ -204,7 +204,7 @@ sudo bash "ubuntu/tor/install-tor.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.1.1
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.1
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
@@ -212,13 +212,13 @@ bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.12 5.2_5.2.12-122591 $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.22 5.2_5.2.22-126460 $UBUNTU_RELEASE_CODENAME
 
 # vscode
 # sudo bash "ubuntu/vscode/install-vscode.sh"
 
 # wkhtmltopdf
-sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4
+sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.5
 
 # xclip
 sudo bash "ubuntu/xclip/install-xclip.sh"
