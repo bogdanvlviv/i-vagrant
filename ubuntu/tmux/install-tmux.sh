@@ -15,6 +15,7 @@ apt install -y libncurses5-dev
 rm -fr /tmp/tmux
 git clone https://github.com/tmux/tmux.git /tmp/tmux
 cd /tmp/tmux
+git checkout $1
 sh autogen.sh
 ./configure && make
 make install

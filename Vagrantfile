@@ -287,7 +287,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/the_silver_searcher/install-the_silver_searcher.sh', privileged: true
 
   # tmux
-  # config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/tmux/install-tmux.sh', args: '2.8', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/tmux/install-dottmux.sh', privileged: false
 
   # tor

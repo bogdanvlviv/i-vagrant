@@ -188,7 +188,7 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 
 # tmux
-# RUN sudo bash "ubuntu/tmux/install-tmux.sh"
+# RUN sudo bash "ubuntu/tmux/install-tmux.sh" 2.8
 # RUN bash "ubuntu/tmux/install-dottmux.sh"
 
 # tor
