@@ -311,7 +311,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/vscode/install-vscode.sh', privileged: true
 
   # wkhtmltopdf
-  # config.vm.provision :shell, path: 'ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh', args: '0.12.5', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh', args: '0.12.4', privileged: true
 
   # xclip
   # config.vm.provision :shell, path: 'ubuntu/xclip/install-xclip.sh', privileged: true

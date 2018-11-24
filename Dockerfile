@@ -212,7 +212,7 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/vscode/install-vscode.sh"
 
 # wkhtmltopdf
-# RUN sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.5
+# RUN sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4
 
 # xclip
 # RUN sudo bash "ubuntu/xclip/install-xclip.sh"

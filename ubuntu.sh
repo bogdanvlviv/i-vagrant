@@ -218,7 +218,7 @@ sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.22 5.2_5.2.22-126460 $UB
 # sudo bash "ubuntu/vscode/install-vscode.sh"
 
 # wkhtmltopdf
-sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.5
+sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4
 
 # xclip
 sudo bash "ubuntu/xclip/install-xclip.sh"
