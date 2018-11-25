@@ -135,7 +135,7 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
-# RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 11 bionic libpq-dev
+# RUN sudo bash "ubuntu/postgresql/install-postgresql.sh" 11 bionic libpq-dev pgadmin4
 # RUN sudo bash "ubuntu/postgresql/create-user.sh" root admin
 # RUN bash "ubuntu/postgresql/set-psqlrc.sh"
 

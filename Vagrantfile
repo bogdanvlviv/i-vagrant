@@ -239,7 +239,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/poppler/install-poppler.sh', privileged: true
 
   # postgresql
-  # config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '11 bionic libpq-dev', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/postgresql/install-postgresql.sh', args: '11 bionic libpq-dev pgadmin4', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/postgresql/create-user.sh', args: 'root admin', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/postgresql/set-psqlrc.sh', privileged: false
 
