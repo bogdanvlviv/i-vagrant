@@ -54,7 +54,7 @@ bash "ubuntu/fzf/install-fzf.sh"
 bash "ubuntu/fzf/set-fzf_default_command.sh"
 
 # gimp
-sudo bash "ubuntu/gimp/install-gimp.sh"
+# sudo bash "ubuntu/gimp/install-gimp.sh"
 
 # git
 sudo bash "ubuntu/git/install-git.sh"
@@ -100,7 +100,7 @@ sudo bash "ubuntu/mc/install-mc.sh"
 # sudo bash "ubuntu/memcached/install-memcached.sh"
 
 # mongodb
-sudo bash "ubuntu/mongodb/install-mongodb.sh" 4.0 $UBUNTU_RELEASE_CODENAME
+# sudo bash "ubuntu/mongodb/install-mongodb.sh" 4.0 $UBUNTU_RELEASE_CODENAME
 
 # mupdf
 sudo bash "ubuntu/mupdf/install-mupdf.sh"
@@ -180,7 +180,7 @@ sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.3 jekyll rails rubocop "tmuxin
 # sudo bash "ubuntu/siege/install-siege.sh"
 
 # simplescreenrecorder
-sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
+# sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
 
 # sqlite3
 sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
