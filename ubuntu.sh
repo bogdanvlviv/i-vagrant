@@ -60,6 +60,10 @@ bash "ubuntu/fzf/set-fzf_default_command.sh"
 sudo bash "ubuntu/git/install-git.sh"
 sudo bash "ubuntu/git/install-diff-highlight.sh"
 
+# go
+# sudo bash "ubuntu/go/install-go.sh" 1.11.2
+# bash "ubuntu/go/set-go-bin-to-path-variable.sh"
+
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
 sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.43

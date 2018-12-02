@@ -54,6 +54,10 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/git/install-git.sh"
 # RUN sudo bash "ubuntu/git/install-diff-highlight.sh"
 
+# go
+# RUN sudo bash "ubuntu/go/install-go.sh" 1.11.2
+# RUN bash "ubuntu/go/set-go-bin-to-path-variable.sh"
+
 # google-chrome
 # RUN sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
 # RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.43

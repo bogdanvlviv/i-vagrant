@@ -79,6 +79,10 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/git/install-diff-highlight.sh', privileged: true
 
+  # go
+  # config.vm.provision :shell, path: 'ubuntu/go/install-go.sh', args: '1.11.2', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/go/set-go-bin-to-path-variable.sh', privileged: false
+
   # google-chrome
   # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-google-chrome.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/google-chrome/install-chromedriver.sh', args: '2.43', privileged: true
