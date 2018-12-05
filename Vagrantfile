@@ -246,6 +246,7 @@ Vagrant.configure('2') do |config|
 
   # xclip
   # config.vm.provision :shell, path: 'ubuntu/xclip/install-xclip.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/xclip/add-xclip-shorthands.sh', privileged: false
 
   # xterm
   # config.vm.provision :shell, path: 'ubuntu/xterm/install-xterm.sh', privileged: true

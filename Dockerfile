@@ -221,6 +221,7 @@ WORKDIR /tmp/i-vagrant
 
 # xclip
 # RUN sudo bash "ubuntu/xclip/install-xclip.sh"
+# RUN bash "ubuntu/xclip/add-xclip-shorthands.sh"
 
 # xterm
 # RUN sudo bash "ubuntu/xterm/install-xterm.sh"

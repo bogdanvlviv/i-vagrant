@@ -227,6 +227,7 @@ sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4
 
 # xclip
 sudo bash "ubuntu/xclip/install-xclip.sh"
+bash "ubuntu/xclip/add-xclip-shorthands.sh"
 
 # xterm
 sudo bash "ubuntu/xterm/install-xterm.sh"
