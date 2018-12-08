@@ -42,6 +42,9 @@ Vagrant.configure('2') do |config|
   # android_studio
   # config.vm.provision :shell, path: 'ubuntu/android_studio/install-android_studio.sh', privileged: true
 
+  # atom
+  # config.vm.provision :shell, path: 'ubuntu/atom/install-atom.sh', privileged: true
+
   # cmus
   # config.vm.provision :shell, path: 'ubuntu/cmus/install-cmus.sh', privileged: true
 
@@ -213,6 +216,9 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/ssh/install-openssh-server.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ssh/change-sshd_config.sh', args: '2222 no', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ssh/set-authorized_keys.sh', privileged: false
+
+  # sublimetext
+  # config.vm.provision :shell, path: 'ubuntu/sublimetext/install-sublimetext.sh', privileged: true
 
   # the_silver_searcher
   # config.vm.provision :shell, path: 'ubuntu/the_silver_searcher/install-the_silver_searcher.sh', privileged: true

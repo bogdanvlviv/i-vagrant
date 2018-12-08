@@ -17,6 +17,9 @@ WORKDIR /tmp/i-vagrant
 # android_studio
 # RUN sudo bash "ubuntu/android_studio/install-android_studio.sh"
 
+# atom
+# RUN sudo bash "ubuntu/atom/install-atom.sh"
+
 # cmus
 # RUN sudo bash "ubuntu/cmus/install-cmus.sh"
 
@@ -188,6 +191,9 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/ssh/install-openssh-server.sh"
 # RUN sudo bash "ubuntu/ssh/change-sshd_config.sh" 2222 no
 # RUN bash "ubuntu/ssh/set-authorized_keys.sh"
+
+# sublimetext
+# RUN sudo bash "ubuntu/sublimetext/install-sublimetext.sh"
 
 # the_silver_searcher
 # RUN sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
