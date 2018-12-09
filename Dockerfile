@@ -76,6 +76,7 @@ WORKDIR /tmp/i-vagrant
 
 # imagemagick
 # RUN sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
+# RUN sudo bash "ubuntu/imagemagick/add-imagemagick-shorthands.sh"
 
 # java
 # RUN sudo bash "ubuntu/java/install-java.sh" 11

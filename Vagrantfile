@@ -101,6 +101,7 @@ Vagrant.configure('2') do |config|
 
   # imagemagick
   # config.vm.provision :shell, path: 'ubuntu/imagemagick/install-imagemagick.sh', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/imagemagick/add-imagemagick-shorthands.sh', privileged: true
 
   # java
   # config.vm.provision :shell, path: 'ubuntu/java/install-java.sh', args: '11', privileged: true

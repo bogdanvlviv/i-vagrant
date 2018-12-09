@@ -82,6 +82,7 @@ sudo bash "ubuntu/htop/install-htop.sh"
 
 # imagemagick
 sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
+sudo bash "ubuntu/imagemagick/add-imagemagick-shorthands.sh"
 
 # java
 sudo bash "ubuntu/java/install-java.sh" 11
