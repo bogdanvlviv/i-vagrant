@@ -9,6 +9,10 @@ Vagrant.configure('2') do |config|
     vb.cpus = '2'
   end
 
+  config.vm.network 'private_network', ip: '192.168.33.10'
+
+  config.vm.network 'forwarded_port', guest: 3000, host: 3000
+
   config.vm.synced_folder '~/work', '/work'
 
   # git
@@ -26,9 +30,6 @@ Vagrant.configure('2') do |config|
   config.vm.provision :file, source: '~/.ssh/id_rsa.pub', destination: '~/.ssh/id_rsa.pub'
   config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa', privileged: false
   config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa.pub', privileged: false
-
-  # rails
-  config.vm.network 'forwarded_port', guest: 3000, host: 3000
 
   # ubuntu
 
