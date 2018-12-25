@@ -200,7 +200,8 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.2.10 bundler', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.3.8 bundler', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.4.5 bundler', privileged: true
-  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.5.3 jekyll rails rubocop tmuxinator', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.5.3', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/ruby/install-ruby.sh', args: 'rbenv 2.6.0 jekyll rails rubocop tmuxinator', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/ruby/prepare-for-rails-development.sh', args: 'vagrant root admin', privileged: false
 
   # siege

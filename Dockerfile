@@ -175,7 +175,8 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.10 bundler
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.8 bundler
 # RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.5 bundler
-# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.3 jekyll rails rubocop tmuxinator
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.3
+# RUN sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.0 jekyll rails rubocop tmuxinator
 # RUN bash "ubuntu/ruby/prepare-for-rails-development.sh" vagrant root admin
 
 # siege
