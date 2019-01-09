@@ -12,3 +12,9 @@ curl https://releases.hashicorp.com/vagrant/$1/vagrant_$1_x86_64.deb -o /tmp/vag
 dpkg -i /tmp/vagrant_$1_x86_64.deb
 
 rm /tmp/vagrant_$1_x86_64.deb
+
+shift 1
+
+if (( $# )); then
+  vagrant plugin install $@
+fi

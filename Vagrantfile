@@ -237,7 +237,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/tree/install-tree.sh', privileged: true
 
   # vagrant
-  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '2.2.1', privileged: true
+  # config.vm.provision :shell, path: 'ubuntu/vagrant/install-vagrant.sh', args: '2.2.1 vagrant-disksize', privileged: true
 
   # vim
   # config.vm.provision :shell, path: 'ubuntu/vim/install-vim.sh', privileged: true

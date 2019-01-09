@@ -217,7 +217,7 @@ sudo bash "ubuntu/tor/install-tor.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.1
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.1 vagrant-disksize
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"

@@ -211,7 +211,7 @@ WORKDIR /tmp/i-vagrant
 # RUN sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.1
+# RUN sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.1 vagrant-disksize
 
 # vim
 # RUN sudo bash "ubuntu/vim/install-vim.sh"
