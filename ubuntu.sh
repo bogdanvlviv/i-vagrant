@@ -182,7 +182,7 @@ sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.8 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.5 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.3
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.0 jekyll rails rubocop "tmuxinator:0.14.0"
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.1 jekyll rails rubocop "tmuxinator:0.14.0"
 # bash "ubuntu/ruby/prepare-for-rails-development.sh" vagrant root admin
 
 # siege
