@@ -69,7 +69,7 @@ sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.43
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.46
 
 # graphviz
 sudo bash "ubuntu/graphviz/install-graphviz.sh"

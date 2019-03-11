@@ -63,7 +63,7 @@ WORKDIR /tmp/i-vagrant
 
 # google-chrome
 # RUN sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.43
+# RUN sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.46
 
 # graphviz
 # RUN sudo bash "ubuntu/graphviz/install-graphviz.sh"
