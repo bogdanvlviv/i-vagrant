@@ -11,27 +11,36 @@ Vagrant.configure('2') do |config|
   config.vm.network 'private_network', ip: '192.168.33.10'
 
   config.vm.network 'forwarded_port', guest: 3000, host: 3000
+  config.vm.network 'forwarded_port', guest: 3001, host: 3001
+  config.vm.network 'forwarded_port', guest: 8080, host: 80
 
-  config.vm.synced_folder '~/work', '/work'
+  #config.vm.synced_folder '~/work', '/work'
+  config.vm.synced_folder "C:/work/code", "/var/code"
+
+  # AWS CLI, SAM, EKS
+  config.vm.provision :file, source: ENV['USERPROFILE'] + '/.aws/config', destination: '~/.aws/config'
+  config.vm.provision :file, source: ENV['USERPROFILE'] + '/.aws/credentials', destination: '~/.aws/credentials'
+  config.vm.provision :file, source: ENV['USERPROFILE'] + '/.kube/config', destination: '~/.kube/config'
 
   # git
-  config.vm.provision :file, source: '~/.gitconfig', destination: '~/.gitconfig'
-  config.vm.provision :file, source: '~/.gitignore_global', destination: '~/.gitignore_global'
+  #config.vm.provision :file, source: '~/.gitconfig', destination: '~/.gitconfig'
+  #config.vm.provision :file, source: '~/.gitignore_global', destination: '~/.gitignore_global'
 
   # gnupg
-  config.vm.provision :file, source: '~/.gnupg/gpg.conf', destination: '~/.gnupg/gpg.conf'
-  config.vm.provision :file, source: '~/.gnupg/pubring.gpg', destination: '~/.gnupg/pubring.gpg'
-  config.vm.provision :file, source: '~/.gnupg/secring.gpg', destination: '~/.gnupg/secring.gpg'
-  config.vm.provision :file, source: '~/.gnupg/trustdb.gpg', destination: '~/.gnupg/trustdb.gpg'
+  #config.vm.provision :file, source: '~/.gnupg/gpg.conf', destination: '~/.gnupg/gpg.conf'
+  #config.vm.provision :file, source: '~/.gnupg/pubring.gpg', destination: '~/.gnupg/pubring.gpg'
+  #config.vm.provision :file, source: '~/.gnupg/secring.gpg', destination: '~/.gnupg/secring.gpg'
+  #config.vm.provision :file, source: '~/.gnupg/trustdb.gpg', destination: '~/.gnupg/trustdb.gpg'
 
   # ssh
-  config.vm.provision :file, source: '~/.ssh/id_rsa', destination: '~/.ssh/id_rsa'
-  config.vm.provision :file, source: '~/.ssh/id_rsa.pub', destination: '~/.ssh/id_rsa.pub'
-  config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa', privileged: false
-  config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa.pub', privileged: false
+  #config.vm.provision :file, source: '~/.ssh/id_rsa', destination: '~/.ssh/id_rsa'
+  #config.vm.provision :file, source: '~/.ssh/id_rsa.pub', destination: '~/.ssh/id_rsa.pub'
+  #config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa', privileged: false
+  #config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa.pub', privileged: false
 
   # ubuntu
-
+  config.vm.provision :shell, path: 'ubuntu/devops/installer.sh', privileged: true
+  
   # upgrade
   # config.vm.provision :shell, path: 'ubuntu/upgrade/make-upgrade_packages.sh', privileged: true
 
@@ -49,10 +58,11 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/cmus/install-cmus.sh', privileged: true
 
   # curl
-  # config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/curl/install-curl.sh', privileged: true
 
   # docker
-  # config.vm.provision :shell, path: 'ubuntu/docker/install-docker.sh', args: 'bionic', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/docker/install-docker.sh', args: 'bionic', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/devops/docker-add-local-user.sh', args: 'vagrant', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/docker/install-docker-compose.sh', args: '1.23.1', privileged: true
 
   # elasticsearch
@@ -79,7 +89,7 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/gimp/install-gimp.sh', privileged: true
 
   # git
-  # config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/git/install-git.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/git/install-diff-highlight.sh', privileged: true
 
   # go
@@ -108,11 +118,12 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/java/install-oracle-java.sh', args: '8', privileged: true
 
   # jq
-  # config.vm.provision :shell, path: 'ubuntu/jq/install-jq.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/jq/install-jq.sh', privileged: true
 
   # kubernetes
   # config.vm.provision :shell, path: 'ubuntu/kubernetes/install-kubectl.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/kubernetes/install-minikube.sh', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/devops/install-k8s-tools-aws.sh', args: '1.12.7', privileged: true
 
   # letsencrypt
   # config.vm.provision :shell, path: 'ubuntu/letsencrypt/install-letsencrypt.sh', privileged: true
@@ -176,6 +187,8 @@ Vagrant.configure('2') do |config|
   # config.vm.provision :shell, path: 'ubuntu/python/install-pyenv.sh', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/python/install-python.sh', args: 'pyenv 2.7.15', privileged: true
   # config.vm.provision :shell, path: 'ubuntu/python/install-python.sh', args: 'pyenv 3.7.1', privileged: true
+  config.vm.provision :shell, path: 'ubuntu/devops/install-pyenv-nonprivileged.sh', privileged: false
+  config.vm.provision :shell, path: 'ubuntu/devops/install-python-nonprivileged.sh', args: 'pyenv 3.6.8 pipenv awscli aws-sam-cli', privileged: false
 
   # rar
   # config.vm.provision :shell, path: 'ubuntu/rar/install-rar.sh', privileged: true
