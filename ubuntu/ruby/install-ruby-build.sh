@@ -12,6 +12,8 @@ apt install -y curl
 
 apt install -y autoconf
 apt install -y bison
+apt install -y gcc
+apt install -y make
 apt install -y build-essential
 apt install -y libssl-dev
 apt install -y libyaml-dev
