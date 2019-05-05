@@ -15,7 +15,7 @@ apt install -y bison
 apt install -y build-essential
 apt install -y libssl-dev
 apt install -y libyaml-dev
-apt install -y libreadline6-dev
+apt install -y libreadline-dev
 apt install -y zlib1g-dev
 apt install -y libncurses5-dev
 apt install -y libffi-dev
