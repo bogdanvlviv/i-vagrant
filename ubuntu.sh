@@ -34,10 +34,10 @@ sudo bash "ubuntu/curl/install-curl.sh"
 
 # docker
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
-sudo bash "ubuntu/docker/install-docker-compose.sh" 1.23.1
+sudo bash "ubuntu/docker/install-docker-compose.sh" 1.24.0
 
 # elasticsearch
-# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 6.5.0
+# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 7.0.1
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -47,7 +47,7 @@ sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 
 # firefox
 sudo bash "ubuntu/firefox/install-firefox.sh"
-sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.23.0
+sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.24.0
 
 # flatpak
 sudo bash "ubuntu/flatpak/install-flatpak.sh"
@@ -64,12 +64,12 @@ sudo bash "ubuntu/git/install-git.sh"
 sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # go
-# sudo bash "ubuntu/go/install-go.sh" 1.11.2
+# sudo bash "ubuntu/go/install-go.sh" 1.12.5
 # bash "ubuntu/go/set-go-bin-to-path-variable.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 2.46
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 75.0.3770.8
 
 # graphviz
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
@@ -133,14 +133,14 @@ sudo bash "ubuntu/ngrok/install-ngrok.sh"
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-# bash "ubuntu/nodejs/install-nvm.sh" 0.33.11
-# bash "ubuntu/nodejs/install-nodejs.sh" 10.13.0
+# bash "ubuntu/nodejs/install-nvm.sh" 0.34.0
+# bash "ubuntu/nodejs/install-nodejs.sh" 10.15.3
 # sudo bash "ubuntu/nodejs/install-yarn.sh"
 # bash "ubuntu/nodejs/install-eslint.sh"
 # bash "ubuntu/nodejs/install-stylelint.sh"
 
 # overmind
-# sudo bash "ubuntu/overmind/install-overmind.sh" 1.2.1
+# sudo bash "ubuntu/overmind/install-overmind.sh" 2.0.2
 
 # phantomjs
 # sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
@@ -155,14 +155,14 @@ sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # python
 # sudo bash "ubuntu/python/install-pyenv.sh"
-# sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.15
-# sudo bash "ubuntu/python/install-python.sh" pyenv 3.7.1
+# sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.16
+# sudo bash "ubuntu/python/install-python.sh" pyenv 3.7.3
 
 # rar
 sudo bash "ubuntu/rar/install-rar.sh"
 
 # rbspy
-# sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.3
+# sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.5
 
 # readline
 bash "ubuntu/readline/set-inputrc.sh"
@@ -180,9 +180,9 @@ sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.1.10 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.2.10 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.3.8 bundler
-# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.5 bundler
-# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.4
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.3 jekyll rails rubocop "tmuxinator:0.14.0"
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.4.6 bundler
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.5
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.3 jekyll rails rubocop "tmuxinator:1.1.0"
 # bash "ubuntu/ruby/prepare-for-rails-development.sh" vagrant root admin
 
 # siege
@@ -207,7 +207,7 @@ bash "ubuntu/ssh/set-authorized_keys.sh"
 sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 
 # tmux
-sudo bash "ubuntu/tmux/install-tmux.sh" 2.8
+sudo bash "ubuntu/tmux/install-tmux.sh" 2.9
 bash "ubuntu/tmux/install-dottmux.sh"
 
 # tor
@@ -217,7 +217,7 @@ sudo bash "ubuntu/tor/install-tor.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.1 vagrant-disksize
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.4 vagrant-disksize
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
@@ -225,13 +225,13 @@ bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 5.2.22 5.2_5.2.22-126460 $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.0_6.0.6-130049 $UBUNTU_RELEASE_CODENAME
 
 # vscode
 # sudo bash "ubuntu/vscode/install-vscode.sh"
 
 # wkhtmltopdf
-sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.4
+sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.5
 
 # xclip
 sudo bash "ubuntu/xclip/install-xclip.sh"
