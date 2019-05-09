@@ -225,13 +225,13 @@ bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.0_6.0.6-130049 $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.0.6 6.0_6.0.6-130049 $UBUNTU_RELEASE_CODENAME
 
 # vscode
 # sudo bash "ubuntu/vscode/install-vscode.sh"
 
 # wkhtmltopdf
-sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.5
+sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.5 $UBUNTU_RELEASE_CODENAME
 
 # xclip
 sudo bash "ubuntu/xclip/install-xclip.sh"

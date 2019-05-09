@@ -11,7 +11,7 @@ apt install -y openjdk-11-jre
 # "ubuntu/java/install-java.sh" 8
 
 rm /tmp/elasticsearch-$1.deb
-curl https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-$1.deb -o /tmp/elasticsearch-$1.deb
+curl https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-$1-amd64.deb -o /tmp/elasticsearch-$1.deb
 
 dpkg -i /tmp/elasticsearch-$1.deb
 
