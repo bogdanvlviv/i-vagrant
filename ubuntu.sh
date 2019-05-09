@@ -75,7 +75,7 @@ sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 75.0.3770.8
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
 
 # heroku
-sudo bash "ubuntu/heroku/install-heroku-cli.sh"
+# sudo bash "ubuntu/heroku/install-heroku-cli.sh"
 
 # htop
 sudo bash "ubuntu/htop/install-htop.sh"
@@ -242,7 +242,7 @@ sudo bash "ubuntu/xterm/install-xterm.sh"
 bash "ubuntu/xterm/install-dotX.sh"
 
 # zoom
-sudo bash "ubuntu/zoom/install-zoom.sh"
+# sudo bash "ubuntu/zoom/install-zoom.sh"
 
 echo ""
 echo "Running: \`source \"$HOME/.bashrc\"\`"
