@@ -207,7 +207,7 @@ bash "ubuntu/ssh/set-authorized_keys.sh"
 sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 
 # tmux
-sudo bash "ubuntu/tmux/install-tmux.sh" 2.9
+sudo bash "ubuntu/tmux/install-tmux.sh" 2.9a
 bash "ubuntu/tmux/install-dottmux.sh"
 
 # tor
