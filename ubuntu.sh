@@ -86,7 +86,6 @@ sudo bash "ubuntu/imagemagick/add-imagemagick-shorthands.sh"
 
 # java
 # sudo bash "ubuntu/java/install-java.sh" 11
-# sudo bash "ubuntu/java/install-oracle-java.sh" 8
 
 # jq
 sudo bash "ubuntu/jq/install-jq.sh"
