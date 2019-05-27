@@ -41,6 +41,7 @@ sudo bash "ubuntu/docker/install-docker-compose.sh" 1.24.0
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
+bash "ubuntu/exuberant-ctags/set-ctags.sh"
 
 # ffmpeg
 sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
