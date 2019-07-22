@@ -1,7 +1,24 @@
 #!/usr/bin/env bash
 
-source "$HOME/.nvm/nvm.sh"
+if [[ "$1" = "nodenv" ]]; then
+  export PATH="$HOME/.nodenv/bin:$PATH"
+  eval "$(nodenv init -)"
 
-nvm install $1
+  nodenv install $2
+  nodenv global $2
 
-nvm alias default $1
+  nodenv rehash
+
+  if [[ "$SUDO_USER" ]]; then
+    chown -R $SUDO_USER:$SUDO_USER ~/.nodenv/
+  fi
+elif [[ "$1" = "nvm" ]]; then
+  source "$HOME/.nvm/nvm.sh"
+
+  nvm install $2
+
+  nvm alias default $2
+else
+  echo "Need to set Node environment manager nodenv or nvm" >&2
+  exit 1
+fi

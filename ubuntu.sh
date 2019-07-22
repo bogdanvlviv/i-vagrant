@@ -133,8 +133,9 @@ sudo bash "ubuntu/ngrok/install-ngrok.sh"
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-# bash "ubuntu/nodejs/install-nvm.sh" 0.34.0
-# bash "ubuntu/nodejs/install-nodejs.sh" 10.15.3
+# sudo bash "ubuntu/nodejs/install-nodenv.sh"
+# sudo bash "ubuntu/nodejs/install-node-build.sh"
+# bash "ubuntu/nodejs/install-nodejs.sh" nodenv 12.6.0
 # sudo bash "ubuntu/nodejs/install-yarn.sh"
 # bash "ubuntu/nodejs/install-eslint.sh"
 # bash "ubuntu/nodejs/install-stylelint.sh"
