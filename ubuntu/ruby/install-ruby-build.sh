@@ -6,10 +6,6 @@ apt update
 apt install -y git
 # "ubuntu/git/install-git.sh"
 
-# "ubuntu/curl/install-curl.sh"
-apt install -y curl
-# "ubuntu/curl/install-curl.sh"
-
 apt install -y autoconf
 apt install -y bison
 apt install -y gcc
