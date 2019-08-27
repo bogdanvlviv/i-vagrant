@@ -193,6 +193,9 @@ sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.3 jekyll rails rubocop "tmuxin
 # simplescreenrecorder
 # sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
 
+# slack
+# sudo bash "ubuntu/slack/install-slack.sh"
+
 # sqlite3
 sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
 
