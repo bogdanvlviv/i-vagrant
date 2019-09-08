@@ -73,6 +73,9 @@ sudo bash "ubuntu/git/install-diff-highlight.sh"
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
 sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 75.0.3770.8
 
+# graphiql
+# sudo bash "ubuntu/graphiql/install-graphiql.sh" 0.7.2
+
 # graphviz
 sudo bash "ubuntu/graphviz/install-graphviz.sh"
 
