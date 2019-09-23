@@ -144,6 +144,10 @@ sudo bash "ubuntu/nmap/install-nmap.sh"
 # bash "ubuntu/nodejs/install-eslint.sh"
 # bash "ubuntu/nodejs/install-stylelint.sh"
 
+# openvpn
+sudo bash "ubuntu/openvpn/install-openvpn.sh"
+sudo bash "ubuntu/openvpn/change-openvpn_config.sh"
+
 # overmind
 # sudo bash "ubuntu/overmind/install-overmind.sh" 2.0.2
 
