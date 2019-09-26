@@ -162,6 +162,9 @@ sudo bash "ubuntu/poppler/install-poppler.sh"
 # sudo bash "ubuntu/postgresql/create-user.sh" root admin
 # bash "ubuntu/postgresql/set-psqlrc.sh"
 
+# postman
+# sudo bash "ubuntu/postman/install-postman.sh"
+
 # python
 # sudo bash "ubuntu/python/install-pyenv.sh"
 # sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.16
