@@ -224,6 +224,9 @@ bash "ubuntu/ssh/set-authorized_keys.sh"
 # the_silver_searcher
 sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 
+# tmate
+# sudo bash "ubuntu/tmate/install-tmate.sh"
+
 # tmux
 sudo bash "ubuntu/tmux/install-tmux.sh" 2.9a
 bash "ubuntu/tmux/install-dottmux.sh"
