@@ -35,7 +35,6 @@ sudo bash "ubuntu/curl/install-curl.sh"
 # docker
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 sudo bash "ubuntu/docker/install-docker-compose.sh" 1.24.0
-sudo bash "ubuntu/docker/add-docker-shorthands.sh"
 
 # elasticsearch
 # sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 7.0.1
