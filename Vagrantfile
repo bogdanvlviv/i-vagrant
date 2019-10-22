@@ -1,16 +1,28 @@
+required_plugins = ['vagrant-disksize']
+required_plugins.each do |plugin|
+  unless Vagrant.has_plugin? plugin
+    abort "Need to install '#{plugin}' plugin."
+  end
+end
+
 Vagrant.configure('2') do |config|
-  config.vm.box = 'ubuntu/bionic64'
-
-  config.disksize.size = '20GB'
-
-  config.vm.provider 'virtualbox' do |vb|
+  config.vm.provider 'virtualbox' do |vb, override|
     vb.memory = '4096'
     vb.cpus = '2'
+
+    override.vm.box = 'ubuntu/bionic64'
+    override.disksize.size = '20GB'
   end
 
-  config.vm.network 'private_network', ip: '192.168.33.10'
+  config.vm.provider 'docker' do |d, override|
+    d.build_dir = 'docker-vagrant'
+    d.has_ssh = true
+    d.remains_running = true
+  end
 
-  config.vm.network 'forwarded_port', guest: 3000, host: 3000
+  config.vm.network 'private_network', type: 'dhcp'
+
+  config.vm.network 'forwarded_port', guest: 3000, host: 3000, auto_correct: true
 
   config.vm.synced_folder '~/work', '/work'
 
