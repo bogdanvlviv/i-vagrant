@@ -196,6 +196,9 @@ sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.5 rubocop "tmuxinator:1.1.0"
 # bash "ubuntu/ruby/prepare-for-rails-development.sh" vagrant root admin
 
+# sequeler
+# sudo bash "ubuntu/sequeler/install-sequeler.sh"
+
 # siege
 # sudo bash "ubuntu/siege/install-siege.sh"
 
