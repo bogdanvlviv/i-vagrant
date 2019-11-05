@@ -37,6 +37,9 @@ sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 sudo bash "ubuntu/docker/add-sudo_user-to-docker-group.sh"
 sudo bash "ubuntu/docker/install-docker-compose.sh" 1.24.0
 
+# drawing
+# sudo bash "ubuntu/drawing/install-drawing.sh"
+
 # elasticsearch
 # sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 7.0.1
 
