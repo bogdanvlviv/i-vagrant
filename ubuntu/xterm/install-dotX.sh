@@ -8,6 +8,6 @@ apt install -y git
 
 rm -fr ~/.X
 rm ~/.Xresources
-git clone https://github.com/bogdanvlviv/dotX.git ~/.X
+git clone https://gitlab.com/bogdanvlviv/dotX.git ~/.X
 ln -s ~/.X/.Xresources ~/
 xrdb ~/.Xresources
