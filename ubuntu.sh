@@ -35,13 +35,13 @@ sudo bash "ubuntu/curl/install-curl.sh"
 # docker
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 sudo bash "ubuntu/docker/add-sudo_user-to-docker-group.sh"
-sudo bash "ubuntu/docker/install-docker-compose.sh" 1.24.0
+sudo bash "ubuntu/docker/install-docker-compose.sh" 1.25.0
 
 # drawing
 # sudo bash "ubuntu/drawing/install-drawing.sh"
 
 # elasticsearch
-# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 7.0.1
+# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 7.4.2
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -52,7 +52,7 @@ sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 
 # firefox
 sudo bash "ubuntu/firefox/install-firefox.sh"
-sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.24.0
+sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.26.0
 
 # flatpak
 sudo bash "ubuntu/flatpak/install-flatpak.sh"
@@ -69,12 +69,12 @@ sudo bash "ubuntu/git/install-git.sh"
 sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # go
-# sudo bash "ubuntu/go/install-go.sh" 1.12.5
+# sudo bash "ubuntu/go/install-go.sh" 1.13.4
 # bash "ubuntu/go/set-go-bin-to-path-variable.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 75.0.3770.8
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 78.0.3904.105
 
 # graphiql
 # sudo bash "ubuntu/graphiql/install-graphiql.sh" 0.7.2
@@ -115,7 +115,7 @@ sudo bash "ubuntu/mc/install-mc.sh"
 # sudo bash "ubuntu/memcached/install-memcached.sh"
 
 # mongodb
-# sudo bash "ubuntu/mongodb/install-mongodb.sh" 4.0 $UBUNTU_RELEASE_CODENAME
+# sudo bash "ubuntu/mongodb/install-mongodb.sh" 4.2 $UBUNTU_RELEASE_CODENAME
 
 # mupdf
 sudo bash "ubuntu/mupdf/install-mupdf.sh"
@@ -142,7 +142,7 @@ sudo bash "ubuntu/nmap/install-nmap.sh"
 # nodejs
 # sudo bash "ubuntu/nodejs/install-nodenv.sh"
 # sudo bash "ubuntu/nodejs/install-node-build.sh"
-# bash "ubuntu/nodejs/install-nodejs.sh" nodenv 12.6.0
+# bash "ubuntu/nodejs/install-nodejs.sh" nodenv 12.13.1
 # sudo bash "ubuntu/nodejs/install-yarn.sh"
 # bash "ubuntu/nodejs/install-eslint.sh"
 # bash "ubuntu/nodejs/install-stylelint.sh"
@@ -170,14 +170,14 @@ sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # python
 # sudo bash "ubuntu/python/install-pyenv.sh"
-# sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.16
-# sudo bash "ubuntu/python/install-python.sh" pyenv 3.7.3
+# sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.17
+# sudo bash "ubuntu/python/install-python.sh" pyenv 3.8.0
 
 # rar
 sudo bash "ubuntu/rar/install-rar.sh"
 
 # rbspy
-# sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.5
+# sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.7
 
 # readline
 bash "ubuntu/readline/set-inputrc.sh"
@@ -234,8 +234,8 @@ sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 # sudo bash "ubuntu/tmate/install-tmate.sh"
 
 # tmux
-sudo bash "ubuntu/tmux/install-tmux.sh" 2.9a
-bash "ubuntu/tmux/install-dottmux.sh"
+sudo bash "ubuntu/tmux/install-tmux.sh" 3.0
+sudo bash "ubuntu/tmux/install-dottmux.sh"
 
 # tor
 sudo bash "ubuntu/tor/install-tor.sh"
@@ -244,15 +244,15 @@ sudo bash "ubuntu/tor/install-tor.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.4 vagrant-disksize
+sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.6 vagrant-disksize
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
-bash "ubuntu/vim/install-dotvim.sh"
+sudo bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.0.6 6.0_6.0.6-130049 $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.0.14 6.0_6.0.14-133895 $UBUNTU_RELEASE_CODENAME
 
 # vscode
 # sudo bash "ubuntu/vscode/install-vscode.sh"
@@ -266,7 +266,7 @@ bash "ubuntu/xclip/add-xclip-shorthands.sh"
 
 # xterm
 sudo bash "ubuntu/xterm/install-xterm.sh"
-bash "ubuntu/xterm/install-dotX.sh"
+sudo bash "ubuntu/xterm/install-dotX.sh"
 
 # zoom
 # sudo bash "ubuntu/zoom/install-zoom.sh"
