@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cp /work/rails/activerecord/test/config.example.yml /work/rails/activerecord/test/config.yml
+cp /work/rails/projects/rails/activerecord/test/config.example.yml /work/rails/projects/rails/activerecord/test/config.yml
 
 sudo -u postgres createuser --superuser $1
 sudo -u postgres createdb -O $1 -E UTF8 -T template0 activerecord_unittest
