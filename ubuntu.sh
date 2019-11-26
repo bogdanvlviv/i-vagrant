@@ -151,9 +151,6 @@ sudo bash "ubuntu/nmap/install-nmap.sh"
 sudo bash "ubuntu/openvpn/install-openvpn.sh"
 sudo bash "ubuntu/openvpn/change-openvpn_config.sh"
 
-# overmind
-# sudo bash "ubuntu/overmind/install-overmind.sh" 2.0.2
-
 # phantomjs
 # sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
