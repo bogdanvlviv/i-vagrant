@@ -226,7 +226,7 @@ sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 
 # tmux
 sudo bash "ubuntu/tmux/install-tmux.sh" 3.0
-sudo bash "ubuntu/tmux/install-dottmux.sh"
+bash "ubuntu/tmux/install-dottmux.sh"
 
 # tor
 sudo bash "ubuntu/tor/install-tor.sh"
@@ -239,7 +239,7 @@ sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.6 vagrant-disksize
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
-sudo bash "ubuntu/vim/install-dotvim.sh"
+bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
@@ -257,7 +257,7 @@ bash "ubuntu/xclip/add-xclip-shorthands.sh"
 
 # xterm
 sudo bash "ubuntu/xterm/install-xterm.sh"
-sudo bash "ubuntu/xterm/install-dotX.sh"
+bash "ubuntu/xterm/install-dotX.sh"
 
 # zoom
 # sudo bash "ubuntu/zoom/install-zoom.sh"
