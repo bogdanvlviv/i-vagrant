@@ -204,7 +204,7 @@ sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.5 rubocop "tmuxinator:1.1.2" p
 # sudo bash "ubuntu/slack/install-slack.sh"
 
 # sqlite3
-sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
+# sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
 
 # ssh
 sudo bash "ubuntu/ssh/install-openssh-client.sh"
@@ -229,13 +229,13 @@ sudo bash "ubuntu/tmux/install-tmux.sh" 3.0
 bash "ubuntu/tmux/install-dottmux.sh"
 
 # tor
-sudo bash "ubuntu/tor/install-tor.sh"
+# sudo bash "ubuntu/tor/install-tor.sh"
 
 # tree
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.6 vagrant-disksize
+# sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.6 vagrant-disksize
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
@@ -243,7 +243,7 @@ bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.0.14 6.0_6.0.14-133895 $UBUNTU_RELEASE_CODENAME
+# sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.0.14 6.0_6.0.14-133895 $UBUNTU_RELEASE_CODENAME
 
 # vscode
 # sudo bash "ubuntu/vscode/install-vscode.sh"
