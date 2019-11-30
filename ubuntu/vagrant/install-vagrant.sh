@@ -18,3 +18,7 @@ shift 1
 if (( $# )); then
   vagrant plugin install $@
 fi
+
+if [[ "$SUDO_USER" ]]; then
+  chown -R $SUDO_USER:$SUDO_USER ~/.vagrant.d/
+fi
