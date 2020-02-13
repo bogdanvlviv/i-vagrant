@@ -16,7 +16,6 @@ fi
 
 flatpak install -y flathub com.viber.Viber
 
-
 if [[ "$SUDO_USER" ]]; then
   chown -R $SUDO_USER:$SUDO_USER ~/.local/share/flatpak/
 fi
