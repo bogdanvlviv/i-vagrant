@@ -238,6 +238,9 @@ sudo bash "ubuntu/tree/install-tree.sh"
 # vagrant
 # sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.6 vagrant-disksize
 
+# viber
+# sudo bash "ubuntu/viber/install-viber.sh"
+
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
 bash "ubuntu/vim/install-dotvim.sh"
