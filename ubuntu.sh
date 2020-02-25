@@ -26,6 +26,9 @@ bash "ubuntu/bashrc/set-term-variable.sh"
 # atom
 # sudo bash "ubuntu/atom/install-atom.sh"
 
+# aws
+# sudo bash "ubuntu/aws/install-aws-cli.sh"
+
 # cmus
 sudo bash "ubuntu/cmus/install-cmus.sh"
 
