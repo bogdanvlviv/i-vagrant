@@ -105,6 +105,9 @@ sudo bash "ubuntu/jq/install-jq.sh"
 # sudo bash "ubuntu/kubernetes/install-kubectl.sh"
 # sudo bash "ubuntu/kubernetes/install-minikube.sh"
 
+# latex
+# sudo bash "ubuntu/latex/install-latex.sh" texlive-lang-cyrillic
+
 # letsencrypt
 # sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
 
