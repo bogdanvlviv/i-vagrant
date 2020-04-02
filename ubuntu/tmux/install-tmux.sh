@@ -7,6 +7,7 @@ apt install -y git
 # "ubuntu/git/install-git.sh"
 
 apt install -y automake
+apt install -y bison
 apt install -y build-essential
 apt install -y pkg-config
 apt install -y libevent-dev
