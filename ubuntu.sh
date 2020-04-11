@@ -228,6 +228,9 @@ bash "ubuntu/ssh/set-authorized_keys.sh"
 # the_silver_searcher
 sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 
+# tig
+sudo bash "ubuntu/tig/install-tig.sh" 2.5.1
+
 # tmate
 # sudo bash "ubuntu/tmate/install-tmate.sh"
 
