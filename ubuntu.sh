@@ -39,8 +39,8 @@ sudo bash "ubuntu/curl/install-curl.sh"
 # docker
 # TODO Fix for focal version: https://docs.docker.com/engine/install/ubuntu/
 # sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
-sudo bash "ubuntu/docker/add-sudo_user-to-docker-group.sh"
-sudo bash "ubuntu/docker/install-docker-compose.sh" 1.25.5
+# sudo bash "ubuntu/docker/add-sudo_user-to-docker-group.sh"
+# sudo bash "ubuntu/docker/install-docker-compose.sh" 1.25.5
 
 # drawing
 # sudo bash "ubuntu/drawing/install-drawing.sh"

@@ -25,8 +25,7 @@ Vagrant.configure('2') do |config|
   config.vm.network 'forwarded_port', guest: 3000, host: 3000, auto_correct: true
 
   # TODO Fix for focal version
-  # config.vm.synced_folder '.', '/vagrant', type: 'rsync'
-  config.vm.synced_folder '~/work', '/work'
+  # config.vm.synced_folder '~/work', '/work'
 
   # git
   config.vm.provision :file, source: '~/.gitconfig', destination: '~/.gitconfig'
