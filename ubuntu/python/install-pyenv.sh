@@ -6,6 +6,10 @@ apt update
 apt install -y git
 # "ubuntu/git/install-git.sh"
 
+if [[ "$SUDO_USER" ]]; then
+  HOME="/home/$SUDO_USER"
+fi
+
 rm -fr ~/.pyenv
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 

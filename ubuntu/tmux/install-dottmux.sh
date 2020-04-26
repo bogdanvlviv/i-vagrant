@@ -6,6 +6,10 @@ apt update
 apt install -y git
 # "ubuntu/git/install-git.sh"
 
+if [[ "$SUDO_USER" ]]; then
+  HOME="/home/$SUDO_USER"
+fi
+
 rm -fr ~/.tmux
 rm ~/.tmux.conf
 git clone https://gitlab.com/bogdanvlviv/dottmux.git ~/.tmux

@@ -20,6 +20,10 @@ apt install -y libffi-dev
 apt install -y libgdbm3
 apt install -y libgdbm-dev
 
+if [[ "$SUDO_USER" ]]; then
+  HOME="/home/$SUDO_USER"
+fi
+
 rm -fr ~/.rbenv/plugins/ruby-build
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ~/.rbenv/plugins/ruby-build/install.sh

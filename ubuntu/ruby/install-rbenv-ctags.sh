@@ -10,5 +10,9 @@ apt install -y git
 apt install -y exuberant-ctags
 # "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
 
+if [[ "$SUDO_USER" ]]; then
+  HOME="/home/$SUDO_USER"
+fi
+
 rm -fr ~/.rbenv/plugins/rbenv-ctags
 git clone git://github.com/tpope/rbenv-ctags.git ~/.rbenv/plugins/rbenv-ctags

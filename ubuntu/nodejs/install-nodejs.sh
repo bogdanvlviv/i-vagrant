@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+if [[ "$SUDO_USER" ]]; then
+  HOME="/home/$SUDO_USER"
+fi
+
 if [[ "$1" = "nodenv" ]]; then
   export PATH="$HOME/.nodenv/bin:$PATH"
   eval "$(nodenv init -)"

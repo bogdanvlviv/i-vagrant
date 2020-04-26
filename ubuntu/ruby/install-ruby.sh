@@ -4,6 +4,10 @@ apt install -y libssl-dev
 apt install -y libreadline-dev
 apt install -y zlib1g-dev
 
+if [[ "$SUDO_USER" ]]; then
+  HOME="/home/$SUDO_USER"
+fi
+
 if [[ "$1" = "rbenv" ]]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"

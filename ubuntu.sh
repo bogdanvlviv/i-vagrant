@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 sudo bash -c ""
+
 echo "Are you ready to start?"
 echo -n "Type 'yes' or operation will be aborted: "
 read answer_for_the_start

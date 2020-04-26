@@ -10,5 +10,9 @@ apt install -y git
 apt install -y curl
 # "ubuntu/curl/install-curl.sh"
 
+if [[ "$SUDO_USER" ]]; then
+  HOME="/home/$SUDO_USER"
+fi
+
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 yes y | ~/.fzf/install

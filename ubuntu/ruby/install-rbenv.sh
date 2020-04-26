@@ -8,6 +8,10 @@ apt install -y git
 
 apt install -y build-essential
 
+if [[ "$SUDO_USER" ]]; then
+  HOME="/home/$SUDO_USER"
+fi
+
 rm -fr ~/.rbenv
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ~/.rbenv/src/configure && make -C ~/.rbenv/src

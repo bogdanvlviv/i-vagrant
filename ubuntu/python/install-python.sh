@@ -7,6 +7,10 @@ apt install -y libbz2-dev
 apt install -y libsqlite3-dev
 apt install -y libssl-dev
 
+if [[ "$SUDO_USER" ]]; then
+  HOME="/home/$SUDO_USER"
+fi
+
 if [[ "$1" = "pyenv" ]]; then
   export PYENV_ROOT="$HOME/.pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"

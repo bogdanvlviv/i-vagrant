@@ -8,6 +8,10 @@ apt install -y git
 
 apt install -y build-essential
 
+if [[ "$SUDO_USER" ]]; then
+  HOME="/home/$SUDO_USER"
+fi
+
 rm -fr ~/.nodenv
 git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 ~/.nodenv/src/configure && make -C ~/.nodenv/src
