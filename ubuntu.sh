@@ -38,7 +38,7 @@ sudo bash "ubuntu/curl/install-curl.sh"
 
 # docker
 # TODO Fix for focal version: https://docs.docker.com/engine/install/ubuntu/
-sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
+# sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 sudo bash "ubuntu/docker/add-sudo_user-to-docker-group.sh"
 sudo bash "ubuntu/docker/install-docker-compose.sh" 1.25.5
 
@@ -267,7 +267,7 @@ bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # wkhtmltopdf
 # TODO Fix for focal version: https://github.com/wkhtmltopdf/wkhtmltopdf/releases
-sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.5 $UBUNTU_RELEASE_CODENAME
+# sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.5 $UBUNTU_RELEASE_CODENAME
 
 # xclip
 sudo bash "ubuntu/xclip/install-xclip.sh"
