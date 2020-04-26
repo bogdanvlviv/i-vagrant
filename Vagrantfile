@@ -10,8 +10,8 @@ Vagrant.configure('2') do |config|
     vb.memory = '4096'
     vb.cpus = '2'
 
-    override.vm.box = 'ubuntu/bionic64'
-    override.disksize.size = '20GB'
+    override.vm.box = 'ubuntu/focal64'
+    override.disksize.size = '50GB'
   end
 
   config.vm.provider 'docker' do |d, override|
@@ -24,6 +24,8 @@ Vagrant.configure('2') do |config|
 
   config.vm.network 'forwarded_port', guest: 3000, host: 3000, auto_correct: true
 
+  # TODO Fix for focal version
+  # config.vm.synced_folder '.', '/vagrant', type: 'rsync'
   config.vm.synced_folder '~/work', '/work'
 
   # git

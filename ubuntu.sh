@@ -11,7 +11,7 @@ if [[ "$answer_for_the_start" != "yes" ]]; then
   return
 fi
 
-UBUNTU_RELEASE_CODENAME="bionic"
+UBUNTU_RELEASE_CODENAME="focal"
 
 # upgrade
 sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
@@ -36,15 +36,16 @@ sudo bash "ubuntu/cmus/install-cmus.sh"
 sudo bash "ubuntu/curl/install-curl.sh"
 
 # docker
+# TODO Fix for focal version: https://docs.docker.com/engine/install/ubuntu/
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 sudo bash "ubuntu/docker/add-sudo_user-to-docker-group.sh"
-sudo bash "ubuntu/docker/install-docker-compose.sh" 1.25.0
+sudo bash "ubuntu/docker/install-docker-compose.sh" 1.25.5
 
 # drawing
 # sudo bash "ubuntu/drawing/install-drawing.sh"
 
 # elasticsearch
-# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 7.4.2
+# sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 7.6.2
 
 # exuberant-ctags
 sudo bash "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -72,12 +73,12 @@ sudo bash "ubuntu/git/install-git.sh"
 sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # go
-# sudo bash "ubuntu/go/install-go.sh" 1.13.4
+# sudo bash "ubuntu/go/install-go.sh" 1.14.2
 # bash "ubuntu/go/set-go-bin-to-path-variable.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 78.0.3904.105
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 83.0.4103.14
 
 # graphiql
 # sudo bash "ubuntu/graphiql/install-graphiql.sh" 0.7.2
@@ -121,7 +122,8 @@ sudo bash "ubuntu/mc/install-mc.sh"
 # sudo bash "ubuntu/memcached/install-memcached.sh"
 
 # mongodb
-# sudo bash "ubuntu/mongodb/install-mongodb.sh" 4.2 $UBUNTU_RELEASE_CODENAME
+# TODO Fix for focal version: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/index.html
+# sudo bash "ubuntu/mongodb/install-mongodb.sh" 4.4 $UBUNTU_RELEASE_CODENAME
 
 # mupdf
 sudo bash "ubuntu/mupdf/install-mupdf.sh"
@@ -131,7 +133,7 @@ sudo bash "ubuntu/mosh/install-mosh.sh"
 
 # mysql
 # sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
-# sudo bash "ubuntu/mysql/install-mariadb.sh" 10.3 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
+# sudo bash "ubuntu/mysql/install-mariadb.sh" 10.5 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
 
 # network-manager
 sudo bash "ubuntu/network-manager/install-network-manager.sh"
@@ -148,7 +150,7 @@ sudo bash "ubuntu/nmap/install-nmap.sh"
 # nodejs
 # sudo bash "ubuntu/nodejs/install-nodenv.sh"
 # sudo bash "ubuntu/nodejs/install-node-build.sh"
-# bash "ubuntu/nodejs/install-nodejs.sh" nodenv 12.13.1
+# bash "ubuntu/nodejs/install-nodejs.sh" nodenv 12.16.2
 # sudo bash "ubuntu/nodejs/install-yarn.sh"
 # bash "ubuntu/nodejs/install-eslint.sh"
 # bash "ubuntu/nodejs/install-stylelint.sh"
@@ -164,7 +166,7 @@ sudo bash "ubuntu/openvpn/change-openvpn_config.sh"
 sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
-# sudo bash "ubuntu/postgresql/install-postgresql.sh" 11 $UBUNTU_RELEASE_CODENAME libpq-dev pgadmin4
+# sudo bash "ubuntu/postgresql/install-postgresql.sh" 12 $UBUNTU_RELEASE_CODENAME libpq-dev pgadmin4
 # sudo bash "ubuntu/postgresql/create-user.sh" root admin
 # bash "ubuntu/postgresql/set-psqlrc.sh"
 
@@ -173,14 +175,14 @@ sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # python
 # sudo bash "ubuntu/python/install-pyenv.sh"
-# sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.17
-# sudo bash "ubuntu/python/install-python.sh" pyenv 3.8.0
+# sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.18
+# sudo bash "ubuntu/python/install-python.sh" pyenv 3.8.2
 
 # rar
 sudo bash "ubuntu/rar/install-rar.sh"
 
 # rbspy
-# sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.7
+# sudo bash "ubuntu/rbspy/install-rbspy.sh" 0.3.8
 
 # readline
 bash "ubuntu/readline/set-inputrc.sh"
@@ -193,9 +195,9 @@ sudo bash "ubuntu/ruby/install-rbenv.sh"
 sudo bash "ubuntu/ruby/install-ruby-build.sh"
 sudo bash "ubuntu/ruby/install-rbenv-ctags.sh"
 sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
-# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.7 bundler
-# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.5 rubocop "tmuxinator:1.1.3" pry-byebug
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.7.0 rubocop "tmuxinator:1.1.3" pry-byebug
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.8 bundler
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.6 rubocop "tmuxinator:1.1.3" pry-byebug
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.7.1 break rubocop "tmuxinator:1.1.5" pry-byebug
 # bash "ubuntu/ruby/prepare-for-rails-development.sh" vagrant root admin
 
 # sequeler
@@ -235,7 +237,7 @@ sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 # sudo bash "ubuntu/tmate/install-tmate.sh"
 
 # tmux
-sudo bash "ubuntu/tmux/install-tmux.sh" 3.0
+sudo bash "ubuntu/tmux/install-tmux.sh" 3.1
 bash "ubuntu/tmux/install-dottmux.sh"
 
 # tor
@@ -245,7 +247,7 @@ bash "ubuntu/tmux/install-dottmux.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.6 vagrant-disksize
+# sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.7 vagrant-disksize
 
 # viber
 # sudo bash "ubuntu/viber/install-viber.sh"
@@ -256,12 +258,14 @@ bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-# sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.0.14 6.0_6.0.14-133895 $UBUNTU_RELEASE_CODENAME
+# TODO Fix for focal version: https://www.virtualbox.org/wiki/Linux_Downloads
+# sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.1.6 6.1_6.1.6-137129 $UBUNTU_RELEASE_CODENAME
 
 # vscode
 # sudo bash "ubuntu/vscode/install-vscode.sh"
 
 # wkhtmltopdf
+# TODO Fix for focal version: https://github.com/wkhtmltopdf/wkhtmltopdf/releases
 sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.5 $UBUNTU_RELEASE_CODENAME
 
 # xclip
