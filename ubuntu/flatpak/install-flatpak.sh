@@ -2,11 +2,7 @@
 
 apt update
 
-add-apt-repository -y ppa:alexlarsson/flatpak
-
-apt update
-
-apt install -y flatpak-builder
+apt install -y flatpak
 
 if [[ "$SUDO_USER" ]]; then
   HOME="/home/$SUDO_USER"
