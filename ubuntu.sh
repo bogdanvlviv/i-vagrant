@@ -37,10 +37,9 @@ sudo bash "ubuntu/cmus/install-cmus.sh"
 sudo bash "ubuntu/curl/install-curl.sh"
 
 # docker
-# TODO Fix for focal version: https://docs.docker.com/engine/install/ubuntu/
-# sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
-# sudo bash "ubuntu/docker/add-sudo_user-to-docker-group.sh"
-# sudo bash "ubuntu/docker/install-docker-compose.sh" 1.25.5
+sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
+sudo bash "ubuntu/docker/add-sudo_user-to-docker-group.sh"
+sudo bash "ubuntu/docker/install-docker-compose.sh" 1.25.5
 
 # drawing
 # sudo bash "ubuntu/drawing/install-drawing.sh"
@@ -259,8 +258,8 @@ bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-# TODO Fix for focal version: https://www.virtualbox.org/wiki/Linux_Downloads
-# sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.1.6 6.1_6.1.6-137129 $UBUNTU_RELEASE_CODENAME
+# sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.1.8 6.1_6.1.8-137981 eoan
+# sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.1.8 6.1_6.1.8-137981 $UBUNTU_RELEASE_CODENAME
 
 # vscode
 # sudo bash "ubuntu/vscode/install-vscode.sh"
