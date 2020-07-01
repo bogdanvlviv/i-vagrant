@@ -265,8 +265,7 @@ bash "ubuntu/vim/set-vim-as-default-editor.sh"
 # sudo bash "ubuntu/vscode/install-vscode.sh"
 
 # wkhtmltopdf
-# TODO Fix for focal version: https://github.com/wkhtmltopdf/wkhtmltopdf/releases
-# sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.5 $UBUNTU_RELEASE_CODENAME
+# sudo bash "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.6 $UBUNTU_RELEASE_CODENAME
 
 # xclip
 sudo bash "ubuntu/xclip/install-xclip.sh"
