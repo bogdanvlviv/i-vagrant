@@ -122,7 +122,6 @@ sudo bash "ubuntu/mc/install-mc.sh"
 # sudo bash "ubuntu/memcached/install-memcached.sh"
 
 # mongodb
-# TODO Fix for focal version: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/index.html
 # sudo bash "ubuntu/mongodb/install-mongodb.sh" 4.4 $UBUNTU_RELEASE_CODENAME
 
 # mupdf
