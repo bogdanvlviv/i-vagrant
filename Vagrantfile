@@ -12,6 +12,14 @@ Vagrant.configure('2') do |config|
 
     override.vm.box = 'ubuntu/focal64'
     override.disksize.size = '50GB'
+
+    # See  https://bugs.launchpad.net/cloud-images/+bug/1829625
+    # TODO Delete this when the bug is fixed.
+    vb.customize ["modifyvm", :id, "--uart1", "0x3F8", "4"]
+    vb.customize ["modifyvm", :id, "--uartmode1", "file", File::NULL]
+    vb.customize ["modifyvm", :id, "--nestedpaging", "off"]
+    vb.customize ["modifyvm", :id, "--cpus", 4]
+    vb.customize ["modifyvm", :id, "--paravirtprovider", "hyperv"]
   end
 
   config.vm.provider 'docker' do |d, override|
