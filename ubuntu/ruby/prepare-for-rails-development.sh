@@ -6,7 +6,7 @@ sudo -u postgres createuser --superuser $1
 sudo -u postgres createdb -O $1 -E UTF8 -T template0 activerecord_unittest
 sudo -u postgres createdb -O $1 -E UTF8 -T template0 activerecord_unittest2
 
-MYSQL_PWD=$3 sudo mysql -u $2 <<SQL
+MYSQL_PWD=$3 mysql -u $2 <<SQL
 CREATE USER 'rails'@'localhost';
 CREATE DATABASE activerecord_unittest DEFAULT CHARACTER SET utf8mb4;
 CREATE DATABASE activerecord_unittest2 DEFAULT CHARACTER SET utf8mb4;
