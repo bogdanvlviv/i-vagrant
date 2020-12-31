@@ -196,7 +196,8 @@ sudo bash "ubuntu/ruby/install-rbenv-ctags.sh"
 sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.8 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.6 break rubocop "tmuxinator:2.0.1" pry-byebug
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.7.1 break rubocop "tmuxinator:2.0.1" pry-byebug
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.7.2 break rubocop "tmuxinator:2.0.1" pry-byebug
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 3.0.0 break rubocop "tmuxinator:2.0.1" pry-byebug
 # bash "ubuntu/ruby/prepare-for-rails-development.sh" vagrant root admin
 
 # sequeler
