@@ -39,7 +39,7 @@ sudo bash "ubuntu/curl/install-curl.sh"
 # docker
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 sudo bash "ubuntu/docker/add-sudo_user-to-docker-group.sh"
-sudo bash "ubuntu/docker/install-docker-compose.sh" 1.25.5
+sudo bash "ubuntu/docker/install-docker-compose.sh" 1.27.4
 
 # drawing
 # sudo bash "ubuntu/drawing/install-drawing.sh"
@@ -247,7 +247,7 @@ bash "ubuntu/tmux/install-dottmux.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.7 vagrant-disksize
+# sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.14 vagrant-disksize
 
 # viber
 # sudo bash "ubuntu/viber/install-viber.sh"
