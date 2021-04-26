@@ -196,8 +196,8 @@ sudo bash "ubuntu/ruby/install-rbenv-ctags.sh"
 sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.8 bundler
 # sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.6
-# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.7.2
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 3.0.0 break rubocop "tmuxinator:2.0.2" pry-byebug
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.7.3
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 3.0.1 break rubocop "tmuxinator:2.0.3" pry-byebug
 # bash "ubuntu/ruby/prepare-for-rails-development.sh" vagrant root admin
 
 # sequeler
@@ -237,7 +237,7 @@ sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 # sudo bash "ubuntu/tmate/install-tmate.sh"
 
 # tmux
-sudo bash "ubuntu/tmux/install-tmux.sh" 3.1c
+sudo bash "ubuntu/tmux/install-tmux.sh" 3.2
 bash "ubuntu/tmux/install-dottmux.sh"
 
 # tor
