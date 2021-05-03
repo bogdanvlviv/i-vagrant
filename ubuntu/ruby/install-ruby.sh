@@ -25,6 +25,7 @@ if [[ "$1" = "rbenv" ]]; then
 
   if [[ "$SUDO_USER" ]]; then
     chown -R $SUDO_USER:$SUDO_USER ~/.rbenv/
+    chown -R $SUDO_USER:$SUDO_USER ~/.local/
   fi
 elif [[ "$1" = "rvm" ]]; then
   source "$HOME/.rvm/scripts/rvm" || source "/etc/profile.d/rvm.sh"
