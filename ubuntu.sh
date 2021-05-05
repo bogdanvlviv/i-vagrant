@@ -165,7 +165,7 @@ sudo bash "ubuntu/openvpn/change-openvpn_config.sh"
 sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
-# sudo bash "ubuntu/postgresql/install-postgresql.sh" 12 $UBUNTU_RELEASE_CODENAME libpq-dev pgadmin4
+# sudo bash "ubuntu/postgresql/install-postgresql.sh" 12 $UBUNTU_RELEASE_CODENAME libpq-dev
 # sudo bash "ubuntu/postgresql/create-user.sh" root admin
 # bash "ubuntu/postgresql/set-psqlrc.sh"
 
