@@ -16,3 +16,7 @@ fi
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 yes y | ~/.fzf/install
+
+if [[ "$SUDO_USER" ]]; then
+  chown -R $SUDO_USER:$SUDO_USER ~/.fzf/
+fi

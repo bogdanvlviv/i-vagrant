@@ -18,3 +18,7 @@ xrdb ~/.Xresources
 cd ~/.X
 git remote add github git@github.com:bogdanvlviv/dotX.git
 cd -
+
+if [[ "$SUDO_USER" ]]; then
+  chown -R $SUDO_USER:$SUDO_USER ~/.X/
+fi

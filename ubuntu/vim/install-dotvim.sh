@@ -19,3 +19,7 @@ git submodule foreach --recursive 'git pull origin master'
 ln -s bundle/vim-pathogen/autoload/ ./
 git remote add github git@github.com:bogdanvlviv/dotvim.git
 cd -
+
+if [[ "$SUDO_USER" ]]; then
+  chown -R $SUDO_USER:$SUDO_USER ~/.vim/
+fi

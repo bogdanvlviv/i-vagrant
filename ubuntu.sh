@@ -62,7 +62,7 @@ sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.26.0
 sudo bash "ubuntu/flatpak/install-flatpak.sh"
 
 # fzf
-bash "ubuntu/fzf/install-fzf.sh"
+sudo bash "ubuntu/fzf/install-fzf.sh"
 bash "ubuntu/fzf/set-fzf_default_command.sh"
 
 # gimp
@@ -238,7 +238,7 @@ sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 
 # tmux
 sudo bash "ubuntu/tmux/install-tmux.sh" 3.2
-bash "ubuntu/tmux/install-dottmux.sh"
+sudo bash "ubuntu/tmux/install-dottmux.sh"
 
 # tor
 # sudo bash "ubuntu/tor/install-tor.sh"
@@ -254,7 +254,7 @@ sudo bash "ubuntu/tree/install-tree.sh"
 
 # vim
 sudo bash "ubuntu/vim/install-vim.sh"
-bash "ubuntu/vim/install-dotvim.sh"
+sudo bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
@@ -273,7 +273,7 @@ bash "ubuntu/xclip/add-xclip-shorthands.sh"
 
 # xterm
 sudo bash "ubuntu/xterm/install-xterm.sh"
-bash "ubuntu/xterm/install-dotX.sh"
+sudo bash "ubuntu/xterm/install-dotX.sh"
 
 # zoom
 # sudo bash "ubuntu/zoom/install-zoom.sh"

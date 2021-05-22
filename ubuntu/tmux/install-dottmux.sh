@@ -17,3 +17,7 @@ ln -s ~/.tmux/.tmux.conf ~/
 cd ~/.tmux
 git remote add github git@github.com:bogdanvlviv/dottmux.git
 cd -
+
+if [[ "$SUDO_USER" ]]; then
+  chown -R $SUDO_USER:$SUDO_USER ~/.tmux/
+fi

@@ -1,9 +1,11 @@
 # i-vagrant
+
 i-vagrant helps to set up a (development) environment.
 
 Try to fork this idea and build for own needs.
 
 ## Getting Started Guide
+
 Download i-vagrant
 ```bash
 $ git clone https://github.com/bogdanvlviv/i-vagrant.git
