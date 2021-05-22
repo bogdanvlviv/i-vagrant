@@ -14,12 +14,6 @@ Vagrant.configure('2') do |config|
     override.disksize.size = '50GB'
   end
 
-  config.vm.provider 'docker' do |d, override|
-    d.build_dir = 'docker-vagrant'
-    d.has_ssh = true
-    d.remains_running = true
-  end
-
   config.vm.network 'private_network', ip: '192.168.33.10'
 
   config.vm.network 'forwarded_port', guest: 3000, host: 3000, auto_correct: true
