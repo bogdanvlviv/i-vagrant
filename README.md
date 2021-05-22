@@ -10,5 +10,4 @@ $ git clone https://github.com/bogdanvlviv/i-vagrant.git
 $ cd i-vagrant/
 ```
 
-### [Setting up android](android/README.md)
 ### [Setting up ubuntu](ubuntu/README.md)
