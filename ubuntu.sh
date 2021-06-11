@@ -224,6 +224,9 @@ bash "ubuntu/ssh/set-authorized_keys.sh"
 # sublimetext
 # sudo bash "ubuntu/sublimetext/install-sublimetext.sh"
 
+# systemd
+# sudo bash "ubuntu/systemd/set-handle-lid-switch-to-ignore.sh"
+
 # telegram
 # sudo bash "ubuntu/telegram/install-telegram.sh"
 
