@@ -8,7 +8,7 @@ Try to fork this idea and build for own needs.
 
 Download i-vagrant
 ```bash
-$ git clone https://github.com/bogdanvlviv/i-vagrant.git
+$ git clone https://gitlab.com/bogdanvlviv/i-vagrant.git
 $ cd i-vagrant/
 ```
 
