@@ -258,8 +258,8 @@ sudo bash "ubuntu/vim/install-dotvim.sh"
 bash "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-# sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.1.16 6.1_6.1.16-140961 eoan
-# sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.1.16 6.1_6.1.16-140961 $UBUNTU_RELEASE_CODENAME
+# sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.1.26 6.1_6.1.26-145957 eoan
+# sudo bash "ubuntu/virtualbox/install-virtualbox.sh" 6.1.26 6.1_6.1.26-145957 $UBUNTU_RELEASE_CODENAME
 
 # vscode
 # sudo bash "ubuntu/vscode/install-vscode.sh"
