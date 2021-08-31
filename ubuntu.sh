@@ -39,7 +39,7 @@ sudo bash "ubuntu/curl/install-curl.sh"
 # docker
 sudo bash "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 sudo bash "ubuntu/docker/add-sudo_user-to-docker-group.sh"
-sudo bash "ubuntu/docker/install-docker-compose.sh" 1.27.4
+sudo bash "ubuntu/docker/install-docker-compose.sh" 1.29.2
 
 # drawing
 # sudo bash "ubuntu/drawing/install-drawing.sh"
@@ -56,7 +56,7 @@ sudo bash "ubuntu/ffmpeg/install-ffmpeg.sh"
 
 # firefox
 sudo bash "ubuntu/firefox/install-firefox.sh"
-sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.26.0
+sudo bash "ubuntu/firefox/install-geckodriver.sh" 0.29.1
 
 # flatpak
 sudo bash "ubuntu/flatpak/install-flatpak.sh"
@@ -73,12 +73,12 @@ sudo bash "ubuntu/git/install-git.sh"
 sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # go
-# sudo bash "ubuntu/go/install-go.sh" 1.14.2
+# sudo bash "ubuntu/go/install-go.sh" 1.17
 # bash "ubuntu/go/set-go-bin-to-path-variable.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 83.0.4103.14
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 92.0.4515.107
 
 # graphiql
 # sudo bash "ubuntu/graphiql/install-graphiql.sh" 0.7.2
@@ -149,7 +149,7 @@ sudo bash "ubuntu/nmap/install-nmap.sh"
 # nodejs
 # sudo bash "ubuntu/nodejs/install-nodenv.sh"
 # sudo bash "ubuntu/nodejs/install-node-build.sh"
-# bash "ubuntu/nodejs/install-nodejs.sh" nodenv 12.16.2
+# bash "ubuntu/nodejs/install-nodejs.sh" nodenv 14.17.5
 # sudo bash "ubuntu/nodejs/install-yarn.sh"
 # bash "ubuntu/nodejs/install-eslint.sh"
 # bash "ubuntu/nodejs/install-stylelint.sh"
@@ -174,8 +174,7 @@ sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # python
 # sudo bash "ubuntu/python/install-pyenv.sh"
-# sudo bash "ubuntu/python/install-python.sh" pyenv 2.7.18
-# sudo bash "ubuntu/python/install-python.sh" pyenv 3.8.2
+# sudo bash "ubuntu/python/install-python.sh" pyenv 3.9.7
 
 # rar
 sudo bash "ubuntu/rar/install-rar.sh"
@@ -194,10 +193,8 @@ sudo bash "ubuntu/ruby/install-rbenv.sh"
 sudo bash "ubuntu/ruby/install-ruby-build.sh"
 sudo bash "ubuntu/ruby/install-rbenv-ctags.sh"
 sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
-# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.5.8 bundler
-# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.6.6
-# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.7.3
-sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 3.0.1 break rubocop "tmuxinator:2.0.3" pry-byebug
+# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.7.4
+sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 3.0.2 break rubocop "tmuxinator:3.0.1" pry-byebug
 # bash "ubuntu/ruby/prepare-for-rails-development.sh" vagrant root admin
 
 # sequeler
@@ -231,13 +228,13 @@ bash "ubuntu/ssh/set-authorized_keys.sh"
 sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 
 # tig
-# sudo bash "ubuntu/tig/install-tig.sh" 2.5.1
+# sudo bash "ubuntu/tig/install-tig.sh" 2.5.4
 
 # tmate
 # sudo bash "ubuntu/tmate/install-tmate.sh"
 
 # tmux
-sudo bash "ubuntu/tmux/install-tmux.sh" 3.2
+sudo bash "ubuntu/tmux/install-tmux.sh" 3.2a
 sudo bash "ubuntu/tmux/install-dottmux.sh"
 
 # tor
@@ -247,7 +244,7 @@ sudo bash "ubuntu/tmux/install-dottmux.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.14 vagrant-disksize
+# sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.18 vagrant-disksize
 
 # viber
 # sudo bash "ubuntu/viber/install-viber.sh"
