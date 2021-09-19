@@ -32,9 +32,11 @@ Vagrant.configure('2') do |config|
   config.vm.provision :file, source: '~/.ssh/id_rsa', destination: '~/.ssh/id_rsa'
   config.vm.provision :file, source: '~/.ssh/id_rsa.pub', destination: '~/.ssh/id_rsa.pub'
   # config.vm.provision :file, source: '~/bogdan/ssh/private_ssh/.ssh/id_rsa', destination: '~/.ssh/id_rsa'
-  # config.vm.provision :file, source: '~/bogdan/ssh/pivate_ssh/.ssh/id_rsa.pub', destination: '~/.ssh/id_rsa.pub'
+  # config.vm.provision :file, source: '~/bogdan/ssh/private_ssh/.ssh/id_rsa.pub', destination: '~/.ssh/id_rsa.pub'
   # config.vm.provision :file, source: '~/bogdan/ssh/gitlab_ssh/.ssh/id_ed25519', destination: '~/.ssh/id_ed25519'
   # config.vm.provision :file, source: '~/bogdan/ssh/gitlab_ssh/.ssh/id_ed25519.pub', destination: '~/.ssh/id_ed25519.pub'
   config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa', privileged: false
   config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_rsa.pub', privileged: false
+  # config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_ed25519', privileged: false
+  # config.vm.provision :shell, inline: 'chmod 600 ~/.ssh/id_ed25519.pub', privileged: false
 end
