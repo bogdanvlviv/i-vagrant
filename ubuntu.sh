@@ -268,6 +268,9 @@ bash "ubuntu/vim/set-vim-as-default-editor.sh"
 sudo bash "ubuntu/xclip/install-xclip.sh"
 bash "ubuntu/xclip/add-xclip-shorthands.sh"
 
+# xournal
+# sudo bash "ubuntu/xournal/install-xournal.sh"
+
 # xterm
 sudo bash "ubuntu/xterm/install-xterm.sh"
 sudo bash "ubuntu/xterm/install-dotX.sh"
