@@ -24,6 +24,9 @@ bash "ubuntu/bashrc/set-term-variable.sh"
 # android_studio
 # sudo bash "ubuntu/android_studio/install-android_studio.sh"
 
+# asdf
+sudo bash "ubuntu/asdf/install-asdf.sh" v0.8.1
+
 # atom
 # sudo bash "ubuntu/atom/install-atom.sh"
 
@@ -73,8 +76,7 @@ sudo bash "ubuntu/git/install-git.sh"
 sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # go
-# sudo bash "ubuntu/go/install-go.sh" 1.17
-# bash "ubuntu/go/set-go-bin-to-path-variable.sh"
+# bash "ubuntu/go/asdf-install-go.sh" 1.17
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
@@ -97,6 +99,7 @@ sudo bash "ubuntu/imagemagick/install-imagemagick.sh"
 sudo bash "ubuntu/imagemagick/add-imagemagick-shorthands.sh"
 
 # java
+# TODO asdf
 # sudo bash "ubuntu/java/install-java.sh" 11
 
 # jq
@@ -122,6 +125,7 @@ sudo bash "ubuntu/mc/install-mc.sh"
 # sudo bash "ubuntu/memcached/install-memcached.sh"
 
 # mongodb
+# TODO asdf
 # sudo bash "ubuntu/mongodb/install-mongodb.sh" 4.4 $UBUNTU_RELEASE_CODENAME
 
 # mupdf
@@ -131,6 +135,7 @@ sudo bash "ubuntu/mupdf/install-mupdf.sh"
 sudo bash "ubuntu/mosh/install-mosh.sh"
 
 # mysql
+# TODO asdf
 # sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
 # sudo bash "ubuntu/mysql/install-mariadb.sh" 10.5 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
 
@@ -147,10 +152,8 @@ sudo bash "ubuntu/ngrok/install-ngrok.sh"
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-# sudo bash "ubuntu/nodejs/install-nodenv.sh"
-# sudo bash "ubuntu/nodejs/install-node-build.sh"
-# bash "ubuntu/nodejs/install-nodejs.sh" nodenv 14.17.5
-# sudo bash "ubuntu/nodejs/install-yarn.sh"
+# bash "ubuntu/nodejs/asdf-install-nodejs.sh" 14.17.5
+# bash "ubuntu/nodejs/asdf-install-yarn.sh" 1.22.13
 # bash "ubuntu/nodejs/install-eslint.sh"
 # bash "ubuntu/nodejs/install-stylelint.sh"
 
@@ -165,14 +168,15 @@ sudo bash "ubuntu/openvpn/change-openvpn_config.sh"
 sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
-# sudo bash "ubuntu/postgresql/install-postgresql.sh" 12 $UBUNTU_RELEASE_CODENAME libpq-dev
-# sudo bash "ubuntu/postgresql/create-user.sh" root admin
+# bash "ubuntu/postgresql/asdf-install-postgresql.sh" 12.8
+# bash "ubuntu/postgresql/create-user.sh" root admin $USER
 # bash "ubuntu/postgresql/set-psqlrc.sh"
 
 # postman
 # sudo bash "ubuntu/postman/install-postman.sh"
 
 # python
+# TODO asdf
 # sudo bash "ubuntu/python/install-pyenv.sh"
 # sudo bash "ubuntu/python/install-python.sh" pyenv 3.9.7
 
@@ -186,16 +190,17 @@ sudo bash "ubuntu/rar/install-rar.sh"
 bash "ubuntu/readline/set-inputrc.sh"
 
 # redis
-# sudo bash "ubuntu/redis/install-redis.sh"
+# bash "ubuntu/redis/asdf-install-redis.sh" 6.2.5
 
 # ruby
 sudo bash "ubuntu/ruby/install-rbenv.sh"
 sudo bash "ubuntu/ruby/install-ruby-build.sh"
 sudo bash "ubuntu/ruby/install-rbenv-ctags.sh"
 sudo bash "ubuntu/ruby/install-rbenv-vars.sh"
-# sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 2.7.4
 sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 3.0.2 break rubocop "tmuxinator:3.0.1" debug pry-byebug
-# bash "ubuntu/ruby/prepare-for-rails-development.sh" vagrant root admin
+#
+# bash "ubuntu/ruby/asdf-install-ruby.sh" 3.0.2 break rubocop "tmuxinator:3.0.1" debug pry-byebug
+# bash "ubuntu/ruby/prepare-for-rails-development.sh" $USER root admin
 
 # sequeler
 # sudo bash "ubuntu/sequeler/install-sequeler.sh"
@@ -209,8 +214,8 @@ sudo bash "ubuntu/ruby/install-ruby.sh" rbenv 3.0.2 break rubocop "tmuxinator:3.
 # slack
 # sudo bash "ubuntu/slack/install-slack.sh"
 
-# sqlite3
-# sudo bash "ubuntu/sqlite3/install-sqlite3.sh" libsqlite3-dev
+# sqlite
+# bash "ubuntu/sqlite/asdf-install-sqlite.sh" 3.36.0
 
 # ssh
 sudo bash "ubuntu/ssh/install-openssh-client.sh"

@@ -2,9 +2,11 @@
 
 cp /work/rails/projects/rails/activerecord/test/config.example.yml /work/rails/projects/rails/activerecord/test/config.yml
 
-sudo -u postgres createuser --superuser $1
-sudo -u postgres createdb -O $1 -E UTF8 -T template0 activerecord_unittest
-sudo -u postgres createdb -O $1 -E UTF8 -T template0 activerecord_unittest2
+pg_ctl start
+
+createuser --superuser $1
+createdb -O $1 -E UTF8 -T template0 activerecord_unittest
+createdb -O $1 -E UTF8 -T template0 activerecord_unittest2
 
 MYSQL_PWD=$3 mysql -u $2 <<SQL
 CREATE USER 'rails'@'localhost';

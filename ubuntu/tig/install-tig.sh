@@ -6,6 +6,8 @@ apt update
 apt install -y curl
 # "ubuntu/curl/install-curl.sh"
 
+apt install -y build-essential
+
 rm /tmp/tig-$1.tar.gz
 rm -fr /tmp/tig-$1
 curl -L https://github.com/jonas/tig/releases/download/tig-$1/tig-$1.tar.gz -o /tmp/tig-$1.tar.gz
