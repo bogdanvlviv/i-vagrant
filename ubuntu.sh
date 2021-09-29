@@ -170,7 +170,7 @@ sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
 # bash "ubuntu/postgresql/asdf-install-postgresql.sh" 12.8
-# bash "ubuntu/postgresql/create-user.sh" root admin $USER
+# bash "ubuntu/postgresql/create-user.sh" root admin
 # bash "ubuntu/postgresql/set-psqlrc.sh"
 
 # postman

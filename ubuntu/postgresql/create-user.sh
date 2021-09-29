@@ -2,6 +2,4 @@
 
 pg_ctl start
 
-createdb $3
-
-psql --command "CREATE USER $1 WITH SUPERUSER PASSWORD '$2'"
+psql --dbname postgres --command "CREATE USER $1 WITH SUPERUSER PASSWORD '$2'"
