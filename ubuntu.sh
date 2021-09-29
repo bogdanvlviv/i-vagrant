@@ -48,6 +48,7 @@ sudo bash "ubuntu/docker/install-docker-compose.sh" 1.29.2
 # sudo bash "ubuntu/drawing/install-drawing.sh"
 
 # elasticsearch
+# TODO asdf
 # sudo bash "ubuntu/elasticsearch/install-elasticsearch.sh" 7.6.2
 
 # exuberant-ctags
