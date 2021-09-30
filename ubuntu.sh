@@ -81,7 +81,7 @@ sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 92.0.4515.107
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 94.0.4606.61
 
 # graphiql
 # sudo bash "ubuntu/graphiql/install-graphiql.sh" 0.7.2
