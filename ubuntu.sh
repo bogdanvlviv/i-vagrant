@@ -215,7 +215,7 @@ bash "ubuntu/ruby/asdf-install-ruby.sh" 3.0.2 break rubocop "tmuxinator:3.0.1" d
 # ssh
 sudo bash "ubuntu/ssh/install-openssh-client.sh"
 sudo bash "ubuntu/ssh/install-openssh-server.sh"
-sudo bash "ubuntu/ssh/change-sshd_config.sh" 2222 no
+sudo bash "ubuntu/ssh/change-sshd_config.sh" 4242 no
 bash "ubuntu/ssh/set-authorized_keys.sh"
 
 # sublimetext
