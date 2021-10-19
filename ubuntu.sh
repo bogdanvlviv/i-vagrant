@@ -77,7 +77,7 @@ sudo bash "ubuntu/git/install-git.sh"
 sudo bash "ubuntu/git/install-diff-highlight.sh"
 
 # go
-# bash "ubuntu/go/asdf-install-go.sh" 1.17
+bash "ubuntu/go/asdf-install-go.sh" 1.17
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
@@ -144,7 +144,7 @@ sudo bash "ubuntu/mosh/install-mosh.sh"
 sudo bash "ubuntu/network-manager/install-network-manager.sh"
 
 # nginx
-# sudo bash "ubuntu/nginx/install-nginx.sh"
+sudo bash "ubuntu/nginx/install-nginx.sh"
 
 # ngrok
 sudo bash "ubuntu/ngrok/install-ngrok.sh"
@@ -153,10 +153,10 @@ sudo bash "ubuntu/ngrok/install-ngrok.sh"
 sudo bash "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-# bash "ubuntu/nodejs/asdf-install-nodejs.sh" 14.17.5
-# bash "ubuntu/nodejs/asdf-install-yarn.sh" 1.22.13
-# bash "ubuntu/nodejs/install-eslint.sh"
-# bash "ubuntu/nodejs/install-stylelint.sh"
+bash "ubuntu/nodejs/asdf-install-nodejs.sh" 14.17.5
+bash "ubuntu/nodejs/asdf-install-yarn.sh" 1.22.13
+bash "ubuntu/nodejs/install-eslint.sh"
+bash "ubuntu/nodejs/install-stylelint.sh"
 
 # openvpn
 sudo bash "ubuntu/openvpn/install-openvpn.sh"
@@ -171,7 +171,7 @@ sudo bash "ubuntu/poppler/install-poppler.sh"
 # postgresql
 # bash "ubuntu/postgresql/asdf-install-postgresql.sh" 12.8
 # bash "ubuntu/postgresql/create-user.sh" root admin
-# bash "ubuntu/postgresql/set-psqlrc.sh"
+bash "ubuntu/postgresql/set-psqlrc.sh"
 
 # postman
 # sudo bash "ubuntu/postman/install-postman.sh"
@@ -225,7 +225,7 @@ bash "ubuntu/ssh/set-authorized_keys.sh"
 # sudo bash "ubuntu/telegram/install-telegram.sh"
 
 # teleport
-# sudo bash "ubuntu/teleport/install-teleport.sh"
+sudo bash "ubuntu/teleport/install-teleport.sh"
 
 # the_silver_searcher
 sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
@@ -234,7 +234,7 @@ sudo bash "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
 # sudo bash "ubuntu/tig/install-tig.sh" 2.5.4
 
 # tmate
-# sudo bash "ubuntu/tmate/install-tmate.sh"
+sudo bash "ubuntu/tmate/install-tmate.sh"
 
 # tmux
 sudo bash "ubuntu/tmux/install-tmux.sh" 3.2a
