@@ -70,7 +70,7 @@ sudo bash "ubuntu/fzf/install-fzf.sh"
 bash "ubuntu/fzf/set-fzf_default_command.sh"
 
 # gimp
-# sudo bash "ubuntu/gimp/install-gimp.sh"
+sudo bash "ubuntu/gimp/install-gimp.sh"
 
 # git
 sudo bash "ubuntu/git/install-git.sh"
@@ -125,6 +125,9 @@ sudo bash "ubuntu/mc/install-mc.sh"
 # memcached
 # sudo bash "ubuntu/memcached/install-memcached.sh"
 
+# mkcert
+sudo bash "ubuntu/mkcert/install-mkcert.sh" v1.4.3
+
 # mongodb
 # TODO asdf
 # sudo bash "ubuntu/mongodb/install-mongodb.sh" 4.4 $UBUNTU_RELEASE_CODENAME
@@ -169,7 +172,7 @@ sudo bash "ubuntu/openvpn/change-openvpn_config.sh"
 sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
-# bash "ubuntu/postgresql/asdf-install-postgresql.sh" 12.8
+bash "ubuntu/postgresql/asdf-install-postgresql.sh" 12.8
 # bash "ubuntu/postgresql/create-user.sh" root admin
 bash "ubuntu/postgresql/set-psqlrc.sh"
 
@@ -191,7 +194,7 @@ sudo bash "ubuntu/rar/install-rar.sh"
 bash "ubuntu/readline/set-inputrc.sh"
 
 # redis
-# bash "ubuntu/redis/asdf-install-redis.sh" 6.2.5
+bash "ubuntu/redis/asdf-install-redis.sh" 6.2.5
 
 # ruby
 bash "ubuntu/ruby/asdf-install-ruby.sh" 3.0.2 break rubocop "tmuxinator:3.0.1" debug pry-byebug
@@ -204,10 +207,10 @@ bash "ubuntu/ruby/asdf-install-ruby.sh" 3.0.2 break rubocop "tmuxinator:3.0.1" d
 # sudo bash "ubuntu/siege/install-siege.sh"
 
 # simplescreenrecorder
-# sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
+sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
 
 # slack
-# sudo bash "ubuntu/slack/install-slack.sh"
+sudo bash "ubuntu/slack/install-slack.sh"
 
 # sqlite
 # bash "ubuntu/sqlite/asdf-install-sqlite.sh" 3.36.0
@@ -272,14 +275,14 @@ sudo bash "ubuntu/xclip/install-xclip.sh"
 bash "ubuntu/xclip/add-xclip-shorthands.sh"
 
 # xournal
-# sudo bash "ubuntu/xournal/install-xournal.sh"
+sudo bash "ubuntu/xournal/install-xournal.sh"
 
 # xterm
 sudo bash "ubuntu/xterm/install-xterm.sh"
 sudo bash "ubuntu/xterm/install-dotX.sh"
 
 # zoom
-# sudo bash "ubuntu/zoom/install-zoom.sh"
+sudo bash "ubuntu/zoom/install-zoom.sh"
 
 echo ""
 echo "Running: \`source \"$HOME/.bashrc\"\`"
