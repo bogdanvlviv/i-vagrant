@@ -22,3 +22,5 @@ asdf plugin add postgres
 asdf plugin update postgres
 asdf install postgres $1
 asdf global postgres $1
+
+sudo apt install -y libpq-dev

@@ -14,3 +14,5 @@ asdf plugin add mysql
 asdf plugin update mysql
 asdf install mysql $1
 asdf global mysql $1
+
+sudo apt install -y libmysqlclient-dev
