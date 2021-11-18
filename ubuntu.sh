@@ -139,9 +139,7 @@ sudo bash "ubuntu/mupdf/install-mupdf.sh"
 sudo bash "ubuntu/mosh/install-mosh.sh"
 
 # mysql
-# TODO asdf
-# sudo bash "ubuntu/mysql/install-mysql.sh" admin libmysqlclient-dev
-# sudo bash "ubuntu/mysql/install-mariadb.sh" 10.5 $UBUNTU_RELEASE_CODENAME admin libmysqlclient-dev
+bash "ubuntu/mysql/asdf-install-mysql.sh" 5.7
 
 # network-manager
 sudo bash "ubuntu/network-manager/install-network-manager.sh"

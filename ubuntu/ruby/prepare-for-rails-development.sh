@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cp /work/rails/projects/rails/activerecord/test/config.example.yml /work/rails/projects/rails/activerecord/test/config.yml
+cp ~/work/rails/rails/activerecord/test/config.example.yml ~/work/rails/rails/activerecord/test/config.yml
 
 pg_ctl start
 
