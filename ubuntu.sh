@@ -211,7 +211,7 @@ sudo bash "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
 sudo bash "ubuntu/slack/install-slack.sh"
 
 # sqlite
-# bash "ubuntu/sqlite/asdf-install-sqlite.sh" 3.36.0
+bash "ubuntu/sqlite/asdf-install-sqlite.sh" 3.36.0
 
 # ssh
 sudo bash "ubuntu/ssh/install-openssh-client.sh"
