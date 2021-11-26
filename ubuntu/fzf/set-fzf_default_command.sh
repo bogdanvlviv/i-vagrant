@@ -4,4 +4,4 @@ if [[ "$SUDO_USER" ]]; then
   HOME="/home/$SUDO_USER"
 fi
 
-sed -i "1iexport FZF_DEFAULT_COMMAND='ag --all-types --hidden -g \"\"'\n" ~/.bashrc
+sed -i "1iexport FZF_DEFAULT_COMMAND='ag --all-types --follow --hidden -g \"\"'\n" ~/.bashrc
