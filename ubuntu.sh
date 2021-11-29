@@ -116,6 +116,9 @@ sudo bash "ubuntu/jq/install-jq.sh"
 # letsencrypt
 # sudo bash "ubuntu/letsencrypt/install-letsencrypt.sh"
 
+# libvips
+sudo bash "ubuntu/libvips/install-libvips.sh"
+
 # libxml2
 sudo bash "ubuntu/libxml2/install-libxml2.sh" libxml2-dev
 
