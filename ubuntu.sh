@@ -123,7 +123,7 @@ sudo bash "ubuntu/libxml2/install-libxml2.sh" libxml2-dev
 sudo bash "ubuntu/mc/install-mc.sh"
 
 # memcached
-# sudo bash "ubuntu/memcached/install-memcached.sh"
+sudo bash "ubuntu/memcached/install-memcached.sh"
 
 # mkcert
 sudo bash "ubuntu/mkcert/install-mkcert.sh" v1.4.3
