@@ -171,7 +171,6 @@ sudo bash "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
 bash "ubuntu/postgresql/asdf-install-postgresql.sh" 12.8
-# bash "ubuntu/postgresql/create-user.sh" root admin
 bash "ubuntu/postgresql/set-psqlrc.sh"
 
 # postman
@@ -196,7 +195,6 @@ bash "ubuntu/redis/asdf-install-redis.sh" 6.2.5
 
 # ruby
 bash "ubuntu/ruby/asdf-install-ruby.sh" 3.0.3 break rubocop "tmuxinator:3.0.1" debug pry-byebug
-# bash "ubuntu/ruby/prepare-for-rails-development.sh" $USER root admin
 
 # sequeler
 # sudo bash "ubuntu/sequeler/install-sequeler.sh"

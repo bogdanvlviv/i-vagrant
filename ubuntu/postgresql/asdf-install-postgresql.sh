@@ -8,8 +8,11 @@ sudo apt install -y autoconf
 sudo apt install -y gcc
 sudo apt install -y make
 sudo apt install -y build-essential
+sudo apt install -y libssl-dev
 sudo apt install -y libreadline-dev
 sudo apt install -y zlib1g-dev
+sudo apt install -y libcurl4-openssl-dev
+sudo apt install -y uuid-dev
 
 if [[ "$SUDO_USER" ]]; then
   HOME="/home/$SUDO_USER"
