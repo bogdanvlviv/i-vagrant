@@ -139,7 +139,7 @@ sudo bash "ubuntu/mupdf/install-mupdf.sh"
 sudo bash "ubuntu/mosh/install-mosh.sh"
 
 # mysql
-bash "ubuntu/mysql/asdf-install-mysql.sh" 5.7
+# bash "ubuntu/mysql/asdf-install-mysql.sh" 5.7
 
 # network-manager
 sudo bash "ubuntu/network-manager/install-network-manager.sh"
