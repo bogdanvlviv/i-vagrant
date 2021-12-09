@@ -148,7 +148,7 @@ sudo bash "ubuntu/mosh/install-mosh.sh"
 sudo bash "ubuntu/network-manager/install-network-manager.sh"
 
 # nginx
-sudo bash "ubuntu/nginx/install-nginx.sh"
+bash "ubuntu/nginx/install-nginx.sh" $UBUNTU_RELEASE_CODENAME
 
 # ngrok
 sudo bash "ubuntu/ngrok/install-ngrok.sh"
