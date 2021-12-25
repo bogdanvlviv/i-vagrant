@@ -166,6 +166,9 @@ bash "ubuntu/nodejs/install-stylelint.sh"
 sudo bash "ubuntu/openvpn/install-openvpn.sh"
 sudo bash "ubuntu/openvpn/change-openvpn_config.sh"
 
+# pcscd
+sudo bash "ubuntu/pcscd/install-pcscd.sh"
+
 # phantomjs
 # sudo bash "ubuntu/phantomjs/install-phantomjs.sh"
 
