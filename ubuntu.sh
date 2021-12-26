@@ -281,9 +281,6 @@ sudo bash "ubuntu/xournal/install-xournal.sh"
 sudo bash "ubuntu/xterm/install-xterm.sh"
 sudo bash "ubuntu/xterm/install-dotX.sh"
 
-# yubico
-sudo bash "ubuntu/yubico/install-yubico.sh"
-
 # yubikey-manager
 sudo bash "ubuntu/yubikey-manager/install-yubikey-manager.sh"
 
