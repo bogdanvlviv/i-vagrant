@@ -81,7 +81,7 @@ bash "ubuntu/go/asdf-install-go.sh" 1.17
 
 # google-chrome
 sudo bash "ubuntu/google-chrome/install-google-chrome.sh"
-sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 102.0.5005.61
+sudo bash "ubuntu/google-chrome/install-chromedriver.sh" 103.0.5060.53
 
 # graphiql
 # sudo bash "ubuntu/graphiql/install-graphiql.sh" 0.7.2
