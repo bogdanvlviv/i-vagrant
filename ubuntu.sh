@@ -197,7 +197,7 @@ bash "ubuntu/readline/set-inputrc.sh"
 bash "ubuntu/redis/asdf-install-redis.sh" 6.2.5
 
 # ruby
-bash "ubuntu/ruby/asdf-install-ruby.sh" 3.1.1 break rubocop "tmuxinator:3.0.2" debug pry-byebug
+bash "ubuntu/ruby/asdf-install-ruby.sh" 3.1.2 break rubocop "tmuxinator:3.0.2" debug pry-byebug
 bash "ubuntu/ruby/set-rspec.sh"
 
 # sequeler
