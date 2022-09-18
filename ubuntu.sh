@@ -250,7 +250,7 @@ sudo bash "ubuntu/tmux/install-dottmux.sh"
 sudo bash "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# sudo bash "ubuntu/vagrant/install-vagrant.sh" 2.2.18 vagrant-disksize
+# bash "ubuntu/vagrant/install-vagrant.sh" 2.3.0 vagrant-disksize
 
 # viber
 # sudo bash "ubuntu/viber/install-viber.sh"
