@@ -96,8 +96,7 @@ bash "ubuntu/imagemagick/install-imagemagick.sh"
 bash "ubuntu/imagemagick/add-imagemagick-shorthands.sh"
 
 # java
-# TODO asdf
-# bash "ubuntu/java/install-java.sh" 11
+# bash "ubuntu/java/asdf-install-java.sh" adoptopenjdk-jre-18.0.2+101
 
 # jq
 bash "ubuntu/jq/install-jq.sh"
