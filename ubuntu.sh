@@ -12,7 +12,7 @@ if [[ "$answer_for_the_start" != "yes" ]]; then
   return
 fi
 
-UBUNTU_RELEASE_CODENAME="focal"
+UBUNTU_RELEASE_CODENAME="jammy"
 
 # upgrade
 sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"

@@ -10,7 +10,7 @@ Vagrant.configure('2') do |config|
     vb.memory = '16384'
     vb.cpus = '4'
 
-    override.vm.box = 'ubuntu/focal64'
+    override.vm.box = 'ubuntu/jammy64'
     override.disksize.size = '200GB'
   end
 

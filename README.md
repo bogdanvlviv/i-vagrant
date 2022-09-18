@@ -1,15 +1,18 @@
 # i-vagrant
 
-i-vagrant helps to set up a (development) environment.
+i-vagrant helps to set up Ubuntu 22.04.
 
-Try to fork this idea and build for own needs.
+## Download i-vagrant
 
-## Getting Started Guide
-
-Download i-vagrant
 ```bash
 $ git clone https://gitlab.com/bogdanvlviv/i-vagrant.git
 $ cd i-vagrant/
 ```
 
-### [Setting up ubuntu](ubuntu/README.md)
+## Configure `ubuntu.sh` file
+
+## Perform
+
+```bash
+$ source ubuntu.sh
+```
