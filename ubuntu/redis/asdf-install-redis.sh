@@ -7,10 +7,6 @@ sudo apt install -y gcc
 sudo apt install -y make
 sudo apt install -y build-essential
 
-if [[ "$SUDO_USER" ]]; then
-  HOME="/home/$SUDO_USER"
-fi
-
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
 

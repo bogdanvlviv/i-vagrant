@@ -16,10 +16,6 @@ sudo apt install -y libffi-dev
 sudo apt install -y libgdbm6
 sudo apt install -y libgdbm-dev
 
-if [[ "$SUDO_USER" ]]; then
-  HOME="/home/$SUDO_USER"
-fi
-
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
 

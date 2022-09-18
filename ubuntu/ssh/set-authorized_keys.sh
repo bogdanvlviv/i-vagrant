@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-if [[ "$SUDO_USER" ]]; then
-  HOME="/home/$SUDO_USER"
-fi
-
 mkdir -p ~/.ssh
 
 chmod 700 ~/.ssh

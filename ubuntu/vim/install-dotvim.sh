@@ -2,10 +2,6 @@
 
 bash "ubuntu/git/install-git.sh"
 
-if [[ "$SUDO_USER" ]]; then
-  HOME="/home/$SUDO_USER"
-fi
-
 rm -fr ~/.vim
 rm ~/.vimrc
 git clone https://gitlab.com/bogdanvlviv/dotvim.git ~/.vim
@@ -16,7 +12,3 @@ ln -s bundle/vim-pathogen/autoload/ ./
 git remote add github git@github.com:bogdanvlviv/dotvim.git
 git remote add gitlab git@gitlab.com:bogdanvlviv/dotvim.git
 cd -
-
-if [[ "$SUDO_USER" ]]; then
-  chown -R $SUDO_USER:$SUDO_USER ~/.vim/
-fi

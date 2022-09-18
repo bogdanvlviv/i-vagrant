@@ -11,10 +11,6 @@ sudo apt install -y libssl-dev
 sudo apt install -y libffi-dev
 sudo apt install -y liblzma-dev
 
-if [[ "$SUDO_USER" ]]; then
-  HOME="/home/$SUDO_USER"
-fi
-
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
 
