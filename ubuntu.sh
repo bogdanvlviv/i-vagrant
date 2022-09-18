@@ -15,7 +15,7 @@ fi
 UBUNTU_RELEASE_CODENAME="jammy"
 
 # upgrade
-sudo bash "ubuntu/upgrade/make-upgrade_packages.sh"
+bash "ubuntu/upgrade/make-upgrade_packages.sh"
 
 # bashrc
 bash "ubuntu/bashrc/set-lc_all-variable.sh"
