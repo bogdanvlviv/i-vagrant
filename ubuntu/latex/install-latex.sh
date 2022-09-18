@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt install -y texlive-latex-extra
+sudo apt install -y texlive-latex-extra
 
 if (( $# )); then
-  apt install -y $@
+  sudo apt install -y $@
 fi

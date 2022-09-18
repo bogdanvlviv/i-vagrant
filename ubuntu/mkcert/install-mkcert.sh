@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 
-apt update
+bash "ubuntu/curl/install-curl.sh"
 
-# "ubuntu/curl/install-curl.sh"
-apt install -y curl
-# "ubuntu/curl/install-curl.sh"
+sudo apt update
 
-apt install -y libnss3-tools
+sudo apt install -y libnss3-tools
 
-curl -L https://github.com/FiloSottile/mkcert/releases/download/$1/mkcert-$1-linux-amd64 -o /usr/local/bin/mkcert
-chmod 755 /usr/local/bin/mkcert
+sudo curl -L https://github.com/FiloSottile/mkcert/releases/download/$1/mkcert-$1-linux-amd64 -o /usr/local/bin/mkcert
+sudo chmod 755 /usr/local/bin/mkcert

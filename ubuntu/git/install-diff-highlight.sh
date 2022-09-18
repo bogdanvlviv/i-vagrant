@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-apt install -y build-essential
+sudo apt update
 
-make -C /usr/share/doc/git/contrib/diff-highlight
+sudo apt install -y build-essential
 
-cp /usr/share/doc/git/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
-chmod 755 /usr/local/bin/diff-highlight
+sudo make -C /usr/share/doc/git/contrib/diff-highlight
+
+sudo cp /usr/share/doc/git/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
+sudo chmod 755 /usr/local/bin/diff-highlight

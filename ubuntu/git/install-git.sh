@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-add-apt-repository -y ppa:git-core/ppa
+sudo add-apt-repository -y ppa:git-core/ppa
 
-apt update
+sudo apt update
 
-apt install -y git
+sudo apt install -y git

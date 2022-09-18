@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
 
-apt update
+bash "ubuntu/git/install-git.sh"
 
-# "ubuntu/git/install-git.sh"
-apt install -y git
-# "ubuntu/git/install-git.sh"
+sudo apt update
 
-apt install -y build-essential
+sudo apt install -y build-essential
 
 rm -fr /tmp/vim
 git clone https://github.com/vim/vim.git /tmp/vim
 make -C /tmp/vim
-make install -C /tmp/vim
+sudo make install -C /tmp/vim
 
 rm -fr /tmp/vim

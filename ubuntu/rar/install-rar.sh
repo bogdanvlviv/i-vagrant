@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt install -y rar
-apt install -y unrar
+sudo apt install -y rar
+sudo apt install -y unrar

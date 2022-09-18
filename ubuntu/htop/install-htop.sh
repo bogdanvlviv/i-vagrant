@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt install -y htop
+sudo apt install -y htop

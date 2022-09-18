@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-sudo apt update
+bash "ubuntu/curl/install-curl.sh"
 
-# "ubuntu/curl/install-curl.sh"
-sudo apt install -y curl
-# "ubuntu/curl/install-curl.sh"
+sudo apt update
 
 sudo apt install -y gnupg2
 sudo apt install -y ca-certificates

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt-add-repository -y ppa:yubico/stable
+sudo apt-add-repository -y ppa:yubico/stable
 
-apt update
+sudo apt update
 
-apt install -y yubikey-manager
+sudo apt install -y yubikey-manager

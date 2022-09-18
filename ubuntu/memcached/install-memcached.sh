@@ -1,21 +1,20 @@
 #!/usr/bin/env bash
 
-apt update
+bash "ubuntu/git/install-git.sh"
 
-# "ubuntu/git/install-git.sh"
-apt install -y git
-# "ubuntu/git/install-git.sh"
+sudo apt update
 
-apt install -y build-essential
-apt install -y libevent-dev
-apt install -y automake
+sudo apt install -y build-essential
+sudo apt install -y libevent-dev
+sudo apt install -y automake
+sudo apt install -y pkg-config
 
 rm -fr /tmp/memcached
 git clone https://github.com/memcached/memcached.git /tmp/memcached
 cd /tmp/memcached
 sh autogen.sh
 ./configure && make
-make install
+sudo make install
 cd -
 
-rm -fr /tmp/memcached
+sudo rm -fr /tmp/memcached

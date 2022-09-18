@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt install -y graphviz
+sudo apt install -y graphviz

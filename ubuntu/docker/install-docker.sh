@@ -1,22 +1,18 @@
 #!/usr/bin/env bash
 
-apt update
+bash "ubuntu/curl/install-curl.sh"
 
-# "ubuntu/curl/install-curl.sh"
-apt install -y curl
-# "ubuntu/curl/install-curl.sh"
+sudo apt update
 
-apt install -y apt-transport-https
-apt install -y ca-certificates
-apt install -y gnupg-agent
-apt install -y software-properties-common
+sudo apt install -y ca-certificates
+sudo apt install -y gnupg
+sudo apt install -y lsb-release
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 
-apt-key fingerprint 0EBFCD88
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $1 stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $1 stable"
+sudo apt update
 
-apt update
-
-apt install -y docker-ce docker-ce-cli
+sudo apt install -y docker-ce docker-ce-cli

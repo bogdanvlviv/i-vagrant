@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt install -y silversearcher-ag
+sudo apt install -y silversearcher-ag

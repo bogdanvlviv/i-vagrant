@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt install -y exuberant-ctags
+sudo apt install -y exuberant-ctags

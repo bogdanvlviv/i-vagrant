@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt install -y mupdf
-apt install -y mupdf-tools
+sudo apt install -y mupdf
+sudo apt install -y mupdf-tools

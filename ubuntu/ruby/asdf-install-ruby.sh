@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo apt update
+
 sudo apt install -y autoconf
 sudo apt install -y bison
 sudo apt install -y gcc

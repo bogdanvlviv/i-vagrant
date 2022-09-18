@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# "ubuntu/curl/install-curl.sh"
-sudo apt install -y curl
-# "ubuntu/curl/install-curl.sh"
+bash "ubuntu/curl/install-curl.sh"
+
+sudo apt update
 
 sudo apt install -y autoconf
 sudo apt install -y gcc

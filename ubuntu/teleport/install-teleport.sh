@@ -1,18 +1,10 @@
 #!/usr/bin/env bash
 
-apt update
+bash "ubuntu/curl/install-curl.sh"
 
-# "ubuntu/curl/install-curl.sh"
-apt install -y curl
-# "ubuntu/curl/install-curl.sh"
+sudo curl https://apt.releases.teleport.dev/gpg  -o /usr/share/keyrings/teleport-archive-keyring.asc
+echo "deb [signed-by=/usr/share/keyrings/teleport-archive-keyring.asc]  https://apt.releases.teleport.dev/ubuntu $1 stable/v10" | sudo tee /etc/apt/sources.list.d/teleport.list > /dev/null
 
-apt install -y apt-transport-https
-apt install -y software-properties-common
+sudo apt update
 
-curl -fsSL https://deb.releases.teleport.dev/teleport-pubkey.asc | apt-key add -
-
-add-apt-repository "deb https://deb.releases.teleport.dev/ stable main"
-
-apt update
-
-apt install -y teleport
+sudo apt install -y teleport

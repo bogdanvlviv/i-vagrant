@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt install -y flatpak
+sudo apt install -y flatpak
+
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 if [[ "$SUDO_USER" ]]; then
   HOME="/home/$SUDO_USER"

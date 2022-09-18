@@ -1,15 +1,13 @@
 #!/usr/bin/env bash
 
-apt update
+bash "ubuntu/curl/install-curl.sh"
 
-# "ubuntu/curl/install-curl.sh"
-apt install -y curl
-# "ubuntu/curl/install-curl.sh"
+sudo apt update
 
-apt install -y unzip
+sudo apt install -y unzip
 
 curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o /tmp/awscliv2.zip
 unzip /tmp/awscliv2.zip -d /tmp/awscliv2
-yes y | /tmp/awscliv2/aws/install
+sudo yes y | sudo /tmp/awscliv2/aws/install
 rm /tmp/awscliv2.zip
 rm -fr /tmp/awscliv2

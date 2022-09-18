@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo apt update
+
 sudo apt install -y libtinfo5
 sudo apt install -y libaio1
 

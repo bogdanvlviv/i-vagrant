@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
-apt update
-
-# "ubuntu/git/install-git.sh"
-apt install -y git
-# "ubuntu/git/install-git.sh"
+bash "ubuntu/git/install-git.sh"
 
 if [[ "$SUDO_USER" ]]; then
   HOME="/home/$SUDO_USER"

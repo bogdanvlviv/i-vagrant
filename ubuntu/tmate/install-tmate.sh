@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt install -y software-properties-common
+sudo apt install -y software-properties-common
 
-apt install -y tmate
+sudo apt install -y tmate

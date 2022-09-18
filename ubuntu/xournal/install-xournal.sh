@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt install -y libcanberra-gtk-module
+sudo apt install -y libcanberra-gtk-module
 
-apt install -y xournal
+sudo apt install -y xournal

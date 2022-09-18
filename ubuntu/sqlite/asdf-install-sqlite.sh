@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-# "ubuntu/curl/install-curl.sh"
-sudo apt install -y curl
-# "ubuntu/curl/install-curl.sh"
+bash "ubuntu/curl/install-curl.sh"
 
 if [[ "$SUDO_USER" ]]; then
   HOME="/home/$SUDO_USER"

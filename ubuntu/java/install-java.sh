@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-apt update
+sudo apt update
 
-apt install -y openjdk-$1-jre
+sudo apt install -y openjdk-$1-jre

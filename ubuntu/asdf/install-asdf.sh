@@ -1,14 +1,8 @@
 #!/usr/bin/env bash
 
-apt update
+bash "ubuntu/git/install-git.sh"
 
-# "ubuntu/git/install-git.sh"
-apt install -y git
-# "ubuntu/git/install-git.sh"
-
-# "ubuntu/curl/install-curl.sh"
-apt install -y curl
-# "ubuntu/curl/install-curl.sh"
+bash "ubuntu/curl/install-curl.sh"
 
 if [[ "$SUDO_USER" ]]; then
   HOME="/home/$SUDO_USER"
