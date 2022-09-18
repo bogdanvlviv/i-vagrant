@@ -14,5 +14,5 @@ $ cd i-vagrant/
 ## Perform
 
 ```bash
-$ bash ubuntu.sh
+$ source ubuntu.sh
 ```
