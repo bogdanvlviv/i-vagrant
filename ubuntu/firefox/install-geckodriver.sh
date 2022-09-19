@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bash "ubuntu/curl/install-curl.sh"
+source "ubuntu/curl/install-curl.sh"
 
 rm /tmp/geckodriver.tar.gz
 rm /tmp/geckodriver

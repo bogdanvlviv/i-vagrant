@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bash "ubuntu/curl/install-curl.sh"
+source "ubuntu/curl/install-curl.sh"
 
 rm /tmp/minikube
 curl -L https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 -o /tmp/minikube

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bash "ubuntu/git/install-git.sh"
+source "ubuntu/git/install-git.sh"
 
 rm -fr ~/.X
 rm ~/.Xresources

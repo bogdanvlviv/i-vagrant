@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-bash "ubuntu/curl/install-curl.sh"
+source "ubuntu/curl/install-curl.sh"
 
-bash "ubuntu/jq/install-jq.sh"
+source "ubuntu/jq/install-jq.sh"
 
 sudo apt update
 

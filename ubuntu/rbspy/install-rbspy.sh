@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bash "ubuntu/curl/install-curl.sh"
+source "ubuntu/curl/install-curl.sh"
 
 rm /tmp/rbspy.tar.gz
 rm /tmp/rbspy

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bash "ubuntu/curl/install-curl.sh"
+source "ubuntu/curl/install-curl.sh"
 
 rm /tmp/virtualbox-$2_Ubuntu_$3_amd64.deb
 curl https://download.virtualbox.org/virtualbox/$1/virtualbox-$2~Ubuntu~$3_amd64.deb -o /tmp/virtualbox-$2_Ubuntu_$3_amd64.deb

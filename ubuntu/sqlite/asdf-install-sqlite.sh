@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bash "ubuntu/curl/install-curl.sh"
+source "ubuntu/curl/install-curl.sh"
 
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash

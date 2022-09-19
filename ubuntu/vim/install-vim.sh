@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bash "ubuntu/git/install-git.sh"
+source "ubuntu/git/install-git.sh"
 
 sudo apt update
 

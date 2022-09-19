@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bash "ubuntu/curl/install-curl.sh"
+source "ubuntu/curl/install-curl.sh"
 
 rm /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2
 rm -fr /tmp/phantomjs-2.1.1-linux-x86_64
