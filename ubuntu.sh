@@ -4,8 +4,8 @@ sudo bash -c ""
 
 echo "Are you ready to start?"
 echo -n "Type 'yes' or operation will be aborted: "
-read answer_for_the_start
-if [[ "$answer_for_the_start" != "yes" ]]; then
+read i_vagrant_ready_to_start_answer
+if [[ "$i_vagrant_ready_to_start_answer" != "yes" ]]; then
   echo ""
   echo "Aborted!"
   echo ""
@@ -171,7 +171,7 @@ source "ubuntu/postgresql/set-psqlrc.sh"
 # source "ubuntu/postman/install-postman.sh"
 
 # python
-# source "ubuntu/python/asdf-install-python.sh" 3.10.7
+source "ubuntu/python/asdf-install-python.sh" 3.10.7
 
 # rar
 source "ubuntu/rar/install-rar.sh"
@@ -199,7 +199,7 @@ source "ubuntu/ruby/set-rspec.sh"
 source "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
 
 # slack
-source "ubuntu/slack/install-slack.sh"
+# source "ubuntu/slack/install-slack.sh"
 
 # sqlite
 source "ubuntu/sqlite/asdf-install-sqlite.sh" 3.39.3
