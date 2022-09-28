@@ -16,6 +16,7 @@ UBUNTU_RELEASE_CODENAME="jammy"
 
 # upgrade
 source "ubuntu/upgrade/make-upgrade_packages.sh"
+# source "ubuntu/upgrade/make-upgrade_snap-store.sh"
 
 # bashrc
 source "ubuntu/bashrc/set-lc_all-variable.sh"
