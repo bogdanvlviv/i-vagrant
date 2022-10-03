@@ -98,6 +98,7 @@ source "ubuntu/imagemagick/add-imagemagick-shorthands.sh"
 
 # java
 # source "ubuntu/java/asdf-install-java.sh" adoptopenjdk-jre-18.0.2+101
+# source "ubuntu/java/install-icedtea-netx.sh"
 
 # jq
 source "ubuntu/jq/install-jq.sh"
