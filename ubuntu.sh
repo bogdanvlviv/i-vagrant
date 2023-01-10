@@ -96,9 +96,6 @@ source "ubuntu/htop/install-htop.sh"
 source "ubuntu/imagemagick/install-imagemagick.sh"
 source "ubuntu/imagemagick/add-imagemagick-shorthands.sh"
 
-# java
-# source "ubuntu/java/asdf-install-java.sh" adoptopenjdk-jre-18.0.2+101
-
 # jq
 source "ubuntu/jq/install-jq.sh"
 
