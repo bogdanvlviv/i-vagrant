@@ -254,8 +254,7 @@ source "ubuntu/vim/set-vim-as-default-editor.sh"
 # source "ubuntu/vscode/install-vscode.sh"
 
 # wkhtmltopdf
-# source "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.6 focal
-# source "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.6 $UBUNTU_RELEASE_CODENAME
+# source "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.6.1-2 $UBUNTU_RELEASE_CODENAME
 
 # xclip
 source "ubuntu/xclip/install-xclip.sh"
