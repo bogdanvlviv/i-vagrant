@@ -151,6 +151,9 @@ source "ubuntu/nodejs/asdf-install-yarn.sh" 1.22.19
 source "ubuntu/nodejs/install-eslint.sh"
 source "ubuntu/nodejs/install-stylelint.sh"
 
+# obs-studio
+# source "ubuntu/obs-studio/install-obs-studio.sh"
+
 # openvpn
 source "ubuntu/openvpn/install-openvpn.sh"
 source "ubuntu/openvpn/change-openvpn_config.sh"
@@ -192,9 +195,6 @@ source "ubuntu/ruby/set-rspec.sh"
 
 # siege
 # source "ubuntu/siege/install-siege.sh"
-
-# simplescreenrecorder
-source "ubuntu/simplescreenrecorder/install-simplescreenrecorder.sh"
 
 # slack
 # source "ubuntu/slack/install-slack.sh"
