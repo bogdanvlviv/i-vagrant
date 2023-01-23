@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
-source "ubuntu/flatpak/install-flatpak.sh"
+source "ubuntu/curl/install-curl.sh"
 
-sudo flatpak install -y flathub us.zoom.Zoom
+rm /tmp/zoom_amd64.deb
+curl -L https://zoom.us/client/$1/zoom_amd64.deb -o /tmp/zoom_amd64.deb
+
+sudo apt install -y /tmp/zoom_amd64.deb
+
+rm /tmp/zoom_amd64.deb
