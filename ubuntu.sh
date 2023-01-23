@@ -99,6 +99,9 @@ source "ubuntu/imagemagick/add-imagemagick-shorthands.sh"
 # jq
 source "ubuntu/jq/install-jq.sh"
 
+# kdenlive
+source "ubuntu/kdenlive/install-kdenlive.sh"
+
 # kubernetes
 # source "ubuntu/kubernetes/install-kubectl.sh"
 # source "ubuntu/kubernetes/install-minikube.sh"
