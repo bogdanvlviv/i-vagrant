@@ -3,7 +3,7 @@
 sudo bash -c ""
 
 echo "Are you ready to start?"
-echo -n "Type 'yes' or operation will be aborted: "
+echo -n "Type 'yes' or the operation will be aborted: "
 read i_vagrant_ready_to_start_answer
 if [[ "$i_vagrant_ready_to_start_answer" != "yes" ]]; then
   echo ""
