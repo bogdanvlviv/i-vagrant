@@ -78,7 +78,7 @@ source "ubuntu/go/asdf-install-go.sh" 1.19
 
 # google-chrome
 source "ubuntu/google-chrome/install-google-chrome.sh"
-source "ubuntu/google-chrome/install-chromedriver.sh" 114.0.5735.90
+source "ubuntu/google-chrome/install-chromedriver.sh" 116.0.5845.96
 
 # graphiql
 # source "ubuntu/graphiql/install-graphiql.sh" 0.7.2
