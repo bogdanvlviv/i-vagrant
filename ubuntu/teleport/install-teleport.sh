@@ -2,9 +2,9 @@
 
 source "ubuntu/curl/install-curl.sh"
 
-sudo curl https://apt.releases.teleport.dev/gpg  -o /usr/share/keyrings/teleport-archive-keyring.asc
-echo "deb [signed-by=/usr/share/keyrings/teleport-archive-keyring.asc]  https://apt.releases.teleport.dev/ubuntu $1 stable/v10" | sudo tee /etc/apt/sources.list.d/teleport.list > /dev/null
+rm /tmp/teleport_amd64.deb
+curl -L https://cdn.teleport.dev/teleport_$1_amd64.deb -o /tmp/teleport_amd64.deb
 
-sudo apt update
+sudo apt install -y /tmp/teleport_amd64.deb
 
-sudo apt install -y teleport
+rm /tmp/teleport_amd64.deb

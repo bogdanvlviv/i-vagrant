@@ -218,7 +218,7 @@ source "ubuntu/ssh/set-authorized_keys.sh"
 # source "ubuntu/telegram/install-telegram.sh"
 
 # teleport
-source "ubuntu/teleport/install-teleport.sh" $UBUNTU_RELEASE_CODENAME
+source "ubuntu/teleport/install-teleport.sh" 13.4.1
 
 # the_silver_searcher
 source "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
