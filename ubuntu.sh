@@ -56,8 +56,8 @@ source "ubuntu/exuberant-ctags/set-ctags.sh"
 source "ubuntu/ffmpeg/install-ffmpeg.sh"
 
 # firefox
-source "ubuntu/firefox/install-firefox.sh"
-source "ubuntu/firefox/install-geckodriver.sh" v0.31.0
+# source "ubuntu/firefox/install-firefox.sh"
+# source "ubuntu/firefox/install-geckodriver.sh" v0.31.0
 
 # flatpak
 source "ubuntu/flatpak/install-flatpak.sh"
