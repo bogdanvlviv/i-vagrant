@@ -274,7 +274,7 @@ source "ubuntu/xterm/install-dotX.sh"
 source "ubuntu/yubikey-manager/install-yubikey-manager.sh"
 
 # zoom
-source "ubuntu/zoom/install-zoom.sh" 5.13.5.431
+source "ubuntu/zoom/install-zoom.sh" 5.16.10.668
 
 echo ""
 echo "Running: \`source \"$HOME/.bashrc\"\`"
