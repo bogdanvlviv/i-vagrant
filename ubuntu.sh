@@ -178,7 +178,7 @@ source "ubuntu/vim/install-dotvim.sh"
 source "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-# source "ubuntu/virtualbox/install-virtualbox.sh" 7.0.14 7.0_7.0.14-161095 $UBUNTU_RELEASE_CODENAME
+# source "ubuntu/virtualbox/install-virtualbox.sh" 6.1.38 6.1_6.1.38-153438 $UBUNTU_RELEASE_CODENAME
 
 # xclip
 source "ubuntu/xclip/install-xclip.sh"
