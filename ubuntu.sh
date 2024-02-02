@@ -22,20 +22,8 @@ source "ubuntu/upgrade/make-upgrade_packages.sh"
 source "ubuntu/bashrc/set-lc_all-variable.sh"
 source "ubuntu/bashrc/set-term-variable.sh"
 
-# android_studio
-# source "ubuntu/android_studio/install-android_studio.sh"
-
 # asdf
 source "ubuntu/asdf/install-asdf.sh" v0.14.0
-
-# atom
-# source "ubuntu/atom/install-atom.sh"
-
-# aws
-# source "ubuntu/aws/install-aws-cli.sh"
-
-# cmus
-# source "ubuntu/cmus/install-cmus.sh"
 
 # curl
 source "ubuntu/curl/install-curl.sh"
@@ -53,8 +41,8 @@ source "ubuntu/exuberant-ctags/set-ctags.sh"
 source "ubuntu/ffmpeg/install-ffmpeg.sh"
 
 # firefox
-# source "ubuntu/firefox/install-firefox.sh"
-# source "ubuntu/firefox/install-geckodriver.sh" v0.34.0
+source "ubuntu/firefox/install-firefox.sh"
+source "ubuntu/firefox/install-geckodriver.sh" v0.34.0
 
 # flatpak
 source "ubuntu/flatpak/install-flatpak.sh"
@@ -79,9 +67,6 @@ source "ubuntu/google-chrome/install-chromedriver.sh" 121.0.6167.85
 
 # graphviz
 source "ubuntu/graphviz/install-graphviz.sh"
-
-# heroku
-# source "ubuntu/heroku/install-heroku-cli.sh"
 
 # htop
 source "ubuntu/htop/install-htop.sh"
