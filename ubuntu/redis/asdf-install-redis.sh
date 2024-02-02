@@ -2,9 +2,6 @@
 
 sudo apt update
 
-sudo apt install -y autoconf
-sudo apt install -y gcc
-sudo apt install -y make
 sudo apt install -y build-essential
 
 source $HOME/.asdf/asdf.sh

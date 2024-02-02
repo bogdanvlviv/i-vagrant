@@ -2,8 +2,6 @@
 
 source "ubuntu/git/install-git.sh"
 
-sudo apt update
-
 sudo apt install -y build-essential
 
 rm -fr /tmp/vim

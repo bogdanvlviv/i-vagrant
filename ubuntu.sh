@@ -26,7 +26,7 @@ source "ubuntu/bashrc/set-term-variable.sh"
 # source "ubuntu/android_studio/install-android_studio.sh"
 
 # asdf
-source "ubuntu/asdf/install-asdf.sh" v0.10.2
+source "ubuntu/asdf/install-asdf.sh" v0.14.0
 
 # atom
 # source "ubuntu/atom/install-atom.sh"
@@ -35,7 +35,7 @@ source "ubuntu/asdf/install-asdf.sh" v0.10.2
 # source "ubuntu/aws/install-aws-cli.sh"
 
 # cmus
-source "ubuntu/cmus/install-cmus.sh"
+# source "ubuntu/cmus/install-cmus.sh"
 
 # curl
 source "ubuntu/curl/install-curl.sh"
@@ -43,10 +43,7 @@ source "ubuntu/curl/install-curl.sh"
 # docker
 source "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
 source "ubuntu/docker/add-user-to-docker-group.sh"
-source "ubuntu/docker/install-docker-compose.sh" v2.11.0
-
-# drawing
-# source "ubuntu/drawing/install-drawing.sh"
+source "ubuntu/docker/install-docker-compose.sh" v2.24.5
 
 # exuberant-ctags
 source "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
@@ -57,7 +54,7 @@ source "ubuntu/ffmpeg/install-ffmpeg.sh"
 
 # firefox
 # source "ubuntu/firefox/install-firefox.sh"
-# source "ubuntu/firefox/install-geckodriver.sh" v0.31.0
+# source "ubuntu/firefox/install-geckodriver.sh" v0.34.0
 
 # flatpak
 source "ubuntu/flatpak/install-flatpak.sh"
@@ -74,14 +71,11 @@ source "ubuntu/git/install-git.sh"
 source "ubuntu/git/install-diff-highlight.sh"
 
 # go
-source "ubuntu/go/asdf-install-go.sh" 1.19
+source "ubuntu/go/asdf-install-go.sh" 1.21.6
 
 # google-chrome
 source "ubuntu/google-chrome/install-google-chrome.sh"
-source "ubuntu/google-chrome/install-chromedriver.sh" 119.0.6045.105
-
-# graphiql
-# source "ubuntu/graphiql/install-graphiql.sh" 0.7.2
+source "ubuntu/google-chrome/install-chromedriver.sh" 121.0.6167.85
 
 # graphviz
 source "ubuntu/graphviz/install-graphviz.sh"
@@ -94,23 +88,12 @@ source "ubuntu/htop/install-htop.sh"
 
 # imagemagick
 source "ubuntu/imagemagick/install-imagemagick.sh"
-source "ubuntu/imagemagick/add-imagemagick-shorthands.sh"
 
 # jq
 source "ubuntu/jq/install-jq.sh"
 
 # kdenlive
 source "ubuntu/kdenlive/install-kdenlive.sh"
-
-# kubernetes
-# source "ubuntu/kubernetes/install-kubectl.sh"
-# source "ubuntu/kubernetes/install-minikube.sh"
-
-# latex
-# source "ubuntu/latex/install-latex.sh" texlive-lang-cyrillic
-
-# letsencrypt
-# source "ubuntu/letsencrypt/install-letsencrypt.sh"
 
 # libvips
 source "ubuntu/libvips/install-libvips.sh"
@@ -127,9 +110,6 @@ source "ubuntu/memcached/install-memcached.sh"
 # mkcert
 source "ubuntu/mkcert/install-mkcert.sh" v1.4.4
 
-# mosh
-source "ubuntu/mosh/install-mosh.sh"
-
 # mupdf
 source "ubuntu/mupdf/install-mupdf.sh"
 
@@ -142,68 +122,48 @@ source "ubuntu/network-manager/install-network-manager.sh"
 # nginx
 source "ubuntu/nginx/install-nginx.sh" $UBUNTU_RELEASE_CODENAME
 
-# ngrok
-source "ubuntu/ngrok/install-ngrok.sh"
-
 # nmap
 source "ubuntu/nmap/install-nmap.sh"
 
 # nodejs
-source "ubuntu/nodejs/asdf-install-nodejs.sh" 16.17.0
+source "ubuntu/nodejs/asdf-install-nodejs.sh" 20.11.0
 source "ubuntu/nodejs/asdf-install-yarn.sh" 1.22.19
-source "ubuntu/nodejs/install-eslint.sh"
-source "ubuntu/nodejs/install-stylelint.sh"
 
 # obs-studio
-# source "ubuntu/obs-studio/install-obs-studio.sh"
+source "ubuntu/obs-studio/install-obs-studio.sh"
 
 # openvpn
 source "ubuntu/openvpn/install-openvpn.sh"
 source "ubuntu/openvpn/change-openvpn_config.sh"
 
-# phantomjs
-# source "ubuntu/phantomjs/install-phantomjs.sh"
-
 # poppler
 source "ubuntu/poppler/install-poppler.sh"
 
 # postgresql
-source "ubuntu/postgresql/asdf-install-postgresql.sh" 14.5
+source "ubuntu/postgresql/asdf-install-postgresql.sh" 16.1
 source "ubuntu/postgresql/set-psqlrc.sh"
 
-# postman
-# source "ubuntu/postman/install-postman.sh"
-
 # python
-source "ubuntu/python/asdf-install-python.sh" 3.10.7
+source "ubuntu/python/asdf-install-python.sh" 3.12.1
 
 # rar
 source "ubuntu/rar/install-rar.sh"
 
 # rbspy
-# source "ubuntu/rbspy/install-rbspy.sh" v0.3.8
+source "ubuntu/rbspy/install-rbspy.sh" v0.19.0
 
 # readline
 source "ubuntu/readline/set-inputrc.sh"
 
 # redis
-source "ubuntu/redis/asdf-install-redis.sh" 7.0.4
+source "ubuntu/redis/asdf-install-redis.sh" 7.2.4
 
 # ruby
-source "ubuntu/ruby/asdf-install-ruby.sh" 3.2.0 debug rubocop "tmuxinator:3.0.5"
+source "ubuntu/ruby/asdf-install-ruby.sh" 3.3.0 debug rubocop "tmuxinator:3.1.0"
 source "ubuntu/ruby/set-rspec.sh"
 
-# sequeler
-# source "ubuntu/sequeler/install-sequeler.sh"
-
-# siege
-# source "ubuntu/siege/install-siege.sh"
-
-# slack
-# source "ubuntu/slack/install-slack.sh"
-
 # sqlite
-source "ubuntu/sqlite/asdf-install-sqlite.sh" 3.39.3
+source "ubuntu/sqlite/asdf-install-sqlite.sh" 3.45.1
 
 # ssh
 source "ubuntu/ssh/install-openssh-client.sh"
@@ -211,39 +171,21 @@ source "ubuntu/ssh/install-openssh-server.sh"
 source "ubuntu/ssh/change-sshd_config.sh" 4242 no
 source "ubuntu/ssh/set-authorized_keys.sh"
 
-# sublimetext
-# source "ubuntu/sublimetext/install-sublimetext.sh"
-
-# telegram
-# source "ubuntu/telegram/install-telegram.sh"
-
 # teleport
-source "ubuntu/teleport/install-teleport.sh" 14.0.1
+source "ubuntu/teleport/install-teleport.sh" 15.0.0
 
 # the_silver_searcher
 source "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
-
-# tig
-# source "ubuntu/tig/install-tig.sh" 2.5.7
-
-# tmate
-source "ubuntu/tmate/install-tmate.sh"
 
 # tmux
 source "ubuntu/tmux/install-tmux.sh" 3.3a
 source "ubuntu/tmux/install-dottmux.sh"
 
-# tor
-# source "ubuntu/tor/install-tor.sh"
-
 # tree
 source "ubuntu/tree/install-tree.sh"
 
 # vagrant
-# source "ubuntu/vagrant/install-vagrant.sh" 2.3.0 vagrant-disksize
-
-# viber
-# source "ubuntu/viber/install-viber.sh"
+# source "ubuntu/vagrant/install-vagrant.sh" 2.4.1
 
 # vim
 source "ubuntu/vim/install-vim.sh"
@@ -251,20 +193,11 @@ source "ubuntu/vim/install-dotvim.sh"
 source "ubuntu/vim/set-vim-as-default-editor.sh"
 
 # virtualbox
-# source "ubuntu/virtualbox/install-virtualbox.sh" 6.1.38 6.1_6.1.38-153438 $UBUNTU_RELEASE_CODENAME
-
-# vscode
-# source "ubuntu/vscode/install-vscode.sh"
-
-# wkhtmltopdf
-# source "ubuntu/wkhtmltopdf/install-wkhtmltopdf.sh" 0.12.6.1-2 $UBUNTU_RELEASE_CODENAME
+# source "ubuntu/virtualbox/install-virtualbox.sh" 7.0.14 7.0_7.0.14-161095 $UBUNTU_RELEASE_CODENAME
 
 # xclip
 source "ubuntu/xclip/install-xclip.sh"
 source "ubuntu/xclip/add-xclip-shorthands.sh"
-
-# xournal
-source "ubuntu/xournal/install-xournal.sh"
 
 # xterm
 source "ubuntu/xterm/install-xterm.sh"
@@ -274,7 +207,7 @@ source "ubuntu/xterm/install-dotX.sh"
 source "ubuntu/yubikey-manager/install-yubikey-manager.sh"
 
 # zoom
-source "ubuntu/zoom/install-zoom.sh" 5.16.10.668
+source "ubuntu/zoom/install-zoom.sh" 5.17.5.2543
 
 echo ""
 echo "Running: \`source \"$HOME/.bashrc\"\`"

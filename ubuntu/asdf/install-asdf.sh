@@ -4,7 +4,6 @@ source "ubuntu/git/install-git.sh"
 
 source "ubuntu/curl/install-curl.sh"
 
-rm -fr ~/.asdf
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 cd ~/.asdf
 git checkout $1

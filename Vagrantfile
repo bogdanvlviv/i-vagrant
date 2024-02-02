@@ -1,17 +1,9 @@
-required_plugins = ['vagrant-disksize']
-required_plugins.each do |plugin|
-  unless Vagrant.has_plugin? plugin
-    abort "Need to install '#{plugin}' plugin."
-  end
-end
-
 Vagrant.configure('2') do |config|
-  config.vm.provider 'virtualbox' do |vb, override|
+  config.vm.box = 'ubuntu/jammy64'
+
+  config.vm.provider 'virtualbox' do |vb|
     vb.memory = '16384'
     vb.cpus = '4'
-
-    override.vm.box = 'ubuntu/jammy64'
-    override.disksize.size = '200GB'
   end
 
   # config.vm.network 'private_network', ip: '192.168.33.10'

@@ -2,4 +2,4 @@
 
 source "ubuntu/flatpak/install-flatpak.sh"
 
-sudo flatpak install -y --from https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+sudo flatpak install -y flathub org.gimp.GIMP

@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-sudo apt update
+source "ubuntu/curl/install-curl.sh"
 
 sudo apt install -y libtinfo5
 sudo apt install -y libaio1
+sudo apt install -y libncurses5
+sudo apt install -y numactl
 
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
