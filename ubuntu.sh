@@ -169,16 +169,10 @@ source "ubuntu/tmux/install-dottmux.sh"
 # tree
 source "ubuntu/tree/install-tree.sh"
 
-# vagrant
-# source "ubuntu/vagrant/install-vagrant.sh" 2.4.1
-
 # vim
 source "ubuntu/vim/install-vim.sh"
 source "ubuntu/vim/install-dotvim.sh"
 source "ubuntu/vim/set-vim-as-default-editor.sh"
-
-# virtualbox
-# source "ubuntu/virtualbox/install-virtualbox.sh" 6.1.38 6.1_6.1.38-153438 $UBUNTU_RELEASE_CODENAME
 
 # xclip
 source "ubuntu/xclip/install-xclip.sh"
