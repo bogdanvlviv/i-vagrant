@@ -8,7 +8,7 @@ sudo apt install -y build-essential
 sudo apt install -y rustc
 sudo apt install -y libssl-dev
 sudo apt install -y libyaml-dev
-sudo apt install -y libreadline6-dev
+sudo apt install -y libreadline-dev
 sudo apt install -y zlib1g-dev
 sudo apt install -y libgmp-dev
 sudo apt install -y libncurses5-dev
