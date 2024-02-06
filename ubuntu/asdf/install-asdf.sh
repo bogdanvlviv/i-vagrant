@@ -12,5 +12,4 @@ cd -
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
 
-sed -i "1isource \$HOME/.asdf/completions/asdf.bash\n" ~/.bashrc
-sed -i "1isource \$HOME/.asdf/asdf.sh" ~/.bashrc
+sed -i "1iexport ASDF_FORCE_PREPEND=\"yes\"\nsource \"\$HOME/.asdf/asdf.sh\"\nsource \"\$HOME/.asdf/completions/asdf.bash\"\n" ~/.bashrc
