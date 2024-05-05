@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 sudo apt update
 
 sudo apt install -y autoconf
@@ -17,9 +15,6 @@ sudo apt install -y libgdbm6
 sudo apt install -y libgdbm-dev
 sudo apt install -y libdb-dev
 sudo apt install -y uuid-dev
-
-source $HOME/.asdf/asdf.sh
-source $HOME/.asdf/completions/asdf.bash
 
 asdf plugin add ruby
 asdf plugin update ruby

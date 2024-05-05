@@ -1,13 +1,9 @@
-#!/usr/bin/env bash
-
-source "ubuntu/curl/install-curl.sh"
+source "ubuntu/curl/install.sh"
 
 sudo apt update
 
 sudo apt install -y unzip
 
-rm /tmp/chromedriver-linux64.zip
-rm -fr /tmp/chromedriver-linux64
 curl -L https://storage.googleapis.com/chrome-for-testing-public/$1/linux64/chromedriver-linux64.zip -o /tmp/chromedriver-linux64.zip
 unzip /tmp/chromedriver-linux64.zip -d /tmp/chromedriver-linux64
 sudo cp /tmp/chromedriver-linux64/chromedriver-linux64/chromedriver /usr/local/bin/chromedriver

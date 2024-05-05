@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-source "ubuntu/curl/install-curl.sh"
+source "ubuntu/curl/install.sh"
 
 sudo apt install -y build-essential
 sudo apt install -y libssl-dev
@@ -10,9 +8,6 @@ sudo apt install -y libcurl4-openssl-dev
 sudo apt install -y uuid-dev
 sudo apt install -y icu-devtools
 sudo apt install -y libicu-dev
-
-source $HOME/.asdf/asdf.sh
-source $HOME/.asdf/completions/asdf.bash
 
 asdf plugin add postgres
 asdf plugin update postgres

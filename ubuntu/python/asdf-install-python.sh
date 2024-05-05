@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-source "ubuntu/curl/install-curl.sh"
+source "ubuntu/curl/install.sh"
 
 sudo apt install -y build-essential
 sudo apt install -y libssl-dev
@@ -15,9 +13,6 @@ sudo apt install -y libxml2-dev
 sudo apt install -y libxmlsec1-dev
 sudo apt install -y libffi-dev
 sudo apt install -y liblzma-dev
-
-source $HOME/.asdf/asdf.sh
-source $HOME/.asdf/completions/asdf.bash
 
 asdf plugin add python
 asdf plugin update python

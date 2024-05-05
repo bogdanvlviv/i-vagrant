@@ -1,9 +1,5 @@
-#!/usr/bin/env bash
+source "ubuntu/git/install.sh"
 
-source "ubuntu/git/install-git.sh"
-
-rm -fr ~/.vim
-rm ~/.vimrc
 git clone https://gitlab.com/bogdanvlviv/dotvim.git ~/.vim
 cd ~/.vim
 git submodule update --init --recursive
