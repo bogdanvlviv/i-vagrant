@@ -63,7 +63,7 @@ source "ubuntu/go/asdf-install-go.sh" 1.21.6
 
 # google-chrome
 source "ubuntu/google-chrome/install-google-chrome.sh"
-source "ubuntu/google-chrome/install-chromedriver.sh" 123.0.6312.58
+source "ubuntu/google-chrome/install-chromedriver.sh" 128.0.6613.119
 
 # graphviz
 source "ubuntu/graphviz/install-graphviz.sh"
