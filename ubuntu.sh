@@ -23,6 +23,9 @@ source "ubuntu/upgrade/snap.sh"
 echo "======== bashrc ========"
 source "ubuntu/bashrc/set-lc_all-variable.sh"
 
+echo "======== desktop-settings ========"
+source "ubuntu/desktop-settings/set.sh"
+
 echo "======== asdf ========"
 source "ubuntu/asdf/install.sh" v0.14.1
 
@@ -64,6 +67,7 @@ source "ubuntu/go/asdf-install-golang.sh" 1.23.1
 
 echo "======== google-chrome ========"
 source "ubuntu/google-chrome/install.sh"
+source "ubuntu/google-chrome/set-default-web-browser.sh"
 source "ubuntu/google-chrome/install-chromedriver.sh" 128.0.6613.119
 
 echo "======== graphviz ========"
@@ -175,6 +179,7 @@ source "ubuntu/xclip/create-xclip-shortcuts.sh"
 
 echo "======== xterm ========"
 source "ubuntu/xterm/install.sh"
+source "ubuntu/xterm/create-xterm-keybinding.sh"
 source "ubuntu/xterm/install-dotX.sh"
 
 echo "======== yubikey-manager ========"
