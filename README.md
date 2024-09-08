@@ -1,6 +1,6 @@
 # i-vagrant
 
-i-vagrant helps with setting up Ubuntu 22.04.
+i-vagrant helps to set up Ubuntu 24.04.
 
 ## Download i-vagrant
 
@@ -11,8 +11,8 @@ $ cd i-vagrant/
 
 ## Configure `ubuntu.sh` file
 
-## Perform
+## Run
 
 ```bash
-$ source ubuntu.sh
+$ bash ubuntu.sh
 ```

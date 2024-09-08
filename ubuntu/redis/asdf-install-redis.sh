@@ -1,11 +1,6 @@
-#!/usr/bin/env bash
-
 sudo apt update
 
 sudo apt install -y build-essential
-
-source $HOME/.asdf/asdf.sh
-source $HOME/.asdf/completions/asdf.bash
 
 asdf plugin add redis
 asdf plugin update redis

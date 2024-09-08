@@ -1,9 +1,5 @@
-#!/usr/bin/env bash
+source "ubuntu/git/install.sh"
 
-source "ubuntu/git/install-git.sh"
-
-rm -fr ~/.tmux
-rm ~/.tmux.conf
 git clone https://gitlab.com/bogdanvlviv/dottmux.git ~/.tmux
 ln -s ~/.tmux/.tmux.conf ~/
 cd ~/.tmux

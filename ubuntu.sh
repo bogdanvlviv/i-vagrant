@@ -1,198 +1,189 @@
-#!/usr/bin/env bash
+set -e
 
 sudo bash -c ""
 
-echo "Are you ready to start?"
+echo "Are you ready to set up Ubuntu 24.04?"
 echo -n "Type 'yes' or the operation will be aborted: "
-read i_vagrant_ready_to_start_answer
-if [[ "$i_vagrant_ready_to_start_answer" != "yes" ]]; then
+read i_vagrant_ready_to_set_up_ubuntu
+if [[ "$i_vagrant_ready_to_set_up_ubuntu" != "yes" ]]; then
   echo ""
   echo "Aborted!"
   echo ""
-  return
+  exit 1
 fi
 
-UBUNTU_RELEASE_CODENAME="jammy"
+echo "======== Setting up Ubuntu 24.04 ========"
 
-# upgrade
-source "ubuntu/upgrade/make-upgrade_packages.sh"
-# source "ubuntu/upgrade/make-upgrade_snap-store.sh"
+UBUNTU_RELEASE_CODENAME="noble"
 
-# bashrc
+echo "======== upgrade ========"
+source "ubuntu/upgrade/packages.sh"
+source "ubuntu/upgrade/snap.sh"
+
+echo "======== bashrc ========"
 source "ubuntu/bashrc/set-lc_all-variable.sh"
-source "ubuntu/bashrc/set-term-variable.sh"
 
-# asdf
-source "ubuntu/asdf/install-asdf.sh" v0.14.0
+echo "======== asdf ========"
+source "ubuntu/asdf/install.sh" v0.14.1
 
-# curl
-source "ubuntu/curl/install-curl.sh"
+echo "======== curl ========"
+source "ubuntu/curl/install.sh"
 
-# docker
-source "ubuntu/docker/install-docker.sh" $UBUNTU_RELEASE_CODENAME
+echo "======== docker ========"
+source "ubuntu/docker/install.sh" $UBUNTU_RELEASE_CODENAME
 source "ubuntu/docker/add-user-to-docker-group.sh"
-source "ubuntu/docker/install-docker-compose.sh" v2.24.5
+source "ubuntu/docker/install-docker-compose.sh" v2.29.2
 
-# exuberant-ctags
-source "ubuntu/exuberant-ctags/install-exuberant-ctags.sh"
-source "ubuntu/exuberant-ctags/set-ctags.sh"
+echo "======== exuberant-ctags ========"
+source "ubuntu/exuberant-ctags/install.sh"
+source "ubuntu/exuberant-ctags/set-ctags-file.sh"
 
-# ffmpeg
-source "ubuntu/ffmpeg/install-ffmpeg.sh"
+echo "======== ffmpeg ========"
+source "ubuntu/ffmpeg/install.sh"
 
-# firefox
-source "ubuntu/firefox/install-firefox.sh"
-source "ubuntu/firefox/install-geckodriver.sh" v0.34.0
+echo "======== firefox ========"
+source "ubuntu/firefox/install.sh"
+source "ubuntu/firefox/install-geckodriver.sh" v0.35.0
 
-# flatpak
-source "ubuntu/flatpak/install-flatpak.sh"
+echo "======== flatpak ========"
+source "ubuntu/flatpak/install.sh"
 
-# fzf
-source "ubuntu/fzf/install-fzf.sh"
-source "ubuntu/fzf/set-fzf_default_command.sh"
+echo "======== fzf ========"
+source "ubuntu/fzf/install.sh"
+source "ubuntu/fzf/set-fzf_default_command-variable.sh"
 
-# gimp
-source "ubuntu/gimp/install-gimp.sh"
+echo "======== gimp ========"
+source "ubuntu/gimp/install.sh"
 
-# git
-source "ubuntu/git/install-git.sh"
+echo "======== git ========"
+source "ubuntu/git/install.sh"
 source "ubuntu/git/install-diff-highlight.sh"
 
-# go
-source "ubuntu/go/asdf-install-go.sh" 1.21.6
+echo "======== go ========"
+source "ubuntu/go/asdf-install-golang.sh" 1.23.1
 
-# google-chrome
-source "ubuntu/google-chrome/install-google-chrome.sh"
+echo "======== google-chrome ========"
+source "ubuntu/google-chrome/install.sh"
 source "ubuntu/google-chrome/install-chromedriver.sh" 128.0.6613.119
 
-# graphviz
-source "ubuntu/graphviz/install-graphviz.sh"
+echo "======== graphviz ========"
+source "ubuntu/graphviz/install.sh"
 
-# htop
-source "ubuntu/htop/install-htop.sh"
+echo "======== htop ========"
+source "ubuntu/htop/install.sh"
 
-# imagemagick
-source "ubuntu/imagemagick/install-imagemagick.sh"
+echo "======== imagemagick ========"
+source "ubuntu/imagemagick/install.sh"
 
-# jq
-source "ubuntu/jq/install-jq.sh"
+echo "======== jq ========"
+source "ubuntu/jq/install.sh"
 
-# kdenlive
-source "ubuntu/kdenlive/install-kdenlive.sh"
+echo "======== kdenlive ========"
+source "ubuntu/kdenlive/install.sh"
 
-# libvips
-source "ubuntu/libvips/install-libvips.sh"
+echo "======== libvips ========"
+source "ubuntu/libvips/install.sh"
 
-# libxml2
-source "ubuntu/libxml2/install-libxml2.sh" libxml2-dev
+echo "======== libxml2 ========"
+source "ubuntu/libxml2/install.sh"
 
-# mc
-source "ubuntu/mc/install-mc.sh"
+echo "======== memcached ========"
+source "ubuntu/memcached/install.sh"
 
-# memcached
-source "ubuntu/memcached/install-memcached.sh"
+echo "======== mkcert ========"
+source "ubuntu/mkcert/install.sh" v1.4.4
 
-# mkcert
-source "ubuntu/mkcert/install-mkcert.sh" v1.4.4
+echo "======== mupdf ========"
+source "ubuntu/mupdf/install.sh"
 
-# mupdf
-source "ubuntu/mupdf/install-mupdf.sh"
+echo "======== network-manager ========"
+source "ubuntu/network-manager/install.sh"
 
-# mysql
-# source "ubuntu/mysql/asdf-install-mysql.sh" 5.7.34
+echo "======== nginx ========"
+source "ubuntu/nginx/install.sh" $UBUNTU_RELEASE_CODENAME
 
-# network-manager
-source "ubuntu/network-manager/install-network-manager.sh"
+echo "======== nmap ========"
+source "ubuntu/nmap/install.sh"
 
-# nginx
-source "ubuntu/nginx/install-nginx.sh" $UBUNTU_RELEASE_CODENAME
+echo "======== nodejs ========"
+source "ubuntu/nodejs/asdf-install-nodejs.sh" 20.17.0
+source "ubuntu/nodejs/asdf-install-yarn.sh" 1.22.22
 
-# nmap
-source "ubuntu/nmap/install-nmap.sh"
+echo "======== obs-studio ========"
+source "ubuntu/obs-studio/install.sh"
 
-# nodejs
-source "ubuntu/nodejs/asdf-install-nodejs.sh" 20.11.0
-source "ubuntu/nodejs/asdf-install-yarn.sh" 1.22.19
+echo "======== openvpn ========"
+source "ubuntu/openvpn/install.sh"
+source "ubuntu/openvpn/change-openvpn-file.sh"
 
-# obs-studio
-source "ubuntu/obs-studio/install-obs-studio.sh"
+echo "======== poppler ========"
+source "ubuntu/poppler/install.sh"
 
-# openvpn
-source "ubuntu/openvpn/install-openvpn.sh"
-source "ubuntu/openvpn/change-openvpn_config.sh"
+echo "======== postgresql ========"
+source "ubuntu/postgresql/asdf-install-postgresql.sh" 16.4
+source "ubuntu/postgresql/set-psqlrc-file.sh"
 
-# poppler
-source "ubuntu/poppler/install-poppler.sh"
+echo "======== python ========"
+source "ubuntu/python/asdf-install-python.sh" 3.12.6
 
-# postgresql
-source "ubuntu/postgresql/asdf-install-postgresql.sh" 16.1
-source "ubuntu/postgresql/set-psqlrc.sh"
+echo "======== rar ========"
+source "ubuntu/rar/install.sh"
 
-# python
-source "ubuntu/python/asdf-install-python.sh" 3.12.1
+echo "======== rbspy ========"
+source "ubuntu/rbspy/install.sh" v0.25.0
 
-# rar
-source "ubuntu/rar/install-rar.sh"
+echo "======== readline ========"
+source "ubuntu/readline/set-inputrc-file.sh"
 
-# rbspy
-source "ubuntu/rbspy/install-rbspy.sh" v0.19.0
+echo "======== redis ========"
+source "ubuntu/redis/asdf-install-redis.sh" 7.4.0
 
-# readline
-source "ubuntu/readline/set-inputrc.sh"
+echo "======== ruby ========"
+source "ubuntu/ruby/asdf-install-ruby.sh" 3.3.5 debug rubocop "tmuxinator:3.3.0"
+source "ubuntu/ruby/set-rspec-file.sh"
 
-# redis
-source "ubuntu/redis/asdf-install-redis.sh" 7.2.4
+echo "======== sqlite ========"
+source "ubuntu/sqlite/asdf-install-sqlite.sh" 3.46.1
 
-# ruby
-source "ubuntu/ruby/asdf-install-ruby.sh" 3.3.0 debug rubocop "tmuxinator:3.1.0"
-source "ubuntu/ruby/set-rspec.sh"
-
-# sqlite
-source "ubuntu/sqlite/asdf-install-sqlite.sh" 3.45.1
-
-# ssh
+echo "======== ssh ========"
 source "ubuntu/ssh/install-openssh-client.sh"
 source "ubuntu/ssh/install-openssh-server.sh"
-source "ubuntu/ssh/change-sshd_config.sh" 4242 no
-source "ubuntu/ssh/set-authorized_keys.sh"
+source "ubuntu/ssh/change-sshd_config-file.sh"
+source "ubuntu/ssh/set-authorized_keys-file.sh"
 
-# teleport
-source "ubuntu/teleport/install-teleport.sh" 15.0.0
+echo "======== teleport ========"
+source "ubuntu/teleport/install.sh" 16.2.1
 
-# the_silver_searcher
-source "ubuntu/the_silver_searcher/install-the_silver_searcher.sh"
+echo "======== the_silver_searcher ========"
+source "ubuntu/the_silver_searcher/install.sh"
 
-# tmux
-source "ubuntu/tmux/install-tmux.sh" 3.3a
+echo "======== tmux ========"
+source "ubuntu/tmux/install.sh" 3.4
 source "ubuntu/tmux/install-dottmux.sh"
 
-# tree
-source "ubuntu/tree/install-tree.sh"
+echo "======== tree ========"
+source "ubuntu/tree/install.sh"
 
-# vim
-source "ubuntu/vim/install-vim.sh"
+echo "======== vim ========"
+source "ubuntu/vim/install.sh"
 source "ubuntu/vim/install-dotvim.sh"
-source "ubuntu/vim/set-vim-as-default-editor.sh"
+source "ubuntu/vim/set-editor-variable.sh"
 
-# xclip
-source "ubuntu/xclip/install-xclip.sh"
-source "ubuntu/xclip/add-xclip-shorthands.sh"
+echo "======== xclip ========"
+source "ubuntu/xclip/install.sh"
+source "ubuntu/xclip/create-xclip-shortcuts.sh"
 
-# xterm
-source "ubuntu/xterm/install-xterm.sh"
+echo "======== xterm ========"
+source "ubuntu/xterm/install.sh"
 source "ubuntu/xterm/install-dotX.sh"
 
-# yubikey-manager
-source "ubuntu/yubikey-manager/install-yubikey-manager.sh"
+echo "======== yubikey-manager ========"
+source "ubuntu/yubikey-manager/install.sh"
 
-# zoom
-source "ubuntu/zoom/install-zoom.sh" 5.17.5.2543
+echo "======== zoom ========"
+source "ubuntu/zoom/install.sh" 6.1.11.1545
 
-echo ""
-echo "Running: \`source \"$HOME/.bashrc\"\`"
+echo "======== source \"\$HOME/.bashrc\" ========"
 source "$HOME/.bashrc"
-echo ""
-echo "==================================================="
-echo "i-vagrant: https://gitlab.com/bogdanvlviv/i-vagrant"
-echo "==================================================="
-echo ""
+
+echo "======== Ubuntu 24.04 setup has been completed ========"
