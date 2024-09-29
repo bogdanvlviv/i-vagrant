@@ -2,7 +2,7 @@
 
 i-vagrant helps to set up Ubuntu 24.04.
 
-## Download i-vagrant
+## Download
 
 ```bash
 $ git clone https://gitlab.com/bogdanvlviv/i-vagrant.git

@@ -3,18 +3,16 @@ set -e
 sudo bash -c ""
 
 echo "Are you ready to set up Ubuntu 24.04?"
-echo -n "Type 'yes' or the operation will be aborted: "
+echo -n "Type 'yes' or the operation will be cancelled: "
 read i_vagrant_ready_to_set_up_ubuntu
 if [[ "$i_vagrant_ready_to_set_up_ubuntu" != "yes" ]]; then
   echo ""
-  echo "Aborted!"
+  echo "Cancelled!"
   echo ""
   exit 1
 fi
 
 echo "======== Setting up Ubuntu 24.04 ========"
-
-UBUNTU_RELEASE_CODENAME="noble"
 
 echo "======== upgrade ========"
 source "ubuntu/upgrade/packages.sh"
@@ -33,7 +31,7 @@ echo "======== curl ========"
 source "ubuntu/curl/install.sh"
 
 echo "======== docker ========"
-source "ubuntu/docker/install.sh" $UBUNTU_RELEASE_CODENAME
+source "ubuntu/docker/install.sh"
 source "ubuntu/docker/add-user-to-docker-group.sh"
 source "ubuntu/docker/install-docker-compose.sh" v2.29.2
 
@@ -43,10 +41,6 @@ source "ubuntu/exuberant-ctags/set-ctags-file.sh"
 
 echo "======== ffmpeg ========"
 source "ubuntu/ffmpeg/install.sh"
-
-echo "======== firefox ========"
-source "ubuntu/firefox/install.sh"
-source "ubuntu/firefox/install-geckodriver.sh" v0.35.0
 
 echo "======== flatpak ========"
 source "ubuntu/flatpak/install.sh"
@@ -104,7 +98,7 @@ echo "======== network-manager ========"
 source "ubuntu/network-manager/install.sh"
 
 echo "======== nginx ========"
-source "ubuntu/nginx/install.sh" $UBUNTU_RELEASE_CODENAME
+source "ubuntu/nginx/install.sh"
 
 echo "======== nmap ========"
 source "ubuntu/nmap/install.sh"
@@ -186,7 +180,7 @@ echo "======== yubikey-manager ========"
 source "ubuntu/yubikey-manager/install.sh"
 
 echo "======== zoom ========"
-source "ubuntu/zoom/install.sh" 6.1.11.1545
+source "ubuntu/zoom/install.sh" 6.2.3.2056
 
 echo "======== source \"\$HOME/.bashrc\" ========"
 source "$HOME/.bashrc"

@@ -1,7 +1,7 @@
 source "ubuntu/curl/install.sh"
 
-curl -L https://zoom.us/client/$1/zoom_amd64.deb -o /tmp/zoom_amd64.deb
+curl -L https://zoom.us/client/$1/zoom_$(dpkg --print-architecture).deb -o /tmp/zoom_$(dpkg --print-architecture).deb
 
-sudo apt install -y /tmp/zoom_amd64.deb
+sudo apt install -y /tmp/zoom_$(dpkg --print-architecture).deb
 
-rm /tmp/zoom_amd64.deb
+rm /tmp/zoom_$(dpkg --print-architecture).deb

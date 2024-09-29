@@ -1,8 +1,8 @@
 source "ubuntu/curl/install.sh"
 
-curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /tmp/google-chrome-stable_current_amd64.deb
+curl https://dl.google.com/linux/direct/google-chrome-stable_current_$(dpkg --print-architecture).deb -o /tmp/google-chrome-stable_current_$(dpkg --print-architecture).deb
 
-sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
+sudo dpkg -i /tmp/google-chrome-stable_current_$(dpkg --print-architecture).deb
 sudo apt install -y -f
 
-rm /tmp/google-chrome-stable_current_amd64.deb
+rm /tmp/google-chrome-stable_current_$(dpkg --print-architecture).deb
