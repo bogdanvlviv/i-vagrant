@@ -127,9 +127,6 @@ source "ubuntu/python/asdf-install-python.sh" 3.12.6
 echo "======== rar ========"
 source "ubuntu/rar/install.sh"
 
-echo "======== rbspy ========"
-source "ubuntu/rbspy/install.sh" v0.25.0
-
 echo "======== readline ========"
 source "ubuntu/readline/set-inputrc-file.sh"
 
@@ -137,8 +134,9 @@ echo "======== redis ========"
 source "ubuntu/redis/asdf-install-redis.sh" 7.4.0
 
 echo "======== ruby ========"
-source "ubuntu/ruby/asdf-install-ruby.sh" 3.3.5 debug rubocop "tmuxinator:3.3.0"
+source "ubuntu/ruby/asdf-install-ruby.sh" 3.3.5 debug rubocop "tmuxinator:3.3.1"
 source "ubuntu/ruby/set-rspec-file.sh"
+source "ubuntu/ruby/install-rbspy.sh" v0.25.0
 
 echo "======== sqlite ========"
 source "ubuntu/sqlite/asdf-install-sqlite.sh" 3.46.1
@@ -156,7 +154,7 @@ echo "======== the_silver_searcher ========"
 source "ubuntu/the_silver_searcher/install.sh"
 
 echo "======== tmux ========"
-source "ubuntu/tmux/install.sh" 3.4
+source "ubuntu/tmux/install.sh" 3.5a
 source "ubuntu/tmux/install-dottmux.sh"
 
 echo "======== tree ========"
