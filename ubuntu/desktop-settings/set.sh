@@ -20,6 +20,7 @@ gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Nautilus.
 
 # Mouse & Touchpad / Scroll Direction: Traditional
 gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 
 # Keyboard / Input Sources
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ua')]"
@@ -27,8 +28,14 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', '
 # Keyboard / Custom Shortcuts / Ctrl+Alt+t=xterm
 # source "ubuntu/xterm/create-xterm-keybinding.sh"
 
+# Privacy & Security / Location: On
+gsettings set org.gnome.system.location enabled true
+
 # Privacy & Security / File History: Off
 gsettings set org.gnome.desktop.privacy remember-recent-files false
+
+# System / Date & Time / Automatic Time Zone: On
+gsettings set org.gnome.desktop.datetime automatic-timezone true
 
 # Set favorite-apps
 gsettings set org.gnome.shell favorite-apps "['debian-xterm.desktop', 'google-chrome.desktop', 'Zoom.desktop', 'org.gnome.Nautilus.desktop']"
