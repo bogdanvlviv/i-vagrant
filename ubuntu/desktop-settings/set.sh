@@ -28,14 +28,14 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', '
 # Keyboard / Custom Shortcuts / Ctrl+Alt+t=xterm
 # source "ubuntu/xterm/create-xterm-keybinding.sh"
 
-# Privacy & Security / Location: On
-gsettings set org.gnome.system.location enabled true
+# Privacy & Security / Location: Off
+gsettings set org.gnome.system.location enabled false
 
 # Privacy & Security / File History: Off
 gsettings set org.gnome.desktop.privacy remember-recent-files false
 
-# System / Date & Time / Automatic Time Zone: On
-gsettings set org.gnome.desktop.datetime automatic-timezone true
+# System / Date & Time / Automatic Time Zone: Off
+gsettings set org.gnome.desktop.datetime automatic-timezone false
 
 # Set favorite-apps
 gsettings set org.gnome.shell favorite-apps "['debian-xterm.desktop', 'google-chrome.desktop', 'Zoom.desktop', 'org.gnome.Nautilus.desktop']"
