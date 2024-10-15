@@ -1,6 +1,6 @@
 sudo apt update
 
-sudo apt-add-repository -y ppa:yubico/stable
+sudo add-apt-repository -y ppa:yubico/stable
 
 sudo apt update
 
