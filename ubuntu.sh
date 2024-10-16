@@ -21,6 +21,9 @@ source "ubuntu/upgrade/snap.sh"
 echo "======== bashrc ========"
 source "ubuntu/bashrc/set-lc_all-variable.sh"
 
+echo "======== dell ========"
+source "ubuntu/dell/precision-5490/support-IntelMIPICamera.sh"
+
 echo "======== desktop-settings ========"
 source "ubuntu/desktop-settings/set.sh"
 
