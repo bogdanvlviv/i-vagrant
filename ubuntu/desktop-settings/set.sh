@@ -1,3 +1,6 @@
+# Power / Automatic Screen Brightness: Off
+gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
+
 # Power / Screen Blank: Never
 gsettings set org.gnome.desktop.session idle-delay 0
 
@@ -38,4 +41,4 @@ gsettings set org.gnome.desktop.privacy remember-recent-files false
 gsettings set org.gnome.desktop.datetime automatic-timezone false
 
 # Set favorite-apps
-gsettings set org.gnome.shell favorite-apps "['debian-xterm.desktop', 'google-chrome.desktop', 'Zoom.desktop', 'org.gnome.Nautilus.desktop']"
+gsettings set org.gnome.shell favorite-apps "['debian-xterm.desktop', 'google-chrome.desktop', 'org.gnome.Nautilus.desktop']"
