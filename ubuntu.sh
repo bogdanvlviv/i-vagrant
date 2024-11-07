@@ -65,7 +65,7 @@ source "ubuntu/go/asdf-install-golang.sh" 1.23.1
 echo "======== google-chrome ========"
 source "ubuntu/google-chrome/install.sh"
 source "ubuntu/google-chrome/set-default-web-browser.sh"
-source "ubuntu/google-chrome/install-chromedriver.sh" 128.0.6613.119
+source "ubuntu/google-chrome/install-chromedriver.sh" 130.0.6723.116
 
 echo "======== graphviz ========"
 source "ubuntu/graphviz/install.sh"
