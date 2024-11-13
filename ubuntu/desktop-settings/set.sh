@@ -1,6 +1,9 @@
 # Power / Automatic Screen Brightness: Off
 gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
 
+# Power / Dim Screen: Off
+gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
+
 # Power / Screen Blank: Never
 gsettings set org.gnome.desktop.session idle-delay 0
 
