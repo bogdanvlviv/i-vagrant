@@ -7,6 +7,9 @@ gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
 # Power / Screen Blank: Never
 gsettings set org.gnome.desktop.session idle-delay 0
 
+# Power / Automatic Power Saver: Off
+gsettings set org.gnome.settings-daemon.plugins.power power-saver-profile-on-low-battery false
+
 # Power / Automatic Suspend: Off
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type "nothing"
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type "nothing"
