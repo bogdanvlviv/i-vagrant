@@ -2,10 +2,4 @@
 
 sudo apt update
 
-sudo apt install -y linux-modules-ipu6-generic
-
-sudo add-apt-repository -y ppa:oem-solutions-group/intel-ipu6
-
-sudo apt update
-
-sudo apt install -y libcamhal0
+sudo apt-get install --no-install-recommends --yes linux-generic-hwe-24.04 linux-modules-ipu6-generic-hwe-24.04 linux-modules-usbio-generic-hwe-24.04
