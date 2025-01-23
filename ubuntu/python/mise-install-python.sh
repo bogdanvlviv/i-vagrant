@@ -14,10 +14,7 @@ sudo apt install -y libxmlsec1-dev
 sudo apt install -y libffi-dev
 sudo apt install -y liblzma-dev
 
-asdf plugin add python
-asdf plugin update python
-asdf install python $1
-asdf global python $1
+mise use --global python@$1
 
 shift 1
 

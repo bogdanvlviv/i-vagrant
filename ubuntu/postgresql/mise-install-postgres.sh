@@ -8,10 +8,8 @@ sudo apt install -y libcurl4-openssl-dev
 sudo apt install -y uuid-dev
 sudo apt install -y icu-devtools
 sudo apt install -y libicu-dev
+sudo apt install -y flex
 
-asdf plugin add postgres
-asdf plugin update postgres
-asdf install postgres $1
-asdf global postgres $1
+mise use --global postgres@$1
 
 sudo apt install -y libpq-dev
