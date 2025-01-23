@@ -16,10 +16,7 @@ sudo apt install -y libgdbm-dev
 sudo apt install -y libdb-dev
 sudo apt install -y uuid-dev
 
-asdf plugin add ruby
-asdf plugin update ruby
-asdf install ruby $1
-asdf global ruby $1
+mise use --global ruby@$1
 
 shift 1
 
