@@ -36,7 +36,7 @@ source "ubuntu/curl/install.sh"
 echo "======== docker ========"
 source "ubuntu/docker/install.sh"
 source "ubuntu/docker/add-user-to-docker-group.sh"
-source "ubuntu/docker/install-docker-compose.sh" v2.29.2
+source "ubuntu/docker/install-docker-compose.sh" v2.32.4
 
 echo "======== exuberant-ctags ========"
 source "ubuntu/exuberant-ctags/install.sh"
@@ -65,7 +65,7 @@ source "ubuntu/go/mise-install-go.sh" 1.23.5
 echo "======== google-chrome ========"
 source "ubuntu/google-chrome/install.sh"
 source "ubuntu/google-chrome/set-default-web-browser.sh"
-source "ubuntu/google-chrome/install-chromedriver.sh" 131.0.6778.85
+source "ubuntu/google-chrome/install-chromedriver.sh" 132.0.6834.110
 
 echo "======== graphviz ========"
 source "ubuntu/graphviz/install.sh"
@@ -139,7 +139,7 @@ source "ubuntu/redis/mise-install-redis.sh" 7.4.2
 echo "======== ruby ========"
 source "ubuntu/ruby/mise-install-ruby.sh" 3.4.1 debug rubocop "tmuxinator:3.3.3"
 source "ubuntu/ruby/set-rspec-file.sh"
-source "ubuntu/ruby/install-rbspy.sh" v0.25.0
+source "ubuntu/ruby/install-rbspy.sh" v0.29.0
 
 echo "======== sqlite ========"
 source "ubuntu/sqlite/mise-install-sqlite.sh" 3.48.0
@@ -151,7 +151,7 @@ source "ubuntu/ssh/change-sshd_config-file.sh"
 source "ubuntu/ssh/set-authorized_keys-file.sh"
 
 echo "======== teleport ========"
-source "ubuntu/teleport/install.sh" 16.2.1
+source "ubuntu/teleport/install.sh" 17.2.2
 
 echo "======== the_silver_searcher ========"
 source "ubuntu/the_silver_searcher/install.sh"
@@ -181,7 +181,7 @@ echo "======== yubikey-manager ========"
 source "ubuntu/yubikey-manager/install.sh"
 
 echo "======== zoom ========"
-source "ubuntu/zoom/install.sh" 6.2.3.2056
+source "ubuntu/zoom/install.sh" 6.3.6.6315
 
 echo "======== source \"\$HOME/.bashrc\" ========"
 source "$HOME/.bashrc"
