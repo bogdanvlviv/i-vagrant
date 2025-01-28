@@ -15,6 +15,6 @@ sudo apt update
 
 sudo apt install -y mise
 
-eval "$(mise activate bash)"
+eval "$(mise activate bash --shims)"
 
-sed -i "1ieval \"$\(mise activate bash\)\"\n" ~/.bashrc
+sed -i "1ieval \"$\(mise activate bash --shims\)\"\n" ~/.bashrc
