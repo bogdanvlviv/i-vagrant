@@ -1,5 +1,6 @@
 source "ubuntu/curl/install.sh"
 
+sudo apt install -y bison
 sudo apt install -y build-essential
 sudo apt install -y libssl-dev
 sudo apt install -y libreadline-dev
@@ -11,5 +12,6 @@ sudo apt install -y libicu-dev
 sudo apt install -y flex
 
 mise use --global postgres@$1
+mise reshim
 
 sudo apt install -y libpq-dev

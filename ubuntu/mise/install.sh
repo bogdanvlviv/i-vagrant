@@ -6,6 +6,7 @@ sudo apt install -y gnupg2
 sudo apt install -y ca-certificates
 sudo apt install -y lsb-release
 sudo apt install -y ubuntu-keyring
+sudo apt install -y wget
 
 curl https://mise.jdx.dev/gpg-key.pub | gpg --dearmor | sudo tee /etc/apt/keyrings/mise-archive-keyring.gpg > /dev/null
 

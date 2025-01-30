@@ -17,6 +17,7 @@ sudo apt install -y libdb-dev
 sudo apt install -y uuid-dev
 
 mise use --global ruby@$1
+mise reshim
 
 shift 1
 

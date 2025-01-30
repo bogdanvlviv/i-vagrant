@@ -15,6 +15,7 @@ sudo apt install -y libffi-dev
 sudo apt install -y liblzma-dev
 
 mise use --global python@$1
+mise reshim
 
 shift 1
 
