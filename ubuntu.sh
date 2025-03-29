@@ -163,6 +163,9 @@ source "ubuntu/tmux/install-dottmux.sh"
 echo "======== tree ========"
 source "ubuntu/tree/install.sh"
 
+echo "======== usb-creator-gtk ========"
+source "ubuntu/usb-creator-gtk/install.sh"
+
 echo "======== vim ========"
 source "ubuntu/vim/install.sh"
 source "ubuntu/vim/install-dotvim.sh"
