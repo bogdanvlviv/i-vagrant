@@ -65,7 +65,7 @@ source "ubuntu/go/mise-install-go.sh" 1.24.3
 echo "======== google-chrome ========"
 source "ubuntu/google-chrome/install.sh"
 source "ubuntu/google-chrome/set-default-web-browser.sh"
-source "ubuntu/google-chrome/install-chromedriver.sh" 136.0.7103.94
+source "ubuntu/google-chrome/install-chromedriver.sh" 137.0.7151.55
 
 echo "======== graphviz ========"
 source "ubuntu/graphviz/install.sh"
@@ -184,7 +184,7 @@ echo "======== yubikey-manager ========"
 source "ubuntu/yubikey-manager/install.sh"
 
 echo "======== zoom ========"
-source "ubuntu/zoom/install.sh" 6.4.6.1370
+source "ubuntu/zoom/install.sh" 6.4.10.2027
 
 echo "======== source \"\$HOME/.bashrc\" ========"
 source "$HOME/.bashrc"
