@@ -171,6 +171,9 @@ source "ubuntu/vim/install.sh"
 source "ubuntu/vim/install-dotvim.sh"
 source "ubuntu/vim/set-editor-variable.sh"
 
+echo "======== visual-studio-code ========"
+source "ubuntu/visual-studio-code/install.sh"
+
 echo "======== xclip ========"
 source "ubuntu/xclip/install.sh"
 source "ubuntu/xclip/create-xclip-shortcuts.sh"
