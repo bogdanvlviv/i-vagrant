@@ -187,7 +187,7 @@ echo "======== yubikey-manager ========"
 source "ubuntu/yubikey-manager/install.sh"
 
 echo "======== zoom ========"
-source "ubuntu/zoom/install.sh" 6.5.7.3298
+source "ubuntu/zoom/install.sh" 6.6.6.5306
 
 echo "======== source \"\$HOME/.bashrc\" ========"
 source "$HOME/.bashrc"
