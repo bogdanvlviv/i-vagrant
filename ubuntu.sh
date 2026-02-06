@@ -134,7 +134,7 @@ echo "======== readline ========"
 source "ubuntu/readline/set-inputrc-file.sh"
 
 echo "======== redis ========"
-source "ubuntu/redis/mise-install-redis.sh" 8.0.1
+# source "ubuntu/redis/mise-install-redis.sh" 7.2
 
 echo "======== ruby ========"
 source "ubuntu/ruby/mise-install-ruby.sh" 3.4.4 debug rubocop "tmuxinator:3.3.4"
