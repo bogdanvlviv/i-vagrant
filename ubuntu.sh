@@ -36,7 +36,7 @@ source "ubuntu/curl/install.sh"
 echo "======== docker ========"
 source "ubuntu/docker/install.sh"
 source "ubuntu/docker/add-user-to-docker-group.sh"
-source "ubuntu/docker/install-docker-compose.sh" v2.36.0
+source "ubuntu/docker/install-docker-compose.sh" v5.0.2
 
 echo "======== exuberant-ctags ========"
 source "ubuntu/exuberant-ctags/install.sh"
@@ -60,12 +60,12 @@ source "ubuntu/git/install.sh"
 source "ubuntu/git/install-diff-highlight.sh"
 
 echo "======== go ========"
-source "ubuntu/go/mise-install-go.sh" 1.24.3
+source "ubuntu/go/mise-install-go.sh" 1.25.7
 
 echo "======== google-chrome ========"
 source "ubuntu/google-chrome/install.sh"
 source "ubuntu/google-chrome/set-default-web-browser.sh"
-source "ubuntu/google-chrome/install-chromedriver.sh" 142.0.7444.175
+source "ubuntu/google-chrome/install-chromedriver.sh" 145.0.7632.46
 
 echo "======== graphviz ========"
 source "ubuntu/graphviz/install.sh"
@@ -107,7 +107,7 @@ echo "======== nmap ========"
 source "ubuntu/nmap/install.sh"
 
 echo "======== nodejs ========"
-source "ubuntu/nodejs/mise-install-node.sh" 22.15.1
+source "ubuntu/nodejs/mise-install-node.sh" 24.13.0
 source "ubuntu/nodejs/mise-install-yarn.sh" 1.22.22
 
 echo "======== obs-studio ========"
@@ -121,11 +121,11 @@ echo "======== poppler ========"
 source "ubuntu/poppler/install.sh"
 
 echo "======== postgresql ========"
-source "ubuntu/postgresql/mise-install-postgres.sh" 17.5
+source "ubuntu/postgresql/mise-install-postgres.sh" 18.1
 source "ubuntu/postgresql/set-psqlrc-file.sh"
 
 echo "======== python ========"
-source "ubuntu/python/mise-install-python.sh" 3.13.3
+source "ubuntu/python/mise-install-python.sh" 3.14.3
 
 echo "======== rar ========"
 source "ubuntu/rar/install.sh"
@@ -137,12 +137,12 @@ echo "======== redis ========"
 # source "ubuntu/redis/mise-install-redis.sh" 7.2
 
 echo "======== ruby ========"
-source "ubuntu/ruby/mise-install-ruby.sh" 3.4.4 debug rubocop "tmuxinator:3.3.4"
+source "ubuntu/ruby/mise-install-ruby.sh" 4.0.1 debug rubocop "tmuxinator:3.3.7"
 source "ubuntu/ruby/set-rspec-file.sh"
-source "ubuntu/ruby/install-rbspy.sh" v0.33.0
+source "ubuntu/ruby/install-rbspy.sh" v0.42.1
 
 echo "======== sqlite ========"
-source "ubuntu/sqlite/mise-install-sqlite.sh" 3.49.2
+source "ubuntu/sqlite/mise-install-sqlite.sh" 3.51.2
 
 echo "======== ssh ========"
 source "ubuntu/ssh/install-openssh-client.sh"
@@ -151,13 +151,13 @@ source "ubuntu/ssh/change-sshd_config-file.sh"
 source "ubuntu/ssh/set-authorized_keys-file.sh"
 
 echo "======== teleport ========"
-source "ubuntu/teleport/install.sh" 17.4.9
+source "ubuntu/teleport/install.sh" 18.6.6
 
 echo "======== the_silver_searcher ========"
 source "ubuntu/the_silver_searcher/install.sh"
 
 echo "======== tmux ========"
-source "ubuntu/tmux/install.sh" 3.5a
+source "ubuntu/tmux/install.sh" 3.6a
 source "ubuntu/tmux/install-dottmux.sh"
 
 echo "======== tree ========"
@@ -190,7 +190,7 @@ echo "======== yubikey-manager ========"
 source "ubuntu/yubikey-manager/install.sh"
 
 echo "======== zoom ========"
-source "ubuntu/zoom/install.sh" 6.6.10.5815
+source "ubuntu/zoom/install.sh" 6.7.2.6498
 
 echo "======== source \"\$HOME/.bashrc\" ========"
 source "$HOME/.bashrc"
