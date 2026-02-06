@@ -166,6 +166,9 @@ source "ubuntu/tree/install.sh"
 echo "======== usb-creator-gtk ========"
 source "ubuntu/usb-creator-gtk/install.sh"
 
+echo "======== valkey ========"
+source "ubuntu/valkey/mise-install-valkey.sh" 9.0.2
+
 echo "======== vim ========"
 source "ubuntu/vim/install.sh"
 source "ubuntu/vim/install-dotvim.sh"
