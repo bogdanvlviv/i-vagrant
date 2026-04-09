@@ -137,7 +137,7 @@ echo "======== redis ========"
 # source "ubuntu/redis/mise-install-redis.sh" 7.2
 
 echo "======== ruby ========"
-source "ubuntu/ruby/mise-install-ruby.sh" 4.0.1 debug rubocop "tmuxinator:3.3.7"
+source "ubuntu/ruby/mise-install-ruby.sh" 4.0.2 debug rubocop "tmuxinator:3.3.8"
 source "ubuntu/ruby/set-rspec-file.sh"
 source "ubuntu/ruby/install-rbspy.sh" v0.42.1
 
