@@ -65,7 +65,7 @@ source "ubuntu/go/mise-install-go.sh" 1.25.7
 echo "======== google-chrome ========"
 source "ubuntu/google-chrome/install.sh"
 source "ubuntu/google-chrome/set-default-web-browser.sh"
-source "ubuntu/google-chrome/install-chromedriver.sh" 146.0.7680.76
+source "ubuntu/google-chrome/install-chromedriver.sh" 147.0.7727.56
 
 echo "======== graphviz ========"
 source "ubuntu/graphviz/install.sh"
