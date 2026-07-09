@@ -1,5 +1,6 @@
 source "ubuntu/curl/install.sh"
 
+# https://github.com/mise-plugins/mise-sqlite#requirements
 sudo apt install -y build-essential
 sudo apt install -y file
 

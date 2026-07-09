@@ -1,25 +1,26 @@
+# Power / Show Battery Percentage: On
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+
 # Power / Automatic Screen Brightness: Off
 gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
 
 # Power / Dim Screen: Off
 gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
 
-# Power / Screen Blank: Never
-gsettings set org.gnome.desktop.session idle-delay 0
-
 # Power / Automatic Power Saver: Off
 gsettings set org.gnome.settings-daemon.plugins.power power-saver-profile-on-low-battery false
+
+# Power / Automatic Screen Blank: Off
+gsettings set org.gnome.desktop.session idle-delay 0
 
 # Power / Automatic Suspend: Off
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type "nothing"
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type "nothing"
 
-# Power / Show Battery Percentage: On
-gsettings set org.gnome.desktop.interface show-battery-percentage true
-
 # Appearance / Style: Dark
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 gsettings set org.gnome.desktop.interface gtk-theme "Yaru-dark"
+gsettings set org.gnome.desktop.interface icon-theme "Yaru-dark"
 
 # Set the default web browser to google-chrome.desktop
 # source "ubuntu/google-chrome/set-default-web-browser.sh"

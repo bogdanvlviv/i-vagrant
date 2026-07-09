@@ -2,6 +2,7 @@ source "ubuntu/curl/install.sh"
 
 sudo apt update
 
+# https://nginx.org/en/linux_packages.html#Ubuntu
 sudo apt install -y gnupg2
 sudo apt install -y ca-certificates
 sudo apt install -y lsb-release

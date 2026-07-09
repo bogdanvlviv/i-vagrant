@@ -2,8 +2,10 @@ source "ubuntu/git/install.sh"
 
 sudo apt update
 
-sudo apt install -y automake
+# https://github.com/tmux/tmux#dependencies
 sudo apt install -y bison
+sudo apt install -y automake
+sudo apt install -y autoconf
 sudo apt install -y build-essential
 sudo apt install -y pkg-config
 sudo apt install -y libevent-dev
