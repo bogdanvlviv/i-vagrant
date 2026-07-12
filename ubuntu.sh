@@ -36,6 +36,7 @@ echo "======== dell-precision-5490 ========"
 # ubuntu-drivers list
 # sudo ubuntu-drivers install
 # reboot
+# sudo rm /etc/apt/sources.list.d/archive_uri-http_dell_archive_canonical_com_-resolute.list
 
 echo "======== curl ========"
 source "ubuntu/curl/install.sh"
