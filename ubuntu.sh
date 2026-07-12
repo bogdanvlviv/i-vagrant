@@ -21,7 +21,13 @@ source "ubuntu/upgrade/snap.sh"
 echo "======== bashrc ========"
 source "ubuntu/bashrc/set-lc_all-variable.sh"
 
-echo "======== dell ========"
+echo "======== desktop-settings ========"
+source "ubuntu/desktop-settings/set.sh"
+
+echo "======== mise ========"
+source "ubuntu/mise/install.sh"
+
+echo "======== dell-precision-5490 ========"
 # https://wiki.ubuntu.com/IntelMIPICamera
 # sudo apt install ubuntu-oem-keyring
 # Check whether http://dell.archive.canonical.com/dists/resolute-somerville-oricorio/ is available
@@ -30,12 +36,6 @@ echo "======== dell ========"
 # ubuntu-drivers list
 # sudo ubuntu-drivers install
 # reboot
-
-echo "======== desktop-settings ========"
-source "ubuntu/desktop-settings/set.sh"
-
-echo "======== mise ========"
-source "ubuntu/mise/install.sh"
 
 echo "======== curl ========"
 source "ubuntu/curl/install.sh"
