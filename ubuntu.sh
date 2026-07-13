@@ -105,17 +105,9 @@ echo "======== memcached ========"
 # Unused?
 # source "ubuntu/memcached/install.sh"
 
-echo "======== mkcert ========"
-# Move to ~/work/gitlab/
-# source "ubuntu/mkcert/install.sh" v1.4.4
-
 echo "======== mupdf ========"
 # Unused?
 # source "ubuntu/mupdf/install.sh"
-
-echo "======== nginx ========"
-# Move to ~/work/gitlab/
-# source "ubuntu/nginx/install.sh"
 
 echo "======== nmap ========"
 source "ubuntu/nmap/install.sh"
@@ -168,10 +160,6 @@ source "ubuntu/ssh/install-openssh-client.sh"
 source "ubuntu/ssh/install-openssh-server.sh"
 source "ubuntu/ssh/change-sshd_config-file.sh"
 source "ubuntu/ssh/set-authorized_keys-file.sh"
-
-echo "======== teleport ========"
-# Move to ~/work/gitlab/
-# source "ubuntu/teleport/install.sh" 18.10.0
 
 echo "======== the_silver_searcher ========"
 source "ubuntu/the_silver_searcher/install.sh"
