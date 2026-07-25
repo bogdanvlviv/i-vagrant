@@ -75,39 +75,11 @@ source "ubuntu/google-chrome/install.sh"
 source "ubuntu/google-chrome/set-default-web-browser.sh"
 source "ubuntu/google-chrome/install-chromedriver.sh" 150.0.7871.114
 
-echo "======== graphviz ========"
-# Unused?
-# source "ubuntu/graphviz/install.sh"
-
 echo "======== htop ========"
 source "ubuntu/htop/install.sh"
 
-echo "======== imagemagick ========"
-# Unused?
-# source "ubuntu/imagemagick/install.sh"
-
-echo "======== jq ========"
-# Unused?
-# source "ubuntu/jq/install.sh"
-
 echo "======== kdenlive ========"
 source "ubuntu/kdenlive/install.sh"
-
-echo "======== libvips ========"
-# Unused?
-# source "ubuntu/libvips/install.sh"
-
-echo "======== libxml2 ========"
-# Unused?
-# source "ubuntu/libxml2/install.sh"
-
-echo "======== memcached ========"
-# Unused?
-# source "ubuntu/memcached/install.sh"
-
-echo "======== mupdf ========"
-# Unused?
-# source "ubuntu/mupdf/install.sh"
 
 echo "======== nmap ========"
 source "ubuntu/nmap/install.sh"
@@ -123,10 +95,6 @@ echo "======== openvpn ========"
 source "ubuntu/openvpn/install.sh"
 source "ubuntu/openvpn/change-openvpn-file.sh"
 
-echo "======== poppler ========"
-# Unused?
-# source "ubuntu/poppler/install.sh"
-
 echo "======== postgresql ========"
 source "ubuntu/postgresql/mise-install-postgres.sh" 18.4
 source "ubuntu/postgresql/set-psqlrc-file.sh"
@@ -134,23 +102,12 @@ source "ubuntu/postgresql/set-psqlrc-file.sh"
 echo "======== python ========"
 source "ubuntu/python/mise-install-python.sh" 3.14.6
 
-echo "======== rar ========"
-# Unused?
-# source "ubuntu/rar/install.sh"
-
 echo "======== readline ========"
 source "ubuntu/readline/set-inputrc-file.sh"
-
-echo "======== redis ========"
-# Unused?
-# Deprecated in favor of valkey.
-# source "ubuntu/redis/mise-install-redis.sh" 7.2
 
 echo "======== ruby ========"
 source "ubuntu/ruby/mise-install-ruby.sh" 4.0.6 debug rubocop "tmuxinator:3.4.1"
 source "ubuntu/ruby/set-rspec-file.sh"
-# Unused?
-# source "ubuntu/ruby/install-rbspy.sh" v0.49.0
 
 echo "======== sqlite ========"
 source "ubuntu/sqlite/mise-install-sqlite.sh" 3.53.3
@@ -170,10 +127,6 @@ source "ubuntu/tmux/install-dottmux.sh"
 
 echo "======== usb-creator-gtk ========"
 source "ubuntu/usb-creator-gtk/install.sh"
-
-echo "======== valkey ========"
-# Unused?
-# source "ubuntu/valkey/mise-install-valkey.sh" 9.1.0
 
 echo "======== vim ========"
 source "ubuntu/vim/install.sh"
