@@ -38,6 +38,9 @@ echo "======== dell-precision-5490 ========"
 # reboot
 # sudo rm /etc/apt/sources.list.d/archive_uri-http_dell_archive_canonical_com_-resolute.list
 
+echo "======== claude ========"
+# source "ubuntu/claude/install.sh"
+
 echo "======== curl ========"
 source "ubuntu/curl/install.sh"
 
