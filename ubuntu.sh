@@ -39,7 +39,7 @@ echo "======== dell-precision-5490 ========"
 # sudo rm /etc/apt/sources.list.d/archive_uri-http_dell_archive_canonical_com_-resolute.list
 #
 # Fix IntelMIPICamera after upgrade
-# sudo systemctl stop v4l2-relayd@default.service; sudo modprobe --remove intel_ipu6; sudo modprobe intel_ipu6; sudo systemctl restart v4l2-relayd@default.service
+# sudo systemctl stop v4l2-relayd@default.service; sudo modprobe --remove intel_ipu6_isys intel_ipu6_psys intel_ipu6; sudo modprobe intel_ipu6_isys intel_ipu6_psys intel_ipu6; sudo systemctl restart v4l2-relayd@default.service
 
 echo "======== claude ========"
 # source "ubuntu/claude/install.sh"
