@@ -140,6 +140,9 @@ echo "======== xclip ========"
 source "ubuntu/xclip/install.sh"
 source "ubuntu/xclip/create-xclip-shortcuts.sh"
 
+echo "======== xournalpp ========"
+source "ubuntu/xournalpp/install.sh"
+
 echo "======== xterm ========"
 source "ubuntu/xterm/install.sh"
 source "ubuntu/xterm/create-xterm-keybinding.sh"
