@@ -76,7 +76,7 @@ source "ubuntu/go/mise-install-go.sh" 1.26.5
 echo "======== google-chrome ========"
 source "ubuntu/google-chrome/install.sh"
 source "ubuntu/google-chrome/set-default-web-browser.sh"
-source "ubuntu/google-chrome/install-chromedriver.sh" 150.0.7871.114
+source "ubuntu/google-chrome/install-chromedriver.sh" 153.0.8010.47
 
 echo "======== htop ========"
 source "ubuntu/htop/install.sh"
