@@ -28,7 +28,7 @@ echo "======== mise ========"
 source "ubuntu/mise/install.sh"
 
 echo "======== dell-precision-5490 ========"
-# https://wiki.ubuntu.com/IntelMIPICamera
+# https://github.com/ubuntu/wiki-archives/blob/main/UbuntuWiki/I/IntelMIPICamera.wiki?plain=1
 # sudo apt install ubuntu-oem-keyring
 # Check whether http://dell.archive.canonical.com/dists/resolute-somerville-oricorio/ is available
 # and try resolute codename first.
