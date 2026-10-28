@@ -98,6 +98,9 @@ echo "======== openvpn ========"
 source "ubuntu/openvpn/install.sh"
 source "ubuntu/openvpn/change-openvpn-file.sh"
 
+echo "======== poppler ========"
+source "ubuntu/poppler/install.sh"
+
 echo "======== postgresql ========"
 source "ubuntu/postgresql/mise-install-postgres.sh" 18.4
 source "ubuntu/postgresql/set-psqlrc-file.sh"
